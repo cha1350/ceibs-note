@@ -1,0 +1,1551 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INNOVATEChina 2027 Case Playbook</title>
+  <style>
+    :root {
+      --ink: #172331;
+      --muted: #617083;
+      --navy: #1f3349;
+      --teal: #167b7f;
+      --coral: #d85a47;
+      --gold: #c6922b;
+      --green: #5e8d6a;
+      --paper: #fbfcfd;
+      --wash: #eef4f7;
+      --line: #d9e2e8;
+      --white: #ffffff;
+      --shadow: 0 18px 45px rgba(23, 35, 49, 0.11);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      min-height: 100vh;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(217, 226, 232, 0.82);
+      background: rgba(251, 252, 253, 0.92);
+      backdrop-filter: blur(14px);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 12px 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .mark {
+      width: 22px;
+      height: 22px;
+      border: 5px solid var(--coral);
+      border-right-color: var(--teal);
+      border-bottom-color: var(--gold);
+      border-radius: 50%;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+      font-size: 13px;
+    }
+
+    nav a {
+      padding: 6px 9px;
+      color: var(--muted);
+      border: 1px solid transparent;
+      border-radius: 8px;
+    }
+
+    nav a:hover {
+      color: var(--navy);
+      border-color: var(--line);
+      background: var(--white);
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px 56px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+      gap: 30px;
+      align-items: stretch;
+      padding: 58px 0 34px;
+    }
+
+    .hero h1 {
+      margin: 0 0 14px;
+      max-width: 830px;
+      color: var(--navy);
+      font-size: clamp(38px, 5vw, 72px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 820px;
+      margin: 0 0 24px;
+      color: #35465a;
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .brief {
+      display: grid;
+      align-content: space-between;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: var(--shadow);
+      min-height: 430px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .brief::after {
+      content: "";
+      position: absolute;
+      right: -72px;
+      top: -74px;
+      width: 210px;
+      height: 210px;
+      border: 32px solid rgba(216, 90, 71, 0.55);
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .brief > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .brief h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+      line-height: 1.25;
+      color: var(--white);
+    }
+
+    .brief p {
+      margin: 0;
+      color: #dbe8ef;
+    }
+
+    .brief-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .brief-item {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      gap: 10px;
+      align-items: start;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .brief-num {
+      display: grid;
+      place-items: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .section {
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
+      gap: 28px;
+      align-items: start;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(28px, 3.5vw, 44px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 22px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h4 {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: 14px;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      color: var(--coral);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .panel {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .panel.accent {
+      border-color: rgba(22, 123, 127, 0.24);
+      background: #f4fbfb;
+    }
+
+    .panel.warning {
+      border-color: rgba(198, 146, 43, 0.28);
+      background: #fff9e9;
+    }
+
+    .metric {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--navy);
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .rubric {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .rubric-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .rubric-card h3 {
+      font-size: 20px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 46px;
+      gap: 10px;
+      align-items: center;
+      margin: 10px 0;
+      color: #2a3a4c;
+      font-size: 13px;
+    }
+
+    .bar {
+      grid-column: 1 / -1;
+      height: 9px;
+      border-radius: 8px;
+      background: #edf2f5;
+      overflow: hidden;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      border-radius: 8px;
+      background: linear-gradient(90deg, var(--teal), var(--coral));
+    }
+
+    .challenge-map {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .capability {
+      padding: 14px;
+      min-height: 128px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .capability::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 5px;
+      background: var(--teal);
+    }
+
+    .capability:nth-child(2)::before {
+      background: var(--coral);
+    }
+
+    .capability:nth-child(3)::before {
+      background: var(--gold);
+    }
+
+    .capability:nth-child(4)::before {
+      background: var(--green);
+    }
+
+    .capability b {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--navy);
+    }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .case-explorer {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 18px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7fafb;
+    }
+
+    .case-filter-row {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.4fr) minmax(180px, 0.8fr) minmax(180px, 0.8fr);
+      gap: 12px;
+      align-items: end;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      color: var(--ink);
+      font: inherit;
+      font-size: 15px;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .case-tab:focus {
+      outline: 3px solid rgba(22, 123, 127, 0.18);
+      outline-offset: 2px;
+      border-color: var(--teal);
+    }
+
+    .case-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .case-tab {
+      min-height: 34px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      color: var(--navy);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .case-tab[aria-selected="true"] {
+      border-color: var(--teal);
+      background: var(--teal);
+      color: var(--white);
+    }
+
+    .case-summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .case-summary strong {
+      color: var(--navy);
+    }
+
+    .case-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .meta-chip {
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f9fbfc;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .meta-chip b {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--navy);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .meta-chip .tag {
+      min-height: 24px;
+      padding: 4px 7px;
+      font-size: 11px;
+      line-height: 1.2;
+    }
+
+    .case-card {
+      display: grid;
+      gap: 14px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: 0 8px 24px rgba(23, 35, 49, 0.05);
+    }
+
+    .case-card.highlight {
+      border-color: rgba(216, 90, 71, 0.35);
+      box-shadow: 0 16px 35px rgba(216, 90, 71, 0.11);
+    }
+
+    .case-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 5px 9px;
+      border-radius: 8px;
+      background: var(--wash);
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .tag.official {
+      color: var(--white);
+      background: var(--teal);
+    }
+
+    .tag.public {
+      color: var(--white);
+      background: var(--coral);
+    }
+
+    .tag.inferred {
+      background: #fff0db;
+      color: #72521c;
+    }
+
+    .case-card dl {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+    }
+
+    .case-card dt {
+      margin-bottom: 4px;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .case-card dd {
+      margin: 0;
+      color: #2a3a4c;
+    }
+
+    .case-card[hidden],
+    .empty-state[hidden] {
+      display: none;
+    }
+
+    .empty-state {
+      padding: 22px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .matrix {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      font-size: 14px;
+    }
+
+    .matrix th,
+    .matrix td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .matrix th {
+      color: var(--white);
+      background: var(--navy);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .matrix tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .matrix td:last-child,
+    .matrix th:last-child {
+      border-right: 0;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 10px;
+    }
+
+    .time-step {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .time-step strong {
+      color: var(--coral);
+    }
+
+    .canvas {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .canvas .panel {
+      min-height: 142px;
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .check {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 10px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .check-num {
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      color: var(--white);
+      background: var(--teal);
+      font-weight: 850;
+      font-size: 13px;
+    }
+
+    .sources {
+      display: grid;
+      gap: 10px;
+      counter-reset: source;
+    }
+
+    .source {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 10px;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .source::before {
+      counter-increment: source;
+      content: counter(source);
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      color: var(--white);
+      background: var(--navy);
+      font-weight: 850;
+      font-size: 13px;
+    }
+
+    .source p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .src {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 24px;
+      height: 22px;
+      padding: 0 6px;
+      border-radius: 8px;
+      background: #e7f4f4;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      vertical-align: baseline;
+    }
+
+    .print-note {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 920px) {
+      .hero,
+      .section-header,
+      .challenge-map,
+      .case-grid,
+      .case-filter-row,
+      .rubric,
+      .grid-3,
+      .grid-4,
+      .canvas,
+      .checklist {
+        grid-template-columns: 1fr;
+      }
+
+      .case-meta {
+        grid-template-columns: 1fr;
+      }
+
+      .brief {
+        min-height: auto;
+      }
+
+      .topbar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 620px) {
+      main,
+      .topbar-inner {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .capability-grid,
+      .time-step {
+        grid-template-columns: 1fr;
+      }
+
+      .matrix {
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .topbar {
+        position: static;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .case-card,
+      .panel,
+      .metric,
+      .rubric-card {
+        break-inside: avoid;
+        box-shadow: none;
+      }
+
+      a {
+        color: #17676a;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand"><span class="mark" aria-hidden="true"></span> INNOVATEChina Case Playbook</div>
+        <nav aria-label="Report sections">
+          <a href="#goal">Goal</a>
+          <a href="#rubric">Rubric</a>
+          <a href="#challenge">Challenge</a>
+          <a href="#cases">Cases</a>
+          <a href="#patterns">Patterns</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#sources">Sources</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div>
+          <div class="eyebrow">Prepared September 15, 2026</div>
+          <h1>How INNOVATEChina finalists think</h1>
+          <p class="lead">A deeper HTML research report on the 2026 Michelin challenge, reverse-engineered for a student preparing to compete in INNOVATEChina 2027. The useful lesson is not to copy an idea. It is to copy the thinking system: sponsor fit, customer pain, commercial logic, ESG proof, and a pitch that survives hard questions.</p>
+          <div class="hero-meta">
+            <span class="pill">66 original entries in 2026</span>
+            <span class="pill">219 contestants</span>
+            <span class="pill">8 finalists</span>
+            <span class="pill">No official 2027 page found yet</span>
+          </div>
+        </div>
+        <aside class="brief">
+          <div>
+            <h2>The competition-winning formula</h2>
+            <p>Start from the corporate partner's strategic problem, then build a solution that can be piloted, measured, and defended financially.</p>
+            <div class="brief-list">
+              <div class="brief-item"><span class="brief-num">1</span><span>Pick a high-pressure customer segment, not a broad market.</span></div>
+              <div class="brief-item"><span class="brief-num">2</span><span>Convert sustainability into customer value: lower cost, new revenue, lower risk, or financing access.</span></div>
+              <div class="brief-item"><span class="brief-num">3</span><span>Use data as proof, not decoration. Judges need credible KPIs.</span></div>
+              <div class="brief-item"><span class="brief-num">4</span><span>Show why the sponsor is the right company to execute this now.</span></div>
+            </div>
+          </div>
+          <p class="note">The 2027 brief is not public yet. This report uses official CEIBS 2026 materials, the competition handbook, media coverage, and public team posts.</p>
+        </aside>
+      </section>
+
+      <section class="section" id="goal">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">Event idea and goal</div>
+            <h2>What INNOVATEChina Tests</h2>
+          </div>
+          <p>CEIBS describes INNOVATEChina as InnoLab's annual flagship global innovation competition. It is not mainly a startup contest; it rewards the ability to frame a real corporate problem, generate a business solution, and present it persuasively to a business audience. <a class="src" href="#s17">17</a> <a class="src" href="#s18">18</a></p>
+        </div>
+
+        <div class="grid-3">
+          <div class="panel">
+            <h3>The event idea</h3>
+            <p>Bring global business-school teams into a real China-market challenge set by a corporate partner, then force them to move from insight to a boardroom-ready case.</p>
+          </div>
+          <div class="panel">
+            <h3>The event goal</h3>
+            <p>Connect innovative student teams with professors, industry leaders, investors, and corporate decision makers, while helping the partner company collect fresh, practical ideas.</p>
+          </div>
+          <div class="panel">
+            <h3>The sponsor lens</h3>
+            <p>Michelin framed the 2026 challenge around practical, verifiable, scalable sustainable-mobility solutions, not abstract ESG positioning. <a class="src" href="#s19">19</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="rubric">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">What judges rewarded</div>
+            <h2>Rubric First, Idea Second</h2>
+          </div>
+          <p>The 2026 handbook is the clearest signal. It asked teams to think through target mobility scenarios, customer segments, monetizable circular value, ESG KPIs, and credible communication. It also published scoring weights across three rounds. <a class="src" href="#s2">2</a> <a class="src" href="#s3">3</a></p>
+        </div>
+
+        <div class="rubric">
+          <div class="rubric-card">
+            <h3>Round 1</h3>
+            <p class="note">Unique insights and creative potential.</p>
+            <div class="bar-row"><span>Problem understanding and insights</span><b>30%</b><div class="bar"><span style="width: 30%"></span></div></div>
+            <div class="bar-row"><span>Innovation</span><b>30%</b><div class="bar"><span style="width: 30%"></span></div></div>
+            <div class="bar-row"><span>ESG integration</span><b>20%</b><div class="bar"><span style="width: 20%"></span></div></div>
+            <div class="bar-row"><span>Clarity and communication</span><b>20%</b><div class="bar"><span style="width: 20%"></span></div></div>
+          </div>
+          <div class="rubric-card">
+            <h3>Semi-final</h3>
+            <p class="note">Commercial rigor and organizational fit.</p>
+            <div class="bar-row"><span>Market analysis and business model</span><b>30%</b><div class="bar"><span style="width: 30%"></span></div></div>
+            <div class="bar-row"><span>Strategic alignment with Michelin</span><b>30%</b><div class="bar"><span style="width: 30%"></span></div></div>
+            <div class="bar-row"><span>Financial viability and KPIs</span><b>20%</b><div class="bar"><span style="width: 20%"></span></div></div>
+            <div class="bar-row"><span>Analytic depth</span><b>20%</b><div class="bar"><span style="width: 20%"></span></div></div>
+          </div>
+          <div class="rubric-card">
+            <h3>Final</h3>
+            <p class="note">Strategic impact and leadership.</p>
+            <div class="bar-row"><span>Innovation and differentiation</span><b>30%</b><div class="bar"><span style="width: 30%"></span></div></div>
+            <div class="bar-row"><span>Implementation and feasibility</span><b>30%</b><div class="bar"><span style="width: 30%"></span></div></div>
+            <div class="bar-row"><span>ESG impact and sustainability</span><b>20%</b><div class="bar"><span style="width: 20%"></span></div></div>
+            <div class="bar-row"><span>Team performance and presentation</span><b>20%</b><div class="bar"><span style="width: 20%"></span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="challenge">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">2026 sponsor logic</div>
+            <h2>The Michelin Case Was Built Around Fit</h2>
+          </div>
+          <p>Michelin's 2026 brief asked how the company could use innovative business models to scale the circular economy and turn ESG into growth. The handbook framed Michelin China around four strategic areas: tire lifecycle management, connected digital assets, advanced materials, and lifestyle through the Michelin Guide. <a class="src" href="#s2">2</a> <a class="src" href="#s3">3</a></p>
+        </div>
+
+        <div class="challenge-map">
+          <div class="panel accent">
+            <h3>What teams had to solve</h3>
+            <p><b>Scenarios and target customers:</b> identify future mobility scenarios such as EV fleets, smart logistics, autonomous transport, or low-altitude economy; then choose the top one or two customer segments.</p>
+            <p><b>Solution and business model:</b> design a circular value proposition that customers recognize and pay for.</p>
+            <p><b>Proof and communication:</b> convert circular outcomes into credible ESG KPIs and a defensible story.</p>
+          </div>
+          <div class="capability-grid">
+            <div class="capability"><b>Tire full lifecycle management</b>Material circularity, logistics optimization, retreading, recycling, and product life extension.</div>
+            <div class="capability"><b>Connected solutions</b>Real-time monitoring, predictive maintenance, data platforms, safety, cost reduction, and carbon management.</div>
+            <div class="capability"><b>Advanced materials</b>Polymers and composites for durable, lightweight, recyclable materials across mobility and energy.</div>
+            <div class="capability"><b>Lifestyle and trust</b>Michelin Guide as a brand system that extends from mobility into quality living and long-term user trust.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="grid-4">
+          <div class="metric"><strong>Feb 10</strong><span>2026 registration opened.</span></div>
+          <div class="metric"><strong>Mar 20</strong><span>Initial proposal deadline.</span></div>
+          <div class="metric"><strong>May 8</strong><span>Business plan submission deadline.</span></div>
+          <div class="metric"><strong>Jun 13</strong><span>Grand Final at CEIBS Shanghai.</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="cases">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">Case intelligence</div>
+            <h2>Eight Finalist Profiles</h2>
+          </div>
+          <p>Use the search, category filter, result filter, and case tabs to study the finalists one at a time. The analysis separates what is known from what is inferred because some finalist ideas remain lightly documented.</p>
+        </div>
+
+        <div class="case-explorer" data-case-explorer>
+          <div class="case-filter-row">
+            <label class="field" for="caseSearch">Search cases
+              <input id="caseSearch" type="search" placeholder="Try TaaS, financing, ESG data, carbon fibre, ocean, pitch">
+            </label>
+            <label class="field" for="caseCategory">Category
+              <select id="caseCategory">
+                <option value="all">All categories</option>
+                <option value="fleet-data">Fleet data and ESG proof</option>
+                <option value="circular-materials">Circular materials</option>
+                <option value="ecosystem-adjacency">Ecosystem adjacency</option>
+                <option value="future-mobility">Future mobility</option>
+                <option value="limited-public-detail">Limited public detail</option>
+              </select>
+            </label>
+            <label class="field" for="caseResult">Result
+              <select id="caseResult">
+                <option value="all">All results</option>
+                <option value="grand-prize">Grand Prize</option>
+                <option value="silver-award">Silver Award</option>
+                <option value="third-prize">Third Prize</option>
+                <option value="esg-excellence">ESG Excellence</option>
+                <option value="best-presentation">Best Presentation</option>
+                <option value="audience-choice">Audience's Choice</option>
+                <option value="innovation-potential">Innovation Potential</option>
+                <option value="top-8-finalist">Top 8 finalist</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="case-tabs" role="tablist" aria-label="Finalist case tabs">
+            <button class="case-tab" type="button" data-case-tab="all" role="tab" aria-selected="true">All cases</button>
+            <button class="case-tab" type="button" data-case-tab="g-c" role="tab" aria-selected="false">G&C</button>
+            <button class="case-tab" type="button" data-case-tab="hku" role="tab" aria-selected="false">HKU</button>
+            <button class="case-tab" type="button" data-case-tab="tripod" role="tab" aria-selected="false">TriPod</button>
+            <button class="case-tab" type="button" data-case-tab="strath" role="tab" aria-selected="false">Conqueror Strath</button>
+            <button class="case-tab" type="button" data-case-tab="phoenix" role="tab" aria-selected="false">Phoenix</button>
+            <button class="case-tab" type="button" data-case-tab="carbon" role="tab" aria-selected="false">Carbon to Capital</button>
+            <button class="case-tab" type="button" data-case-tab="whu" role="tab" aria-selected="false">WHU</button>
+            <button class="case-tab" type="button" data-case-tab="davinci" role="tab" aria-selected="false">Da Vinci Coder</button>
+          </div>
+
+          <div class="case-summary" aria-live="polite">
+            <strong id="caseResultCount">8 cases shown</strong>
+            <span id="caseActiveFilters">All cases, all categories, all results</span>
+          </div>
+        </div>
+
+        <div class="case-grid" id="caseGrid">
+          <article class="case-card highlight" id="case-g-c" data-case="g-c" data-title="G&C - HEC Paris x Yale SOM" data-category="fleet-data" data-category-label="Fleet data and ESG proof" data-result="grand-prize" data-result-label="Grand Prize" data-tags="tire-as-a-service ev logistics predictive maintenance retreading circularity esg reporting platform partnerships sponsor fit">
+            <div class="case-top">
+              <span class="tag official">Grand Prize</span>
+              <span class="tag">Officially documented</span>
+            </div>
+            <h3>G&C - HEC Paris x Yale SOM</h3>
+            <div class="case-meta">
+              <span class="meta-chip"><b>Category</b>Fleet data and ESG proof</span>
+              <span class="meta-chip"><b>Result</b>Grand Prize</span>
+              <span class="meta-chip"><b>Tags</b><span class="tag-row"><span class="tag">TaaS</span><span class="tag">EV logistics</span><span class="tag">Predictive maintenance</span><span class="tag">Retreading</span></span></span>
+            </div>
+            <dl>
+              <div>
+                <dt>Known concept</dt>
+                <dd>Data-driven Tire-as-a-Service for China's high-utilization EV logistics fleets: pay-per-kilometre leasing, predictive maintenance, retreading, casing recovery, auditable ESG reporting, and EV platform partnerships. <a class="src" href="#s1">1</a> <a class="src" href="#s7">7</a> <a class="src" href="#s8">8</a></dd>
+              </div>
+              <div>
+                <dt>How they appear to have thought</dt>
+                <dd>They chose a segment where tires are mission-critical and utilization is high. That makes tire performance, downtime, cost predictability, and replacement timing financially urgent. Then they turned Michelin from product seller into fleet operating partner.</dd>
+              </div>
+              <div>
+                <dt>What to copy</dt>
+                <dd>Pick a customer with repeated usage and measurable pain. Build a loop where the sponsor's product, data, service network, and recycling assets reinforce each other.</dd>
+              </div>
+              <div>
+                <dt>Likely judge questions</dt>
+                <dd>What is the unit economics per kilometre? Who owns the tire asset? How will fleets trust predictive maintenance? How does casing recovery work at scale?</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-card" id="case-hku" data-case="hku" data-title="HKU MBA - GreenStar NEXUS" data-category="fleet-data" data-category-label="Fleet data and ESG proof" data-result="silver-award" data-result-label="Silver Award" data-tags="tires-as-a-service greenstar nexus green star passport esg score telematics green financing sustainability linked opportunities fleet operating cost">
+            <div class="case-top">
+              <span class="tag public">Silver Award</span>
+              <span class="tag">Public team posts</span>
+            </div>
+            <h3>HKU MBA - GreenStar NEXUS</h3>
+            <div class="case-meta">
+              <span class="meta-chip"><b>Category</b>Fleet data and ESG proof</span>
+              <span class="meta-chip"><b>Result</b>Silver Award</span>
+              <span class="meta-chip"><b>Tags</b><span class="tag-row"><span class="tag">TaaS</span><span class="tag">ESG score</span><span class="tag">Telematics</span><span class="tag">Green financing</span></span></span>
+            </div>
+            <dl>
+              <div>
+                <dt>Known concept</dt>
+                <dd>A two-part model: Tires-as-a-Service paid by kilometre, plus a Michelin Green Star Passport that converts tire and telematics data into auditable ESG scores for green financing and sustainability-linked opportunities. <a class="src" href="#s9">9</a> <a class="src" href="#s20">20</a></dd>
+              </div>
+              <div>
+                <dt>How they appear to have thought</dt>
+                <dd>They connected operational savings with capital-market benefits. The idea does not stop at "sustainable tire use"; it asks how verified operational data can unlock cheaper financing or better business terms.</dd>
+              </div>
+              <div>
+                <dt>What to copy</dt>
+                <dd>Find the second-order value of your solution. If the direct customer saves money, ask whether the same data also helps with credit, insurance, compliance, brand trust, or procurement.</dd>
+              </div>
+              <div>
+                <dt>Likely judge questions</dt>
+                <dd>Who verifies the ESG score? Which financial institutions would accept it? What data is required from the fleet? How do you avoid ESG overclaiming?</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-card" id="case-tripod" data-case="tripod" data-title="TriPod Group - Guanghua, Peking University" data-category="ecosystem-adjacency" data-category-label="Ecosystem adjacency" data-result="third-prize" data-result-label="Third Prize" data-tags="ocean restoration preservation marine food industry positive impact growth adjacency Michelin capability transfer pilot sponsor fit">
+            <div class="case-top">
+              <span class="tag public">Third Prize</span>
+              <span class="tag">Public team post</span>
+            </div>
+            <h3>TriPod Group - Guanghua, Peking University</h3>
+            <div class="case-meta">
+              <span class="meta-chip"><b>Category</b>Ecosystem adjacency</span>
+              <span class="meta-chip"><b>Result</b>Third Prize</span>
+              <span class="meta-chip"><b>Tags</b><span class="tag-row"><span class="tag">Ocean restoration</span><span class="tag">Marine food</span><span class="tag">Adjacency</span><span class="tag">Sponsor fit</span></span></span>
+            </div>
+            <dl>
+              <div>
+                <dt>Known concept</dt>
+                <dd>The team placed third with a solution centered on ocean restoration and preservation, described by the team as a positive-impact growth direction rooted in what Michelin already does best. Later posts suggest the idea was connected to helping a major marine food industry grow while reducing ocean pressure. <a class="src" href="#s13">13</a></dd>
+              </div>
+              <div>
+                <dt>How they appear to have thought</dt>
+                <dd>They stretched the sponsor brief into a bolder adjacency. Instead of staying only within fleet tire economics, they looked for a large environmental system where Michelin's materials, brand, data, or mobility capabilities could create new growth.</dd>
+              </div>
+              <div>
+                <dt>What to copy</dt>
+                <dd>Radical ideas can work if the bridge back to the sponsor is strong. If you go outside the obvious industry box, make the "why this company" argument impossible to miss.</dd>
+              </div>
+              <div>
+                <dt>Likely judge questions</dt>
+                <dd>Why Michelin? Why now? Which capabilities are truly transferable? What is the first pilot and who pays for it?</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-card" id="case-strath" data-case="strath" data-title="Conqueror Strath - University of Strathclyde" data-category="fleet-data" data-category-label="Fleet data and ESG proof" data-result="esg-excellence" data-result-label="ESG Excellence" data-tags="carbon fleet intelligence heavy-duty fleets tire sensor data carbon tracking retreading operations ESG KPI reporting compliance">
+            <div class="case-top">
+              <span class="tag public">ESG Excellence</span>
+              <span class="tag">University news</span>
+            </div>
+            <h3>Conqueror Strath - University of Strathclyde</h3>
+            <div class="case-meta">
+              <span class="meta-chip"><b>Category</b>Fleet data and ESG proof</span>
+              <span class="meta-chip"><b>Result</b>ESG Excellence</span>
+              <span class="meta-chip"><b>Tags</b><span class="tag-row"><span class="tag">Carbon tracking</span><span class="tag">Sensors</span><span class="tag">Retreading</span><span class="tag">KPI proof</span></span></span>
+            </div>
+            <dl>
+              <div>
+                <dt>Known concept</dt>
+                <dd>Carbon Fleet Intelligence, a B2B platform for heavy-duty fleet operators that connects tire sensor data, carbon tracking, and retreading operations into one measurable ESG story. <a class="src" href="#s6">6</a></dd>
+              </div>
+              <div>
+                <dt>How they appear to have thought</dt>
+                <dd>They treated ESG as an operating system. The pitch likely moved from compliance burden to competitive advantage by showing how fleets could measure emissions, reduce waste, and improve reporting through existing tire operations.</dd>
+              </div>
+              <div>
+                <dt>What to copy</dt>
+                <dd>Build a KPI architecture early. The handbook directly asks how circular outcomes become credible, reportable ESG KPIs, and this team seems to have aimed straight at that requirement.</dd>
+              </div>
+              <div>
+                <dt>Likely judge questions</dt>
+                <dd>Which emissions factors are used? How much data quality is enough? What are the incentives for fleet operators and retreading partners?</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-card" id="case-phoenix" data-case="phoenix" data-title="Phoenix Innovators - UBC Sauder" data-category="fleet-data" data-category-label="Fleet data and ESG proof" data-result="best-presentation" data-result-label="Best Presentation" data-tags="verified ESG data tire lifecycle infrastructure fleet operators compliance storytelling pitch clarity professor mentor feedback">
+            <div class="case-top">
+              <span class="tag public">Best Presentation</span>
+              <span class="tag">Public team posts</span>
+            </div>
+            <h3>Phoenix Innovators - UBC Sauder</h3>
+            <div class="case-meta">
+              <span class="meta-chip"><b>Category</b>Fleet data and ESG proof</span>
+              <span class="meta-chip"><b>Result</b>Best Presentation</span>
+              <span class="meta-chip"><b>Tags</b><span class="tag-row"><span class="tag">Verified ESG data</span><span class="tag">Lifecycle infrastructure</span><span class="tag">Pitch clarity</span></span></span>
+            </div>
+            <dl>
+              <div>
+                <dt>Known concept</dt>
+                <dd>The team proposed using Michelin China's tire lifecycle infrastructure to create verified ESG data for fleet operators, helping them meet compliance needs while creating new business value. <a class="src" href="#s10">10</a> <a class="src" href="#s11">11</a></dd>
+              </div>
+              <div>
+                <dt>How they appear to have thought</dt>
+                <dd>They translated a complex infrastructure idea into a simple story. Public reflections emphasize team formation, professor office hours, mentor input, repeated meetings, and presentation clarity.</dd>
+              </div>
+              <div>
+                <dt>What to copy</dt>
+                <dd>Do not leave storytelling until the end. If the idea needs a long explanation, the idea is not ready. Build a one-sentence explanation, then make every slide prove it.</dd>
+              </div>
+              <div>
+                <dt>Likely judge questions</dt>
+                <dd>What counts as verified ESG data? Who audits it? Does Michelin have enough lifecycle touchpoints to generate defensible data?</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-card" id="case-carbon" data-case="carbon" data-title="Carbon to Capital - CEIBS x Melbourne Business School" data-category="circular-materials" data-category-label="Circular materials" data-result="audience-choice" data-result-label="Audience's Choice" data-tags="aeroloop carbon fibre circular economy low-altitude aviation advanced air mobility composite materials subscription audience clarity">
+            <div class="case-top">
+              <span class="tag public">Audience's Choice</span>
+              <span class="tag">Public team post</span>
+            </div>
+            <h3>Carbon to Capital - CEIBS x Melbourne Business School</h3>
+            <div class="case-meta">
+              <span class="meta-chip"><b>Category</b>Circular materials</span>
+              <span class="meta-chip"><b>Result</b>Audience's Choice</span>
+              <span class="meta-chip"><b>Tags</b><span class="tag-row"><span class="tag">AeroLoop</span><span class="tag">Carbon fibre</span><span class="tag">Low-altitude aviation</span></span></span>
+            </div>
+            <dl>
+              <div>
+                <dt>Known concept</dt>
+                <dd>AeroLoop, a subscription service that turns end-of-life carbon fibre from the mobility sector into a circular-economy asset, closing the composite-material loop in low-altitude aviation and advanced air mobility. <a class="src" href="#s12">12</a></dd>
+              </div>
+              <div>
+                <dt>How they appear to have thought</dt>
+                <dd>They used an emerging-market hook. Low-altitude aviation is vivid, future-facing, and material-intensive; carbon fibre waste is concrete enough for the audience to grasp quickly.</dd>
+              </div>
+              <div>
+                <dt>What to copy</dt>
+                <dd>Audience understanding matters. If your idea uses a technical material or new industry, anchor it in a visual, concrete waste stream and a subscription model people can repeat back.</dd>
+              </div>
+              <div>
+                <dt>Likely judge questions</dt>
+                <dd>Can carbon fibre be reused at the required quality? Who are the collection partners? What does the subscription cover? How does the model scale beyond the first ecosystem?</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-card" id="case-whu" data-case="whu" data-title="Team WHU - WHU Otto Beisheim School of Management" data-category="future-mobility" data-category-label="Future mobility" data-result="innovation-potential" data-result-label="Innovation Potential" data-tags="future mobility innovation potential elevating mobility finalist limited public detail platform scale adoption wedge">
+            <div class="case-top">
+              <span class="tag public">Innovation Potential</span>
+              <span class="tag inferred">Details limited</span>
+            </div>
+            <h3>Team WHU - WHU Otto Beisheim School of Management</h3>
+            <div class="case-meta">
+              <span class="meta-chip"><b>Category</b>Future mobility</span>
+              <span class="meta-chip"><b>Result</b>Innovation Potential</span>
+              <span class="meta-chip"><b>Tags</b><span class="tag-row"><span class="tag">Future mobility</span><span class="tag">Scale story</span><span class="tag">Adoption wedge</span></span></span>
+            </div>
+            <dl>
+              <div>
+                <dt>Known concept</dt>
+                <dd>The team reached the Top 8 and received the Innovation Potential Award. WHU described the recognition as tied to the strength and future promise of the solution. Public finalist material used the tagline "Elevating the future of mobility." <a class="src" href="#s14">14</a> <a class="src" href="#s15">15</a></dd>
+              </div>
+              <div>
+                <dt>How they appear to have thought</dt>
+                <dd>Because the specific solution is not publicly detailed, the reliable lesson is about award positioning: judges saw future promise. This suggests a solution with enough originality or optionality to be worth watching even if it was not the overall winner.</dd>
+              </div>
+              <div>
+                <dt>What to copy</dt>
+                <dd>Include a credible scale story. A pilot matters, but judges also need to see the market wedge becoming a platform, ecosystem, or category.</dd>
+              </div>
+              <div>
+                <dt>Likely judge questions</dt>
+                <dd>Is the idea innovative enough to deserve attention? What is the first adoption wedge? Why would the market grow into the future state you describe?</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="case-card" id="case-davinci" data-case="davinci" data-title="The Da Vinci Coder - IESE Business School" data-category="limited-public-detail" data-category-label="Limited public detail" data-result="top-8-finalist" data-result-label="Top 8 finalist" data-tags="system reframing puzzle redesign finalist IESE limited public detail strategic reframing implementation milestones">
+            <div class="case-top">
+              <span class="tag public">Top 8 finalist</span>
+              <span class="tag inferred">Details limited</span>
+            </div>
+            <h3>The Da Vinci Coder - IESE Business School</h3>
+            <div class="case-meta">
+              <span class="meta-chip"><b>Category</b>Limited public detail</span>
+              <span class="meta-chip"><b>Result</b>Top 8 finalist</span>
+              <span class="meta-chip"><b>Tags</b><span class="tag-row"><span class="tag">System reframing</span><span class="tag">Strategic puzzle</span><span class="tag">Implementation</span></span></span>
+            </div>
+            <dl>
+              <div>
+                <dt>Known concept</dt>
+                <dd>The team was listed among the Top 8 finalists with the public tagline "We do not just solve the puzzle - we build a better one." CEIBS later highlighted interviews with IESE participants as part of the finalist learning story. <a class="src" href="#s15">15</a> <a class="src" href="#s16">16</a></dd>
+              </div>
+              <div>
+                <dt>How they appear to have thought</dt>
+                <dd>The available signal points to reframing. The tagline suggests a pitch built around redesigning the system, not simply optimizing one operational issue.</dd>
+              </div>
+              <div>
+                <dt>What to copy</dt>
+                <dd>Use reframing when the brief is too broad. Explain the old puzzle, why it is broken, and what better puzzle the sponsor should solve instead.</dd>
+              </div>
+              <div>
+                <dt>Likely judge questions</dt>
+                <dd>Is the reframing practical? Does it still answer the sponsor's question? Can the new system be implemented with real partners and milestones?</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+        <div class="empty-state" id="caseEmpty" hidden>No matching cases. Try a broader keyword, category, or result filter.</div>
+      </section>
+
+      <section class="section" id="patterns">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">What to learn</div>
+            <h2>Cross-Case Thinking Patterns</h2>
+          </div>
+          <p>Strong teams seem to have combined two moves: a narrow operational entry point and a broader strategic upside. The best ideas did not say "ESG is good"; they made ESG useful for cost, revenue, risk, financing, or category creation.</p>
+        </div>
+
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th>Pattern</th>
+              <th>What finalists did</th>
+              <th>How you should use it in 2027</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Segment discipline</b></td>
+              <td>G&C and HKU targeted fleets, especially high-utilization or operating-cost-sensitive customers.</td>
+              <td>Choose one urgent segment first. Avoid "all consumers" or "all companies" unless the brief demands it.</td>
+            </tr>
+            <tr>
+              <td><b>Monetized sustainability</b></td>
+              <td>TaaS, ESG credentials, retreading, and circular materials became business models, not moral statements.</td>
+              <td>Translate impact into willingness to pay: lower TCO, less downtime, financing access, compliance savings, customer retention.</td>
+            </tr>
+            <tr>
+              <td><b>Data as evidence</b></td>
+              <td>Winning and award ideas repeatedly used sensor, telematics, lifecycle, or carbon data to prove performance.</td>
+              <td>Design the data model early. What data is captured, who owns it, who trusts it, and which KPI does it support?</td>
+            </tr>
+            <tr>
+              <td><b>Sponsor fit</b></td>
+              <td>The strongest ideas used Michelin's existing assets: tire knowledge, fleet relationships, material expertise, lifecycle infrastructure, brand trust.</td>
+              <td>Create a "why this sponsor" slide. Map each part of the solution to an existing sponsor capability.</td>
+            </tr>
+            <tr>
+              <td><b>Defensible ambition</b></td>
+              <td>TriPod and Carbon to Capital moved into larger environmental or advanced-mobility systems while keeping a business-model hook.</td>
+              <td>Be bold, but give judges a first pilot. Ambition without a starting wedge feels like fantasy.</td>
+            </tr>
+            <tr>
+              <td><b>Iteration under pressure</b></td>
+              <td>Public reflections mention late nights, repeated story rebuilding, financial-model defense, mentor feedback, and hard questions.</td>
+              <td>Plan for three rebuilds: after customer research, after mentor feedback, and after a hostile Q&A rehearsal.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">Your preparation</div>
+            <h2>A 2027 Action Plan</h2>
+          </div>
+          <p>The 2026 schedule ran from February registration to a June final. Use the same rhythm as a planning assumption until CEIBS publishes the 2027 handbook.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="time-step"><strong>Now to Nov 2026</strong><span>Build your team around complementary skills: strategy, finance, customer research, operations, and pitch craft. Start a shared evidence bank of good business models from mobility, ESG, circular economy, AI, healthcare, and China consumer sectors.</span></div>
+          <div class="time-step"><strong>Dec 2026 to Jan 2027</strong><span>Create reusable templates: customer interview guide, market-sizing model, TCO model, ESG KPI map, pilot plan, competitor scan, and Q&A objection log.</span></div>
+          <div class="time-step"><strong>Launch month</strong><span>Read the handbook before ideating. Extract the scoring criteria, sponsor capabilities, target customers, deliverable format, and deadlines. Assign one person as rubric owner.</span></div>
+          <div class="time-step"><strong>Round 1</strong><span>Submit a 10-page executive summary that makes one sharp bet: target customer, painful problem, proposed solution, unique value proposition, and why the sponsor can win.</span></div>
+          <div class="time-step"><strong>Semi-final</strong><span>Turn the idea into a complete business proposal with evidence. Stress-test the unit economics, implementation roadmap, KPI model, risk strategy, and strategic alignment.</span></div>
+          <div class="time-step"><strong>Final</strong><span>Rehearse the pitch as an executive decision, not a classroom presentation. Judges should know what you want them to believe by slide two.</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">Use this canvas</div>
+            <h2>Build Your Case Like A Finalist</h2>
+          </div>
+          <p>This is the practical working structure I would use for your 2027 team. It mirrors the 2026 handbook and the visible patterns from finalist cases.</p>
+        </div>
+
+        <div class="canvas">
+          <div class="panel"><h4>1. Sponsor truth</h4><p>What does the sponsor already own that competitors cannot easily copy? Examples: data, channels, infrastructure, IP, supplier network, brand trust, regulatory access.</p></div>
+          <div class="panel"><h4>2. Painful segment</h4><p>Which customer has repeated usage, high stakes, measurable costs, and a reason to change now?</p></div>
+          <div class="panel"><h4>3. Value mechanism</h4><p>How does the solution create value: reduce cost, reduce risk, increase revenue, unlock financing, improve utilization, or improve compliance?</p></div>
+          <div class="panel"><h4>4. Proof engine</h4><p>What data proves the value? Who verifies it? Which metrics will be credible enough for a judge, buyer, or partner?</p></div>
+          <div class="panel"><h4>5. Business model</h4><p>Who pays, how often, based on what unit, and why is the price below the value created?</p></div>
+          <div class="panel"><h4>6. Pilot path</h4><p>What can be tested in 90 days? Which partners, assets, people, and data are needed for a small but convincing launch?</p></div>
+        </div>
+
+        <div class="checklist">
+          <div class="check"><span class="check-num">A</span><span><b>Have a challenger in your team.</b> Their job is to break weak assumptions before judges do.</span></div>
+          <div class="check"><span class="check-num">B</span><span><b>Make one financial model.</b> Even a simple TCO/payback model makes your argument more serious.</span></div>
+          <div class="check"><span class="check-num">C</span><span><b>Interview real users.</b> Five relevant interviews beat fifty pages of generic industry research.</span></div>
+          <div class="check"><span class="check-num">D</span><span><b>Practice hostile Q&A.</b> Prepare answers on adoption, pricing, data quality, risk, implementation, and sponsor fit.</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">Final guidance</div>
+            <h2>What You Should Do Differently</h2>
+          </div>
+          <p>The temptation is to chase novelty. The better move is to chase judged novelty: originality that also passes commercial, strategic, ESG, and execution tests.</p>
+        </div>
+        <div class="grid-3">
+          <div class="panel warning"><h3>Do not start with technology</h3><p>AI, platforms, blockchain, sensors, or apps are weak unless they solve a specific customer pain. Start with the buyer's job and only then decide what technology helps.</p></div>
+          <div class="panel warning"><h3>Do not write ESG as a slogan</h3><p>Define the impact metric, baseline, data source, verification method, and business value. The 2026 brief directly asked teams to avoid unsupported claims.</p></div>
+          <div class="panel warning"><h3>Do not hide implementation</h3><p>The final round weighted feasibility heavily. A beautiful idea with no pilot owner, no partner map, and no economics will feel unfinished.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="sources">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">Evidence base</div>
+            <h2>Sources</h2>
+          </div>
+          <p>Official CEIBS and handbook materials were weighted highest. LinkedIn and school posts were used for finalist-specific details where CEIBS did not publish a full case archive. Public-post details should be treated as research signals, not official case documents.</p>
+        </div>
+
+        <div class="sources">
+          <div class="source" id="s1"><div><a href="https://www.ceibs.edu/mba/innovatechina2026">CEIBS INNOVATEChina 2026 main page</a><p>Used for event purpose, partners, prize framing, and official 2026 Grand Prize case summary.</p></div></div>
+          <div class="source" id="s2"><div><a href="https://www.ceibs.edu/mba/innovatechina2026/details">CEIBS 2026 competition details</a><p>Used for the 2026 challenge question, eligibility, registration timing, mentorship, and FAQ details.</p></div></div>
+          <div class="source" id="s3"><div><a href="https://www.ceibs.edu/sites/portal.prod1.dpmgr.ceibs.edu/files/INNOVATEChina2026%20Handbook.pdf">INNOVATEChina 2026 handbook</a><p>Used for timeline, judging criteria, Michelin background, scenario/customer prompts, mentor-program details, prizes, and participation requirements.</p></div></div>
+          <div class="source" id="s4"><div><a href="https://www.ceibs.edu/video-podcast/mba/29447">CEIBS 2026 Grand Final recap</a><p>Used for 66 teams, 219 contestants, 32 countries and regions, over 40 schools, eight finalists, Michelin and Roland Berger roles, and final date.</p></div></div>
+          <div class="source" id="s5"><div><a href="https://www.yicai.com/video/103230246.html">Yicai video coverage</a><p>Used for independent media framing of the Shanghai final around sustainable mobility, circular economy, and business model innovation.</p></div></div>
+          <div class="source" id="s6"><div><a href="https://www.sbs.strath.ac.uk/apps/feeds/news?id=3263">Strathclyde Business School news</a><p>Used for the ESG Excellence Award, Carbon Fleet Intelligence case description, and team process details.</p></div></div>
+          <div class="source" id="s7"><div><a href="https://de.linkedin.com/in/junzhe-shen-86727384">Junzhe Shen public LinkedIn profile/post snippets</a><p>Used for the G&C team members, learning background, and explanation of the winning model's strategy, finance, energy, sustainability, and circular economy roots.</p></div></div>
+          <div class="source" id="s8"><div><a href="https://www.linkedin.com/school/yale-school-of-management/">Yale School of Management public LinkedIn update snippets</a><p>Used for confirmation of EV platform partnership framing and the $10,000 prize.</p></div></div>
+          <div class="source" id="s9"><div><a href="https://www.linkedin.com/posts/shelene-wong_esg-esg-mba-activity-7473224501476945921-SJNo">HKU MBA / Shelene Wong public LinkedIn post</a><p>Used for Silver Award details and the GreenStar NEXUS model.</p></div></div>
+          <div class="source" id="s10"><div><a href="https://www.linkedin.com/posts/connie-li-59b7a5149_esg-activity-7461522441870217216-GlQz">Connie Li public LinkedIn finalist post</a><p>Used for Phoenix Innovators' proposal framing and team process reflections.</p></div></div>
+          <div class="source" id="s11"><div><a href="https://www.linkedin.com/posts/connie-li-59b7a5149_shanghai-activity-7482799686735523840-d-VO">Connie Li public LinkedIn reflection post</a><p>Used for Best Presentation Award, audience scale, and pitch clarity cues.</p></div></div>
+          <div class="source" id="s12"><div><a href="https://au.linkedin.com/in/-matthewtalbot">Matthew Talbot public LinkedIn profile/post snippets</a><p>Used for Carbon to Capital's Audience's Choice Award and AeroLoop case description.</p></div></div>
+          <div class="source" id="s13"><div><a href="https://www.linkedin.com/posts/javier-ramos-nicolas_proud-to-share-that-tripod-group-placed-3rd-activity-7472110036136341504-Lbem">Javier Ramos public LinkedIn post</a><p>Used for TriPod Group's third-place result, ocean restoration concept, and process reflections on stress-testing, rebuilding the story, and defending financials.</p></div></div>
+          <div class="source" id="s14"><div><a href="https://de.linkedin.com/company/whu-mba-program">WHU MBA Program public LinkedIn page/update snippets</a><p>Used for Team WHU's Innovation Potential Award, team members, and finalist status.</p></div></div>
+          <div class="source" id="s15"><div><a href="https://www.linkedin.com/posts/ceibs_building-the-future-of-sustainable-mobility-activity-7466307399369478144-samf">CEIBS public LinkedIn finalist post</a><p>Used for finalist team list, mentor associations, and public event framing.</p></div></div>
+          <div class="source" id="s16"><div><a href="https://www.linkedin.com/school/ceibs/">CEIBS public LinkedIn page/update snippets</a><p>Used for participant-learning coverage involving HKU, HEC Paris/Yale SOM, and IESE Business School.</p></div></div>
+          <div class="source" id="s17"><div><a href="https://www.ceibs.edu/faq/29147">CEIBS FAQ: What is INNOVATEChina?</a><p>Used for the competition definition, real-challenge focus, and emphasis on problem framing, solution generation, and business presentation.</p></div></div>
+          <div class="source" id="s18"><div><a href="https://www.ceibs.edu/mba/innolab/event">CEIBS InnoLab event overview</a><p>Used for InnoLab's annual event context, INNOVATEChina's legacy, and the stated connection to professors, industry leaders, investors, and idea validation.</p></div></div>
+          <div class="source" id="s19"><div><a href="https://www.michelin.com.cn/news/2026/0212.html">Michelin China 2026 launch announcement</a><p>Used for Michelin's sponsor perspective on sustainable mobility, carbon reduction, resource efficiency, practical application, verifiability, and scalable business models.</p></div></div>
+          <div class="source" id="s20"><div><a href="https://www.linkedin.com/posts/cheukmingyan_we-did-it-after-months-of-late-night-calls-activity-7473231230356848640-PPyB">Emily Cheuk public LinkedIn post</a><p>Used as additional confirmation of the HKU team's Silver Award, pay-per-kilometre service model, ESG score/star-rating framing, and team process.</p></div></div>
+          <div class="source" id="s21"><div><a href="https://www.linkedin.com/posts/april-xie-7919101b3_innovatechina-ceibs-innovatechina2026-activity-7474185830803169280-dVKV">April Xie public LinkedIn organizer post</a><p>Used for behind-the-scenes process signals: registration-to-final cadence, mentor matching, participant experience, company visit, audience scale, and what the event created for CEIBS, Michelin, and participants.</p></div></div>
+        </div>
+
+        <p class="print-note">Research limitation: I did not find an official INNOVATEChina 2027 page in public search as of September 15, 2026. Replace 2027 planning assumptions when CEIBS publishes the next official handbook.</p>
+      </section>
+    </main>
+  </div>
+  <script>
+    (() => {
+      const cards = Array.from(document.querySelectorAll(".case-card[data-case]"));
+      const tabs = Array.from(document.querySelectorAll("[data-case-tab]"));
+      const search = document.querySelector("#caseSearch");
+      const category = document.querySelector("#caseCategory");
+      const result = document.querySelector("#caseResult");
+      const count = document.querySelector("#caseResultCount");
+      const filters = document.querySelector("#caseActiveFilters");
+      const empty = document.querySelector("#caseEmpty");
+
+      if (!cards.length || !tabs.length || !search || !category || !result || !count || !filters || !empty) {
+        return;
+      }
+
+      let activeCase = "all";
+
+      const normalize = (value) => value.toLowerCase().replace(/\s+/g, " ").trim();
+
+      const selectedText = (select) => select.options[select.selectedIndex].textContent;
+
+      const activeCaseLabel = () => {
+        const tab = tabs.find((item) => item.dataset.caseTab === activeCase);
+        return tab ? tab.textContent : "All cases";
+      };
+
+      const updateCases = () => {
+        const query = normalize(search.value);
+        const queryTerms = query ? query.split(" ") : [];
+        const selectedCategory = category.value;
+        const selectedResult = result.value;
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const haystack = normalize([
+            card.dataset.title,
+            card.dataset.categoryLabel,
+            card.dataset.resultLabel,
+            card.dataset.tags,
+            card.textContent
+          ].join(" "));
+
+          const caseMatch = activeCase === "all" || card.dataset.case === activeCase;
+          const categoryMatch = selectedCategory === "all" || card.dataset.category === selectedCategory;
+          const resultMatch = selectedResult === "all" || card.dataset.result === selectedResult;
+          const searchMatch = queryTerms.every((term) => haystack.includes(term));
+          const isVisible = caseMatch && categoryMatch && resultMatch && searchMatch;
+
+          card.hidden = !isVisible;
+          if (isVisible) {
+            visibleCount += 1;
+          }
+        });
+
+        tabs.forEach((tab) => {
+          tab.setAttribute("aria-selected", String(tab.dataset.caseTab === activeCase));
+        });
+
+        count.textContent = `${visibleCount} ${visibleCount === 1 ? "case" : "cases"} shown`;
+        filters.textContent = `${activeCaseLabel()}, ${selectedText(category)}, ${selectedText(result)}`;
+        empty.hidden = visibleCount !== 0;
+      };
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          activeCase = tab.dataset.caseTab;
+          updateCases();
+        });
+      });
+
+      search.addEventListener("input", updateCases);
+      category.addEventListener("change", updateCases);
+      result.addEventListener("change", updateCases);
+      updateCases();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+window.CEIBS_LIBRARY = {
+  "name": "CEIBS Notes",
+  "topics": [
+    {
+      "id": "economics",
+      "name": "Economics",
+      "icon": "chart-no-axes-combined",
+      "color": "green"
+    },
+    {
+      "id": "competitions",
+      "name": "Case competitions",
+      "icon": "trophy",
+      "color": "coral"
+    },
+    {
+      "id": "innovatechina",
+      "name": "INNOVATEChina",
+      "parent": "competitions",
+      "icon": "lightbulb",
+      "color": "coral"
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "icon": "megaphone",
+      "color": "violet"
+    },
+    {
+      "id": "analytics",
+      "name": "Data analytics",
+      "icon": "chart-column",
+      "color": "blue"
+    }
+  ],
+  "pages": [
+    {
+      "id": "microeconomics-quiz",
+      "title": "Microeconomics practice",
+      "description": "60 advanced questions, worked solutions, and economic graphs. Study, take an exam, or revisit your answers.",
+      "topic": "economics",
+      "formats": [
+        "Interactive"
+      ],
+      "tags": [
+        "Microeconomics",
+        "Midterm",
+        "Quiz"
+      ],
+      "detail": "60 questions",
+      "path": "pages/economics/microeconomics-quiz.html",
+      "updated": "2026-09-18",
+      "thumbnail": "assets/previews/microeconomics-quiz.jpg"
+    },
+    {
+      "id": "innovatechina-playbook",
+      "title": "INNOVATEChina 2027",
+      "description": "Competition research, finalist cases, judging criteria, and a preparation roadmap for the next challenge.",
+      "topic": "innovatechina",
+      "formats": [
+        "Research",
+        "Summary"
+      ],
+      "tags": [
+        "Innovation",
+        "Strategy",
+        "Case competition"
+      ],
+      "detail": "Research playbook",
+      "path": "pages/competitions/innovatechina/playbook.html",
+      "updated": "2026-09-18",
+      "thumbnail": "assets/previews/innovatechina-playbook.jpg"
+    },
+    {
+      "id": "gilead-playbook",
+      "title": "Gilead case competition",
+      "description": "A research playbook covering the pharmaceutical landscape, competition preparation, and strategic questions.",
+      "topic": "competitions",
+      "formats": [
+        "Research",
+        "Case study"
+      ],
+      "tags": [
+        "Healthcare",
+        "Pharma",
+        "Strategy"
+      ],
+      "detail": "Research playbook",
+      "path": "pages/competitions/gilead/playbook.html",
+      "updated": "2026-09-18",
+      "thumbnail": "assets/previews/gilead-playbook.jpg"
+    },
+    {
+      "id": "perfect-diary",
+      "title": "Perfect Diary",
+      "description": "From KOL-led growth to a sustainable beauty platform. Case analysis through 5C, STP, and the marketing mix.",
+      "topic": "marketing",
+      "formats": [
+        "Case study",
+        "Summary"
+      ],
+      "tags": [
+        "Brand strategy",
+        "Beauty",
+        "China"
+      ],
+      "detail": "Case analysis",
+      "path": "pages/marketing/perfect-diary.html",
+      "updated": "2026-09-18",
+      "thumbnail": "assets/previews/perfect-diary.jpg"
+    },
+    {
+      "id": "yelp-experimentation",
+      "title": "Experimentation at Yelp",
+      "description": "An A/B test report on experimental design, results, and the business decision behind the numbers.",
+      "topic": "analytics",
+      "formats": [
+        "Case study",
+        "Summary"
+      ],
+      "tags": [
+        "A/B testing",
+        "Experiments",
+        "Decision making"
+      ],
+      "detail": "A/B test report",
+      "path": "pages/analytics/yelp-experimentation.html",
+      "updated": "2026-09-18",
+      "thumbnail": "assets/previews/yelp-experimentation.jpg"
+    }
+  ]
+};

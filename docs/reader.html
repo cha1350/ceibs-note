@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reading | CEIBS Notes</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/library.css">
+  <script defer src="assets/lucide.min.js"></script>
+  <script defer src="catalog.js"></script>
+  <script defer src="assets/library.js"></script>
+</head>
+<body class="reader-page">
+  <header class="reader-bar">
+    <a class="back-link" id="back-library" href="index.html" aria-label="Back to library" title="Back to library"><i data-lucide="arrow-left"></i><span>Library</span></a>
+    <div class="reader-title"><strong id="reader-title">CEIBS Notes</strong><small id="reader-topic"></small></div>
+    <div class="reader-tools" id="reader-tools">
+      <button class="icon-button" id="reader-save" aria-label="Save page" title="Save page" aria-pressed="false"><i data-lucide="bookmark"></i></button>
+      <button class="icon-button copy-button" id="copy-link" aria-label="Copy page link" title="Copy page link"><i data-lucide="link"></i></button>
+      <a class="icon-button" id="open-original" target="_blank" rel="noopener" aria-label="Open page in new tab" title="Open page in new tab"><i data-lucide="external-link"></i></a>
+    </div>
+  </header>
+  <iframe class="reader-frame" id="reader-frame" title="Library page" allowfullscreen></iframe>
+  <section class="reader-error" id="reader-error" hidden><h1>Page not found</h1><p>This page is not in the library.</p><a href="index.html">Back to library</a></section>
+  <noscript><p><a href="index.html">Return to the library to open a page directly.</a></p></noscript>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

@@ -3,15 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CEIBS Notes</title>
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="description" content="Chayanan's library of research, case studies, summaries, and interactive learning tools.">
+  <title>Library | CEIBS Notes</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/library.css">
+  <script defer src="assets/lucide.min.js"></script>
+  <script defer src="catalog.js"></script>
+  <script defer src="assets/library.js"></script>
 </head>
 <body>
-  <h1>CEIBS Notes</h1>
-  <p>My public HTML knowledge base.</p>
-
-  <h2>Topics</h2>
-  <ul>
-    <li><a href="economics/">Economics</a></li>
-  </ul>
+  <a class="skip-link" href="#main">Skip to library</a>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Library navigation">
+      <a class="brand" href="index.html"><span class="brand-mark"><i data-lucide="notebook-tabs"></i></span><span>CEIBS Notes<small>CHAYANAN'S LIBRARY</small></span></a>
+      <button class="icon-button sidebar-close" id="close-menu" aria-label="Close navigation" title="Close navigation"><i data-lucide="x"></i></button>
+      <nav class="primary-nav" aria-label="Collections">
+        <a href="?view=all" data-view="all"><i data-lucide="library"></i><span>All pages</span><small id="all-count"></small></a>
+        <a href="?view=saved" data-view="saved"><i data-lucide="bookmark"></i><span>Saved</span><small id="saved-count"></small></a>
+        <a href="?view=recent" data-view="recent"><i data-lucide="history"></i><span>Recently opened</span></a>
+      </nav>
+      <div class="nav-heading">TOPICS <span id="topic-count"></span></div>
+      <nav class="topic-nav" id="topics" aria-label="Topics"></nav>
+      <div class="sidebar-bottom"><span class="avatar">C</span><div>Chayanan<small>Personal knowledge library</small></div><a class="icon-button" href="https://github.com/cha1350/ceibs-note" target="_blank" rel="noopener" title="View repository" aria-label="View repository"><i data-lucide="github"></i></a></div>
+    </aside>
+    <button class="scrim" id="scrim" aria-label="Close navigation" hidden></button>
+    <div class="workspace">
+      <header class="topbar">
+        <button class="icon-button menu-button" id="open-menu" title="Open navigation" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><i data-lucide="menu"></i></button>
+        <div class="topbar-label"><i data-lucide="book-open"></i><span>My workspace</span></div>
+        <form class="search" role="search" id="search-form"><i data-lucide="search"></i><input id="search" type="search" aria-label="Search library" placeholder="Search your library..." autocomplete="off"><button type="button" class="icon-button" id="clear-search" aria-label="Clear search" title="Clear search" hidden><i data-lucide="x"></i></button></form>
+        <span class="topbar-status"><span></span>Personal library</span>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="breadcrumb" id="breadcrumb">Workspace / Library</div>
+        <div class="page-heading"><div><h1 id="heading">All pages</h1><p id="heading-meta">Research, ideas, and things worth keeping.</p></div><span class="total-label" id="total-label"></span></div>
+        <section class="topic-overview" aria-label="Topic collections" id="topic-overview"></section>
+        <div class="library-bar"><div class="format-tabs" id="formats" role="group" aria-label="Filter by format"></div><div class="display-tools"><label class="sort-label"><i data-lucide="arrow-down-wide-narrow"></i><select id="sort" aria-label="Sort pages"><option value="updated">Recently updated</option><option value="title">Title A-Z</option><option value="opened">Last opened</option></select></label><div class="view-toggle" role="group" aria-label="Display mode"><button class="icon-button" id="grid-view" aria-label="Grid view" title="Grid view" aria-pressed="true"><i data-lucide="layout-grid"></i></button><button class="icon-button" id="list-view" aria-label="List view" title="List view" aria-pressed="false"><i data-lucide="list"></i></button></div></div></div>
+        <div class="results-meta"><span id="result-count" role="status" aria-live="polite"></span><button class="reset-link" id="reset-filters" hidden>Clear filters</button></div>
+        <section class="page-grid" id="pages" aria-label="Pages"></section>
+        <section class="empty-state" id="empty-state" hidden><i data-lucide="search-x"></i><h2 id="empty-title">No matching pages</h2><p id="empty-copy">Try another search or topic.</p><button class="button" id="empty-reset">Show all pages</button></section>
+        <footer class="library-footer"><span>CEIBS Notes</span><span id="footer-count">A growing collection.</span></footer>
+        <noscript><p>Open a page directly:</p><ul><li><a href="pages/economics/microeconomics-quiz.html">Microeconomics practice</a></li><li><a href="pages/competitions/innovatechina/playbook.html">INNOVATEChina 2027</a></li><li><a href="pages/competitions/gilead/playbook.html">Gilead case competition</a></li><li><a href="pages/marketing/perfect-diary.html">Perfect Diary</a></li><li><a href="pages/analytics/yelp-experimentation.html">Experimentation at Yelp</a></li></ul></noscript>
+      </main>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" hidden></div>
 </body>
 </html>
