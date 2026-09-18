@@ -3,9 +3,7 @@
   "topics": [
     { "id": "economics", "name": "Economics", "icon": "chart-no-axes-combined", "color": "green" },
     { "id": "competitions", "name": "Case competitions", "icon": "trophy", "color": "coral" },
-    { "id": "innovatechina", "name": "INNOVATEChina", "parent": "competitions", "icon": "lightbulb", "color": "coral" },
-    { "id": "marketing", "name": "Marketing", "icon": "megaphone", "color": "violet" },
-    { "id": "analytics", "name": "Data analytics", "icon": "chart-column", "color": "blue" }
+    { "id": "innovatechina", "name": "INNOVATEChina", "parent": "competitions", "icon": "lightbulb", "color": "coral" }
   ],
   "pages": [
     {
@@ -28,20 +26,6 @@
       "topic": "competitions", "formats": ["Research", "Case study"], "tags": ["Healthcare", "Pharma", "Strategy"], "detail": "Research playbook",
       "source": "output/html/gilead_case_competition_research_playbook.html",
       "path": "pages/competitions/gilead/playbook.html", "updated": "2026-09-18"
-    },
-    {
-      "id": "perfect-diary", "title": "Perfect Diary",
-      "description": "From KOL-led growth to a sustainable beauty platform. Case analysis through 5C, STP, and the marketing mix.",
-      "topic": "marketing", "formats": ["Case study", "Summary"], "tags": ["Brand strategy", "Beauty", "China"], "detail": "Case analysis",
-      "source": "01 Subjects/Marketing Management/Case Reading - Perfect Diary.html",
-      "path": "pages/marketing/perfect-diary.html", "updated": "2026-09-18"
-    },
-    {
-      "id": "yelp-experimentation", "title": "Experimentation at Yelp",
-      "description": "An A/B test report on experimental design, results, and the business decision behind the numbers.",
-      "topic": "analytics", "formats": ["Case study", "Summary"], "tags": ["A/B testing", "Experiments", "Decision making"], "detail": "A/B test report",
-      "source": "01 Subjects/Data Analytics/Materials/Cases/Experimentation at Yelp - AB Test Report.html",
-      "path": "pages/analytics/yelp-experimentation.html", "updated": "2026-09-18"
     }
   ]
 }

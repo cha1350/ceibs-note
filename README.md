@@ -48,7 +48,7 @@ stable when titles or file locations change, preserving reader links and bookmar
 > update library.json, generate a preview, run the build and browser checks, then
 > publish to GitHub Pages.
 
-To refresh the original five pages from the notes folder:
+To refresh the cataloged pages from the notes folder:
 
 ```sh
 python3 scripts/build.py --source-root '/absolute/path/to/Material - Obsidian'
@@ -56,8 +56,7 @@ python3 scripts/build.py --source-root '/absolute/path/to/Material - Obsidian'
 
 `source` fields are used only by that import command. Normal builds work on another
 computer or GitHub checkout without access to the notes folder. Only cataloged HTML
-pages are imported. The Perfect Diary summary's local PDF link becomes a source
-label, because the reading PDF is not included in this site.
+pages are imported.
 
 ## Optional preview generation and browser checks
 

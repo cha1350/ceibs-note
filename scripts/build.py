@@ -59,12 +59,6 @@ def main():
         if args.source_root and page.get("source"):
             source = inside(args.source_root, page["source"])
             content = source.read_text(encoding="utf-8")
-            # The reading PDF stays in the notes vault; only the summary is published.
-            if page["id"] == "perfect-diary":
-                content = content.replace(
-                    '<a class="pill" href="Materials/Readings/Perfect%20Diary.pdf">Open Source PDF</a>',
-                    '<span class="pill">Source: Perfect Diary case reading</span>',
-                )
             destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_text(content, encoding="utf-8")
         assert destination.is_file(), f"Missing page: {page['path']}"

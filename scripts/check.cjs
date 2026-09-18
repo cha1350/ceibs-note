@@ -47,9 +47,9 @@ const server = http.createServer((req,res) => {
     await page.reload();
     assert.equal(await page.locator('#heading').textContent(), 'INNOVATEChina');
     await page.locator('.primary-nav [data-view="all"]').click();
-    await page.locator('#search').fill('A/B testing');
+    await page.locator('#search').fill('Pharma');
     assert.equal(await cards().count(), 1);
-    assert.equal(await cards().first().getAttribute('data-id'), 'yelp-experimentation');
+    assert.equal(await cards().first().getAttribute('data-id'), 'gilead-playbook');
     await page.locator('#clear-search').click();
     await page.locator('[data-format="Interactive"]').click();
     assert.equal(await cards().count(), 1);
