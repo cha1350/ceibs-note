@@ -1,0 +1,1475 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Data Analytics Practice Lab</title>
+  <style>
+    :root {
+      --ink: #182536;
+      --muted: #687487;
+      --line: #dbe1e8;
+      --paper: #fffdf8;
+      --canvas: #f2f0e9;
+      --panel: #ffffff;
+      --navy: #142b4a;
+      --blue: #236b8e;
+      --teal: #1d8a78;
+      --orange: #e46f3d;
+      --gold: #d8a83e;
+      --red: #b94747;
+      --green-bg: #e8f5ef;
+      --red-bg: #faece9;
+      --blue-bg: #eaf3f8;
+      --shadow: 0 20px 48px rgba(20, 43, 74, 0.10);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 10% -10%, rgba(35, 107, 142, 0.12), transparent 28rem),
+        radial-gradient(circle at 95% 8%, rgba(228, 111, 61, 0.10), transparent 24rem),
+        var(--canvas);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    button, input, textarea, select { font: inherit; }
+    button { color: inherit; }
+    button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+      outline: 3px solid rgba(35, 107, 142, 0.28);
+      outline-offset: 2px;
+    }
+
+    .hidden { display: none !important; }
+    .muted { color: var(--muted); }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 68px;
+      padding: 12px clamp(18px, 4vw, 56px);
+      background: rgba(255, 253, 248, 0.88);
+      border-bottom: 1px solid rgba(24, 37, 54, 0.10);
+      backdrop-filter: blur(14px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      text-align: left;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      color: white;
+      background: var(--navy);
+      box-shadow: 0 8px 18px rgba(20, 43, 74, 0.18);
+      font-weight: 900;
+      letter-spacing: -0.05em;
+    }
+
+    .brand strong { display: block; font-size: 0.96rem; }
+    .brand small { display: block; color: var(--muted); font-size: 0.72rem; }
+
+    .header-tools { display: flex; align-items: center; gap: 10px; }
+    .session-indicator {
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: white;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 52px 0 72px;
+    }
+
+    .loading-card, .load-error {
+      width: min(680px, calc(100% - 32px));
+      margin: 15vh auto;
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .spinner {
+      width: 38px;
+      height: 38px;
+      margin: 0 auto 16px;
+      border: 4px solid #dce5ea;
+      border-top-color: var(--blue);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+      gap: 48px;
+      align-items: end;
+      padding: 28px 0 44px;
+    }
+
+    .hero h1 {
+      max-width: 780px;
+      margin: 0;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.65rem, 6vw, 5.7rem);
+      font-weight: 500;
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .hero h1 em { color: var(--orange); font-style: italic; }
+    .hero-copy { max-width: 690px; margin: 22px 0 0; color: var(--muted); font-size: 1.08rem; }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .stat-tile {
+      min-height: 112px;
+      padding: 18px;
+      border: 1px solid rgba(20, 43, 74, 0.10);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.72);
+    }
+
+    .stat-tile strong {
+      display: block;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.2rem;
+      line-height: 1;
+    }
+
+    .stat-tile span { color: var(--muted); font-size: 0.78rem; font-weight: 700; }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 24px 0 18px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 500;
+      letter-spacing: -0.035em;
+    }
+
+    .section-heading p { max-width: 540px; margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+    .preset-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .preset-card {
+      position: relative;
+      min-height: 205px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      cursor: pointer;
+      text-align: left;
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .preset-card:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(20,43,74,0.10); }
+    .preset-card.active { border: 2px solid var(--blue); box-shadow: 0 14px 34px rgba(35,107,142,0.16); }
+    .preset-card.active::after {
+      content: "✓";
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: grid;
+      place-items: center;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      color: white;
+      background: var(--blue);
+      font-size: 0.78rem;
+      font-weight: 900;
+    }
+
+    .preset-number { color: var(--orange); font: 700 2rem/1 Georgia, serif; }
+    .preset-card h3 { margin: 24px 0 6px; color: var(--navy); font-size: 1rem; }
+    .preset-card p { margin: 0; color: var(--muted); font-size: 0.82rem; }
+    .preset-meta { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 18px; }
+
+    .pill, .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      min-height: 26px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: #eef2f5;
+      color: #536174;
+      font-size: 0.7rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .builder {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 20px;
+      margin-top: 20px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.72);
+    }
+
+    .control-group { margin-bottom: 24px; }
+    .control-group:last-child { margin-bottom: 0; }
+    .control-label { display: block; margin-bottom: 10px; color: var(--navy); font-size: 0.8rem; font-weight: 850; letter-spacing: 0.02em; }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .check-chip input { position: absolute; opacity: 0; pointer-events: none; }
+    .check-chip span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: white;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 750;
+      transition: 140ms ease;
+    }
+
+    .check-chip input:checked + span { border-color: var(--blue); background: var(--blue-bg); color: var(--blue); }
+    .check-chip input:focus-visible + span { outline: 3px solid rgba(35,107,142,.25); }
+
+    .range-row { display: grid; grid-template-columns: 1fr 80px; gap: 14px; align-items: center; }
+    input[type="range"] { width: 100%; accent-color: var(--blue); }
+    input[type="number"], select {
+      width: 100%;
+      min-height: 42px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: white;
+      color: var(--ink);
+    }
+
+    .start-panel {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px;
+      border-radius: 16px;
+      color: white;
+      background: var(--navy);
+    }
+
+    .start-panel h3 { margin: 0; font: 500 1.45rem/1.15 Georgia, serif; }
+    .start-panel p { margin: 10px 0 0; color: rgba(255,255,255,.68); font-size: 0.82rem; }
+    .session-preview { display: grid; gap: 10px; margin-top: 20px; }
+    .preview-row { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 9px; border-bottom: 1px solid rgba(255,255,255,.13); font-size: 0.78rem; }
+    .preview-row span { color: rgba(255,255,255,.62); }
+    .preview-row strong { text-align: right; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 1px solid transparent;
+      border-radius: 11px;
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 850;
+      transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn:disabled { cursor: not-allowed; opacity: .48; transform: none; }
+    .btn-primary { color: white; background: var(--orange); box-shadow: 0 8px 18px rgba(228,111,61,.24); }
+    .btn-dark { color: white; background: var(--navy); }
+    .btn-light { border-color: var(--line); background: white; }
+    .btn-soft { color: var(--blue); background: var(--blue-bg); }
+    .btn-ghost { border-color: rgba(255,255,255,.24); color: white; background: rgba(255,255,255,.08); }
+    .btn-danger { color: var(--red); background: var(--red-bg); }
+    .btn-wide { width: 100%; }
+
+    .resume-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 20px 0;
+      padding: 18px 20px;
+      border: 1px solid rgba(29,138,120,.28);
+      border-radius: 14px;
+      background: var(--green-bg);
+    }
+
+    .resume-banner strong { display: block; color: #146b5c; }
+    .resume-banner span { color: #4b776f; font-size: .8rem; }
+
+    /* Quiz */
+    .quiz-layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 820px);
+      justify-content: center;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .quiz-sidebar {
+      position: sticky;
+      top: 92px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.82);
+    }
+
+    .progress-line { height: 7px; margin: 10px 0 8px; overflow: hidden; border-radius: 999px; background: #e3e8ed; }
+    .progress-fill { width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--teal)); transition: width 240ms ease; }
+    .progress-copy { display: flex; justify-content: space-between; color: var(--muted); font-size: .72rem; font-weight: 750; }
+
+    .question-map {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 7px;
+      margin: 22px 0;
+    }
+
+    .map-item {
+      position: relative;
+      aspect-ratio: 1;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: white;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: .72rem;
+      font-weight: 800;
+    }
+
+    .map-item.answered { border-color: #a9cbbb; background: var(--green-bg); color: #196d5e; }
+    .map-item.current { border: 2px solid var(--blue); background: var(--blue-bg); color: var(--blue); }
+    .map-item.flagged::after { content: ""; position: absolute; top: 4px; right: 4px; width: 5px; height: 5px; border-radius: 50%; background: var(--orange); }
+    .map-item.checked.correct { background: var(--green-bg); color: var(--teal); }
+    .map-item.checked.incorrect { background: var(--red-bg); color: var(--red); }
+
+    .legend { display: grid; gap: 7px; margin-top: 18px; color: var(--muted); font-size: .7rem; }
+    .legend span { display: flex; align-items: center; gap: 8px; }
+    .legend i { width: 9px; height: 9px; border-radius: 3px; background: var(--line); }
+    .legend .lg-answered { background: #a9cbbb; }
+    .legend .lg-current { background: var(--blue); }
+    .legend .lg-flagged { background: var(--orange); border-radius: 50%; }
+
+    .quiz-main { min-width: 0; }
+    .quiz-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .timer {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: white;
+      color: var(--navy);
+      font-variant-numeric: tabular-nums;
+      font-size: .8rem;
+      font-weight: 850;
+    }
+
+    .timer.warning { border-color: #efc0b2; color: var(--red); background: var(--red-bg); }
+    .mobile-map-button { display: none; }
+
+    .question-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .question-accent { height: 6px; background: linear-gradient(90deg, var(--blue), var(--teal) 58%, var(--gold)); }
+    .question-body { padding: clamp(22px, 5vw, 46px); }
+    .question-meta { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 28px; }
+    .question-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag.type { color: var(--blue); background: var(--blue-bg); }
+    .tag.hard { color: #9a4d28; background: #fbeee5; }
+    .tag.medium { color: #276a5d; background: var(--green-bg); }
+
+    .flag-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: white;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: .72rem;
+      font-weight: 800;
+    }
+
+    .flag-button.active { border-color: #efb495; background: #fff3ec; color: #b3532a; }
+    .question-number { margin: 0 0 8px; color: var(--muted); font-size: .76rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+    .question-title {
+      margin: 0;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      font-weight: 500;
+      line-height: 1.32;
+      letter-spacing: -.025em;
+    }
+
+    .instruction { margin: 12px 0 0; color: var(--muted); font-size: .82rem; }
+    .options { display: grid; gap: 11px; margin-top: 28px; }
+    .option { position: relative; display: block; }
+    .option input { position: absolute; opacity: 0; }
+    .option-content {
+      display: grid;
+      grid-template-columns: 36px 1fr auto;
+      gap: 13px;
+      align-items: center;
+      min-height: 62px;
+      padding: 11px 14px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #fff;
+      cursor: pointer;
+      transition: 140ms ease;
+    }
+
+    .option-content:hover { border-color: #a9bcc8; transform: translateX(2px); }
+    .option-letter { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 9px; color: var(--muted); font-size: .76rem; font-weight: 900; }
+    .option-text { color: #2d3a4b; font-size: .92rem; }
+    .option-status { min-width: 18px; color: var(--muted); font-size: 1rem; font-weight: 900; }
+    .option input:checked + .option-content { border-color: var(--blue); background: var(--blue-bg); box-shadow: inset 0 0 0 1px var(--blue); }
+    .option input:checked + .option-content .option-letter { border-color: var(--blue); color: white; background: var(--blue); }
+    .option input:focus-visible + .option-content { outline: 3px solid rgba(35,107,142,.22); }
+    .option.review-correct .option-content { border-color: #69af96; background: var(--green-bg); }
+    .option.review-correct .option-letter { border-color: var(--teal); background: var(--teal); color: white; }
+    .option.review-wrong .option-content { border-color: #db8a7c; background: var(--red-bg); }
+    .option.review-wrong .option-letter { border-color: var(--red); background: var(--red); color: white; }
+    .option input:disabled + .option-content { cursor: default; transform: none; }
+
+    .written-grid { display: grid; gap: 24px; margin-top: 28px; }
+    .written-part { padding-top: 22px; border-top: 1px solid var(--line); }
+    .written-part:first-child { padding-top: 0; border-top: 0; }
+    .part-heading { display: flex; gap: 12px; align-items: flex-start; }
+    .part-letter { display: grid; flex: 0 0 30px; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: var(--navy); color: white; font-size: .76rem; font-weight: 900; text-transform: uppercase; }
+    .part-heading h3 { margin: 2px 0 0; color: var(--ink); font-size: .96rem; line-height: 1.45; }
+    .points-label { white-space: nowrap; margin-left: auto; color: var(--muted); font-size: .7rem; font-weight: 800; }
+    .response-box {
+      width: 100%;
+      min-height: 118px;
+      margin-top: 12px;
+      padding: 13px 14px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fcfcfb;
+      color: var(--ink);
+      font-size: .9rem;
+      line-height: 1.55;
+    }
+
+    .response-box:focus { border-color: var(--blue); background: white; }
+    .rubric {
+      margin-top: 14px;
+      padding: 16px;
+      border: 1px solid #b9d9cc;
+      border-radius: 12px;
+      background: var(--green-bg);
+    }
+
+    .rubric h4 { margin: 0 0 8px; color: #176a5b; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; }
+    .rubric ul { margin: 8px 0 12px 18px; padding: 0; color: #345f58; font-size: .8rem; }
+    .sample-answer { margin: 0; padding-top: 12px; border-top: 1px solid #c9e2d7; color: #315d55; font-size: .82rem; }
+    .self-score { display: flex; align-items: center; gap: 9px; margin-top: 12px; }
+    .self-score label { color: #315d55; font-size: .76rem; font-weight: 800; }
+    .self-score select { width: auto; min-width: 88px; min-height: 36px; }
+
+    .feedback {
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 14px;
+      border-left: 5px solid var(--teal);
+      background: var(--green-bg);
+    }
+
+    .feedback.incorrect { border-left-color: var(--red); background: var(--red-bg); }
+    .feedback.partial { border-left-color: var(--gold); background: #fff7df; }
+    .feedback strong { display: block; margin-bottom: 5px; color: var(--navy); }
+    .feedback p { margin: 5px 0; color: #405064; font-size: .84rem; }
+    .trap { padding-top: 10px; border-top: 1px solid rgba(24,37,54,.10); }
+
+    .question-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .action-side { display: flex; gap: 9px; }
+
+    /* Results */
+    .results-hero {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 34px;
+      border-radius: 24px;
+      color: white;
+      background: var(--navy);
+      box-shadow: var(--shadow);
+    }
+
+    .score-ring {
+      display: grid;
+      place-items: center;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      background: conic-gradient(var(--orange) var(--score-angle, 0deg), rgba(255,255,255,.13) 0);
+      position: relative;
+    }
+
+    .score-ring::before { content: ""; position: absolute; inset: 14px; border-radius: 50%; background: var(--navy); }
+    .score-value { position: relative; text-align: center; }
+    .score-value strong { display: block; font: 500 3rem/1 Georgia, serif; }
+    .score-value span { color: rgba(255,255,255,.62); font-size: .76rem; }
+    .results-hero h1 { margin: 0; font: 500 clamp(2rem,4vw,3.6rem)/1 Georgia, serif; letter-spacing: -.04em; }
+    .results-hero p { max-width: 610px; margin: 12px 0 0; color: rgba(255,255,255,.68); }
+    .result-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 22px; }
+
+    .results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 22px; }
+    .result-panel { padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: white; }
+    .result-panel h2 { margin: 0 0 18px; color: var(--navy); font: 500 1.4rem/1.2 Georgia, serif; }
+    .breakdown-row { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; align-items: center; margin-bottom: 13px; }
+    .breakdown-row:last-child { margin-bottom: 0; }
+    .breakdown-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .8rem; font-weight: 700; }
+    .breakdown-value { color: var(--muted); font-size: .74rem; font-weight: 800; }
+    .mini-bar { grid-column: 1 / -1; height: 6px; overflow: hidden; border-radius: 999px; background: #e8ecef; }
+    .mini-bar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--teal)); }
+
+    .review-list { display: grid; gap: 11px; margin-top: 22px; }
+    .review-item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 13px;
+      align-items: center;
+      padding: 15px 17px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: white;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .review-item:hover { border-color: #a9bcc8; }
+    .review-index { display: grid; place-items: center; width: 33px; height: 33px; border-radius: 9px; color: white; background: var(--navy); font-size: .72rem; font-weight: 900; }
+    .review-copy strong { display: block; color: var(--ink); font-size: .82rem; }
+    .review-copy span { display: block; color: var(--muted); font-size: .7rem; }
+    .review-score { color: var(--muted); font-size: .75rem; font-weight: 850; }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      z-index: 60;
+      transform: translate(-50%, 18px);
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: white;
+      background: #172536;
+      box-shadow: 0 12px 28px rgba(0,0,0,.18);
+      opacity: 0;
+      pointer-events: none;
+      transition: 180ms ease;
+      font-size: .8rem;
+      font-weight: 750;
+    }
+
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+    @media (max-width: 980px) {
+      .hero { grid-template-columns: 1fr; gap: 28px; }
+      .hero-stats { max-width: 560px; grid-template-columns: repeat(4, 1fr); }
+      .stat-tile { min-height: 92px; }
+      .preset-grid { grid-template-columns: 1fr 1fr; }
+      .quiz-layout { grid-template-columns: 1fr; }
+      .quiz-sidebar { display: none; position: fixed; inset: 78px 16px auto; z-index: 50; max-height: calc(100vh - 100px); overflow: auto; box-shadow: var(--shadow); }
+      .quiz-sidebar.open { display: block; }
+      .mobile-map-button { display: inline-flex; }
+    }
+
+    @media (max-width: 720px) {
+      .page { width: min(100% - 22px, 1180px); padding-top: 24px; }
+      .site-header { padding: 10px 13px; }
+      .brand small, .session-indicator { display: none; }
+      .hero { padding-top: 16px; }
+      .hero h1 { font-size: clamp(2.8rem, 15vw, 4.4rem); }
+      .hero-stats { grid-template-columns: 1fr 1fr; }
+      .preset-grid, .builder, .results-grid { grid-template-columns: 1fr; }
+      .builder { padding: 18px; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 8px; }
+      .question-body { padding: 22px 18px; }
+      .question-meta { align-items: flex-start; }
+      .question-actions { align-items: stretch; flex-direction: column; }
+      .action-side { display: grid; grid-template-columns: 1fr 1fr; }
+      .results-hero { grid-template-columns: 1fr; text-align: center; justify-items: center; padding: 28px 18px; }
+      .result-actions { justify-content: center; }
+      .score-ring { width: 160px; height: 160px; }
+      .resume-banner { align-items: stretch; flex-direction: column; }
+    }
+
+    @media print {
+      .site-header, .quiz-sidebar, .quiz-topbar, .question-actions, .result-actions { display: none !important; }
+      body { background: white; }
+      .page { width: 100%; padding: 0; }
+      .question-card, .result-panel, .results-hero { box-shadow: none; break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <button class="brand" id="brandButton" type="button" aria-label="Return to practice setup">
+      <span class="brand-mark">DA</span>
+      <span><strong>Practice Lab</strong><small>CEIBS MBA · Data Analytics</small></span>
+    </button>
+    <div class="header-tools">
+      <span class="session-indicator" id="headerStatus">Loading question bank…</span>
+      <button class="btn btn-light hidden" id="exitButton" type="button">Save &amp; exit</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="loadingView" class="loading-card">
+      <div class="spinner" aria-hidden="true"></div>
+      <strong>Preparing your practice bank</strong>
+      <p class="muted">Loading questions and answer rubrics…</p>
+    </section>
+
+    <section id="loadError" class="load-error hidden">
+      <p class="eyebrow">One quick step</p>
+      <h1>Load the question bank</h1>
+      <p class="muted">Your browser blocked the adjacent JSON file. Select <strong>Data Analytics Practice Bank - 80 Questions.json</strong> from this folder. The file stays on your device.</p>
+      <label class="btn btn-dark" for="bankFile">Choose JSON file</label>
+      <input id="bankFile" class="hidden" type="file" accept="application/json,.json">
+      <p id="loadErrorMessage" class="muted"></p>
+    </section>
+
+    <section id="setupView" class="page hidden">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Reasoning under exam conditions</p>
+          <h1>Practice the decision, <em>not just the formula.</em></h1>
+          <p class="hero-copy">Build a focused session from 80 medium-to-hard questions covering EDA, regression, experiments, classification, data quality, and business recommendations.</p>
+        </div>
+        <div class="hero-stats" aria-label="Question bank summary">
+          <div class="stat-tile"><strong id="statQuestions">80</strong><span>questions</span></div>
+          <div class="stat-tile"><strong id="statObjective">60</strong><span>objective</span></div>
+          <div class="stat-tile"><strong id="statWritten">20</strong><span>written cases</span></div>
+          <div class="stat-tile"><strong id="statHard">45</strong><span>hard</span></div>
+        </div>
+      </div>
+
+      <div id="resumeBanner" class="resume-banner hidden">
+        <div><strong>Continue your saved session</strong><span id="resumeCopy">Your answers and position are saved on this device.</span></div>
+        <div class="action-side">
+          <button class="btn btn-light" id="discardSaved" type="button">Discard</button>
+          <button class="btn btn-dark" id="resumeButton" type="button">Resume session</button>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <div><p class="eyebrow">01 · Session mode</p><h2>Choose your practice format</h2></div>
+        <p>Each preset draws a fresh randomized set. Use Custom Mix to target a specific weakness.</p>
+      </div>
+
+      <div class="preset-grid" id="presetGrid">
+        <button class="preset-card active" type="button" data-preset="balanced">
+          <span class="preset-number">20</span>
+          <h3>Balanced practice</h3>
+          <p>A broad reasoning set across every question style.</p>
+          <span class="preset-meta"><span class="pill">~90 min</span><span class="pill">10 SC · 5 MS · 5 WR</span></span>
+        </button>
+        <button class="preset-card" type="button" data-preset="exam">
+          <span class="preset-number">2h</span>
+          <h3>Exam-format sprint</h3>
+          <p>Ten objective questions and three four-part written cases.</p>
+          <span class="preset-meta"><span class="pill">120 min</span><span class="pill">13 questions</span></span>
+        </button>
+        <button class="preset-card" type="button" data-preset="objective">
+          <span class="preset-number">20</span>
+          <h3>Concept traps</h3>
+          <p>Fast practice with single-choice and multi-select reasoning.</p>
+          <span class="preset-meta"><span class="pill">40 min</span><span class="pill">Objective only</span></span>
+        </button>
+        <button class="preset-card" type="button" data-preset="written">
+          <span class="preset-number">6</span>
+          <h3>Written-answer lab</h3>
+          <p>Interpret, critique, redesign, and recommend with rubrics.</p>
+          <span class="preset-meta"><span class="pill">60 min</span><span class="pill">24 sub-parts</span></span>
+        </button>
+      </div>
+
+      <div class="section-heading">
+        <div><p class="eyebrow">02 · Fine tune</p><h2>Build a custom mix</h2></div>
+        <p>Changing any control below switches the session to Custom Mix.</p>
+      </div>
+
+      <div class="builder">
+        <div>
+          <div class="control-group">
+            <span class="control-label">Question types</span>
+            <div class="chip-row" id="typeFilters">
+              <label class="check-chip"><input type="checkbox" value="single_choice" checked><span>Single choice</span></label>
+              <label class="check-chip"><input type="checkbox" value="multiple_select" checked><span>Multi-select</span></label>
+              <label class="check-chip"><input type="checkbox" value="written" checked><span>Written cases</span></label>
+            </div>
+          </div>
+          <div class="control-group">
+            <span class="control-label">Difficulty</span>
+            <div class="chip-row" id="difficultyFilters">
+              <label class="check-chip"><input type="checkbox" value="medium" checked><span>Medium</span></label>
+              <label class="check-chip"><input type="checkbox" value="hard" checked><span>Hard</span></label>
+            </div>
+          </div>
+          <div class="control-group">
+            <span class="control-label">Topics</span>
+            <div class="chip-row" id="topicFilters"></div>
+          </div>
+          <div class="control-group">
+            <span class="control-label">Question count</span>
+            <div class="range-row">
+              <input id="countRange" type="range" min="5" max="80" value="20" step="1">
+              <input id="countInput" type="number" min="1" max="80" value="20" aria-label="Question count">
+            </div>
+          </div>
+          <div class="control-group">
+            <span class="control-label">Time limit</span>
+            <select id="timerSelect">
+              <option value="0">No timer</option>
+              <option value="30">30 minutes</option>
+              <option value="45">45 minutes</option>
+              <option value="60">60 minutes</option>
+              <option value="90" selected>90 minutes</option>
+              <option value="120">120 minutes</option>
+            </select>
+          </div>
+        </div>
+
+        <aside class="start-panel">
+          <div>
+            <p class="eyebrow" style="color:#7fc9ba">Selected session</p>
+            <h3 id="previewTitle">Balanced practice</h3>
+            <p id="previewDescription">A broad reasoning set across every question style.</p>
+            <div class="session-preview">
+              <div class="preview-row"><span>Questions</span><strong id="previewCount">20</strong></div>
+              <div class="preview-row"><span>Time</span><strong id="previewTime">90 minutes</strong></div>
+              <div class="preview-row"><span>Coverage</span><strong id="previewCoverage">All topics</strong></div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-wide" id="startButton" type="button">Start practice <span aria-hidden="true">→</span></button>
+        </aside>
+      </div>
+    </section>
+
+    <section id="quizView" class="page hidden">
+      <div class="quiz-layout">
+        <aside class="quiz-sidebar" id="quizSidebar">
+          <p class="eyebrow">Session progress</p>
+          <div class="progress-line"><div class="progress-fill" id="progressFill"></div></div>
+          <div class="progress-copy"><span id="progressAnswered">0 answered</span><span id="progressPercent">0%</span></div>
+          <nav class="question-map" id="questionMap" aria-label="Question navigation"></nav>
+          <button class="btn btn-light btn-wide" id="finishButton" type="button">Finish session</button>
+          <div class="legend">
+            <span><i class="lg-current"></i> Current</span>
+            <span><i class="lg-answered"></i> Answered</span>
+            <span><i class="lg-flagged"></i> Flagged for review</span>
+          </div>
+        </aside>
+
+        <div class="quiz-main">
+          <div class="quiz-topbar">
+            <button class="btn btn-light mobile-map-button" id="mapToggle" type="button">Question map</button>
+            <span class="muted" id="sessionName">Balanced practice</span>
+            <span class="timer" id="timerDisplay">Untimed</span>
+          </div>
+          <article class="question-card" id="questionCard"></article>
+          <div class="question-actions">
+            <button class="btn btn-light" id="previousButton" type="button">← Previous</button>
+            <div class="action-side">
+              <button class="btn btn-soft" id="checkButton" type="button">Check answer</button>
+              <button class="btn btn-dark" id="nextButton" type="button">Next →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultsView" class="page hidden">
+      <div class="results-hero">
+        <div class="score-ring" id="scoreRing"><div class="score-value"><strong id="scorePercent">0%</strong><span id="scorePoints">0 / 0 points</span></div></div>
+        <div>
+          <p class="eyebrow" style="color:#7fc9ba">Session complete</p>
+          <h1 id="resultHeadline">Review the reasoning.</h1>
+          <p id="resultSummary">Your score combines automatically graded objective questions and your self-assessed written responses.</p>
+          <div class="result-actions">
+            <button class="btn btn-primary" id="reviewMissedButton" type="button">Review missed &amp; flagged</button>
+            <button class="btn btn-ghost" id="newSessionButton" type="button">Build another session</button>
+            <button class="btn btn-ghost" id="printButton" type="button">Print results</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-grid">
+        <section class="result-panel"><h2>By question type</h2><div id="typeBreakdown"></div></section>
+        <section class="result-panel"><h2>By topic</h2><div id="topicBreakdown"></div></section>
+      </div>
+
+      <div class="section-heading">
+        <div><p class="eyebrow">Question review</p><h2>Inspect every response</h2></div>
+        <p>Select a question to reopen it with answers and feedback visible.</p>
+      </div>
+      <div class="review-list" id="reviewList"></div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const BANK_FILE = './Data Analytics Practice Bank - 80 Questions.json';
+      const STORAGE_KEY = 'ceibs-da-practice-session-v1';
+      const ui = Object.fromEntries([...document.querySelectorAll('[id]')].map(el => [el.id, el]));
+      const state = { bank: null, preset: 'balanced', session: null, timerHandle: null, reviewMode: false };
+
+      const presetConfig = {
+        balanced: { title: 'Balanced practice', description: 'A broad reasoning set across every question style.', timer: 90, counts: { single_choice: 10, multiple_select: 5, written: 5 } },
+        exam: { title: 'Exam-format sprint', description: 'Ten objective questions and three four-part written cases.', timer: 120, counts: { single_choice: 7, multiple_select: 3, written: 3 } },
+        objective: { title: 'Concept traps', description: 'Fast practice with single-choice and multi-select reasoning.', timer: 40, counts: { single_choice: 15, multiple_select: 5, written: 0 } },
+        written: { title: 'Written-answer lab', description: 'Interpret, critique, redesign, and recommend with rubrics.', timer: 60, counts: { single_choice: 0, multiple_select: 0, written: 6 } },
+        custom: { title: 'Custom mix', description: 'A targeted session using your selected filters.', timer: 0, counts: null }
+      };
+
+      const typeNames = { single_choice: 'Single choice', multiple_select: 'Multi-select', written: 'Written case' };
+
+      function escapeHTML(value = '') {
+        return String(value).replace(/[&<>'"]/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#39;', '"':'&quot;' }[char]));
+      }
+
+      function shuffle(items) {
+        const copy = [...items];
+        for (let i = copy.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [copy[i], copy[j]] = [copy[j], copy[i]];
+        }
+        return copy;
+      }
+
+      function showView(name) {
+        ['loadingView', 'loadError', 'setupView', 'quizView', 'resultsView'].forEach(id => ui[id].classList.add('hidden'));
+        ui[name].classList.remove('hidden');
+        ui.exitButton.classList.toggle('hidden', name !== 'quizView');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+
+      function toast(message) {
+        ui.toast.textContent = message;
+        ui.toast.classList.add('show');
+        clearTimeout(toast.handle);
+        toast.handle = setTimeout(() => ui.toast.classList.remove('show'), 1800);
+      }
+
+      function validateBank(data) {
+        if (!data || !data.metadata || !Array.isArray(data.questions) || data.questions.length === 0) throw new Error('The selected file is not a valid practice bank.');
+        return data;
+      }
+
+      async function loadBank() {
+        try {
+          const response = await fetch(BANK_FILE, { cache: 'no-store' });
+          if (!response.ok) throw new Error(`Could not load question bank (${response.status}).`);
+          initialize(validateBank(await response.json()));
+        } catch (error) {
+          ui.loadErrorMessage.textContent = location.protocol === 'file:' ? 'Tip: selecting the JSON once lets the page run normally when opened as a local file.' : error.message;
+          showView('loadError');
+          ui.headerStatus.textContent = 'Question bank needed';
+        }
+      }
+
+      function initialize(bank) {
+        state.bank = bank;
+        const meta = bank.metadata;
+        ui.statQuestions.textContent = meta.question_count;
+        ui.statObjective.textContent = (meta.type_counts.single_choice || 0) + (meta.type_counts.multiple_select || 0);
+        ui.statWritten.textContent = meta.type_counts.written || 0;
+        ui.statHard.textContent = meta.difficulty_counts.hard || 0;
+        renderTopicFilters();
+        updateSetupPreview();
+        refreshResumeBanner();
+        ui.headerStatus.textContent = `${meta.question_count} questions ready`;
+        showView('setupView');
+      }
+
+      function renderTopicFilters() {
+        const topics = [...new Set(state.bank.questions.map(q => q.topic))].sort();
+        ui.topicFilters.innerHTML = topics.map(topic => `<label class="check-chip"><input type="checkbox" value="${escapeHTML(topic)}" checked><span>${escapeHTML(topic)}</span></label>`).join('');
+      }
+
+      function selectedValues(container) {
+        return [...container.querySelectorAll('input:checked')].map(input => input.value);
+      }
+
+      function setPreset(name) {
+        state.preset = name;
+        document.querySelectorAll('.preset-card').forEach(card => card.classList.toggle('active', card.dataset.preset === name));
+        if (name !== 'custom') {
+          const config = presetConfig[name];
+          const total = Object.values(config.counts).reduce((a, b) => a + b, 0);
+          ui.countRange.value = total;
+          ui.countInput.value = total;
+          ui.timerSelect.value = String(config.timer);
+        }
+        updateSetupPreview();
+      }
+
+      function switchToCustom() {
+        state.preset = 'custom';
+        document.querySelectorAll('.preset-card').forEach(card => card.classList.remove('active'));
+        updateSetupPreview();
+      }
+
+      function eligibleCustomQuestions() {
+        const types = selectedValues(ui.typeFilters);
+        const difficulties = selectedValues(ui.difficultyFilters);
+        const topics = selectedValues(ui.topicFilters);
+        return state.bank.questions.filter(q => types.includes(q.type) && difficulties.includes(q.difficulty) && topics.includes(q.topic));
+      }
+
+      function updateSetupPreview() {
+        if (!state.bank) return;
+        const config = presetConfig[state.preset];
+        let count, coverage, timer;
+        if (state.preset === 'custom') {
+          const eligible = eligibleCustomQuestions();
+          const requested = Math.max(1, Number(ui.countInput.value) || 1);
+          count = Math.min(requested, eligible.length);
+          coverage = `${selectedValues(ui.topicFilters).length} topics · ${eligible.length} eligible`;
+          timer = Number(ui.timerSelect.value);
+          ui.countRange.max = Math.max(1, eligible.length);
+          ui.countInput.max = Math.max(1, eligible.length);
+        } else {
+          count = Object.values(config.counts).reduce((a, b) => a + b, 0);
+          coverage = 'All topics';
+          timer = config.timer;
+          ui.countRange.max = state.bank.questions.length;
+          ui.countInput.max = state.bank.questions.length;
+        }
+        ui.previewTitle.textContent = config.title;
+        ui.previewDescription.textContent = config.description;
+        ui.previewCount.textContent = count || '—';
+        ui.previewTime.textContent = timer ? `${timer} minutes` : 'Untimed';
+        ui.previewCoverage.textContent = coverage;
+        ui.startButton.disabled = count === 0;
+      }
+
+      function pickByType(counts) {
+        return Object.entries(counts).flatMap(([type, count]) => shuffle(state.bank.questions.filter(q => q.type === type)).slice(0, count));
+      }
+
+      function buildSession() {
+        const config = presetConfig[state.preset];
+        let questions;
+        let timer;
+        if (state.preset === 'custom') {
+          const requested = Math.max(1, Number(ui.countInput.value) || 1);
+          questions = shuffle(eligibleCustomQuestions()).slice(0, requested);
+          timer = Number(ui.timerSelect.value);
+        } else {
+          questions = pickByType(config.counts);
+          timer = config.timer;
+        }
+        if (!questions.length) return toast('Select at least one available question.');
+
+        const now = Date.now();
+        state.session = {
+          version: 1,
+          name: config.title,
+          preset: state.preset,
+          questionIds: shuffle(questions).map(q => q.id),
+          index: 0,
+          answers: {},
+          checked: {},
+          selfScores: {},
+          flagged: [],
+          startedAt: now,
+          timerMinutes: timer,
+          deadline: timer ? now + timer * 60_000 : null,
+          completed: false
+        };
+        state.reviewMode = false;
+        saveSession();
+        startQuiz();
+      }
+
+      function sessionQuestions() {
+        if (!state.session || !state.bank) return [];
+        const byId = new Map(state.bank.questions.map(q => [q.id, q]));
+        return state.session.questionIds.map(id => byId.get(id)).filter(Boolean);
+      }
+
+      function saveSession() {
+        if (state.session) localStorage.setItem(STORAGE_KEY, JSON.stringify(state.session));
+      }
+
+      function loadSavedSession() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+          if (!saved || !Array.isArray(saved.questionIds)) return null;
+          const validIds = new Set(state.bank.questions.map(q => q.id));
+          if (!saved.questionIds.every(id => validIds.has(id))) return null;
+          return saved;
+        } catch { return null; }
+      }
+
+      function refreshResumeBanner() {
+        const saved = loadSavedSession();
+        const resumable = saved && !saved.completed;
+        ui.resumeBanner.classList.toggle('hidden', !resumable);
+        if (resumable) {
+          const answered = saved.questionIds.filter(id => answerHasContent(saved.answers[id])).length;
+          ui.resumeCopy.textContent = `${answered} of ${saved.questionIds.length} answered · ${saved.name || 'Saved practice'}`;
+        }
+      }
+
+      function startQuiz() {
+        if (!state.session) return;
+        ui.sessionName.textContent = state.session.name;
+        ui.headerStatus.textContent = `${state.session.questionIds.length}-question session`;
+        showView('quizView');
+        renderQuestion();
+        startTimer();
+      }
+
+      function currentQuestion() { return sessionQuestions()[state.session.index]; }
+
+      function answerHasContent(answer) {
+        if (Array.isArray(answer)) return answer.length > 0;
+        if (answer && typeof answer === 'object') return Object.values(answer).some(v => String(v).trim().length > 0);
+        return false;
+      }
+
+      function objectiveScore(q) {
+        const selected = new Set(state.session.answers[q.id] || []);
+        const correct = new Set(q.answer.correct_option_ids);
+        const exact = selected.size === correct.size && [...selected].every(id => correct.has(id));
+        if (q.type === 'single_choice') return exact ? q.points : 0;
+        if (exact) return q.points;
+        const cleanSubset = selected.size > 0 && [...selected].every(id => correct.has(id));
+        return cleanSubset ? 1 : 0;
+      }
+
+      function writtenScore(q) {
+        const scores = state.session.selfScores[q.id] || {};
+        return q.subquestions.reduce((sum, sub) => sum + Math.min(sub.max_points, Math.max(0, Number(scores[sub.id]) || 0)), 0);
+      }
+
+      function questionScore(q) { return q.type === 'written' ? writtenScore(q) : objectiveScore(q); }
+
+      function renderQuestion() {
+        const q = currentQuestion();
+        if (!q) return finishSession();
+        const checked = !!state.session.checked[q.id] || state.reviewMode;
+        const flagActive = state.session.flagged.includes(q.id);
+        const prompt = q.stem || q.scenario;
+        const instruction = q.type === 'single_choice' ? 'Select one answer.' : q.type === 'multiple_select' ? 'Select every answer that applies.' : 'Answer each part, then reveal the rubric and self-assess.';
+        const content = q.type === 'written' ? renderWritten(q, checked) : renderObjective(q, checked);
+        ui.questionCard.innerHTML = `
+          <div class="question-accent"></div>
+          <div class="question-body">
+            <div class="question-meta">
+              <div class="question-tags">
+                <span class="tag type">${escapeHTML(typeNames[q.type])}</span>
+                <span class="tag ${escapeHTML(q.difficulty)}">${escapeHTML(q.difficulty)}</span>
+                <span class="tag">${escapeHTML(q.topic)}</span>
+                <span class="tag">${q.points} ${q.points === 1 ? 'point' : 'points'}</span>
+              </div>
+              <button class="flag-button ${flagActive ? 'active' : ''}" id="flagButton" type="button">${flagActive ? '● Flagged' : '○ Flag'}</button>
+            </div>
+            <p class="question-number">Question ${state.session.index + 1} of ${state.session.questionIds.length} · ${escapeHTML(q.id)}</p>
+            <h1 class="question-title">${escapeHTML(prompt)}</h1>
+            <p class="instruction">${instruction}</p>
+            ${content}
+          </div>`;
+
+        bindQuestionInputs(q, checked);
+        ui.previousButton.disabled = state.session.index === 0;
+        ui.nextButton.textContent = state.session.index === state.session.questionIds.length - 1 ? 'Finish session' : 'Next →';
+        ui.checkButton.textContent = q.type === 'written' ? (checked ? 'Rubric shown' : 'Show rubric') : (checked ? 'Answer checked' : 'Check answer');
+        ui.checkButton.disabled = checked;
+        renderQuestionMap();
+        updateProgress();
+      }
+
+      function renderObjective(q, checked) {
+        const selected = new Set(state.session.answers[q.id] || []);
+        const correct = new Set(q.answer.correct_option_ids);
+        const inputType = q.type === 'single_choice' ? 'radio' : 'checkbox';
+        const options = q.options.map(option => {
+          const isSelected = selected.has(option.id);
+          const isCorrect = correct.has(option.id);
+          let reviewClass = '';
+          let status = '';
+          if (checked && isCorrect) { reviewClass = 'review-correct'; status = '✓'; }
+          else if (checked && isSelected && !isCorrect) { reviewClass = 'review-wrong'; status = '×'; }
+          return `<label class="option ${reviewClass}">
+            <input type="${inputType}" name="answer" value="${escapeHTML(option.id)}" ${isSelected ? 'checked' : ''} ${checked ? 'disabled' : ''}>
+            <span class="option-content"><span class="option-letter">${escapeHTML(option.id)}</span><span class="option-text">${escapeHTML(option.text)}</span><span class="option-status">${status}</span></span>
+          </label>`;
+        }).join('');
+
+        let feedback = '';
+        if (checked) {
+          const score = objectiveScore(q);
+          const kind = score === q.points ? '' : score > 0 ? 'partial' : 'incorrect';
+          const label = score === q.points ? 'Correct' : score > 0 ? 'Partially correct' : 'Review this one';
+          feedback = `<div class="feedback ${kind}"><strong>${label} · ${score}/${q.points} ${q.points === 1 ? 'point' : 'points'}</strong><p>${escapeHTML(q.answer.explanation)}</p><p class="trap"><strong>Common trap:</strong> ${escapeHTML(q.answer.common_trap)}</p></div>`;
+        }
+        return `<div class="options">${options}</div>${feedback}`;
+      }
+
+      function renderWritten(q, checked) {
+        const answers = state.session.answers[q.id] || {};
+        const scores = state.session.selfScores[q.id] || {};
+        const parts = q.subquestions.map(sub => {
+          const rubric = checked ? `<div class="rubric">
+            <h4>Full-credit elements</h4>
+            <ul>${sub.answer_key.required_elements.map(item => `<li>${escapeHTML(item)}</li>`).join('')}</ul>
+            <p class="sample-answer"><strong>Sample answer:</strong> ${escapeHTML(sub.answer_key.sample_answer)}</p>
+            <div class="self-score"><label for="score-${q.id}-${sub.id}">Self-score</label><select id="score-${q.id}-${sub.id}" data-score-part="${sub.id}">${Array.from({ length: sub.max_points + 1 }, (_, n) => `<option value="${n}" ${Number(scores[sub.id] || 0) === n ? 'selected' : ''}>${n} / ${sub.max_points}</option>`).join('')}</select></div>
+          </div>` : '';
+          return `<section class="written-part">
+            <div class="part-heading"><span class="part-letter">${escapeHTML(sub.id)}</span><h3>${escapeHTML(sub.prompt)}</h3><span class="points-label">${sub.max_points} pts</span></div>
+            <textarea class="response-box" data-written-part="${sub.id}" placeholder="Write a concise, exam-ready answer…" ${state.reviewMode ? 'readonly' : ''}>${escapeHTML(answers[sub.id] || '')}</textarea>
+            ${rubric}
+          </section>`;
+        }).join('');
+        const overall = checked ? `<div class="feedback"><strong>Case feedback · ${writtenScore(q)}/${q.points} points self-assessed</strong><p>${escapeHTML(q.overall_feedback || '')}</p></div>` : '';
+        return `<div class="written-grid">${parts}</div>${overall}`;
+      }
+
+      function bindQuestionInputs(q, checked) {
+        const flag = document.getElementById('flagButton');
+        flag.addEventListener('click', () => {
+          const index = state.session.flagged.indexOf(q.id);
+          if (index >= 0) state.session.flagged.splice(index, 1); else state.session.flagged.push(q.id);
+          saveSession();
+          renderQuestion();
+        });
+
+        if (q.type !== 'written') {
+          document.querySelectorAll('input[name="answer"]').forEach(input => input.addEventListener('change', () => {
+            const selected = [...document.querySelectorAll('input[name="answer"]:checked')].map(el => el.value);
+            state.session.answers[q.id] = selected;
+            saveSession();
+            updateProgress();
+            renderQuestionMap();
+          }));
+        } else {
+          document.querySelectorAll('[data-written-part]').forEach(area => area.addEventListener('input', () => {
+            state.session.answers[q.id] ||= {};
+            state.session.answers[q.id][area.dataset.writtenPart] = area.value;
+            saveSession();
+            updateProgress();
+            renderQuestionMap();
+          }));
+          if (checked) {
+            document.querySelectorAll('[data-score-part]').forEach(select => select.addEventListener('change', () => {
+              state.session.selfScores[q.id] ||= {};
+              state.session.selfScores[q.id][select.dataset.scorePart] = Number(select.value);
+              saveSession();
+              renderQuestion();
+            }));
+          }
+        }
+      }
+
+      function renderQuestionMap() {
+        const questions = sessionQuestions();
+        ui.questionMap.innerHTML = questions.map((q, index) => {
+          const answered = answerHasContent(state.session.answers[q.id]);
+          const checked = !!state.session.checked[q.id];
+          const score = questionScore(q);
+          const scoreClass = checked ? (score === q.points ? 'correct' : 'incorrect') : '';
+          return `<button type="button" class="map-item ${answered ? 'answered' : ''} ${index === state.session.index ? 'current' : ''} ${state.session.flagged.includes(q.id) ? 'flagged' : ''} ${checked ? 'checked' : ''} ${scoreClass}" data-map-index="${index}" aria-label="Go to question ${index + 1}">${index + 1}</button>`;
+        }).join('');
+        ui.questionMap.querySelectorAll('[data-map-index]').forEach(button => button.addEventListener('click', () => {
+          state.session.index = Number(button.dataset.mapIndex);
+          saveSession();
+          ui.quizSidebar.classList.remove('open');
+          renderQuestion();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }));
+      }
+
+      function updateProgress() {
+        const ids = state.session.questionIds;
+        const answered = ids.filter(id => answerHasContent(state.session.answers[id])).length;
+        const percent = Math.round(answered / ids.length * 100);
+        ui.progressFill.style.width = `${percent}%`;
+        ui.progressAnswered.textContent = `${answered} answered`;
+        ui.progressPercent.textContent = `${percent}%`;
+      }
+
+      function checkCurrent() {
+        const q = currentQuestion();
+        if (!answerHasContent(state.session.answers[q.id])) {
+          return toast(q.type === 'written' ? 'Write at least one response before viewing the rubric.' : 'Select an answer first.');
+        }
+        state.session.checked[q.id] = true;
+        saveSession();
+        renderQuestion();
+      }
+
+      function moveQuestion(direction) {
+        const next = state.session.index + direction;
+        if (next >= state.session.questionIds.length) return finishSession();
+        if (next < 0) return;
+        state.session.index = next;
+        saveSession();
+        renderQuestion();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      function startTimer() {
+        clearInterval(state.timerHandle);
+        updateTimer();
+        if (state.session.timerMinutes && !state.session.completed) state.timerHandle = setInterval(updateTimer, 1000);
+      }
+
+      function updateTimer() {
+        if (!state.session.timerMinutes) {
+          ui.timerDisplay.textContent = 'Untimed';
+          ui.timerDisplay.classList.remove('warning');
+          return;
+        }
+        const remaining = Math.max(0, state.session.deadline - Date.now());
+        const totalSeconds = Math.ceil(remaining / 1000);
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+        ui.timerDisplay.textContent = hours ? `${hours}:${String(minutes).padStart(2,'0')}:${String(seconds).padStart(2,'0')}` : `${minutes}:${String(seconds).padStart(2,'0')}`;
+        ui.timerDisplay.classList.toggle('warning', remaining <= 5 * 60_000);
+        if (remaining <= 0) {
+          clearInterval(state.timerHandle);
+          toast('Time is up. Your session has been submitted.');
+          finishSession();
+        }
+      }
+
+      function finishSession() {
+        if (!state.session || state.session.completed) return;
+        state.session.completed = true;
+        state.session.completedAt = Date.now();
+        clearInterval(state.timerHandle);
+        saveSession();
+        renderResults();
+      }
+
+      function scoreSummary() {
+        const questions = sessionQuestions();
+        const earned = questions.reduce((sum, q) => sum + questionScore(q), 0);
+        const possible = questions.reduce((sum, q) => sum + q.points, 0);
+        return { questions, earned, possible, percent: possible ? Math.round(earned / possible * 100) : 0 };
+      }
+
+      function renderResults() {
+        const { questions, earned, possible, percent } = scoreSummary();
+        state.reviewMode = false;
+        showView('resultsView');
+        ui.headerStatus.textContent = 'Session complete';
+        ui.scorePercent.textContent = `${percent}%`;
+        ui.scorePoints.textContent = `${earned} / ${possible} points`;
+        ui.scoreRing.style.setProperty('--score-angle', `${percent * 3.6}deg`);
+        ui.resultHeadline.textContent = percent >= 85 ? 'Strong analytical control.' : percent >= 70 ? 'A solid base to sharpen.' : 'Turn the misses into method.';
+        const writtenCount = questions.filter(q => q.type === 'written').length;
+        ui.resultSummary.textContent = writtenCount ? `Objective answers were graded automatically. ${writtenCount} written ${writtenCount === 1 ? 'case was' : 'cases were'} scored using your rubric self-assessment.` : 'All objective questions were graded automatically. Review the explanations behind both correct and incorrect answers.';
+        renderBreakdown(ui.typeBreakdown, groupScores(questions, q => typeNames[q.type]));
+        renderBreakdown(ui.topicBreakdown, groupScores(questions, q => q.topic));
+        renderReviewList(questions);
+      }
+
+      function groupScores(questions, keyFn) {
+        const groups = {};
+        questions.forEach(q => {
+          const key = keyFn(q);
+          groups[key] ||= { earned: 0, possible: 0, count: 0 };
+          groups[key].earned += questionScore(q);
+          groups[key].possible += q.points;
+          groups[key].count += 1;
+        });
+        return groups;
+      }
+
+      function renderBreakdown(container, groups) {
+        container.innerHTML = Object.entries(groups).sort((a,b) => a[0].localeCompare(b[0])).map(([name, data]) => {
+          const pct = data.possible ? Math.round(data.earned / data.possible * 100) : 0;
+          return `<div class="breakdown-row"><span class="breakdown-label" title="${escapeHTML(name)}">${escapeHTML(name)}</span><span class="breakdown-value">${data.earned}/${data.possible} · ${pct}%</span><span class="mini-bar"><i style="width:${pct}%"></i></span></div>`;
+        }).join('');
+      }
+
+      function renderReviewList(questions, missedOnly = false) {
+        const rows = questions.map((q, index) => ({ q, index, score: questionScore(q), flagged: state.session.flagged.includes(q.id) }))
+          .filter(row => !missedOnly || row.score < row.q.points || row.flagged);
+        ui.reviewList.innerHTML = rows.length ? rows.map(({ q, index, score, flagged }) => `<button class="review-item" type="button" data-review-index="${index}">
+          <span class="review-index">${index + 1}</span>
+          <span class="review-copy"><strong>${escapeHTML((q.stem || q.scenario).slice(0, 110))}${(q.stem || q.scenario).length > 110 ? '…' : ''}</strong><span>${escapeHTML(typeNames[q.type])} · ${escapeHTML(q.topic)}${flagged ? ' · Flagged' : ''}</span></span>
+          <span class="review-score">${score}/${q.points}</span>
+        </button>`).join('') : `<div class="result-panel"><strong>No missed or flagged questions.</strong><p class="muted">You earned full credit across this session.</p></div>`;
+        ui.reviewList.querySelectorAll('[data-review-index]').forEach(button => button.addEventListener('click', () => openReview(Number(button.dataset.reviewIndex))));
+      }
+
+      function openReview(index) {
+        state.reviewMode = true;
+        state.session.index = index;
+        sessionQuestions().forEach(q => { state.session.checked[q.id] = true; });
+        showView('quizView');
+        ui.sessionName.textContent = 'Results review';
+        ui.timerDisplay.textContent = 'Review mode';
+        ui.timerDisplay.classList.remove('warning');
+        renderQuestion();
+      }
+
+      function exitToSetup() {
+        clearInterval(state.timerHandle);
+        saveSession();
+        state.reviewMode = false;
+        refreshResumeBanner();
+        ui.headerStatus.textContent = `${state.bank.metadata.question_count} questions ready`;
+        showView('setupView');
+      }
+
+      ui.bankFile.addEventListener('change', async event => {
+        const file = event.target.files[0];
+        if (!file) return;
+        try { initialize(validateBank(JSON.parse(await file.text()))); }
+        catch (error) { ui.loadErrorMessage.textContent = error.message; }
+      });
+
+      ui.presetGrid.addEventListener('click', event => {
+        const card = event.target.closest('[data-preset]');
+        if (card) setPreset(card.dataset.preset);
+      });
+
+      [ui.typeFilters, ui.difficultyFilters, ui.topicFilters].forEach(container => container.addEventListener('change', () => { switchToCustom(); }));
+      ui.countRange.addEventListener('input', () => { ui.countInput.value = ui.countRange.value; switchToCustom(); });
+      ui.countInput.addEventListener('input', () => {
+        const value = Math.max(1, Math.min(Number(ui.countInput.max), Number(ui.countInput.value) || 1));
+        ui.countRange.value = value;
+        switchToCustom();
+      });
+      ui.timerSelect.addEventListener('change', switchToCustom);
+      ui.startButton.addEventListener('click', buildSession);
+      ui.resumeButton.addEventListener('click', () => { state.session = loadSavedSession(); state.reviewMode = false; startQuiz(); });
+      ui.discardSaved.addEventListener('click', () => { localStorage.removeItem(STORAGE_KEY); ui.resumeBanner.classList.add('hidden'); toast('Saved session discarded.'); });
+      ui.previousButton.addEventListener('click', () => moveQuestion(-1));
+      ui.nextButton.addEventListener('click', () => moveQuestion(1));
+      ui.checkButton.addEventListener('click', checkCurrent);
+      ui.finishButton.addEventListener('click', finishSession);
+      ui.exitButton.addEventListener('click', exitToSetup);
+      ui.brandButton.addEventListener('click', () => state.bank && exitToSetup());
+      ui.mapToggle.addEventListener('click', () => ui.quizSidebar.classList.toggle('open'));
+      ui.newSessionButton.addEventListener('click', () => { localStorage.removeItem(STORAGE_KEY); state.session = null; exitToSetup(); });
+      ui.printButton.addEventListener('click', () => window.print());
+      ui.reviewMissedButton.addEventListener('click', () => {
+        const questions = sessionQuestions();
+        const first = questions.findIndex(q => questionScore(q) < q.points || state.session.flagged.includes(q.id));
+        if (first >= 0) openReview(first); else toast('No missed or flagged questions to review.');
+      });
+
+      document.addEventListener('keydown', event => {
+        if (ui.quizView.classList.contains('hidden') || event.target.matches('textarea, input, select')) return;
+        if (event.key === 'ArrowRight') moveQuestion(1);
+        if (event.key === 'ArrowLeft') moveQuestion(-1);
+      });
+
+      loadBank();
+    })();
+  </script>
+</body>
+</html>

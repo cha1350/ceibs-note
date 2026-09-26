@@ -8,6 +8,12 @@ window.CEIBS_LIBRARY = {
       "color": "green"
     },
     {
+      "id": "data-analytics",
+      "name": "Data Analytics",
+      "icon": "chart-no-axes-combined",
+      "color": "green"
+    },
+    {
       "id": "competitions",
       "name": "Case competitions",
       "icon": "trophy",
@@ -38,6 +44,24 @@ window.CEIBS_LIBRARY = {
       "detail": "60 questions",
       "path": "pages/economics/microeconomics-quiz.html",
       "updated": "2026-09-18",
+      "thumbnail": "assets/previews/microeconomics-quiz.jpg"
+    },
+    {
+      "id": "da-practice",
+      "title": "Data Analytics practice",
+      "description": "60 advanced questions, worked solutions, and economic graphs. Study, take an exam, or revisit your answers.",
+      "topic": "data-analytics",
+      "formats": [
+        "Interactive"
+      ],
+      "tags": [
+        "Data Analytics",
+        "Midterm",
+        "Quiz"
+      ],
+      "detail": "60 questions",
+      "path": "pages/data-analytics/da-practice.html",
+      "updated": "2026-09-26",
       "thumbnail": "assets/previews/microeconomics-quiz.jpg"
     },
     {

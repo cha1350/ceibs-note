@@ -1,0 +1,2456 @@
+{
+  "metadata": {
+    "title": "CEIBS MBA Data Analytics - Medium-Hard Practice Bank",
+    "version": "1.0",
+    "language": "en",
+    "purpose": "Reasoning-focused practice based on DA 1-7, Pastry, Yelp, Warriors, and the supplied exam examples. This is practice, not a prediction of the actual exam.",
+    "question_count": 80,
+    "total_points": 240,
+    "estimated_completion_minutes": 381,
+    "type_counts": {
+      "single_choice": 40,
+      "multiple_select": 20,
+      "written": 20
+    },
+    "difficulty_counts": {
+      "medium": 35,
+      "hard": 45
+    },
+    "difficulty_target": "medium-hard",
+    "recommended_use": "Use filters or random selection in the future HTML. A full run of all 80 top-level questions is a question-bank session, not a two-hour simulation.",
+    "scoring": {
+      "single_choice": "1 point; exactly one correct option.",
+      "multiple_select": "2 points; all correct options and no incorrect options for full credit. The HTML may optionally award 1 point for a non-empty proper subset containing no incorrect selections.",
+      "written": "Points are allocated by sub-question. Grade against required_elements; sample_answer is illustrative rather than the only acceptable wording."
+    },
+    "type_definitions": {
+      "single_choice": "Select exactly one option.",
+      "multiple_select": "Select every correct option; there may be two or more.",
+      "written": "Answer all sub-questions using concise business language, calculations where needed, and limitations or recommendations when requested."
+    }
+  },
+  "questions": [
+    {
+      "id": "DA-P001",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Descriptive Analytics and EDA",
+      "subtopics": ["skewness", "mean", "median"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 2", "DA 3"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Customer spending has a median of RMB 240 and a mean of RMB 610. The histogram has a long right tail. Which interpretation is best?",
+      "options": [
+        {"id": "A", "text": "Most customers spend about RMB 610."},
+        {"id": "B", "text": "A small number of large values pull the mean upward, so RMB 240 better represents a typical customer."},
+        {"id": "C", "text": "The distribution must contain a data-entry error."},
+        {"id": "D", "text": "The mean is always preferable because it uses every observation."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "In a right-skewed distribution, large observations pull the mean above the median. The median is often the better description of a typical observation.",
+        "common_trap": "Treating the mean as typical without inspecting shape and outliers."
+      }
+    },
+    {
+      "id": "DA-P002",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Data Quality and Lineage",
+      "subtopics": ["lineage", "population", "unit of observation"],
+      "skills": ["diagnose", "critique"],
+      "course_alignment": ["DA 2", "Warriors case", "Pastry case"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "Before using historical Warriors ticket transactions to plan future promotions, which issues should be checked? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Whether third-party resale transactions are excluded."},
+        {"id": "B", "text": "Whether the historical period was unusually successful and still represents the future."},
+        {"id": "C", "text": "Whether one row represents a transaction, customer, or game."},
+        {"id": "D", "text": "Whether every numeric-looking identifier has a large standard deviation."},
+        {"id": "E", "text": "Whether the variables were available at the time a promotion decision would be made."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C", "E"],
+        "explanation": "These checks establish population coverage, temporal relevance, observation unit, and feature timing. The variance of an identifier has no analytical meaning.",
+        "common_trap": "Checking cleanliness while ignoring how and when the data were generated."
+      }
+    },
+    {
+      "id": "DA-P003",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "A/B Testing",
+      "subtopics": ["p-value", "null hypothesis"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 4", "DA 5"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "An experiment estimates a positive treatment-control difference with p = 0.14. Which statement is most accurate at the 5% level?",
+      "options": [
+        {"id": "A", "text": "There is a 14% probability that the treatment has no effect."},
+        {"id": "B", "text": "The treatment has exactly zero effect."},
+        {"id": "C", "text": "The evidence is insufficient to reject no mean difference at 5%, but a useful effect has not been ruled out."},
+        {"id": "D", "text": "The treatment works with 86% probability."}
+      ],
+      "answer": {
+        "correct_option_ids": ["C"],
+        "explanation": "A p-value above 0.05 is insufficient evidence against the null at that threshold. It does not prove a zero effect or give the probability that the null is true.",
+        "common_trap": "Converting failure to reject into proof of no effect."
+      }
+    },
+    {
+      "id": "DA-P004",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["interference", "p-value", "duration", "redesign"],
+      "skills": ["interpret", "diagnose", "redesign", "recommend"],
+      "course_alignment": ["DA 4", "DA 5", "Warriors case"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "A workplace wellbeing platform randomly gives some employees a new tool for organizing walking groups. Treated employees invite control employees to join. During a two-week test, treatment users average 3.2 walks and controls 3.0; p = 0.14. A manager concludes that the tool has no useful effect and could never support a lasting increase in activity.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Calculate and interpret the observed treatment-control difference.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["3.2 - 3.0 = 0.2 walks per employee over two weeks", "States that this is an estimated difference, not proof of causality by itself"],
+            "sample_answer": "Treatment users averaged 0.2 more walks per employee over the two-week period. This is the observed experimental contrast before considering validity threats and uncertainty."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Assess the manager's claim that there is no useful effect using the p-value and effect size.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["p = 0.14 is above 0.05", "Insufficient evidence is not proof of zero effect", "Practical usefulness also depends on effect size and cost"],
+            "sample_answer": "The result is not statistically significant at 5%, but that does not establish a zero or useless effect. The 0.2-walk estimate should be judged against uncertainty, program cost, and the minimum effect the test could detect."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Identify the main validity problem created by invitations to control employees.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Identifies interference or spillover", "Explains controls may benefit", "Explains contrast may be biased toward zero or otherwise contaminated"],
+            "sample_answer": "The experiment has interference: treatment employees expose controls to walking groups. Control activity may rise because of the treatment, reducing the measured treatment-control difference."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Assess the lasting-effect claim and propose one redesign.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Two weeks cannot establish long-run persistence", "Proposes a longer follow-up or early/late windows", "Uses a unit such as team/site to reduce spillovers or otherwise addresses interference"],
+            "sample_answer": "A two-week test cannot show that the effect could never last. Run longer and compare early with later activity, while assigning whole teams or sites so invitations are less likely to cross treatment boundaries."
+          }
+        }
+      ],
+      "overall_feedback": "A full-credit answer separates statistical evidence, practical value, interference, and time horizon rather than relying on p = 0.14 alone."
+    },
+    {
+      "id": "DA-P005",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Linear Regression",
+      "subtopics": ["coefficient units", "holding constant"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 6", "DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "CompletedRides is measured in thousands and DriverHours in hundreds of hours. The DriverHours coefficient is 0.085. Which interpretation is correct?",
+      "options": [
+        {"id": "A", "text": "One additional driver hour is associated with 85 more rides."},
+        {"id": "B", "text": "Holding the other variables constant, 100 additional driver hours are associated with 85 more fitted rides."},
+        {"id": "C", "text": "Holding the other variables constant, 100 additional driver hours cause 0.085 more rides."},
+        {"id": "D", "text": "The model predicts DriverHours with 8.5% accuracy."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "A one-unit increase in DriverHours means 100 actual hours, and 0.085 thousand rides equals 85 rides. Regression wording should preserve the partial-association interpretation.",
+        "common_trap": "Losing the hundreds/thousands conversion or claiming causality."
+      }
+    },
+    {
+      "id": "DA-P006",
+      "type": "multiple_select",
+      "difficulty": "medium",
+      "topic": "Classification",
+      "subtopics": ["accuracy", "precision", "recall"],
+      "skills": ["interpret", "compare"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "For a cancellation model where Cancel is the positive class, which statements are correct? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Precision asks what share of predicted cancelers actually cancel."},
+        {"id": "B", "text": "Recall asks what share of actual cancelers the model identifies."},
+        {"id": "C", "text": "Accuracy always reveals whether the model finds the rare class well."},
+        {"id": "D", "text": "A false negative is a customer predicted to stay who actually cancels."},
+        {"id": "E", "text": "A false positive is a customer predicted to stay who actually cancels."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "D"],
+        "explanation": "Precision starts from predicted positives, recall from actual positives, and a missed canceler is a false negative. Accuracy may conceal weak minority-class performance.",
+        "common_trap": "Reversing precision and recall or memorizing matrix positions instead of labels."
+      }
+    },
+    {
+      "id": "DA-P007",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "Descriptive Analytics and EDA",
+      "subtopics": ["correlation", "nonlinearity", "scatterplot"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 2", "DA 3"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A scatterplot shows a clear inverted-U relationship, but the correlation is 0.02. What is the best conclusion?",
+      "options": [
+        {"id": "A", "text": "There is no relationship because correlation is near zero."},
+        {"id": "B", "text": "There may be a strong nonlinear relationship even though the linear correlation is near zero."},
+        {"id": "C", "text": "The variables must have equal standard deviations."},
+        {"id": "D", "text": "The correlation proves the relationship is causal but small."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Correlation summarizes linear association. Opposing slopes in an inverted U can cancel, producing near-zero correlation despite a visible relationship.",
+        "common_trap": "Using a single-number correlation without inspecting the scatterplot."
+      }
+    },
+    {
+      "id": "DA-P008",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Linear Regression",
+      "subtopics": ["continuous coefficient", "dummy variable", "prediction", "R-squared"],
+      "skills": ["calculate", "interpret", "critique"],
+      "course_alignment": ["DA 6", "DA 7 sample exam"],
+      "estimated_minutes": 14,
+      "points": 8,
+      "scenario": "A ride-hailing model is: Fitted CompletedRides (thousands) = 18.400 - 0.720 AvgFare + 0.085 DriverHours + 2.100 Weekend. AvgFare is dollars, DriverHours is hundreds of hours, and Weekend is 1 on weekends. R-squared = 0.710; adjusted R-squared = 0.702. The Weekend p-value is 0.002.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Interpret the AvgFare coefficient.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Holding DriverHours and Weekend constant", "$1 increase", "0.720 thousand or 720 fewer fitted rides", "Association rather than unsupported causal language"],
+            "sample_answer": "Holding DriverHours and Weekend constant, a $1 higher average fare is associated with 0.720 thousand, or about 720, fewer fitted completed rides."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Interpret Weekend and assess significance at 5%.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Weekend compared with weekday reference", "2.100 thousand or 2,100 more fitted rides", "p = 0.002 < 0.05"],
+            "sample_answer": "Holding fare and driver hours constant, a weekend has 2,100 more fitted rides than a weekday. The difference is statistically significant at 5% because 0.002 < 0.05."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Calculate fitted rides for AvgFare = 12, DriverHours = 80, Weekend = 1.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["18.400 - 0.720(12) + 0.085(80) + 2.100(1)", "18.660 thousand", "18,660 rides"],
+            "sample_answer": "The fitted value is 18.660 thousand completed rides, or approximately 18,660 rides."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Explain R-squared and one thing it does not mean.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["71% of observed variation in CompletedRides explained by the model", "Does not mean 71% of city-days are predicted correctly", "Does not guarantee future performance"],
+            "sample_answer": "The predictors jointly explain 71% of the observed variation in completed rides in these data. It is not a classification accuracy rate and does not by itself establish good out-of-sample prediction."
+          }
+        }
+      ],
+      "overall_feedback": "Preserve units, state reference groups, and distinguish fitted associations from causal effects."
+    },
+    {
+      "id": "DA-P009",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Classification",
+      "subtopics": ["positive class", "confusion matrix"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Fraud is the positive class. A transaction is predicted legitimate but is actually fraudulent. How is it classified?",
+      "options": [
+        {"id": "A", "text": "True positive"},
+        {"id": "B", "text": "False positive"},
+        {"id": "C", "text": "False negative"},
+        {"id": "D", "text": "True negative"}
+      ],
+      "answer": {
+        "correct_option_ids": ["C"],
+        "explanation": "The actual outcome is positive, but the model predicted negative, so this is a false negative.",
+        "common_trap": "Using memorized table positions rather than actual and predicted labels."
+      }
+    },
+    {
+      "id": "DA-P010",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["design", "randomization", "metrics", "duration"],
+      "skills": ["design", "critique"],
+      "course_alignment": ["DA 4", "DA 5 PTG example"],
+      "estimated_minutes": 4,
+      "points": 2,
+      "stem": "Which elements belong in a defensible A/B-test design for a new search-guidance feature? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "An if-then-by-because hypothesis naming the change and primary outcome."},
+        {"id": "B", "text": "Random assignment of eligible units to clearly defined control and treatment experiences."},
+        {"id": "C", "text": "Selection of the most favorable metric after observing the results."},
+        {"id": "D", "text": "A primary metric with a stated denominator and relevant guardrails."},
+        {"id": "E", "text": "A duration and sample size connected to the effect the business wants to detect."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "D", "E"],
+        "explanation": "A clear hypothesis, random assignment, prespecified metrics, and adequate sample/duration make the test interpretable. Post-result metric selection encourages cherry-picking.",
+        "common_trap": "Treating random assignment as the entire design rather than one component."
+      }
+    },
+    {
+      "id": "DA-P011",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Linear Regression",
+      "subtopics": ["R-squared"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 6", "DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A regression has R-squared = 0.71. Which statement is correct?",
+      "options": [
+        {"id": "A", "text": "The model predicts 71% of observations exactly."},
+        {"id": "B", "text": "The model's predictors explain 71% of the observed variation in the dependent variable in the fitted sample."},
+        {"id": "C", "text": "Every coefficient has a 71% probability of being positive."},
+        {"id": "D", "text": "The model must have 71% holdout accuracy."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "R-squared is an in-sample goodness-of-fit measure for a numerical outcome. It is not percent correct or holdout accuracy.",
+        "common_trap": "Translating R-squared into classification accuracy."
+      }
+    },
+    {
+      "id": "DA-P012",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Classification",
+      "subtopics": ["confusion matrix", "accuracy", "precision", "recall", "business costs"],
+      "skills": ["calculate", "interpret", "recommend"],
+      "course_alignment": ["DA 7 sample exam"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "For 200 customers, Cancel is positive. Predicted Cancel/Actual Cancel = 36; Predicted Cancel/Actual Stay = 24; Predicted Stay/Actual Cancel = 12; Predicted Stay/Actual Stay = 128.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Identify TP, FP, FN, and TN.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["TP = 36", "FP = 24", "FN = 12", "TN = 128"],
+            "sample_answer": "TP 36, FP 24, FN 12, and TN 128."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Calculate accuracy, precision, and recall.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Accuracy = 164/200 = 82%", "Precision = 36/60 = 60%", "Recall = 36/48 = 75%"],
+            "sample_answer": "Accuracy is 82%, precision 60%, and recall 75%."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Interpret precision and recall in business language.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Among predicted cancelers, 60% actually cancel", "Among actual cancelers, 75% are identified"],
+            "sample_answer": "Sixty percent of targeted customers truly cancel, while the model catches 75% of everyone who actually cancels."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Choose a priority when discounts are cheap but missed cancellations are costly, then explain how it changes if discounts become expensive.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Prioritize recall when false negatives are costly", "Accept more false positives when discounts are cheap", "Shift toward precision when false positives become expensive"],
+            "sample_answer": "Prioritize recall when missed cancelers are costly and discounts are cheap. If discounts become expensive, emphasize precision to reduce offers to customers who would have stayed."
+          }
+        }
+      ],
+      "overall_feedback": "Define the positive class before using any formula and tie the final metric choice to error costs."
+    },
+    {
+      "id": "DA-P013",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Descriptive Analytics and EDA",
+      "subtopics": ["variable types", "chart selection"],
+      "skills": ["select method"],
+      "course_alignment": ["DA 2", "DA 3"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A manager wants to compare monthly revenue distributions between franchise and directly operated stores. What is the best starting display?",
+      "options": [
+        {"id": "A", "text": "Correlation matrix"},
+        {"id": "B", "text": "Side-by-side box plots"},
+        {"id": "C", "text": "A crosstab of raw counts only"},
+        {"id": "D", "text": "A single pie chart"}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Store type is categorical and revenue is numerical. Side-by-side box plots compare center, spread, skew, and outliers across groups.",
+        "common_trap": "Using correlation when one variable is categorical."
+      }
+    },
+    {
+      "id": "DA-P014",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Linear Regression",
+      "subtopics": ["multicollinearity", "model selection"],
+      "skills": ["diagnose", "recommend"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 4,
+      "points": 2,
+      "stem": "Store area, staff count, and rent are strongly correlated and are included together in a revenue regression. Which outcomes are consistent with multicollinearity? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Individual coefficients may become unstable."},
+        {"id": "B", "text": "Some p-values may be large even if the predictors jointly contain useful information."},
+        {"id": "C", "text": "Adjusted R-squared may improve little after redundant predictors are added."},
+        {"id": "D", "text": "The regression must have R-squared equal to zero."},
+        {"id": "E", "text": "Coefficient signs may become difficult to interpret reliably."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C", "E"],
+        "explanation": "Strongly overlapping predictors make their distinct partial contributions difficult to estimate. This can destabilize signs and p-values without eliminating overall fit.",
+        "common_trap": "Assuming insignificant individual coefficients prove the entire group is irrelevant."
+      }
+    },
+    {
+      "id": "DA-P015",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "A/B Testing",
+      "subtopics": ["statistical significance", "business significance"],
+      "skills": ["compare", "recommend"],
+      "course_alignment": ["DA 4", "DA 5"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A feature increases revenue per user by RMB 0.01 with p < 0.001, but costs RMB 0.05 per user to operate. What is the best conclusion?",
+      "options": [
+        {"id": "A", "text": "Launch because every statistically significant effect is profitable."},
+        {"id": "B", "text": "Reject the statistical result because the effect is small."},
+        {"id": "C", "text": "The effect is statistically significant but appears economically unattractive unless other benefits justify the cost."},
+        {"id": "D", "text": "The p-value proves the operating cost will fall."}
+      ],
+      "answer": {
+        "correct_option_ids": ["C"],
+        "explanation": "Statistical significance concerns evidence against no difference; business significance compares the effect with costs and strategic value.",
+        "common_trap": "Using p < 0.05 as an automatic launch rule."
+      }
+    },
+    {
+      "id": "DA-P016",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Integrated Business Analysis",
+      "subtopics": ["Pastry", "correlation", "alternative explanations", "validation"],
+      "skills": ["interpret", "critique", "recommend"],
+      "course_alignment": ["DA 3", "Pastry case"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "Among franchise stores in their first six months, later county entry order is associated with lower average revenue. The first five positions average 588, positions 16-20 average 448, and the correlation between entry order and average revenue is -0.65. Later stores also tend to be smaller and were opened in different calendar months.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Describe the observed pattern without making a causal claim.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Negative association", "Includes the revenue comparison or r = -0.65", "Avoids saying later entry causes lower revenue"],
+            "sample_answer": "Later county entry is associated with lower early revenue: positions 16-20 average 448 versus 588 for positions 1-5, and the correlation is -0.65."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Give two plausible alternative explanations.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["At least two of store size, location quality, calendar seasonality, county selection, sample size, market saturation"],
+            "sample_answer": "Later stores may be smaller or in weaker locations, and their early months may occur in less favorable calendar periods. Market saturation is another possibility, not the only explanation."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Propose one analysis that would better evaluate cannibalization.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Compares existing-store revenue before and after a new store opens", "Uses similar stores/counties or controls for calendar and maturity"],
+            "sample_answer": "For each new opening, compare revenue changes at existing stores before and after the opening, using similar counties or calendar controls to separate cannibalization from seasonal change."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Give a conditional business recommendation.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Caution about late expansion", "Does not recommend a universal stop", "Requests evidence on location strength or cannibalization"],
+            "sample_answer": "Treat late county entry as a warning rather than proof. Require stronger location evidence and a cannibalization check before opening additional stores in already dense counties."
+          }
+        }
+      ],
+      "overall_feedback": "The course expects observation, alternative explanations, verification, and business implications in that order."
+    },
+    {
+      "id": "DA-P017",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Classification",
+      "subtopics": ["accuracy", "class imbalance"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Only 5% of customers cancel. A model predicts Stay for every customer and reports 95% accuracy. What is the main problem?",
+      "options": [
+        {"id": "A", "text": "The model has too many true positives."},
+        {"id": "B", "text": "Accuracy hides that recall for cancelers is zero."},
+        {"id": "C", "text": "Precision must equal 95%."},
+        {"id": "D", "text": "The positive class should always be the more common class."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "The majority-class prediction is usually correct overall but never finds an actual canceler, so recall for the positive class is zero.",
+        "common_trap": "Treating high accuracy as sufficient under class imbalance."
+      }
+    },
+    {
+      "id": "DA-P018",
+      "type": "multiple_select",
+      "difficulty": "medium",
+      "topic": "Descriptive Analytics and EDA",
+      "subtopics": ["chart selection", "variable types"],
+      "skills": ["select method"],
+      "course_alignment": ["DA 2", "DA 3"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "Which variable-pair and analysis matches are appropriate? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Numeric vs numeric: scatterplot and correlation."},
+        {"id": "B", "text": "Categorical vs numeric: group summaries and side-by-side box plots."},
+        {"id": "C", "text": "Categorical vs categorical: crosstab with clearly defined percentages."},
+        {"id": "D", "text": "Time-based numeric outcome: unordered pie chart as the first analysis."},
+        {"id": "E", "text": "One numeric variable: histogram and box plot."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C", "E"],
+        "explanation": "These tools match the variable types and analytical goals. Time order should be preserved in a time-series chart.",
+        "common_trap": "Choosing a familiar chart without checking the variable types."
+      }
+    },
+    {
+      "id": "DA-P019",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Linear Regression",
+      "subtopics": ["dummy variable", "reference group"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 6", "DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Weekend = 1 for Saturday/Sunday and 0 for weekdays. Its coefficient is 2.100 when rides are measured in thousands. Which interpretation is correct?",
+      "options": [
+        {"id": "A", "text": "Weekdays have 2,100 more fitted rides than weekends."},
+        {"id": "B", "text": "Holding other predictors constant, weekends have 2,100 more fitted rides than weekdays."},
+        {"id": "C", "text": "Weekend increases the probability of a ride by 210%."},
+        {"id": "D", "text": "The coefficient compares weekend with the intercept rather than weekdays."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "The dummy coefficient compares the group coded 1 with the group coded 0, holding other included predictors constant.",
+        "common_trap": "Reversing the reference group or confusing linear-regression units with probabilities."
+      }
+    },
+    {
+      "id": "DA-P020",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["duration", "short-run", "long-run", "redesign"],
+      "skills": ["diagnose", "redesign"],
+      "course_alignment": ["DA 4", "DA 5 PTG example"],
+      "estimated_minutes": 10,
+      "points": 8,
+      "scenario": "A new search-guidance tool may initially confuse users but become useful after they learn it. An analyst reports only the average treatment effect over a three-month experiment.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Why can the full-period average be misleading?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Early and later effects can differ", "Opposing effects may average together"],
+            "sample_answer": "A negative learning period and a positive later effect can offset each other, so the full-period mean may hide the behavior that matters for long-run adoption."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Define a short-run analysis window.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Window anchored to each user's first eligible exposure/query", "Example such as first two weeks", "Same treatment-control comparison"],
+            "sample_answer": "For each user, analyze eligible sessions in the first two weeks after the first eligible query, then compare mean outcomes by assigned group."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Define a long-run analysis window.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Later window anchored to first exposure", "Example after two months", "Same assignment retained"],
+            "sample_answer": "Compare outcomes from sessions occurring after two months from each user's first eligible query, retaining the original random assignment."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Explain why original assignment should remain fixed across both windows.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Preserves comparability", "Avoids users switching experiences", "Separates time pattern from reassignment"],
+            "sample_answer": "Fixed assignment preserves the randomized comparison and prevents treatment switching from contaminating the early-versus-later interpretation."
+          }
+        }
+      ],
+      "overall_feedback": "The key is to compare time windows without redefining groups after outcomes appear.",
+      "tags": ["redesign", "time horizon"]
+    },
+    {
+      "id": "DA-P021",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "A/B Testing",
+      "subtopics": ["randomization"],
+      "skills": ["explain"],
+      "course_alignment": ["DA 4"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "What is the main purpose of random assignment in an A/B test?",
+      "options": [
+        {"id": "A", "text": "To guarantee the groups are identical on every measured variable."},
+        {"id": "B", "text": "To make treatment and control comparable on average so outcome differences can be attributed more credibly to the treatment."},
+        {"id": "C", "text": "To ensure the treatment effect is statistically significant."},
+        {"id": "D", "text": "To remove the need for consistent measurement."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Random assignment balances observed and unobserved characteristics on average. It does not guarantee exact balance or statistical significance.",
+        "common_trap": "Treating randomization as a guarantee rather than a probabilistic design property."
+      }
+    },
+    {
+      "id": "DA-P022",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Classification",
+      "subtopics": ["holdout", "data leakage", "feature timing"],
+      "skills": ["diagnose", "critique"],
+      "course_alignment": ["DA 7", "Warriors case"],
+      "estimated_minutes": 4,
+      "points": 2,
+      "stem": "Which practices would make a reported holdout result less trustworthy? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Choosing model features after repeatedly checking holdout performance."},
+        {"id": "B", "text": "Using a variable derived directly from the outcome."},
+        {"id": "C", "text": "Using post-purchase information to predict a pre-purchase decision."},
+        {"id": "D", "text": "Fitting on a training sample and evaluating once on unseen holdout observations."},
+        {"id": "E", "text": "Reporting only in-sample accuracy as if it were out-of-sample performance."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C", "E"],
+        "explanation": "Repeated holdout use, outcome-derived variables, unavailable future information, and in-sample reporting all overstate deployable predictive performance. A single honest holdout evaluation is appropriate.",
+        "common_trap": "Calling a dataset a holdout even after it influenced model construction."
+      }
+    },
+    {
+      "id": "DA-P023",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "Data Quality and Lineage",
+      "subtopics": ["missing values", "selection bias"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 2"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Income is missing mainly for the highest-income customers because they refuse to disclose it. What is the best response?",
+      "options": [
+        {"id": "A", "text": "Replace every missing value with zero because no income was recorded."},
+        {"id": "B", "text": "Drop the rows and describe the remaining sample as unbiased."},
+        {"id": "C", "text": "Recognize that missingness is systematic and that naive deletion or zero-filling can bias income summaries downward."},
+        {"id": "D", "text": "Convert income to a customer identifier."}
+      ],
+      "answer": {
+        "correct_option_ids": ["C"],
+        "explanation": "The missingness mechanism is related to the underlying value. Handling it mechanically can produce a systematically low estimate.",
+        "common_trap": "Treating all missing values as equivalent to zero or random omissions."
+      }
+    },
+    {
+      "id": "DA-P024",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Linear Regression",
+      "subtopics": ["model selection", "adjusted R-squared", "p-values", "logic"],
+      "skills": ["compare", "diagnose", "recommend"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "Model A predicts Days_Before_Game using Age and LowerSeat: R-squared = 0.538, adjusted R-squared = 0.537; both coefficients have p < 0.01. Model B adds TicketPrice: R-squared = 0.5384, adjusted R-squared = 0.5370; TicketPrice p = 0.723. TicketPrice and LowerSeat have correlation 0.724.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "What does the small R-squared increase show?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["TicketPrice adds very little in-sample explained variation", "Does not by itself prove TicketPrice has no relationship with timing"],
+            "sample_answer": "Adding TicketPrice barely changes fitted explanatory power, so it contributes little additional information in this specification."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Interpret the adjusted R-squared comparison.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["No adjusted-fit improvement", "Penalty for extra predictor", "Favors simpler model if other factors are equal"],
+            "sample_answer": "The extra predictor does not improve complexity-adjusted fit, so adjusted R-squared provides no reason to prefer Model B."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Explain why multicollinearity is relevant.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["TicketPrice overlaps with LowerSeat", "Distinct TicketPrice coefficient becomes hard to estimate", "Large p-value may reflect redundant information"],
+            "sample_answer": "TicketPrice and LowerSeat contain overlapping information, so the model struggles to isolate TicketPrice's partial association after LowerSeat is held constant."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Recommend a model and state one caveat.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Prefers Model A or requests out-of-sample comparison", "Uses simplicity/adjusted fit/logic", "Notes target and feature availability or prediction validation"],
+            "sample_answer": "Prefer Model A unless Model B improves holdout prediction or has a compelling business rationale. Current ticket price may also be unavailable before purchase, limiting deployment value."
+          }
+        }
+      ],
+      "overall_feedback": "Model selection should combine statistics, redundancy, business logic, and availability at prediction time."
+    },
+    {
+      "id": "DA-P025",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["denominator", "Yelp funnel"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 4", "DA 5", "Yelp case"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Yelp's treatment raises clicks per shown ad but lowers the proportion of eligible searches that show an ad. Which metric best captures total monetization across opportunities?",
+      "options": [
+        {"id": "A", "text": "Clicks per shown ad only"},
+        {"id": "B", "text": "Revenue per eligible search"},
+        {"id": "C", "text": "Average number of categories in the dataset"},
+        {"id": "D", "text": "Revenue per control user only"}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Revenue per eligible search retains the complete opportunity denominator and reflects shown rate, clickthrough, and revenue per click.",
+        "common_trap": "Using a conditional funnel rate as if it captured the entire business outcome."
+      }
+    },
+    {
+      "id": "DA-P026",
+      "type": "multiple_select",
+      "difficulty": "medium",
+      "topic": "Linear Regression",
+      "subtopics": ["coefficient", "significance", "confidence interval"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 6", "DA 7"],
+      "estimated_minutes": 4,
+      "points": 2,
+      "stem": "A coefficient is -0.72 with p < 0.001 and a 95% confidence interval of [-1.08, -0.36]. Which statements are correct? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "The estimated partial association is negative."},
+        {"id": "B", "text": "Zero is excluded from the interval, consistent with significance at 5%."},
+        {"id": "C", "text": "The coefficient is guaranteed to be causal."},
+        {"id": "D", "text": "The plausible coefficient range under this analysis remains negative."},
+        {"id": "E", "text": "The interval means 95% of individual outcomes fall between -1.08 and -0.36."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "D"],
+        "explanation": "The estimate and interval indicate a statistically significant negative coefficient. A coefficient interval is not an interval containing individual outcomes and does not establish causality.",
+        "common_trap": "Misreading a coefficient confidence interval as a range for individual Y values."
+      }
+    },
+    {
+      "id": "DA-P027",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Classification",
+      "subtopics": ["recall", "business interpretation"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A cancellation model has recall of 75%. Which interpretation is correct?",
+      "options": [
+        {"id": "A", "text": "Among predicted cancelers, 75% actually cancel."},
+        {"id": "B", "text": "Among actual cancelers, the model identifies 75%."},
+        {"id": "C", "text": "The model correctly classifies 75% of all customers."},
+        {"id": "D", "text": "Seventy-five percent of discounts are profitable."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Recall uses actual positives as the denominator: TP divided by TP + FN.",
+        "common_trap": "Confusing recall with precision or accuracy."
+      }
+    },
+    {
+      "id": "DA-P028",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Integrated Business Analysis",
+      "subtopics": ["Warriors", "holdout", "interference", "deployment"],
+      "skills": ["critique", "design", "recommend"],
+      "course_alignment": ["DA 1", "DA 7", "Warriors case"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "The Warriors' ticket-timing model performs well on historical data not used for training. One manager wants immediate deployment to demonstrate value; another wants a season-long experiment because mistakes could affect many fans and game-level promotions may create interference.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "What does strong historical holdout performance establish?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Evidence of predictive performance on unseen historical observations", "Does not prove causal business lift"],
+            "sample_answer": "It supports the model's ability to predict purchase timing in similar historical data, but not whether changing email timing increases sales or improves customer experience."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Why is a deployment experiment still useful?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Measures real business outcomes", "Detects implementation errors or unintended effects", "Tests action based on prediction"],
+            "sample_answer": "The experiment would estimate the causal effect of using model-based promotions on sales, revenue, email volume, and unsubscribes while revealing operational failures."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Explain why ordinary fan-level randomization may be problematic and name the course-supported alternative.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Fans for the same games share inventory/promotions/demand", "Potential interference", "Game-level switchback with randomly selected games"],
+            "sample_answer": "Fans are exposed to common game conditions and marketing, so outcomes may not be independent. A switchback can randomly use the model for some games and the standard approach for others."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Give a deployment recommendation.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Staged or experimental deployment before full rollout", "Names outcomes/guardrails", "Balances learning and risk"],
+            "sample_answer": "Run a staged switchback before broad deployment, tracking ticket sales and revenue together with email volume, unsubscribes, and implementation quality."
+          }
+        }
+      ],
+      "overall_feedback": "Prediction validity and intervention value are different questions."
+    },
+    {
+      "id": "DA-P029",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "Descriptive Analytics and EDA",
+      "subtopics": ["time series", "maturity", "seasonality"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 2", "DA 3", "Pastry case"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Pastry revenue is higher at 12 months since opening, but many 12-month observations occur in a holiday month. What is the central analytical concern?",
+      "options": [
+        {"id": "A", "text": "Months since opening is categorical and cannot be analyzed."},
+        {"id": "B", "text": "Store maturity and calendar seasonality may be confounded."},
+        {"id": "C", "text": "Revenue must be converted to a customer ID."},
+        {"id": "D", "text": "A holiday guarantees causality."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "The apparent maturity effect may partly reflect when those maturity observations occur on the calendar. Both time dimensions should be examined.",
+        "common_trap": "Treating all time variables as measuring the same phenomenon."
+      }
+    },
+    {
+      "id": "DA-P030",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["Yelp funnel", "metrics", "decision"],
+      "skills": ["interpret", "recommend"],
+      "course_alignment": ["DA 4", "DA 5", "Yelp case"],
+      "estimated_minutes": 4,
+      "points": 2,
+      "stem": "Yelp treatment CTR rises from 0.748 to 0.864, while shown rate falls from 0.933 to 0.764. Which conclusions are justified? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Shown ads are clicked more often under treatment."},
+        {"id": "B", "text": "Treatment reduces the fraction of eligible opportunities that show an ad."},
+        {"id": "C", "text": "CTR improvement alone proves total revenue increases."},
+        {"id": "D", "text": "Revenue per eligible search and revenue per click are relevant to the launch decision."},
+        {"id": "E", "text": "Long-run advertiser response may differ from the short-run revenue effect."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "D", "E"],
+        "explanation": "The two rates describe different funnel stages. Monetization and longer-run marketplace response must be examined before launch.",
+        "common_trap": "Using one favorable conditional rate as the entire business conclusion."
+      }
+    },
+    {
+      "id": "DA-P031",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Linear Regression",
+      "subtopics": ["confidence interval", "significance"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 6", "DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A 95% coefficient confidence interval is [-0.4, 1.8]. What is the best 5% significance conclusion?",
+      "options": [
+        {"id": "A", "text": "The coefficient is significant because the upper endpoint is positive."},
+        {"id": "B", "text": "The coefficient is not significant at 5% because the interval includes zero."},
+        {"id": "C", "text": "The dependent variable lies between -0.4 and 1.8 for 95% of observations."},
+        {"id": "D", "text": "The coefficient must equal 0.7."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "For the corresponding two-sided test, an interval containing zero indicates insufficient evidence that the coefficient differs from zero at 5%.",
+        "common_trap": "Looking only at the sign of the point estimate or one endpoint."
+      }
+    },
+    {
+      "id": "DA-P032",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Classification",
+      "subtopics": ["threshold", "precision", "recall", "business costs"],
+      "skills": ["compare", "recommend"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 10,
+      "points": 8,
+      "scenario": "A cancellation model outputs probabilities. At cutoff 0.50, precision is 72% and recall 48%. At cutoff 0.30, precision is 55% and recall 81%. The company gives a retention offer to predicted cancelers.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Describe what happens when the cutoff is lowered.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["More predicted positives", "Recall rises", "Precision falls"],
+            "sample_answer": "Lowering the cutoff targets more customers, catches a larger share of actual cancelers, and reduces the share of targeted customers who truly cancel."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Which cutoff is more appropriate when missed cancelers are very costly and offers are cheap?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Chooses 0.30", "Connects to higher recall and fewer false negatives", "Accepts more false positives"],
+            "sample_answer": "Use 0.30 because the business values recall and can tolerate more unnecessary offers."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Which cutoff is more attractive when offers become expensive?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Chooses or favors 0.50", "Connects to higher precision and fewer wasted offers", "Acknowledges more missed cancelers"],
+            "sample_answer": "Move toward 0.50 to increase precision and reduce wasted discounts, accepting lower recall."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "What additional evaluation condition is essential before choosing either cutoff?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Metrics evaluated on unseen holdout data", "Same positive class and denominator", "Business costs or expected value considered"],
+            "sample_answer": "Compare both cutoffs on an untouched holdout and combine the error counts with actual retention value and offer cost."
+          }
+        }
+      ],
+      "overall_feedback": "A cutoff is a business decision informed by error costs, not a universally fixed value."
+    },
+    {
+      "id": "DA-P033",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Descriptive Analytics and EDA",
+      "subtopics": ["outliers", "robust statistics"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 2", "DA 3"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A genuine flagship store has revenue far above the upper IQR fence. What is the best analytical response?",
+      "options": [
+        {"id": "A", "text": "Delete it automatically because every box-plot outlier is an error."},
+        {"id": "B", "text": "Keep and investigate it, compare mean/SD with median/IQR, and explain whether the business question includes flagship stores."},
+        {"id": "C", "text": "Replace its revenue with zero."},
+        {"id": "D", "text": "Conclude the whole dataset is unusable."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "An outlier flag identifies an unusual value, not necessarily a mistake. Its relevance depends on provenance and the decision population.",
+        "common_trap": "Equating unusual with invalid."
+      }
+    },
+    {
+      "id": "DA-P034",
+      "type": "multiple_select",
+      "difficulty": "medium",
+      "topic": "Classification",
+      "subtopics": ["positive class", "confusion matrix"],
+      "skills": ["classify", "interpret"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "The positive class is Last-Minute. Which descriptions are correct? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "TP: predicted Last-Minute and actually Last-Minute."},
+        {"id": "B", "text": "FP: predicted Last-Minute but actually Other."},
+        {"id": "C", "text": "FN: predicted Other but actually Last-Minute."},
+        {"id": "D", "text": "TN: predicted Last-Minute and actually Other."},
+        {"id": "E", "text": "Changing the positive class changes which errors are called FP and FN."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C", "E"],
+        "explanation": "TP, FP, and FN follow from the chosen positive label. A true negative is predicted Other and actually Other.",
+        "common_trap": "Treating positive as inherently good rather than the outcome being detected."
+      }
+    },
+    {
+      "id": "DA-P035",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "A/B Testing",
+      "subtopics": ["null hypothesis"],
+      "skills": ["formulate"],
+      "course_alignment": ["DA 4", "DA 5"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A two-group t-test evaluates whether average product views differ between treatment and control. What is the standard null hypothesis?",
+      "options": [
+        {"id": "A", "text": "Treatment mean minus control mean equals zero."},
+        {"id": "B", "text": "Treatment is definitely worse than control."},
+        {"id": "C", "text": "Every treatment user has the same outcome."},
+        {"id": "D", "text": "The p-value equals the treatment effect."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "The usual null for comparing group means is no population mean difference.",
+        "common_trap": "Confusing the hypothesis with the observed estimate or p-value."
+      }
+    },
+    {
+      "id": "DA-P036",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["primary metric", "guardrails", "denominators", "recommendation"],
+      "skills": ["design", "interpret", "recommend"],
+      "course_alignment": ["DA 4", "DA 5", "Yelp case"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "An online marketplace tests a stricter matching rule. Treatment improves clickthrough among shown recommendations but reduces the probability that any recommendation is shown. Management wants a single launch recommendation.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Define a reasonable primary quality metric and its denominator.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Names a metric such as clicks/shown recommendations", "States denominator explicitly", "Connects metric to relevance or engagement"],
+            "sample_answer": "Use clickthrough rate, clicks divided by shown recommendations, as the primary measure of whether displayed recommendations are more engaging."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Name two secondary or guardrail metrics needed for the launch decision.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Shown rate or coverage", "Revenue/value per eligible opportunity or another business metric", "Metrics tied to possible harm"],
+            "sample_answer": "Track recommendation shown rate and revenue per eligible opportunity; also monitor latency or user satisfaction if relevant."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Explain why a CTR increase alone is insufficient.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["CTR conditions on shown recommendations", "Treatment changes coverage/composition", "Total clicks or revenue can fall"],
+            "sample_answer": "CTR describes only shown recommendations. If the treatment shows far fewer recommendations, total engagement or monetization may decline despite better conditional CTR."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "State a conditional launch rule.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Requires meaningful primary-metric benefit", "Requires acceptable business/guardrail impact", "Allows reject or iterate if tradeoff is poor"],
+            "sample_answer": "Launch only if the CTR gain is meaningful and revenue or value per eligible opportunity remains within a prespecified acceptable range; otherwise refine the matching rule and retest."
+          }
+        }
+      ],
+      "overall_feedback": "Strong answers connect each metric to a different stage of the business funnel."
+    },
+    {
+      "id": "DA-P037",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Linear Regression",
+      "subtopics": ["adjusted R-squared", "model selection"],
+      "skills": ["compare"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A new predictor slightly raises R-squared but lowers adjusted R-squared. What does this most strongly suggest?",
+      "options": [
+        {"id": "A", "text": "The new predictor adds enough value to justify its complexity."},
+        {"id": "B", "text": "The new predictor contributes little relative to the penalty for adding it."},
+        {"id": "C", "text": "R-squared must have been calculated incorrectly because it increased."},
+        {"id": "D", "text": "The dependent variable is categorical."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Ordinary R-squared cannot decline when predictors are added to the same OLS sample, but adjusted R-squared can fall when the added variable contributes little.",
+        "common_trap": "Choosing the model with the largest raw R-squared automatically."
+      }
+    },
+    {
+      "id": "DA-P038",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Descriptive Analytics and EDA",
+      "subtopics": ["correlation", "causation", "alternative explanations"],
+      "skills": ["critique", "verify"],
+      "course_alignment": ["DA 2", "DA 3", "Pastry case"],
+      "estimated_minutes": 4,
+      "points": 2,
+      "stem": "Store rent is positively correlated with revenue. Which statements are defensible? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Higher rent may proxy for stronger locations."},
+        {"id": "B", "text": "Larger stores may have both higher rent and higher revenue."},
+        {"id": "C", "text": "The correlation alone proves that raising a store's rent will raise revenue."},
+        {"id": "D", "text": "A regression or comparison controlling for store scale and location factors could help assess the distinct association."},
+        {"id": "E", "text": "The direction of causality may be unclear from the correlation alone."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "D", "E"],
+        "explanation": "Rent may reflect location quality and store scale. Observational association does not establish that paying more rent itself creates revenue.",
+        "common_trap": "Turning a proxy variable into a managerial causal lever."
+      }
+    },
+    {
+      "id": "DA-P039",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Classification",
+      "subtopics": ["multiclass classification", "probabilities"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A multiclass model gives Planner = 0.15, In-Between = 0.25, and Last-Minute = 0.60. What class is predicted under the course rule?",
+      "options": [
+        {"id": "A", "text": "Planner"},
+        {"id": "B", "text": "In-Between"},
+        {"id": "C", "text": "Last-Minute"},
+        {"id": "D", "text": "No class because probabilities are not all above 0.50"}
+      ],
+      "answer": {
+        "correct_option_ids": ["C"],
+        "explanation": "The multinomial model selects the class with the highest predicted probability, and the probabilities sum to one.",
+        "common_trap": "Requiring every multiclass prediction to exceed a binary 0.50 threshold."
+      }
+    },
+    {
+      "id": "DA-P040",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Linear Regression",
+      "subtopics": ["causality", "omitted variables", "inference", "redesign"],
+      "skills": ["interpret", "critique", "redesign"],
+      "course_alignment": ["DA 3", "DA 6", "DA 7"],
+      "estimated_minutes": 11,
+      "points": 8,
+      "scenario": "A city-level regression finds that higher average fares are associated with fewer completed rides after controlling for driver hours and weekends. A manager says lowering fares will necessarily create exactly the coefficient-implied increase in rides.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "State the appropriate coefficient interpretation.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Holding included predictors constant", "Uses fitted rides and correct units", "Association language"],
+            "sample_answer": "Holding driver hours and weekend status constant, a one-dollar higher fare is associated with the coefficient-sized decrease in fitted completed rides."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Why is the manager's causal statement too strong?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Observational regression", "Omitted demand conditions or reverse direction", "Coefficient does not automatically identify an intervention effect"],
+            "sample_answer": "Demand conditions can influence both fares and rides, and other omitted city-day factors may remain. The regression quantifies a conditional association rather than the guaranteed effect of changing price."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Give one additional analysis or data item that could test an alternative explanation.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Names a plausible factor such as weather, events, demand, city effects, or time", "Explains how adding/comparing it helps"],
+            "sample_answer": "Add city, major-event, weather, and time controls or compare similar city-days to see whether the fare coefficient persists after demand conditions are better represented."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "What design would support a stronger causal price conclusion?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Randomized or otherwise controlled price test within feasible business constraints", "Compares comparable treatment and control units", "Monitors business guardrails"],
+            "sample_answer": "A carefully controlled experiment that randomly varies the pricing policy across comparable eligible units and measures rides plus revenue and supply guardrails would support a stronger causal conclusion."
+          }
+        }
+      ],
+      "overall_feedback": "The key distinction is between interpreting a fitted relationship and predicting the effect of an intervention.",
+      "tags": ["association", "causality"]
+    },
+    {
+      "id": "DA-P041",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "A/B Testing",
+      "subtopics": ["treatment effect", "direction of effect"],
+      "skills": ["calculate", "interpret"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "In a randomized test, treatment users average 8.4 completed tasks and control users average 7.9. Using treatment minus control, what is the estimated average treatment effect in the sample?",
+      "options": [
+        {"id": "A", "text": "-0.5 task per user"},
+        {"id": "B", "text": "+0.5 task per user"},
+        {"id": "C", "text": "+6.3% with no need to state the base"},
+        {"id": "D", "text": "Zero unless the p-value is below 0.05"}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "The observed treatment-minus-control difference is 8.4 - 7.9 = 0.5 completed task per user. Statistical significance affects uncertainty, not the arithmetic estimate.",
+        "common_trap": "Replacing a statistically uncertain estimate with zero."
+      }
+    },
+    {
+      "id": "DA-P042",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["interference", "duration", "external validity"],
+      "skills": ["diagnose", "critique"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "A social feature is randomized by employee for two weeks. Treated employees can invite control employees into feature-created groups. Which facts directly weaken a claim that the experiment cleanly identifies a lasting individual-level effect? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Control employees can be exposed through invitations from treated employees."},
+        {"id": "B", "text": "The two-week window may capture novelty rather than persistence."},
+        {"id": "C", "text": "Random assignment makes all design limitations impossible."},
+        {"id": "D", "text": "The outcome is measured numerically."},
+        {"id": "E", "text": "Employees interact, so one person's assignment may affect another person's outcome."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "E"],
+        "explanation": "Cross-group exposure violates the no-interference logic behind a simple individual comparison, and a short test cannot establish persistence. A numerical outcome does not solve either problem.",
+        "common_trap": "Treating randomization as protection against contamination, spillovers, and an inadequate measurement horizon."
+      }
+    },
+    {
+      "id": "DA-P043",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Exploratory Data Analysis",
+      "subtopics": ["unit of observation", "data structure"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 1", "DA 2"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A dataset contains one row per purchase, and the same customer may appear many times. Which statement is most accurate?",
+      "options": [
+        {"id": "A", "text": "The row count is the number of unique customers."},
+        {"id": "B", "text": "The unit of observation is a purchase, so customer-level questions require aggregation or methods that recognize repeated customers."},
+        {"id": "C", "text": "Customer ID should be averaged because it is numeric."},
+        {"id": "D", "text": "Every purchase is independent simply because it occupies a separate row."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Rows represent purchases, not customers. The data must be aligned to the unit required by the business question, and repeated observations from one customer should not automatically be treated as independent people.",
+        "common_trap": "Assuming that a table's row count always equals the number of decision-making entities."
+      }
+    },
+    {
+      "id": "DA-P044",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Classification",
+      "subtopics": ["holdout evaluation", "data leakage", "thresholds", "business costs"],
+      "skills": ["calculate", "interpret", "diagnose", "recommend"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "A subscription company builds a model to predict at the start of each month which customers will cancel during that month. Training accuracy is 94% and holdout accuracy is 79%. One predictor is whether a cancellation request was filed during the month. At the current threshold, holdout precision is 62% and recall is 35% for the positive class 'will cancel.'",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Diagnose the largest validity problem with the listed predictor.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["The cancellation request occurs after prediction time or reveals the outcome", "Identifies data leakage", "Explains why apparent performance can be inflated"],
+            "sample_answer": "A cancellation request filed during the month is unavailable at the start-of-month decision point and may nearly reveal the target. It is leakage and can make the model appear more accurate than a deployable model."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "What does the training-versus-holdout gap suggest?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Performance does not generalize as well to unseen data", "Possible overfitting and/or leakage", "Holdout is the more relevant estimate for deployment"],
+            "sample_answer": "The 15-point drop suggests poor generalization, potentially from overfitting and leakage. The holdout result better represents expected performance on new customers, assuming the split itself is valid."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Interpret the holdout precision and recall in business language.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["62% of predicted cancelers actually cancel", "35% of actual cancelers are identified", "Names the positive class"],
+            "sample_answer": "Among customers flagged as likely to cancel, 62% actually cancel. The model finds only 35% of all customers who actually cancel, so it misses 65% of true cancelers."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Recommend the next modeling and decision step.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Remove or rebuild predictors using only information available at prediction time", "Re-evaluate on untouched holdout or future data", "Choose threshold using false-positive and false-negative business costs"],
+            "sample_answer": "Rebuild the feature set using only start-of-month information, evaluate the frozen model on untouched later data, and select a threshold by comparing the cost of unnecessary retention offers with the cost of missed cancelers."
+          }
+        }
+      ],
+      "overall_feedback": "A strong answer links the deployment time to feature eligibility before interpreting model metrics."
+    },
+    {
+      "id": "DA-P045",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Linear Regression",
+      "subtopics": ["intercept", "interpretation"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 3"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A fitted model is Revenue = 120 + 4.5 Advertising + 30 Weekend, where Weekend is 1 on weekends. Advertising was never below 20 in the sample. Which is the best interpretation of 120?",
+      "options": [
+        {"id": "A", "text": "It is the predicted revenue for a weekday with zero advertising, but that combination may have little practical meaning because it lies outside the observed advertising range."},
+        {"id": "B", "text": "It is the average revenue of all observations."},
+        {"id": "C", "text": "It is the causal revenue produced by the model."},
+        {"id": "D", "text": "It is the weekend effect."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "The intercept is the fitted outcome when all numeric predictors equal zero and dummy variables are at their reference level. That algebraic value may not be substantively useful if zero is outside the data range.",
+        "common_trap": "Forcing a practical story onto an intercept evaluated at unrealistic predictor values."
+      }
+    },
+    {
+      "id": "DA-P046",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Predictive Modeling",
+      "subtopics": ["data leakage", "prediction time", "feature selection"],
+      "skills": ["diagnose", "redesign"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "A platform wants to predict at the moment a ride is requested whether the ride will be completed. Which proposed predictors create leakage or are unavailable at the prediction moment? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "The ride's eventual trip duration"},
+        {"id": "B", "text": "Whether the passenger canceled ten minutes after requesting"},
+        {"id": "C", "text": "The estimated pickup distance displayed at request time"},
+        {"id": "D", "text": "The final charged fare after the ride ends"},
+        {"id": "E", "text": "A holiday indicator known before the request"}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "D"],
+        "explanation": "Eventual duration, later cancellation, and final fare occur after the prediction point or encode the outcome. Pickup distance and a known holiday flag are available at request time.",
+        "common_trap": "Keeping a highly predictive variable without asking when it becomes known."
+      }
+    },
+    {
+      "id": "DA-P047",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Classification",
+      "subtopics": ["precision", "confusion matrix"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "For a fraud model, 'fraud' is the positive class and precision is 0.72. What does this mean?",
+      "options": [
+        {"id": "A", "text": "72% of all actual fraud cases were flagged."},
+        {"id": "B", "text": "72% of transactions flagged as fraud were actually fraudulent."},
+        {"id": "C", "text": "72% of legitimate transactions were correctly cleared."},
+        {"id": "D", "text": "The model is correct on 72% of all transactions."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Precision is true positives divided by all predicted positives. It answers how reliable a fraud flag is.",
+        "common_trap": "Confusing precision with recall or overall accuracy."
+      }
+    },
+    {
+      "id": "DA-P048",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["interference", "post-treatment selection", "estimand", "redesign"],
+      "skills": ["diagnose", "critique", "redesign", "recommend"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "A company randomizes individual employees to receive a peer-recognition tool. Recognition posts are visible to entire teams, including controls. After four weeks, the analyst compares only employees who opened the app at least three times after assignment and finds higher morale among treated employees.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Identify the interference problem and its likely consequence for interpretation.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Controls can be exposed to treatment-generated posts", "One employee's assignment can affect another's outcome", "Individual treatment-control contrast is contaminated or measures a diluted/direct effect"],
+            "sample_answer": "Controls on the same team can see recognition produced by treated colleagues, so outcomes may depend on colleagues' assignments. The individual comparison no longer cleanly separates an unexposed control condition and may dilute or otherwise change the estimated contrast."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Why is restricting the analysis to frequent post-assignment app users problematic?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["App use occurs after assignment", "Treatment can affect inclusion", "Conditioning can break randomized comparability or create selection bias"],
+            "sample_answer": "Opening the app is a post-treatment behavior that the tool itself may influence. Selecting on it can create systematically different analyzed groups and discard the protection supplied by random assignment."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "State a defensible primary analysis for the experiment as run.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Analyze all employees according to original assignment", "Compare treatment and control on a pre-specified morale measure", "Acknowledge that interference affects the meaning of the estimate"],
+            "sample_answer": "Use an intention-to-treat comparison of all randomized employees on the pre-specified morale outcome, while stating that team spillovers mean the estimate is the effect of assignment in this mixed-exposure setting."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Redesign the experiment to estimate the effect of making the tool available to a team.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Randomize at team or another interference cluster", "Keep teams in one condition", "Measure morale plus adoption and guardrails over an adequate period"],
+            "sample_answer": "Randomize whole teams, keep communication exposure within assigned clusters as much as possible, and compare team-level outcomes over a longer period while tracking adoption and relevant guardrails."
+          }
+        }
+      ],
+      "overall_feedback": "Randomization must match the level at which treatment can spread, and the primary analysis should preserve original assignment."
+    },
+    {
+      "id": "DA-P049",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Exploratory Data Analysis",
+      "subtopics": ["correlation", "covariance", "scale"],
+      "skills": ["compare", "interpret"],
+      "course_alignment": ["DA 2"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Sales are converted from yuan to thousands of yuan while customer traffic is unchanged. Which statement is most accurate?",
+      "options": [
+        {"id": "A", "text": "Both covariance and correlation must remain numerically identical."},
+        {"id": "B", "text": "Covariance changes with the sales scale, while correlation is unchanged by a positive rescaling."},
+        {"id": "C", "text": "Correlation changes sign because the unit changed."},
+        {"id": "D", "text": "Neither measure describes direction."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Covariance carries the units and scale of both variables. Correlation standardizes by the variables' standard deviations, so a positive unit conversion does not change it.",
+        "common_trap": "Treating covariance as a unit-free measure that can be compared across scales."
+      }
+    },
+    {
+      "id": "DA-P050",
+      "type": "multiple_select",
+      "difficulty": "medium",
+      "topic": "Exploratory Data Analysis",
+      "subtopics": ["skewness", "robust summaries", "visualization"],
+      "skills": ["select", "interpret"],
+      "course_alignment": ["DA 1", "DA 2"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "Customer spending is strongly right-skewed with a few very large purchases. Which summaries or displays are especially useful for describing a typical customer and the distribution? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Median spending"},
+        {"id": "B", "text": "Interquartile range"},
+        {"id": "C", "text": "Histogram or boxplot"},
+        {"id": "D", "text": "Customer ID average"},
+        {"id": "E", "text": "Mean alone, with no distributional context"}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C"],
+        "explanation": "The median and IQR are resistant to extreme values, while a histogram or boxplot reveals shape and outliers. The mean can still be reported, but it should not stand alone as the description of a skewed distribution.",
+        "common_trap": "Choosing a familiar summary without checking whether skewness makes it unrepresentative."
+      }
+    },
+    {
+      "id": "DA-P051",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "A/B Testing",
+      "subtopics": ["power", "sample size", "standard error"],
+      "skills": ["explain"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Assuming the true effect and outcome variability remain fixed, what is the main statistical benefit of increasing the randomized experiment's sample size?",
+      "options": [
+        {"id": "A", "text": "It makes the true treatment effect larger."},
+        {"id": "B", "text": "It reduces standard error and increases the chance of detecting the fixed effect."},
+        {"id": "C", "text": "It guarantees business significance."},
+        {"id": "D", "text": "It removes every source of bias."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "A larger sample generally improves precision and power for a fixed effect. It does not change the underlying effect or cure design problems such as contamination.",
+        "common_trap": "Confusing greater precision with a larger effect or a bias-free design."
+      }
+    },
+    {
+      "id": "DA-P052",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Predictive Modeling",
+      "subtopics": ["prediction timing", "data leakage", "holdout evaluation", "feature design"],
+      "skills": ["diagnose", "redesign", "recommend"],
+      "course_alignment": ["DA 7", "Warriors case"],
+      "estimated_minutes": 11,
+      "points": 8,
+      "scenario": "A ride platform wants to predict cancellation immediately after a request is placed. A proposed model uses request-time pickup distance, weekday, final wait time, final fare, and whether the driver eventually accepted. Randomly splitting rows gives 91% accuracy.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Classify the proposed predictors as eligible or ineligible at the decision time.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Pickup distance and weekday are available at request time", "Final wait time, final fare, and eventual acceptance are future information", "Connects eligibility to deployment timing"],
+            "sample_answer": "Request-time pickup distance and weekday are eligible. Final wait, final fare, and eventual driver acceptance occur later and cannot be used for an immediate prediction."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Explain why the reported accuracy may be overly optimistic even though a holdout split was used.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Leakage can exist in both training and holdout features", "Random row split does not enforce time order or independent operational units", "The evaluation does not reproduce deployment conditions"],
+            "sample_answer": "A holdout does not fix leaked features: later information is still supplied for holdout rows. A random row split may also mix time periods or repeated entities, so the test differs from future deployment."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Propose a valid evaluation design.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Construct all features as of request time", "Train on earlier observations and test on later untouched observations or otherwise mimic deployment", "Evaluate relevant classification metrics"],
+            "sample_answer": "Build an as-of-request feature table, train on earlier requests, and evaluate the frozen model on later requests that were never used in fitting or tuning, reporting confusion-matrix metrics."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Name one business decision the model could support and one metric or guardrail needed for that use.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Concrete intervention such as proactive rematching or message", "Metric tied to error cost such as recall/precision or incremental completed rides", "Guardrail such as driver burden, wait time, or cost"],
+            "sample_answer": "The platform could proactively rematch high-risk requests. It should choose recall and precision based on intervention cost, then monitor completed rides and a guardrail such as driver burden or added wait time."
+          }
+        }
+      ],
+      "overall_feedback": "Model validity begins with reproducing exactly what information will exist when the operational decision is made."
+    },
+    {
+      "id": "DA-P053",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "Classification",
+      "subtopics": ["threshold", "precision-recall tradeoff"],
+      "skills": ["compare", "interpret"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "For fixed predicted probabilities on a fixed dataset, a classifier's positive threshold is lowered from 0.70 to 0.40. Which result must occur?",
+      "options": [
+        {"id": "A", "text": "The number of predicted positives cannot decrease, and recall cannot decrease."},
+        {"id": "B", "text": "Precision must increase."},
+        {"id": "C", "text": "Accuracy must increase."},
+        {"id": "D", "text": "The underlying predicted probabilities change."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "Lowering the threshold labels the same or more cases positive. Existing true positives remain positive, so recall cannot fall, although precision and accuracy can move either way.",
+        "common_trap": "Assuming every metric improves when the threshold becomes more aggressive."
+      }
+    },
+    {
+      "id": "DA-P054",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Statistical Inference",
+      "subtopics": ["statistical significance", "business significance", "confidence intervals"],
+      "skills": ["interpret", "recommend"],
+      "course_alignment": ["DA 3", "DA 6"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "A very large experiment estimates a 0.03-minute reduction in average handling time with p = 0.02. Which conclusions are justified? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "The estimate is statistically significant at the 5% level under the stated test."},
+        {"id": "B", "text": "The result is automatically valuable enough to launch."},
+        {"id": "C", "text": "Business value depends on scale, implementation cost, and effects on other outcomes."},
+        {"id": "D", "text": "A confidence interval would help assess the plausible effect magnitudes."},
+        {"id": "E", "text": "There is a 98% probability that the alternative hypothesis is true."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "C", "D"],
+        "explanation": "The p-value supports rejection at 0.05, but it does not measure practical value or give the probability that a hypothesis is true. Magnitude, uncertainty, scale, cost, and guardrails determine the business decision.",
+        "common_trap": "Treating statistical detectability as a complete launch recommendation."
+      }
+    },
+    {
+      "id": "DA-P055",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "Linear Regression",
+      "subtopics": ["prediction", "inference", "multicollinearity"],
+      "skills": ["compare", "diagnose"],
+      "course_alignment": ["DA 3", "DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A regression has strong holdout prediction but several individually insignificant coefficients among highly correlated predictors. Which conclusion is best?",
+      "options": [
+        {"id": "A", "text": "The model is useless for every purpose."},
+        {"id": "B", "text": "It may still predict well, but individual coefficient stories are unstable and should not be treated as clear causal effects."},
+        {"id": "C", "text": "Every insignificant coefficient is exactly zero."},
+        {"id": "D", "text": "High holdout performance proves each predictor causes the outcome."}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Prediction depends on combined out-of-sample performance, while multicollinearity can inflate coefficient uncertainty and destabilize individual interpretations. Predictive success does not establish causality.",
+        "common_trap": "Applying an inference criterion to prediction, or using prediction to justify causal coefficient claims."
+      }
+    },
+    {
+      "id": "DA-P056",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Integrated Analytics",
+      "subtopics": ["funnel analysis", "denominators", "alternative explanations", "recommendation"],
+      "skills": ["calculate", "interpret", "critique", "recommend"],
+      "course_alignment": ["Yelp case", "DA 2", "DA 7"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "A restaurant platform reports the following monthly funnel by category. Sushi: 20,000 listing views, 2,400 direction requests, and 600 check-ins. Cafes: 50,000 listing views, 4,000 direction requests, and 1,200 check-ins. Management says cafes are the better-converting category because they have more check-ins.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Calculate view-to-check-in conversion for each category.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Sushi: 600/20000 = 3.0%", "Cafes: 1200/50000 = 2.4%", "Uses a common denominator"],
+            "sample_answer": "Sushi converts 3.0% of views to check-ins; cafes convert 2.4%."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Assess management's statement.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Raw check-ins measure volume, not conversion", "Cafes have more views", "Sushi has the higher calculated conversion rate"],
+            "sample_answer": "Cafes generate more total check-ins because they receive much more traffic, but that does not mean better conversion. Using views as the denominator, sushi has the higher view-to-check-in rate."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Give two reasons these rates may not measure restaurant quality or the causal effect of category.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Any two plausible issues: category/location/user mix, exposure ranking, incomplete check-in capture, seasonality, differing intent, selection", "Explains that category was not randomly assigned"],
+            "sample_answer": "Categories serve users with different intent and locations, and listing rank may give different restaurants different exposure. Check-ins may also be incomplete. Because category is not randomized, the rates do not isolate a category effect or pure quality."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Recommend the next analysis before changing platform promotion.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Validate event definitions and funnel lineage", "Segment or model comparable users/restaurants/time periods", "Test a promotion change with a controlled experiment and guardrails"],
+            "sample_answer": "First audit view, direction, and check-in event definitions, then compare categories within similar location, user, rank, and time segments. If changing promotion, test it experimentally and monitor total engagement plus restaurant and user-experience guardrails."
+          }
+        }
+      ],
+      "overall_feedback": "The central move is to separate volume from conversion and then separate descriptive conversion from causal quality."
+    },
+    {
+      "id": "DA-P057",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Data Foundations",
+      "subtopics": ["variable types", "categorical encoding"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 1"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Store IDs are recorded as 101, 102, and 103. How should they normally be treated in analysis?",
+      "options": [
+        {"id": "A", "text": "As continuous values because they contain digits"},
+        {"id": "B", "text": "As categorical identifiers unless their numeric spacing has a real quantitative meaning"},
+        {"id": "C", "text": "As outcomes because every row has one"},
+        {"id": "D", "text": "As ordered ratings because 103 is larger than 101"}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Numeric storage does not make a variable quantitative. Arithmetic differences between arbitrary IDs have no substantive meaning.",
+        "common_trap": "Inferring measurement scale from the computer's data type rather than the variable's meaning."
+      }
+    },
+    {
+      "id": "DA-P058",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Classification",
+      "subtopics": ["error costs", "positive class", "threshold selection"],
+      "skills": ["interpret", "recommend"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "A retention model defines 'will churn' as positive. Missing a true churner is very costly, while contacting a non-churner is inexpensive but not free. Which statements are appropriate? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Recall deserves substantial attention because it measures the share of actual churners found."},
+        {"id": "B", "text": "The threshold may be lowered to catch more churners, while monitoring precision and contact volume."},
+        {"id": "C", "text": "Accuracy alone is sufficient regardless of churn prevalence."},
+        {"id": "D", "text": "False negatives are actual churners the model fails to flag."},
+        {"id": "E", "text": "False positives have exactly zero business cost by definition."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "D"],
+        "explanation": "High false-negative cost makes recall important, and the threshold can reflect that cost while still tracking unnecessary contacts. Accuracy can hide failure on a rare positive class, and false positives can consume budget or annoy customers.",
+        "common_trap": "Choosing a metric without first translating the confusion-matrix cells into operational consequences."
+      }
+    },
+    {
+      "id": "DA-P059",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["contamination", "bias", "treatment contrast"],
+      "skills": ["diagnose", "interpret"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "In a test of a training program, many control employees obtain the same training materials from treated colleagues. If the materials help and no other mechanism changes, what is the most likely effect on the observed treatment-control difference?",
+      "options": [
+        {"id": "A", "text": "It is likely attenuated toward zero because the control condition receives part of the treatment."},
+        {"id": "B", "text": "It must become larger than the true effect."},
+        {"id": "C", "text": "It is unaffected because assignment was random."},
+        {"id": "D", "text": "It becomes a p-value."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "When controls receive a beneficial treatment component, their outcomes can move toward treated outcomes, shrinking the contrast. Random assignment does not prevent post-assignment contamination.",
+        "common_trap": "Assuming randomization protects the experiment from behavior that occurs after assignment."
+      }
+    },
+    {
+      "id": "DA-P060",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Linear Regression",
+      "subtopics": ["dummy variables", "reference group", "prediction", "extrapolation"],
+      "skills": ["calculate", "interpret", "critique"],
+      "course_alignment": ["DA 3"],
+      "estimated_minutes": 10,
+      "points": 8,
+      "scenario": "A restaurant estimates DailySales = 12 + 0.6 AdSpend + 4.0 Weekend - 1.5 Rain, where DailySales and AdSpend are both measured in thousands of yuan, Weekend = 1 on weekends, and Rain = 1 on rainy days. Observed AdSpend ranges from 2 to 15.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Interpret the AdSpend coefficient in business units.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Holding Weekend and Rain constant", "An additional 1000 yuan in advertising", "Associated with 600 yuan higher fitted daily sales"],
+            "sample_answer": "Holding weekend and rain status constant, an additional 1,000 yuan of ad spending is associated with 0.6 thousand yuan, or 600 yuan, higher fitted daily sales."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Interpret the Weekend coefficient and identify its comparison group.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Weekend versus weekday reference", "Holding AdSpend and Rain constant", "4000 yuan higher fitted sales"],
+            "sample_answer": "At the same ad spending and rain status, a weekend day has fitted sales 4 thousand yuan higher than a weekday, which is the Weekend = 0 reference condition."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Predict sales for a non-rainy weekend with AdSpend = 10.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Substitution: 12 + 0.6(10) + 4(1) - 1.5(0)", "Result 22", "States 22000 yuan"],
+            "sample_answer": "The prediction is 12 + 6 + 4 = 22 thousand yuan, or 22,000 yuan."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Why should the model not be used casually to predict sales at AdSpend = 100 or to claim advertising causality?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["100 is far outside the observed 2-15 range", "Linear relationship may not extrapolate", "Observational coefficient may reflect omitted factors or reverse causality"],
+            "sample_answer": "AdSpend = 100 is far beyond the observed range, so the fitted linear relationship may not continue there. Unless spending was assigned or a credible causal design was used, the coefficient also remains an association that may reflect omitted demand factors."
+          }
+        }
+      ],
+      "overall_feedback": "Full credit requires correct units, explicit reference groups, correct arithmetic, and limits on extrapolation and causality."
+    },
+    {
+      "id": "DA-P061",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Exploratory Data Analysis",
+      "subtopics": ["boxplot", "distribution comparison"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 2"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Two store regions are compared with side-by-side boxplots. Region A has a higher median, a wider box, and several high outliers. Which conclusion is supported?",
+      "options": [
+        {"id": "A", "text": "Region A has a higher typical value, greater middle-50% spread, and unusual high observations."},
+        {"id": "B", "text": "Every Region A observation exceeds every Region B observation."},
+        {"id": "C", "text": "Region A's data must be normally distributed."},
+        {"id": "D", "text": "The difference is causal because the medians differ."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "A boxplot directly supports statements about the median, interquartile range, and flagged outliers. It does not establish complete separation, normality, or causality.",
+        "common_trap": "Reading more from a descriptive plot than the displayed summaries justify."
+      }
+    },
+    {
+      "id": "DA-P062",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Linear Regression",
+      "subtopics": ["R-squared", "adjusted R-squared", "model comparison"],
+      "skills": ["compare", "interpret"],
+      "course_alignment": ["DA 3"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "A model is expanded by adding several predictors. R-squared rises from 0.52 to 0.54, while adjusted R-squared falls from 0.50 to 0.47. Which statements are justified? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "The added predictors increase in-sample R-squared, as added predictors generally cannot reduce it."},
+        {"id": "B", "text": "The adjusted R-squared decline suggests the extra in-sample fit may not justify the added complexity."},
+        {"id": "C", "text": "The larger model is guaranteed to predict new observations better."},
+        {"id": "D", "text": "Holdout performance would be useful if prediction is the goal."},
+        {"id": "E", "text": "The smaller model must be causal."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "D"],
+        "explanation": "R-squared rewards added fit without a complexity penalty. Adjusted R-squared can fall when added variables contribute too little, and prediction should ultimately be judged on unseen data.",
+        "common_trap": "Selecting a model solely because its unadjusted in-sample R-squared is slightly larger."
+      }
+    },
+    {
+      "id": "DA-P063",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Predictive Modeling",
+      "subtopics": ["training data", "holdout data", "model selection"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "An analyst tries 30 model specifications and chooses the one with the highest accuracy on the same holdout set that will be reported as final performance. What is the main problem?",
+      "options": [
+        {"id": "A", "text": "The holdout has influenced model selection, so its reported performance is no longer a clean final estimate on untouched data."},
+        {"id": "B", "text": "Thirty models are always too few."},
+        {"id": "C", "text": "Accuracy can be calculated only on training data."},
+        {"id": "D", "text": "The best holdout model is automatically causal."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "Repeatedly using holdout results to choose a model adapts the analysis to that set. A separate untouched test set or a disciplined validation process is needed for a final generalization estimate.",
+        "common_trap": "Believing data remain an unbiased holdout after they have guided repeated choices."
+      }
+    },
+    {
+      "id": "DA-P064",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["unit of randomization", "interference", "switchback design", "metrics"],
+      "skills": ["diagnose", "redesign", "recommend"],
+      "course_alignment": ["DA 6", "Warriors case"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "A ride platform randomizes individual ride requests to a new dispatch algorithm or the old algorithm within the same city and minute. The new algorithm assigns nearby drivers faster. Those drivers then become unavailable to control requests, potentially increasing control wait times.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Explain why individual-request randomization may violate the experiment's interference assumption.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Treated requests consume a shared driver supply", "A request's outcome can depend on other requests' assignments", "Control outcomes are changed by treatment allocation"],
+            "sample_answer": "Treated requests can take drivers who would otherwise serve controls. A control request's wait and completion can therefore depend on nearby treatment assignments, so the units do not behave independently."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Why could the simple treatment-control difference misstate the system-wide rollout effect?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["It compares requests inside a mixed system", "Treatment may improve partly by shifting scarce capacity away from controls", "Full rollout has no simultaneous old-algorithm controls competing in the same way"],
+            "sample_answer": "The mixed-market contrast may credit treatment for reallocating drivers away from controls. Under full rollout, every request uses the new logic, so the market equilibrium and the relevant effect can differ from the within-minute request comparison."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Propose a more appropriate randomization design for the system-wide effect.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Randomize separated markets or city-time blocks", "All interacting requests and drivers in a block use the same condition", "Use balanced repeated periods where appropriate"],
+            "sample_answer": "Use a switchback design that assigns entire city-time blocks to one algorithm, or randomize sufficiently separated markets. This keeps interacting drivers and requests in the same condition and allows repeated treatment and control periods."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Specify one primary metric and two guardrails for the redesigned test.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Primary metric tied to the goal such as completed-ride rate", "Two relevant guardrails such as passenger wait, driver utilization/earnings, cancellations, or geographic fairness", "Metrics measured at the randomized unit or aggregated consistently"],
+            "sample_answer": "Use completed-ride rate as the primary metric, with passenger wait time and driver utilization or earnings as guardrails, aggregated at the city-time block level."
+          }
+        }
+      ],
+      "overall_feedback": "The assignment unit should contain the units that compete for the same scarce resource."
+    },
+    {
+      "id": "DA-P065",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Statistical Inference",
+      "subtopics": ["p-value", "null hypothesis"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 3", "DA 6"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A test reports p = 0.08. Which interpretation is correct?",
+      "options": [
+        {"id": "A", "text": "Assuming the null hypothesis and test assumptions, results at least this extreme would occur about 8% of the time."},
+        {"id": "B", "text": "There is an 8% probability that the null hypothesis is true."},
+        {"id": "C", "text": "There is a 92% probability that the treatment works."},
+        {"id": "D", "text": "The treatment effect is exactly zero."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "A p-value is calculated under the null and describes the extremeness of the observed result. It is not the posterior probability of either hypothesis and does not set the effect estimate to zero.",
+        "common_trap": "Reversing the conditional probability represented by a p-value."
+      }
+    },
+    {
+      "id": "DA-P066",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Exploratory Data Analysis",
+      "subtopics": ["alternative explanations", "selection", "measurement"],
+      "skills": ["critique", "diagnose"],
+      "course_alignment": ["DA 2", "Yelp case", "Pastry case"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "Customers who use a restaurant app's reservation feature spend more per visit than non-users. Which are plausible alternative explanations to 'the feature causes higher spending'? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Higher-spending customers may be more likely to choose reservations."},
+        {"id": "B", "text": "Reservation use may be concentrated at expensive restaurants or special occasions."},
+        {"id": "C", "text": "Spending may be recorded more completely for app-linked visits."},
+        {"id": "D", "text": "A positive mean difference by itself proves causality."},
+        {"id": "E", "text": "Every possible confounder is removed because both groups appear in one dataset."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C"],
+        "explanation": "Self-selection, context and restaurant mix, and differential measurement can all produce the observed association. Merely observing both groups does not make them comparable.",
+        "common_trap": "Jumping from a descriptive group difference to an intervention claim without constructing a credible comparison."
+      }
+    },
+    {
+      "id": "DA-P067",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "Linear Regression",
+      "subtopics": ["multicollinearity", "coefficient uncertainty"],
+      "skills": ["diagnose"],
+      "course_alignment": ["DA 3"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "After two highly correlated marketing variables are included together, their coefficient signs change across samples and standard errors become large, while overall fitted values change little. What is the most likely diagnosis?",
+      "options": [
+        {"id": "A", "text": "Multicollinearity makes their separate conditional effects difficult to estimate precisely."},
+        {"id": "B", "text": "The outcome must be categorical."},
+        {"id": "C", "text": "R-squared must equal zero."},
+        {"id": "D", "text": "Both variables have been proven causal."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "Highly correlated predictors provide little independent variation for separating their coefficients. This can create unstable signs and large standard errors even when their combined predictive contribution is useful.",
+        "common_trap": "Assuming unstable individual coefficients mean the entire model has no predictive signal."
+      }
+    },
+    {
+      "id": "DA-P068",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Integrated Analytics",
+      "subtopics": ["missing-value bias", "sample selection", "classification", "deployment"],
+      "skills": ["diagnose", "critique", "redesign", "recommend"],
+      "course_alignment": ["DA 1", "DA 7"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "A lender builds a model to predict repayment for all future applicants. Historical repayment outcomes exist only for applicants who were approved under the old policy. Income is missing more often for self-employed applicants. The model reaches 88% accuracy on a random holdout drawn from the same approved-loan records.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Explain the sample-selection problem.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Repayment is observed only for previously approved applicants", "Approved borrowers differ from all future applicants due to the old policy", "Holdout from the same selected population does not test the intended population"],
+            "sample_answer": "The label is available only after old-policy approval, so the model learns from a selected group of borrowers. A random holdout of approved loans estimates performance on similar approved cases, not necessarily on every future applicant the model will score."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Why can the income missingness create bias or uneven performance?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Missingness is systematic rather than random", "It is related to self-employment or applicant type", "Dropping or simple imputation can distort representation and group performance"],
+            "sample_answer": "Income is systematically less available for self-employed applicants. Dropping those rows or replacing all missing values with one number can underrepresent or mischaracterize that group and produce uneven errors."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Why is 88% accuracy insufficient for deciding whether to deploy?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Needs class prevalence and confusion matrix", "False approvals and false rejections have different costs", "Performance should be checked across relevant groups and future data"],
+            "sample_answer": "Accuracy hides which errors occur and may look high when one class dominates. The lender needs precision, recall, and the confusion matrix for the defined positive class, error costs, subgroup performance, and a deployment-like validation sample."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Outline a safer evaluation and rollout plan using concepts from the course.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Document data lineage and missingness by group", "Validate on later or otherwise representative applicants where outcomes can be observed", "Set threshold using business costs and monitor errors/guardrails after a controlled rollout"],
+            "sample_answer": "Audit how approval, income, and repayment fields were generated; report missingness and metrics by applicant group; validate prospectively on representative later cases with observed outcomes; and use a staged rollout with a cost-based threshold and ongoing error monitoring."
+          }
+        }
+      ],
+      "overall_feedback": "An accurate model on a selected historical sample can still be invalid for the population and decision where it will be used."
+    },
+    {
+      "id": "DA-P069",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Classification",
+      "subtopics": ["false positive", "false negative", "positive class"],
+      "skills": ["interpret"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A quality-control model defines 'defective' as positive. It predicts that an item is acceptable, but inspection shows it is defective. How is this error classified?",
+      "options": [
+        {"id": "A", "text": "True positive"},
+        {"id": "B", "text": "False positive"},
+        {"id": "C", "text": "True negative"},
+        {"id": "D", "text": "False negative"}
+      ],
+      "answer": {
+        "correct_option_ids": ["D"],
+        "explanation": "The actual class is positive but the prediction is negative, which is a false negative.",
+        "common_trap": "Naming the error before explicitly stating predicted and actual classes."
+      }
+    },
+    {
+      "id": "DA-P070",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["hypotheses", "primary metrics", "guardrails", "pre-specification"],
+      "skills": ["design", "select"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "Before launching an experiment on a new checkout flow, which elements belong in a strong analysis plan? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Define the eligible population and unit of randomization."},
+        {"id": "B", "text": "Choose a primary outcome and state the null and alternative hypotheses."},
+        {"id": "C", "text": "Specify guardrails such as refund rate or customer complaints."},
+        {"id": "D", "text": "Plan the duration and sample size based on the effect worth detecting."},
+        {"id": "E", "text": "Wait for results, then select whichever of many metrics has the smallest p-value as the primary metric."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C", "D"],
+        "explanation": "The unit, population, hypotheses, primary metric, guardrails, and detectable effect should be set before seeing results. Choosing the headline metric afterward encourages selective reporting.",
+        "common_trap": "Treating a collection of post-hoc significant metrics as a pre-specified test of the business objective."
+      }
+    },
+    {
+      "id": "DA-P071",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Exploratory Data Analysis",
+      "subtopics": ["time series", "visualization", "trend"],
+      "skills": ["select", "interpret"],
+      "course_alignment": ["DA 2"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A manager wants to see whether daily cancellations changed gradually, showed weekly seasonality, or jumped after a policy date. Which first display is most useful?",
+      "options": [
+        {"id": "A", "text": "A time-ordered line chart with the policy date marked"},
+        {"id": "B", "text": "A pie chart of all cancellations"},
+        {"id": "C", "text": "A bar chart of customer IDs"},
+        {"id": "D", "text": "A single overall average"}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "A line chart preserves time order and can reveal trend, recurring patterns, and level changes. It remains descriptive and does not by itself prove the policy caused a jump.",
+        "common_trap": "Collapsing a time-dependent question into a timeless total or average."
+      }
+    },
+    {
+      "id": "DA-P072",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Linear Regression",
+      "subtopics": ["model comparison", "coefficient change", "R-squared", "causality"],
+      "skills": ["interpret", "compare", "critique"],
+      "course_alignment": ["DA 3", "Pastry case"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "A ticketing analyst estimates two models for TicketPrice in dollars. Model 1 includes only LowerSeat (1 for lower-level seats): LowerSeat coefficient = 12, p < 0.001, R-squared = 0.22, adjusted R-squared = 0.21. Model 2 adds HomeWinPct and OpponentPopularity: LowerSeat coefficient = 8, p = 0.004; HomeWinPct coefficient = 20, p = 0.08; OpponentPopularity coefficient = 5, p = 0.35; R-squared = 0.29, adjusted R-squared = 0.26.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Interpret the LowerSeat coefficient in Model 2.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Lower-level versus the reference seat group", "Holding HomeWinPct and OpponentPopularity constant", "8-dollar higher fitted ticket price", "Association language"],
+            "sample_answer": "Holding home winning percentage and opponent popularity constant, a lower-level seat is associated with an 8-dollar higher fitted ticket price than the reference seat level."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Give a plausible reason the LowerSeat coefficient falls from 12 to 8 after adding the two variables.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Model 1 may attribute omitted game-demand differences to seat level", "Added variables can be related to seat mix and price", "Conditional comparison changes"],
+            "sample_answer": "If lower-level tickets are disproportionately observed for more attractive games, Model 1 may load part of that demand premium onto LowerSeat. Model 2 compares seats after holding the added game characteristics constant, so the coefficient can shrink."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Compare model fit and the evidence for the added predictors.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["R-squared and adjusted R-squared are higher in Model 2", "Model 2 explains more in-sample variation even after the adjustment", "HomeWinPct and OpponentPopularity are not individually significant at 5% in the reported output"],
+            "sample_answer": "Model 2 raises R-squared from 0.22 to 0.29 and adjusted R-squared from 0.21 to 0.26, so fit improves beyond the simple complexity penalty. However, the two new coefficients are not individually significant at 5% in this output."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Can the analyst conclude that moving a customer to a lower seat causes an 8-dollar price increase? Explain.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["No automatic causal conclusion from observational regression", "Seat type and price may be jointly set or affected by omitted demand factors", "Need a credible causal design for an intervention claim"],
+            "sample_answer": "No. The regression estimates a conditional association in observed listings or sales. Pricing decisions, availability, timing, and demand can affect both seat type and price, so a causal claim needs an appropriate experiment or other credible design."
+          }
+        }
+      ],
+      "overall_feedback": "Model comparison requires interpreting the new conditional comparison, fit statistics, uncertainty, and causal limits together."
+    },
+    {
+      "id": "DA-P073",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["experiment duration", "novelty", "long-run effects"],
+      "skills": ["critique"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A one-week randomized test shows a statistically significant increase in feature use. What is the strongest justified conclusion?",
+      "options": [
+        {"id": "A", "text": "Assignment increased feature use during the measured week, subject to the design assumptions; persistence still needs evidence."},
+        {"id": "B", "text": "The feature will permanently change behavior."},
+        {"id": "C", "text": "The effect must grow every week."},
+        {"id": "D", "text": "A significant short-run result proves positive long-run profit."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A"],
+        "explanation": "Randomization can support a causal conclusion for the measured outcome and horizon if implementation is valid. It cannot by itself establish persistence, maturation, or long-run profitability.",
+        "common_trap": "Extending a valid short-run estimate to an unmeasured long-run business claim."
+      }
+    },
+    {
+      "id": "DA-P074",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Classification",
+      "subtopics": ["multiclass classification", "accuracy", "class probabilities"],
+      "skills": ["interpret", "diagnose"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "A three-class customer-timing model has 70% overall accuracy, but one rare class is operationally important. Which statements are appropriate? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Inspect the multiclass confusion matrix because overall accuracy can hide poor performance on the rare class."},
+        {"id": "B", "text": "Review class-specific errors and the business cost of confusing each pair of classes."},
+        {"id": "C", "text": "A predicted class can be the highest-probability class even when its probability is below 0.50."},
+        {"id": "D", "text": "Seventy percent accuracy guarantees at least 70% recall for every class."},
+        {"id": "E", "text": "The rare class should be ignored because it contributes little to accuracy."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C"],
+        "explanation": "Aggregate accuracy does not guarantee adequate performance for each class. Multiclass decisions usually select the largest probability, which need not exceed 0.50, and error costs should guide evaluation.",
+        "common_trap": "Letting a majority-weighted overall metric conceal failure on an important minority class."
+      }
+    },
+    {
+      "id": "DA-P075",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Linear Regression",
+      "subtopics": ["prediction", "units"],
+      "skills": ["calculate", "interpret"],
+      "course_alignment": ["DA 3"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A model is Profit = 50 + 3.2 Customers, with Profit measured in thousands of yuan and Customers measured in hundreds. What is the fitted profit when Customers = 6?",
+      "options": [
+        {"id": "A", "text": "53.2 yuan"},
+        {"id": "B", "text": "69.2 thousand yuan"},
+        {"id": "C", "text": "19.2 thousand yuan"},
+        {"id": "D", "text": "69.2 hundred yuan"}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Substitution gives 50 + 3.2(6) = 69.2 in the outcome's units, so fitted profit is 69.2 thousand yuan.",
+        "common_trap": "Doing the arithmetic correctly but losing the units of the outcome."
+      }
+    },
+    {
+      "id": "DA-P076",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Classification",
+      "subtopics": ["confusion matrix", "precision", "recall", "cost-sensitive thresholds"],
+      "skills": ["calculate", "compare", "recommend"],
+      "course_alignment": ["DA 7"],
+      "estimated_minutes": 12,
+      "points": 8,
+      "scenario": "A churn model is evaluated on 1,000 customers, of whom 100 actually churn. At threshold A: TP = 80, FP = 120, FN = 20, TN = 780. At threshold B: TP = 60, FP = 40, FN = 40, TN = 860. Churn is the positive class.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Calculate precision and recall at threshold A.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Precision = 80/(80+120) = 40%", "Recall = 80/(80+20) = 80%"],
+            "sample_answer": "Threshold A has 40% precision and 80% recall."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Calculate precision and recall at threshold B and compare the thresholds.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Precision = 60/(60+40) = 60%", "Recall = 60/(60+40) = 60%", "B is more selective with higher precision and lower recall"],
+            "sample_answer": "Threshold B has 60% precision and 60% recall. Compared with A, it produces fewer alerts and more reliable alerts, but it catches fewer actual churners."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Which threshold would you prefer if a missed churner is far more costly than an unnecessary contact? Explain.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Prefers A under the stated relative costs, subject to capacity", "A has fewer false negatives and higher recall", "Acknowledges more false positives or contacts"],
+            "sample_answer": "I would prefer A if the business can handle the contact volume because it misses only 20 churners rather than 40 and has 80% recall. The cost is 80 additional false-positive contacts."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "What additional information is needed before making the final operational choice?",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Monetary or strategic cost/value of each error and intervention", "Contact capacity or budget", "Evidence the intervention actually changes churn and validation on future data"],
+            "sample_answer": "Quantify the value of retaining a true churner, the cost and possible harm of each contact, and campaign capacity. Also verify on later data and test whether contacting flagged customers causes enough incremental retention to justify the intervention."
+          }
+        }
+      ],
+      "overall_feedback": "Threshold choice converts statistical errors into a business resource and value decision."
+    },
+    {
+      "id": "DA-P077",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "topic": "Analytics Foundations",
+      "subtopics": ["descriptive analytics", "predictive analytics", "prescriptive analytics"],
+      "skills": ["classify"],
+      "course_alignment": ["DA 1", "DA 7"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "Which question is primarily predictive?",
+      "options": [
+        {"id": "A", "text": "What was last quarter's average order value?"},
+        {"id": "B", "text": "Which current customers are likely to churn next month?"},
+        {"id": "C", "text": "What retention action should be assigned under a fixed budget?"},
+        {"id": "D", "text": "Why did the dashboard definition change?"}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "Predictive analytics estimates an unknown future outcome. The other choices are descriptive, prescriptive, or a data-lineage question.",
+        "common_trap": "Calling every analysis that supports a decision predictive."
+      }
+    },
+    {
+      "id": "DA-P078",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "topic": "Integrated Analytics",
+      "subtopics": ["analytics workflow", "data lineage", "validation", "monitoring"],
+      "skills": ["design", "recommend"],
+      "course_alignment": ["DA 1", "DA 2", "DA 7"],
+      "estimated_minutes": 3,
+      "points": 2,
+      "stem": "Which actions belong in a credible end-to-end predictive analytics workflow? Select all that apply.",
+      "options": [
+        {"id": "A", "text": "Define the business decision, prediction time, outcome, and unit before building features."},
+        {"id": "B", "text": "Trace how fields are generated and whether they would exist at prediction time."},
+        {"id": "C", "text": "Evaluate on unseen data that resembles deployment and choose metrics tied to error costs."},
+        {"id": "D", "text": "Monitor data quality and performance after deployment."},
+        {"id": "E", "text": "Report training accuracy only because deployment data do not yet exist."}
+      ],
+      "answer": {
+        "correct_option_ids": ["A", "B", "C", "D"],
+        "explanation": "A useful model starts from a defined decision and valid as-of data, is tested under deployment-like conditions using business-relevant metrics, and is monitored as data and behavior change.",
+        "common_trap": "Treating model fitting as the entire analytics process."
+      }
+    },
+    {
+      "id": "DA-P079",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "topic": "A/B Testing",
+      "subtopics": ["primary metric", "secondary metric", "guardrail"],
+      "skills": ["select", "recommend"],
+      "course_alignment": ["DA 6"],
+      "estimated_minutes": 2,
+      "points": 1,
+      "stem": "A push-notification feature is intended to create sustained weekly activity, but it could annoy users. Which metric plan best matches the business question?",
+      "options": [
+        {"id": "A", "text": "Primary: notification open rate; no other metrics"},
+        {"id": "B", "text": "Primary: retained weekly active use over an adequate horizon; secondary: open rate; guardrail: opt-outs or complaints"},
+        {"id": "C", "text": "Primary: whichever metric has the smallest p-value after the test"},
+        {"id": "D", "text": "Primary: number of notifications sent"}
+      ],
+      "answer": {
+        "correct_option_ids": ["B"],
+        "explanation": "The primary metric should represent the intended sustained behavior. Open rate measures an intermediate response, while opt-outs or complaints capture a plausible harm.",
+        "common_trap": "Making an easy-to-move proxy the primary success criterion when it does not represent the ultimate business outcome."
+      }
+    },
+    {
+      "id": "DA-P080",
+      "type": "written",
+      "difficulty": "hard",
+      "topic": "Integrated Analytics",
+      "subtopics": ["regression interpretation", "causality", "model validation", "experiment design"],
+      "skills": ["interpret", "diagnose", "critique", "recommend"],
+      "course_alignment": ["DA 3", "DA 6", "DA 7", "Yelp case"],
+      "estimated_minutes": 13,
+      "points": 8,
+      "scenario": "A food-delivery platform studies whether to promote selected restaurants higher in search. Historically promoted restaurants average 18 orders per day versus 12 for non-promoted restaurants. A regression controlling for cuisine and neighborhood estimates a Promotion coefficient of +4.5 orders (p < 0.001, R-squared = 0.41). A model built to predict which restaurants will respond to promotion has 85% training accuracy and 67% holdout accuracy. Management proposes promoting every restaurant the model flags.",
+      "subquestions": [
+        {
+          "id": "a",
+          "prompt": "Interpret the Promotion coefficient and its p-value carefully.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Holding cuisine and neighborhood constant", "Promoted restaurants have 4.5 higher fitted daily orders", "p-value is evidence against a zero conditional association under the model", "Does not state probability the effect is causal"],
+            "sample_answer": "Holding cuisine and neighborhood constant, promoted restaurants are associated with 4.5 more fitted orders per day. The small p-value is strong evidence against a zero conditional association under the model assumptions, but it is not the probability that promotion causes orders."
+          }
+        },
+        {
+          "id": "b",
+          "prompt": "Give two plausible reasons the regression coefficient may not equal the causal effect of promotion.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["At least two plausible issues such as managers select already-popular restaurants, unmeasured quality/ratings/price, seasonality, or reverse targeting", "Explains confounding or selection"],
+            "sample_answer": "Managers may choose restaurants already expected to sell well, and unmeasured ratings, price, delivery speed, or temporary demand may affect both promotion and orders. Thus the promoted and non-promoted groups may not be comparable after the limited controls."
+          }
+        },
+        {
+          "id": "c",
+          "prompt": "Assess the classification model evidence before deployment.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Large training-holdout gap suggests overfitting or non-generalization", "Accuracy alone lacks positive-class and error-cost detail", "Check leakage and evaluate precision/recall/confusion matrix on deployment-like data"],
+            "sample_answer": "The 18-point gap suggests poor generalization or possible leakage. Sixty-seven percent accuracy is not enough without class prevalence, a defined positive class, precision, recall, the confusion matrix, and evidence that the holdout resembles future restaurants."
+          }
+        },
+        {
+          "id": "d",
+          "prompt": "Recommend a decision process that could establish whether targeted promotion creates business value.",
+          "max_points": 2,
+          "answer_key": {
+            "required_elements": ["Randomize promotion among eligible restaurants, potentially within meaningful strata", "Use incremental orders or contribution as a primary outcome with cannibalization/customer/restaurant guardrails", "Evaluate targeting prospectively and compare against a simple policy or untargeted treatment", "Use adequate duration"],
+            "sample_answer": "Run a sufficiently long randomized promotion test among eligible restaurants, stratifying on major demand factors if helpful. Measure incremental orders or contribution, while monitoring cannibalization, customer experience, and restaurant fairness. Evaluate the targeting rule prospectively against a simple baseline before scaling it."
+          }
+        }
+      ],
+      "overall_feedback": "A full-credit answer separates descriptive differences, regression association, predictive generalization, and the causal evidence required for rollout."
+    }
+  ]
+}
