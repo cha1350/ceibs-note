@@ -11,6 +11,48 @@
   const detail = document.getElementById('case-detail');
   const filters = [...document.querySelectorAll('.filter')];
   let activeFilter = 'all';
+  const feedbackKey = 'ai-impact-library-member-feedback-v1';
+  const feedback = Object.create(null);
+  let canSaveFeedback = true;
+
+  let savedFeedback = {};
+  try {
+    savedFeedback = JSON.parse(localStorage.getItem(feedbackKey) || '{}') || {};
+  } catch {
+    try { localStorage.removeItem(feedbackKey); } catch { canSaveFeedback = false; }
+  }
+  for (const item of cases) {
+    const entry = savedFeedback?.[item.id];
+    if (!entry || typeof entry !== 'object') continue;
+    feedback[item.id] = {
+      liked: entry.liked === true,
+      speakerVote: entry.speakerVote === true,
+      comments: Array.isArray(entry.comments) ? entry.comments.filter(comment =>
+        comment && typeof comment.id === 'string' && typeof comment.body === 'string' &&
+        typeof comment.createdAt === 'string'
+      ).map(comment => ({
+        id: comment.id.slice(0, 80),
+        body: comment.body.slice(0, 500),
+        createdAt: comment.createdAt
+      })).slice(-30) : []
+    };
+  }
+
+  function feedbackFor(id) {
+    if (!feedback[id]) feedback[id] = { liked: false, speakerVote: false, comments: [] };
+    return feedback[id];
+  }
+
+  function saveFeedback() {
+    if (!canSaveFeedback) return false;
+    try {
+      localStorage.setItem(feedbackKey, JSON.stringify(feedback));
+      return true;
+    } catch {
+      canSaveFeedback = false;
+      return false;
+    }
+  }
 
   const metrics = {
     'klarna-ai-service': { value: '$59m', label: 'modeled 2025 service saving' },
@@ -62,6 +104,7 @@
 
   function cardFor(item) {
     const metric = metrics[item.id];
+    const memberFeedback = feedbackFor(item.id);
     const card = node('button', 'case-card');
     card.type = 'button';
     card.setAttribute('aria-label', `Read ${item.company} case study`);
@@ -72,6 +115,12 @@
     card.append(node('h3', '', item.company));
     card.append(node('p', 'case-title', item.caseTitle));
     card.append(node('p', 'case-summary', item.oneSentenceSummary));
+    if (memberFeedback.liked || memberFeedback.speakerVote) {
+      const flags = node('div', 'member-flags');
+      if (memberFeedback.liked) flags.append(node('span', '', '♥ Liked'));
+      if (memberFeedback.speakerVote) flags.append(node('span', '', '✦ Speaker vote'));
+      card.append(flags);
+    }
     const bottom = node('div', 'card-bottom');
     const copy = node('div', 'metric-copy');
     copy.append(node('strong', 'metric-value', metric?.value || 'Case study'));
@@ -151,6 +200,8 @@
       body.append(section);
     }
 
+    body.append(memberPulseFor(item));
+
     const sources = node('section', 'detail-section');
     sources.append(node('h3', '', 'Sources and evidence'));
     const sourceList = node('ul', 'source-list');
@@ -173,6 +224,135 @@
     else dialog.setAttribute('open', '');
     dialog.scrollTop = 0;
     document.getElementById('close-dialog').focus();
+  }
+
+  function memberPulseFor(item) {
+    const entry = feedbackFor(item.id);
+    const section = node('section', 'member-pulse');
+    section.append(node('span', 'pulse-kicker', 'Member pulse · Interactive demo'));
+    section.append(node('h3', '', 'Shape a future club event.'));
+    addParagraph(section, 'pulse-intro', 'Like this case, vote for a speaker session on a similar topic, or leave a question you would ask the guest.');
+
+    const actions = node('div', 'pulse-actions');
+    const like = node('button', 'pulse-button');
+    const speaker = node('button', 'pulse-button');
+    like.type = 'button';
+    speaker.type = 'button';
+    actions.append(like, speaker);
+    section.append(actions);
+
+    const note = node('p', 'pulse-privacy');
+    section.append(note);
+    function updateChoices() {
+      like.textContent = entry.liked ? '♥ Liked this case' : '♡ Like this case';
+      speaker.textContent = entry.speakerVote ? '✦ Speaker vote added' : '✦ Vote for a speaker event';
+      like.classList.toggle('selected', entry.liked);
+      speaker.classList.toggle('selected', entry.speakerVote);
+      like.setAttribute('aria-pressed', String(entry.liked));
+      speaker.setAttribute('aria-pressed', String(entry.speakerVote));
+      note.textContent = canSaveFeedback
+        ? 'Demo feedback stays on this browser. Other members and club organizers cannot see it.'
+        : 'Browser storage is unavailable. Demo feedback will last only until you leave this page.';
+    }
+    like.addEventListener('click', () => {
+      entry.liked = !entry.liked;
+      saveFeedback();
+      updateChoices();
+      render();
+    });
+    speaker.addEventListener('click', () => {
+      entry.speakerVote = !entry.speakerVote;
+      saveFeedback();
+      updateChoices();
+      render();
+    });
+    updateChoices();
+
+    const topics = item.speakerPotential?.suggestedDiscussionTopics?.slice(0, 3) || [];
+    if (topics.length) {
+      const ideas = node('div', 'speaker-ideas');
+      ideas.append(node('h4', '', 'Ideas for a speaker conversation'));
+      addList(ideas, topics);
+      section.append(ideas);
+    }
+
+    const form = node('form', 'comment-form');
+    const label = node('label', '', 'What would you ask a speaker?');
+    const textarea = node('textarea', 'comment-input');
+    textarea.name = 'speaker-comment';
+    textarea.required = true;
+    textarea.minLength = 3;
+    textarea.maxLength = 500;
+    textarea.rows = 4;
+    textarea.placeholder = 'I would like to know how they measured the impact and handled the rollout…';
+    label.append(textarea);
+    form.append(label);
+    const formBottom = node('div', 'comment-form-bottom');
+    const counter = node('span', 'comment-counter', '0 / 500');
+    const submit = node('button', 'comment-submit', 'Save demo comment');
+    submit.type = 'submit';
+    formBottom.append(counter, submit);
+    form.append(formBottom);
+    section.append(form);
+    textarea.addEventListener('input', () => {
+      counter.textContent = `${textarea.value.length} / 500`;
+    });
+
+    const commentsHeading = node('h4', 'comments-heading');
+    const commentList = node('div', 'comment-list');
+    commentList.setAttribute('aria-live', 'polite');
+    section.append(commentsHeading, commentList);
+    function renderComments() {
+      commentsHeading.textContent = `Comments on this browser (${entry.comments.length})`;
+      commentList.replaceChildren();
+      if (!entry.comments.length) {
+        commentList.append(node('p', 'comments-empty', 'No comments yet. Start with a question you would ask the speaker.'));
+        return;
+      }
+      for (const comment of [...entry.comments].reverse()) {
+        const article = node('article', 'member-comment');
+        const top = node('div', 'comment-top');
+        const date = new Date(comment.createdAt);
+        const dateLabel = Number.isNaN(date.getTime()) ? 'Saved comment' :
+          new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'short', day: 'numeric' }).format(date);
+        top.append(node('span', '', `You · ${dateLabel}`));
+        const remove = node('button', 'remove-comment', 'Remove');
+        remove.type = 'button';
+        remove.setAttribute('aria-label', 'Remove your comment');
+        remove.addEventListener('click', () => {
+          entry.comments = entry.comments.filter(saved => saved.id !== comment.id);
+          saveFeedback();
+          updateChoices();
+          renderComments();
+          textarea.focus();
+        });
+        top.append(remove);
+        article.append(top, node('p', '', comment.body));
+        commentList.append(article);
+      }
+    }
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const body = textarea.value.trim();
+      if (body.length < 3) {
+        textarea.focus();
+        return;
+      }
+      entry.comments.push({
+        id: `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`,
+        body,
+        createdAt: new Date().toISOString()
+      });
+      entry.comments = entry.comments.slice(-30);
+      saveFeedback();
+      updateChoices();
+      form.reset();
+      counter.textContent = '0 / 500';
+      renderComments();
+      textarea.focus();
+    });
+    renderComments();
+    return section;
   }
 
   function render() {

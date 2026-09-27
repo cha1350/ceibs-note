@@ -17,6 +17,9 @@ The research source is `research/ai-impact-library/cases.json`; the accompanying
 the JSON, run `python3 scripts/build_ai_impact.py` to refresh the browser-ready
 `cases.js`, then `python3 scripts/build.py` to refresh the CEIBS Notes catalog.
 The site needs no backend or external runtime packages.
+Its member-feedback demo lets visitors like a case, vote for a related speaker
+event, and write or remove comments. Feedback is stored only in that browser's
+local storage; it is not shared between members or sent to club organizers.
 
 ## Open and publish
 
