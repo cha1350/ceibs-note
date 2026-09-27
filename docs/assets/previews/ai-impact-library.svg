@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 632" role="img" aria-labelledby="title desc">
+  <title id="title">AI Impact Library website preview</title>
+  <desc id="desc">A dark editorial headline above research case cards for Klarna, UPS, and IBM.</desc>
+  <rect width="1200" height="632" fill="#f4f7f6"/>
+  <rect width="1200" height="337" fill="#102632"/>
+  <path d="M0 68h1200" stroke="#38535e"/>
+  <rect x="36" y="18" width="34" height="34" rx="7" fill="#d8f277"/>
+  <text x="41" y="43" font-family="Georgia,serif" font-size="20" font-weight="bold" fill="#102632">AI</text>
+  <text x="84" y="42" font-family="Arial,sans-serif" font-size="14" font-weight="bold" letter-spacing="2" fill="white">AI IMPACT LIBRARY</text>
+  <text x="34" y="130" font-family="Arial,sans-serif" font-size="12" font-weight="bold" letter-spacing="3" fill="#d8f277">UNIVERSITY AI &amp; DATA CLUB · BUSINESS CASEBOOK</text>
+  <text x="34" y="210" font-family="Georgia,serif" font-size="68" letter-spacing="-3" fill="white">How companies put AI</text>
+  <text x="34" y="281" font-family="Georgia,serif" font-size="68" letter-spacing="-3" fill="white">to work.</text>
+  <text x="810" y="168" font-family="Georgia,serif" font-size="24" fill="#d9e7e7">Real implementations,</text>
+  <text x="810" y="198" font-family="Georgia,serif" font-size="24" fill="#d9e7e7">measurable outcomes.</text>
+  <path d="M810 228h340" stroke="#4c6570"/>
+  <text x="810" y="270" font-family="Georgia,serif" font-size="31" fill="white">13</text>
+  <text x="931" y="270" font-family="Georgia,serif" font-size="31" fill="white">11</text>
+  <text x="1055" y="270" font-family="Georgia,serif" font-size="31" fill="white">A–C</text>
+  <text x="810" y="291" font-family="Arial,sans-serif" font-size="12" fill="#afc2c5">cases</text>
+  <text x="931" y="291" font-family="Arial,sans-serif" font-size="12" fill="#afc2c5">industries</text>
+  <text x="1055" y="291" font-family="Arial,sans-serif" font-size="12" fill="#afc2c5">evidence</text>
+  <text x="36" y="387" font-family="Arial,sans-serif" font-size="12" font-weight="bold" letter-spacing="3" fill="#42636b">THE LIBRARY</text>
+  <text x="36" y="435" font-family="Georgia,serif" font-size="44" letter-spacing="-2" fill="#102632">Explore the cases</text>
+  <g fill="white" stroke="#d5dfdf">
+    <rect x="36" y="466" width="358" height="212" rx="12"/>
+    <rect x="421" y="466" width="358" height="212" rx="12"/>
+    <rect x="806" y="466" width="358" height="212" rx="12"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="11" font-weight="bold" letter-spacing="1.5" fill="#52727c">
+    <text x="58" y="495">FINANCIAL SERVICES / PAYMENTS</text>
+    <text x="443" y="495">LOGISTICS</text>
+    <text x="828" y="495">SOFTWARE / TECHNOLOGY</text>
+  </g>
+  <g font-family="Georgia,serif" font-size="30" fill="#102632">
+    <text x="58" y="547">Klarna</text>
+    <text x="443" y="547">UPS</text>
+    <text x="828" y="547">IBM</text>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="13" fill="#203c49">
+    <text x="58" y="573">AI customer service</text>
+    <text x="443" y="573">Delivery route optimization</text>
+    <text x="828" y="573">Automating routine HR support</text>
+  </g>
+  <g font-family="Georgia,serif" font-size="30" fill="#102632">
+    <text x="58" y="620">$59m</text>
+    <text x="443" y="620">$410m</text>
+    <text x="828" y="620">40%</text>
+  </g>
+</svg>

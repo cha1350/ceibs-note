@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102632">
+  <meta name="description" content="A research-backed library of real company AI implementations, measurable business outcomes, and the methods behind them.">
+  <title>AI Impact Library — Real business results</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23102632'/%3E%3Cpath d='M15 45V19h8v26m8 0V27h8v18m8 0V14h8v31' stroke='%23d8f277' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="cases.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="mast" id="top">
+    <header class="shell topbar">
+      <a class="brand" href="#top" aria-label="AI Impact Library home"><span class="mark">AI</span><span>AI Impact Library</span></a>
+      <nav aria-label="Main navigation"><a href="#explore">Explore cases</a><a href="#evidence">Evidence guide</a></nav>
+    </header>
+    <section class="shell hero" aria-labelledby="page-title">
+      <div class="hero-main"><p class="eyebrow">University AI &amp; Data Club · Business casebook</p><h1 id="page-title">How companies put AI to work.</h1></div>
+      <div class="hero-side"><p>Real implementations, measurable outcomes, and an honest account of how the work changed.</p><div class="hero-rule"></div><div class="hero-stats"><div><strong>13</strong><span>company cases</span></div><div><strong>11</strong><span>industry labels</span></div><div><strong>A–C</strong><span>source grades</span></div></div></div>
+    </section>
+  </div>
+
+  <main>
+    <section class="shell explore" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading"><div><span class="section-kicker">The library</span><h2 id="explore-title">Explore the cases</h2></div><p>Start with the result. Open a case to see the method, operating change, and evidence limits.</p></div>
+      <div class="toolbar" role="search">
+        <label class="search-field"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><circle cx="10.8" cy="10.8" r="6.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="sr-only">Search companies, methods or functions</span><input id="search" type="search" placeholder="Search companies, methods or functions" autocomplete="off"></label>
+        <label class="select-field"><span class="sr-only">Filter by industry</span><select id="industry"><option value="all">All industries</option></select><svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="m5 9 7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></label>
+      </div>
+      <div class="filter-line"><div class="filters" role="group" aria-label="Filter by business outcome"><button class="filter active" data-filter="all" type="button" aria-pressed="true">All cases</button><button class="filter" data-filter="cost" type="button" aria-pressed="false">Cost &amp; waste</button><button class="filter" data-filter="growth" type="button" aria-pressed="false">Revenue growth</button><button class="filter" data-filter="speed" type="button" aria-pressed="false">Speed &amp; quality</button></div><div class="result-count" id="result-count" aria-live="polite"></div></div>
+      <div class="case-grid" id="case-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><h3>No cases match those filters.</h3><p>Try another company, industry, or outcome.</p><button id="clear-filters" type="button">Clear filters</button></div>
+    </section>
+
+    <section class="evidence" id="evidence" aria-labelledby="evidence-title"><div class="shell evidence-layout"><div><span class="section-kicker">How to read the numbers</span><h2 id="evidence-title">Evidence before excitement.</h2><p>A case can be credible without every business outcome being audited. The library preserves each source’s scope and distinguishes real expense changes from modeled savings, revenue claims, and time released.</p></div><div class="grade-list"><div><b>A</b><span>Regulatory filing, financial report, or investor disclosure</span></div><div><b>B</b><span>Official company publication</span></div><div><b>C</b><span>Company and technology-provider case study</span></div><p>All 13 cases use A–C sources. Every case links to its originals and explains what remains unknown.</p></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-layout"><div><strong>AI Impact Library</strong><span>Research for the University AI &amp; Data Club</span></div><a href="#top">Back to top ↑</a></div></footer>
+
+  <dialog id="case-dialog" class="case-dialog" aria-labelledby="detail-title"><div class="dialog-wrap"><div class="dialog-top"><span class="dialog-wordmark"><span class="dialog-symbol">AI</span> AI Impact Library / Case study</span><button id="close-dialog" class="close-dialog" type="button" aria-label="Close case study"><svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21"><path d="M5 5 19 19M19 5 5 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div><div id="case-detail"></div></div></dialog>
+</body>
+</html>

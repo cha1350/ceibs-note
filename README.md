@@ -4,6 +4,20 @@ A static HTML library for research, case studies, summaries, and interactive too
 
 Live site: https://cha1350.github.io/ceibs-note/
 
+## AI Impact Library
+
+The [AI Impact Library](https://cha1350.github.io/ceibs-note/pages/ai-impact-library/index.html)
+is a static showcase of 13 real company AI implementations. It appears in the
+library under **AI in business**. Each case includes the business problem, how the
+implementation worked, measured results, evidence limits, applicability, and
+original sources.
+
+The research source is `research/ai-impact-library/cases.json`; the accompanying
+`research-summary.md` and `case-articles.md` are in the same folder. After editing
+the JSON, run `python3 scripts/build_ai_impact.py` to refresh the browser-ready
+`cases.js`, then `python3 scripts/build.py` to refresh the CEIBS Notes catalog.
+The site needs no backend or external runtime packages.
+
 ## Open and publish
 
 Open `docs/index.html` directly for a local preview. No server or npm build is needed.

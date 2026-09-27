@@ -1,0 +1,1771 @@
+[
+  {
+    "id": "klarna-ai-service",
+    "company": "Klarna",
+    "industry": "Financial services / payments",
+    "country": "Sweden (group incorporated in the UK)",
+    "companySize": "Large; millions of active consumers",
+    "caseTitle": "AI assistant handles routine customer-service chats",
+    "oneSentenceSummary": "Klarna shifted a large share of consumer chats to an AI assistant and disclosed an estimated $59 million in 2025 service cost savings in its annual filing.",
+    "businessFunction": "Customer service",
+    "businessProblem": "Fast growth made multilingual support expensive while customers expected quick answers.",
+    "beforeAI": "Human agents handled most chat and telephone inquiries, including routine ones.",
+    "aiSolution": "An OpenAI-powered assistant answers and resolves common customer requests in more than 35 languages, with human service still available.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Inventory repeated chat requests and separate account actions from questions that only need an approved answer.\n2. Prepare current policies and authorized customer-service workflows for the assistant; define which cases need a person.\n3. Introduce the OpenAI-powered assistant in digital chat, then expand its language and market coverage.\n4. Allow customers to reach a human representative and pass unresolved or sensitive cases to that route.\n5. Use service logs to compare AI and human resolution time, repeat contact and satisfaction by request type.\n6. Estimate avoided service cost from the reduction in agent-handled volume, and keep that estimate separate from booked expense changes.",
+    "implementationSteps": [
+      "Inventory repeated chat requests and separate account actions from questions that only need an approved answer.",
+      "Prepare current policies and authorized customer-service workflows for the assistant; define which cases need a person.",
+      "Introduce the OpenAI-powered assistant in digital chat, then expand its language and market coverage.",
+      "Allow customers to reach a human representative and pass unresolved or sensitive cases to that route.",
+      "Use service logs to compare AI and human resolution time, repeat contact and satisfaction by request type.",
+      "Estimate avoided service cost from the reduction in agent-handled volume, and keep that estimate separate from booked expense changes."
+    ],
+    "afterAI": "In 2025 the assistant handled 80% of service chats; human agents continued to handle other requests.",
+    "aiType": [
+      "AI Customer Service",
+      "Generative AI"
+    ],
+    "technologyUsed": [
+      "OpenAI-powered conversational assistant",
+      "Customer-service chat system"
+    ],
+    "vendors": [
+      "OpenAI"
+    ],
+    "businessImpact": {
+      "costSavings": "Approximately USD 59 million of 2025 cost savings reported by Klarna; management estimated this using human-service costs for the reduced volume of agent-handled requests. This is a modeled saving, not an audited expense-line reduction.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "As of September 2024, AI chats averaged 2 minutes to resolution versus 12 minutes for human-agent chats; case mix may differ.",
+      "otherMetrics": [
+        "80% of customer-service chats handled by AI in 2025",
+        "Estimated work equivalent of more than 850 full-time agents in 2025; this is not a disclosed headcount reduction",
+        "25% fewer repeat inquiries after launch, based on company service logs"
+      ]
+    },
+    "impactType": [
+      "Cost avoided",
+      "Time saved",
+      "Service improvement"
+    ],
+    "implementationDifficulty": "High",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Customer-service leaders, policy owners, product and engineering teams, risk/privacy staff, human agents for escalation.",
+    "dataRequired": "Historical service conversations, approved policies, customer account context, quality and satisfaction logs.",
+    "whyItWorked": [
+      "High chat volume made automation economically meaningful.",
+      "Human escalation preserved a path for difficult cases.",
+      "Management measured service speed and satisfaction as well as volume."
+    ],
+    "keyLessons": [
+      "Compare similar request types when measuring speed.",
+      "Treat agent-equivalent work and modeled savings separately from actual payroll reduction."
+    ],
+    "risks": [
+      "Incorrect financial guidance",
+      "Data privacy and account security",
+      "Poor escalation for vulnerable customers",
+      "Customer dissatisfaction if human support is hard to reach"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Banks",
+      "Payment platforms",
+      "Airlines",
+      "Telecom companies",
+      "Large e-commerce businesses"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Banks",
+        "Payment platforms",
+        "Airlines",
+        "Telecom companies",
+        "Large e-commerce businesses"
+      ],
+      "probablyNotUsefulFor": [
+        "Organizations with very low support volume",
+        "Services without reliable policies or secure account access"
+      ],
+      "requirements": [
+        "High-volume digital support",
+        "Approved knowledge and secure system access",
+        "Human escalation",
+        "Quality and compliance review"
+      ]
+    },
+    "evidenceGrade": "A",
+    "evidenceExplanation": "A 2025 Form 20-F reports the operating metrics and management-modeled cost savings. Filing status makes the source strong, but the $59 million is a counterfactual estimate, not an audited line-item saving.",
+    "sources": [
+      {
+        "title": "Klarna Group plc 2025 Form 20-F",
+        "publisher": "U.S. Securities and Exchange Commission",
+        "url": "https://www.sec.gov/Archives/edgar/data/2003292/000200329226000007/klar-20251231.htm",
+        "date": "2026-02-26"
+      },
+      {
+        "title": "Klarna financial update: AI assistant savings methodology",
+        "publisher": "Klarna Group plc / SEC exhibit",
+        "url": "https://www.sec.gov/Archives/edgar/data/2003292/000162828025052805/exhibit992klarnapresenta.htm",
+        "date": "2025-11"
+      }
+    ],
+    "tags": [
+      "customer service",
+      "cost avoided",
+      "financial filing"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "Head of Customer Service",
+        "AI Product Lead",
+        "Consumer Protection Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "How to calculate service AI savings",
+        "Measuring resolution quality and repeat contacts",
+        "When customers need a human"
+      ]
+    },
+    "article": {
+      "opening": "Klarna’s customer-service problem was a scale problem. A routine question still required a person to read the conversation, identify the request and work toward a resolution. That model becomes costly when a payments company operates around the clock across many countries and languages. Klarna introduced its OpenAI-powered assistant in February 2024 to make digital chat the first stop for many requests, while keeping human representatives available.",
+      "howTheyDidIt": "The public filing identifies the assistant’s scope and results but does not publish its internal architecture, training set or escalation rules. The disclosed method is a conversational assistant that can handle a range of customer errands in more than 35 languages across 23 markets. Operationally, the assistant takes on chats that would otherwise require service agents; customers can still ask for a human. Klarna measures the shift through service-chat logs, resolution times, repeat inquiries and internal satisfaction surveys. A practical implementation sequence would be to inventory the most common requests, define which actions the assistant may take, connect it to approved service information and account workflows, and test the handoff to an agent before expanding across languages. Those project steps are a reconstruction, not a published Klarna playbook.",
+      "whatChanged": "The central change is the allocation of work. AI handles a large share of digital conversations, leaving human staff to take requests that need judgment, reassurance or an explicit preference for a person. The assistant therefore changes service capacity, not merely the wording of replies.",
+      "resultsAndLimits": "Klarna reported that the assistant handled 80% of customer-service chats in 2025. It estimated approximately USD 59 million of cost savings that year by valuing the reduced volume of agent-handled requests against the cost of human service. That is a management-modeled saving, not proof of USD 59 million less payroll. Its comparison of two-minute AI resolution and twelve-minute human resolution may also reflect different mixes of simple and complex cases.",
+      "businessTakeaway": "The replicable idea is to start with high-volume digital requests and measure cost per resolved request alongside repeat contact and satisfaction. A business with little chat volume or weak escalation processes will not have the same economics."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "ups-orion-routing",
+    "company": "UPS",
+    "industry": "Logistics",
+    "country": "United States",
+    "companySize": "Large global parcel carrier",
+    "caseTitle": "Optimizing daily delivery routes with ORION",
+    "oneSentenceSummary": "UPS reported about 100 million fewer miles and roughly $410 million of annual operating-expense savings after full US deployment of its route optimizer.",
+    "businessFunction": "Operations / logistics",
+    "businessProblem": "Residential delivery growth made routes longer and more expensive.",
+    "beforeAI": "Dispatchers and drivers relied more on established routes and human planning.",
+    "aiSolution": "ORION uses package, map and vehicle data to recommend efficient daily delivery routes; drivers retain judgment.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Gather each day’s package destinations, service commitments, vehicle information and accurate road-map data.\n2. Use ORION’s routing algorithms to calculate a feasible sequence of stops for each delivery vehicle.\n3. Deliver the route to dispatchers and drivers as part of daily operations.\n4. Let drivers apply local knowledge when traffic, access or customer conditions make a recommendation impractical.\n5. Record actual miles, fuel consumption and service performance after the route is driven.\n6. Compare operating expense and miles with the pre-rollout plan, accounting for changes in delivery volume.",
+    "implementationSteps": [
+      "Gather each day’s package destinations, service commitments, vehicle information and accurate road-map data.",
+      "Use ORION’s routing algorithms to calculate a feasible sequence of stops for each delivery vehicle.",
+      "Deliver the route to dispatchers and drivers as part of daily operations.",
+      "Let drivers apply local knowledge when traffic, access or customer conditions make a recommendation impractical.",
+      "Record actual miles, fuel consumption and service performance after the route is driven.",
+      "Compare operating expense and miles with the pre-rollout plan, accounting for changes in delivery volume."
+    ],
+    "afterAI": "By 2017, the first full year after targeted US rollout, UPS reported fewer miles and lower operating expense.",
+    "aiType": [
+      "Optimization"
+    ],
+    "technologyUsed": [
+      "ORION route optimization",
+      "Customized map data",
+      "Fleet telematics"
+    ],
+    "vendors": [],
+    "businessImpact": {
+      "costSavings": "UPS reported 2017 operating-expense savings of about USD 410 million: USD 10 million above its USD 400 million expected saving. This is a management-attributed program figure, not a separately audited P&L line.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "About 100 million fewer miles annually",
+        "About 100,000 metric tons less CO2 annually"
+      ]
+    },
+    "impactType": [
+      "Actual cost reduction",
+      "Faster operations"
+    ],
+    "implementationDifficulty": "High",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Route planners, drivers, operations managers, mapping/data teams, fleet technology staff.",
+    "dataRequired": "Package-level stops, vehicle capacity, road network, delivery constraints and telematics.",
+    "whyItWorked": [
+      "Route decisions were repeated at massive scale.",
+      "The system used operational data already generated by deliveries.",
+      "Drivers could correct the optimization with local knowledge."
+    ],
+    "keyLessons": [
+      "Optimization can have large economic value without generative AI.",
+      "Measure actual route miles and expense, not only model predictions."
+    ],
+    "risks": [
+      "Poor maps or address data",
+      "Routes that ignore driver or customer constraints",
+      "Confusing classical route optimization with modern machine learning"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Parcel carriers",
+      "Field-service fleets",
+      "Grocery delivery networks"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Parcel carriers",
+        "Field-service fleets",
+        "Grocery delivery networks"
+      ],
+      "probablyNotUsefulFor": [
+        "Businesses with few daily stops",
+        "Fleets with unstable or unrecorded destination data"
+      ],
+      "requirements": [
+        "Large repeating route network",
+        "Accurate address and vehicle data",
+        "Driver feedback",
+        "Baseline fuel and mileage metrics"
+      ]
+    },
+    "evidenceGrade": "B",
+    "evidenceExplanation": "UPS reported the numbers in its 2017 corporate sustainability report. ORION is an advanced optimization system; UPS does not identify the reported ORION algorithm itself as a machine-learning model. Include as the library’s optimization category, with that qualification.",
+    "sources": [
+      {
+        "title": "UPS 2017 Corporate Sustainability Progress Report",
+        "publisher": "UPS",
+        "url": "https://filexfer.ups.com/assets/resources/media/knowledge-center/UPS_2017_SR.pdf",
+        "date": "2018"
+      }
+    ],
+    "tags": [
+      "logistics",
+      "optimization",
+      "actual cost reduction"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "Operations Research Lead",
+        "Last-Mile Operations Executive",
+        "Fleet Manager"
+      ],
+      "suggestedDiscussionTopics": [
+        "Turning route models into driver behavior",
+        "How route ROI was measured",
+        "Where driver judgment overrides software"
+      ]
+    },
+    "article": {
+      "opening": "UPS faced a physical version of the same scale challenge: millions of delivery decisions every day. Even a small reduction in miles per driver compounds across a national fleet. Its ORION system converts package destinations, custom road maps and vehicle data into a suggested daily route for each delivery vehicle.",
+      "howTheyDidIt": "UPS describes ORION as an operations-research and advanced-algorithm system, not as a generative chatbot or a disclosed machine-learning model. The software begins with package-level details and the day’s stops, incorporates customized online map information and fleet telematics, and calculates a route that meets delivery needs while avoiding unnecessary travel. Dispatchers and drivers then execute the route, with drivers using their knowledge when a recommendation clashes with conditions on the ground. UPS completed deployment across the targeted US routes in 2016. A similar project would require reliable addresses, service-time commitments, vehicle constraints and a way to compare planned and actual miles; UPS does not provide a portable model formula or detailed cost build-up.",
+      "whatChanged": "Route planning moved from a primarily human and habitual process to a daily data-driven recommendation embedded in delivery operations. The operating decision still has a human last mile: the driver can recognize an impractical turn, loading issue or customer condition that the software misses.",
+      "resultsAndLimits": "UPS reported about 100 million fewer miles annually and operating-expense savings of roughly USD 410 million in 2017, the first full year after targeted US rollout. The figure is management-attributed program performance in a corporate sustainability report, not a separate audited income-statement line. The case belongs in an optimization category and should not be presented as evidence that a large language model created the savings.",
+      "businessTakeaway": "For a fleet business, the transferable method is to optimize a repeated operating decision and verify the result in fuel, miles, service reliability and expense. The model matters only if drivers and dispatchers can use it during real work."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "ibm-askhr",
+    "company": "IBM",
+    "industry": "Software / technology",
+    "country": "United States",
+    "companySize": "Large global enterprise",
+    "caseTitle": "Automating routine HR support with AskHR",
+    "oneSentenceSummary": "IBM says AskHR contributed to a 40% reduction in HR operational costs over four years while routing complex issues to human advisers.",
+    "businessFunction": "HR",
+    "businessProblem": "Employees and managers had to navigate fragmented policies and systems for common HR needs.",
+    "beforeAI": "Routine HR requests created tickets and manual handoffs across multiple systems.",
+    "aiSolution": "AskHR gives policy answers and completes common HR transactions through connected systems; human advisers handle complex matters.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Identify frequent HR questions and transactions, then simplify the underlying process before automating it.\n2. Keep local policy pages and permission rules current so the assistant can present the right answer to the right employee.\n3. Connect AskHR to HR systems such as Workday, SAP and Concur for approved transactions.\n4. Classify a request by topic, answer it or trigger a task such as a letter or vacation request.\n5. Route unusual, sensitive or unresolved matters to a human HR adviser.\n6. Track containment, ticket volume, employee feedback, task productivity and HR operating cost over time.",
+    "implementationSteps": [
+      "Identify frequent HR questions and transactions, then simplify the underlying process before automating it.",
+      "Keep local policy pages and permission rules current so the assistant can present the right answer to the right employee.",
+      "Connect AskHR to HR systems such as Workday, SAP and Concur for approved transactions.",
+      "Classify a request by topic, answer it or trigger a task such as a letter or vacation request.",
+      "Route unusual, sensitive or unresolved matters to a human HR adviser.",
+      "Track containment, ticket volume, employee feedback, task productivity and HR operating cost over time."
+    ],
+    "afterAI": "IBM reports that AskHR automates around 80 tasks and handles common questions with a 94% containment rate.",
+    "aiType": [
+      "Knowledge Assistant",
+      "AI Agent",
+      "Document Automation"
+    ],
+    "technologyUsed": [
+      "IBM AskHR",
+      "IBM watsonx Orchestrate",
+      "Workday",
+      "SAP",
+      "Concur"
+    ],
+    "vendors": [
+      "IBM"
+    ],
+    "businessImpact": {
+      "costSavings": "IBM reports a 40% reduction in HR team operational costs over four years, to which AskHR contributed; the isolated AI share and dollar amount are not disclosed.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Some HR task areas improved by as much as 75% between 2022 and 2024; not a company-wide productivity rate.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "94% containment of common questions",
+        "75% fewer HR support tickets since 2016",
+        "More than 11.5 million employee interactions in 2024"
+      ]
+    },
+    "impactType": [
+      "Actual cost reduction",
+      "Productivity capacity released",
+      "Service improvement"
+    ],
+    "implementationDifficulty": "High",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "HR operations, policy/legal owners, employee experience team, IT integration and security, human advisers.",
+    "dataRequired": "Current HR policies, employee permissions, transaction rules, HR-system records and feedback.",
+    "whyItWorked": [
+      "Routine requests were standardized before automation.",
+      "The assistant could complete tasks in connected HR systems.",
+      "A two-tier model kept people for sensitive cases."
+    ],
+    "keyLessons": [
+      "Cost reduction can come from process redesign plus AI.",
+      "Use up-to-date policies and identity-based permissions."
+    ],
+    "risks": [
+      "Outdated policy answers",
+      "Privacy of employee records",
+      "Biased or incorrect HR guidance",
+      "Attribution of cost decline to several concurrent changes"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Large multinational employers",
+      "Universities with complex HR",
+      "Shared-service HR centers"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Large multinational employers",
+        "Universities with complex HR",
+        "Shared-service HR centers"
+      ],
+      "probablyNotUsefulFor": [
+        "Small firms with simple HR policies and few requests"
+      ],
+      "requirements": [
+        "High request volume",
+        "Maintained policy knowledge",
+        "Secure HR-system integration",
+        "Human review for sensitive decisions"
+      ]
+    },
+    "evidenceGrade": "B",
+    "evidenceExplanation": "IBM’s own case study reports a real departmental cost decline but says the agent contributed rather than caused all of it. Its 2025 generative-AI upgrade occurred after part of the reported four-year cost trend.",
+    "sources": [
+      {
+        "title": "Transforming HR support with agentic AI: IBM AskHR",
+        "publisher": "IBM",
+        "url": "https://www.ibm.com/case-studies/ibm-askhr",
+        "date": "2025"
+      }
+    ],
+    "tags": [
+      "HR",
+      "customer service economics",
+      "cost reduction"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "Head of HR Operations",
+        "Employee Experience Lead",
+        "AskHR Product Owner"
+      ],
+      "suggestedDiscussionTopics": [
+        "Which HR tasks to automate first",
+        "Cost measurement across a multiyear transformation",
+        "Handling sensitive employee requests"
+      ]
+    },
+    "article": {
+      "opening": "At IBM, a request for a payslip, vacation document or policy answer could cross several HR systems and regional rules. The issue was not a shortage of generic answers; it was the friction of finding the right answer and completing a routine transaction. IBM gradually developed AskHR into a common front door for these requests.",
+      "howTheyDidIt": "IBM says it first simplified HR processes before automating them. AskHR now draws on about 7,000 policy pages and connects to systems including Workday, SAP and Concur. A question is classified into an area such as payroll, benefits or career matters. The assistant either gives a relevant answer or starts an approved task, such as a vacation request or employment-verification letter. Managers can initiate more complex changes through connected workflows. Common requests stay in self-service; human advisers take sensitive or unusual cases. IBM refined the assistant over six years and added watsonx Orchestrate in 2025. The source does not disclose every policy-control rule, model evaluation result or the implementation duration for each task.",
+      "whatChanged": "Employees no longer need to know which HR application owns a routine answer or transaction. For HR staff, fewer basic tickets mean more attention can go to issues requiring judgment, though the source does not quantify how much staff time was redeployed.",
+      "resultsAndLimits": "IBM reports a 94% containment rate for common questions and a 40% reduction in HR operational costs over four years, to which AskHR contributed. The cost decline spans a wider transformation and began before the 2025 generative-AI enhancement. It would be misleading to claim the latest model alone produced 40% savings.",
+      "businessTakeaway": "The method to copy is process simplification, approved policy knowledge, secure system connections and an explicit human tier. A chatbot over unsorted policies would be far less useful than one that can safely finish a task."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "google-datacenter-cooling",
+    "company": "Google",
+    "industry": "Software / technology",
+    "country": "United States",
+    "companySize": "Large global enterprise",
+    "caseTitle": "AI control of data-center cooling",
+    "oneSentenceSummary": "Google reported up to 40% lower cooling energy use in a live data-center test after using AI to recommend safer operating settings.",
+    "businessFunction": "Operations / energy",
+    "businessProblem": "Cooling systems consume substantial energy and their best settings change with weather and IT load.",
+    "beforeAI": "Operators adjusted industrial cooling equipment using engineering rules and experience.",
+    "aiSolution": "A model predicted future energy use and checked temperature and pressure limits before suggesting cooling settings.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Collect historical readings from cooling-system sensors and measure energy use under existing operating settings.\n2. Train a model to predict energy efficiency under possible cooling adjustments.\n3. Train separate forecasts for temperature and pressure so unsafe adjustments can be rejected.\n4. Test recommendations at a live site, comparing intervals with the system on and off.\n5. Keep operators and local control systems responsible for equipment safety.\n6. For later automated control, take fresh sensor readings regularly and implement only actions that pass the safety checks.",
+    "implementationSteps": [
+      "Collect historical readings from cooling-system sensors and measure energy use under existing operating settings.",
+      "Train a model to predict energy efficiency under possible cooling adjustments.",
+      "Train separate forecasts for temperature and pressure so unsafe adjustments can be rejected.",
+      "Test recommendations at a live site, comparing intervals with the system on and off.",
+      "Keep operators and local control systems responsible for equipment safety.",
+      "For later automated control, take fresh sensor readings regularly and implement only actions that pass the safety checks."
+    ],
+    "afterAI": "The live test reduced cooling energy and the team planned a wider rollout.",
+    "aiType": [
+      "Optimization",
+      "Forecasting"
+    ],
+    "technologyUsed": [
+      "Google DeepMind models",
+      "Data-center temperature, power, pump and pressure sensors"
+    ],
+    "vendors": [
+      "Google DeepMind"
+    ],
+    "businessImpact": {
+      "costSavings": "No monetary saving disclosed; lower energy consumption should not be converted into dollars without tariff and load data.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "Up to 40% reduction in cooling energy use in the reported live test",
+        "Approximately 15% reduction in overall power-usage-effectiveness overhead at the tested site"
+      ]
+    },
+    "impactType": [
+      "Cost avoided",
+      "Energy reduction"
+    ],
+    "implementationDifficulty": "High",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Facilities engineers, data-center operators, energy analysts, AI team and safety/control owners.",
+    "dataRequired": "Time-stamped equipment sensor data, weather, workload, energy consumption and safe operating limits.",
+    "whyItWorked": [
+      "Extensive sensor history already existed.",
+      "The objective was a measurable energy metric.",
+      "Safety predictions constrained recommendations."
+    ],
+    "keyLessons": [
+      "Measure physical energy before calculating economic value.",
+      "Industrial AI needs operating guardrails and site-specific validation."
+    ],
+    "risks": [
+      "Unsafe temperature or pressure settings",
+      "Model drift after equipment changes",
+      "Overgeneralizing a site test to all facilities"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Data-center operators",
+      "Cold-chain facilities",
+      "Industrial plants with large cooling loads"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Data-center operators",
+        "Cold-chain facilities",
+        "Industrial plants with large cooling loads"
+      ],
+      "probablyNotUsefulFor": [
+        "Facilities without metered cooling systems",
+        "Sites too small to recover integration costs"
+      ],
+      "requirements": [
+        "Sensor coverage",
+        "Controllable equipment",
+        "Safety limits",
+        "Energy baseline"
+      ]
+    },
+    "evidenceGrade": "B",
+    "evidenceExplanation": "The original Google DeepMind publication describes a live on/off test and energy metrics. It does not publish a dollar saving or evidence that every Google site achieved the same result.",
+    "sources": [
+      {
+        "title": "DeepMind AI Reduces Google Data Centre Cooling Bill by 40%",
+        "publisher": "Google DeepMind",
+        "url": "https://deepmind.google/discover/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/",
+        "date": "2016-07-20"
+      },
+      {
+        "title": "Safety-first AI for autonomous data centre cooling and industrial control",
+        "publisher": "Google DeepMind",
+        "url": "https://deepmind.google/blog/safety-first-ai-for-autonomous-data-centre-cooling-and-industrial-control/",
+        "date": "2018-08-17"
+      }
+    ],
+    "tags": [
+      "energy",
+      "operations",
+      "optimization"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "Data Center Operations Lead",
+        "Facilities Energy Manager",
+        "AI Research Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "Safe deployment of AI in physical systems",
+        "Turning energy reduction into a business case",
+        "Why site-by-site validation matters"
+      ]
+    },
+    "article": {
+      "opening": "Data-center cooling is a continuous balancing act. A warmer day, a shift in computing load or a change in equipment behavior can make yesterday’s settings inefficient. Google and DeepMind used the historical sensor data already collected in a data center to identify better cooling choices.",
+      "howTheyDidIt": "The 2016 system learned from thousands of readings, including temperature, electrical power, pump speed and equipment settings. One set of models estimated future energy efficiency under different settings; two other sets predicted whether temperature and pressure would stay within safe limits over the next hour. Operators tried the recommendations in a live site and compared cooling energy when the recommendations were on and off. In a later 2018 iteration, Google reported that an automated controller took a fresh sensor snapshot every five minutes, checked candidate actions against safety constraints and sent approved changes through local controls under operator supervision. The 40% result belongs to the earlier reported live test; it should not be silently attributed to the later controller.",
+      "whatChanged": "Cooling decisions became more adaptive to changing site conditions. The later design also reduced the effort of having operators manually implement each recommendation, while keeping local safety controls and expert oversight.",
+      "resultsAndLimits": "Google reported up to 40% less cooling energy and about 15% lower total power-usage-effectiveness overhead at the tested site. That is an energy measure. Neither the 2016 account nor the case record gives a verified dollar saving or a claim that every data center achieved the same reduction.",
+      "businessTakeaway": "The business method is to optimize a measurable physical cost with abundant sensor data while treating safety limits as part of the product. Any financial return must be calculated from actual metered energy, tariffs and deployment costs at each site."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "coca-cola-store-recommendations",
+    "company": "The Coca-Cola Company",
+    "industry": "Consumer goods / e-commerce",
+    "country": "United States",
+    "companySize": "Large global consumer-goods company",
+    "caseTitle": "Personalized product discovery at the US Coca-Cola Store",
+    "oneSentenceSummary": "An Adobe and Coca-Cola case study reports 36% higher revenue associated with AI-powered personalized product recommendations in the US online store.",
+    "businessFunction": "Marketing / e-commerce",
+    "businessProblem": "Shoppers did not always find relevant products or complementary items in the online store.",
+    "beforeAI": "Product discovery and messages were less tailored to individual behavior.",
+    "aiSolution": "AI uses shopper actions and preferences to rank products and recommend relevant extras.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Unify online-store product, shopper-behavior and transaction data into usable customer and product records.\n2. Use browsing and buying signals to infer which products or combinations may interest a shopper.\n3. Show individualized product suggestions and related-item placements inside the US online store.\n4. Track clicks on recommendations, products added to baskets, completed purchases and store revenue.\n5. Review whether recommendations help shoppers find relevant products rather than only increasing clicks.\n6. For a future rollout, use a holdout group to estimate incremental revenue and margin more rigorously.",
+    "implementationSteps": [
+      "Unify online-store product, shopper-behavior and transaction data into usable customer and product records.",
+      "Use browsing and buying signals to infer which products or combinations may interest a shopper.",
+      "Show individualized product suggestions and related-item placements inside the US online store.",
+      "Track clicks on recommendations, products added to baskets, completed purchases and store revenue.",
+      "Review whether recommendations help shoppers find relevant products rather than only increasing clicks.",
+      "For a future rollout, use a holdout group to estimate incremental revenue and margin more rigorously."
+    ],
+    "afterAI": "The US store reported stronger recommendation engagement and revenue after the personalization rollout.",
+    "aiType": [
+      "Recommendation System",
+      "Personalization"
+    ],
+    "technologyUsed": [
+      "Adobe AI",
+      "Adobe Commerce",
+      "Adobe Experience Platform"
+    ],
+    "vendors": [
+      "Adobe"
+    ],
+    "businessImpact": {
+      "costSavings": "Not disclosed.",
+      "revenueImpact": "36% increase in revenue reported for the AI-personalized US Coca-Cola Store product-discovery initiative; not Coca-Cola company-wide revenue and no controlled-test method was disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "117% increase in clicks on personalized recommendations",
+        "17% click-through rate for frequently-bought-together suggestions"
+      ]
+    },
+    "impactType": [
+      "Revenue influenced",
+      "Conversion improvement"
+    ],
+    "implementationDifficulty": "Medium",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "E-commerce manager, merchandising, marketing analytics, data integration and privacy teams.",
+    "dataRequired": "Product catalog, shopper clicks, purchase history, consent and transaction data.",
+    "whyItWorked": [
+      "Product discovery was a measurable buying bottleneck.",
+      "Recommendations were tied to real shopper behavior.",
+      "The team watched revenue, not clicks alone."
+    ],
+    "keyLessons": [
+      "Keep site-scope metrics separate from company-wide sales.",
+      "Use revenue and profit per visitor alongside engagement."
+    ],
+    "risks": [
+      "Attribution without a public control group",
+      "Privacy and consent",
+      "Recommendations that over-promote popular items"
+    ],
+    "replicability": "High",
+    "whoCouldUseThis": [
+      "Consumer brands with online stores",
+      "Retailers",
+      "Travel or hospitality marketplaces"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Consumer brands with online stores",
+        "Retailers",
+        "Travel or hospitality marketplaces"
+      ],
+      "probablyNotUsefulFor": [
+        "Sites with very small catalogs",
+        "Businesses without meaningful digital purchase traffic"
+      ],
+      "requirements": [
+        "Clean catalog",
+        "Event tracking",
+        "Privacy controls",
+        "Experimentation and revenue measurement"
+      ]
+    },
+    "evidenceGrade": "C",
+    "evidenceExplanation": "Adobe’s customer story includes Coca-Cola executive participation and a store-scope revenue claim. There is no public audited reconciliation or experimental design, so treat the 36% as reported revenue influence.",
+    "sources": [
+      {
+        "title": "Coca-Cola personalizes experiences with Adobe Journey Optimizer",
+        "publisher": "Adobe and The Coca-Cola Company",
+        "url": "https://business.adobe.com/customer-success-stories/coca-cola-case-study-personalization.html",
+        "date": "2024-12-10"
+      }
+    ],
+    "tags": [
+      "marketing",
+      "e-commerce",
+      "revenue"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "Global E-commerce Lead",
+        "Personalization Product Manager",
+        "Digital Analytics Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "How recommendations affect baskets",
+        "Designing fair A/B tests",
+        "Moving from clicks to revenue and margin"
+      ]
+    },
+    "article": {
+      "opening": "An online storefront can show the same product grid to everyone, even though shoppers reveal different interests through what they browse and buy. Coca-Cola’s US online store used AI-powered discovery to show more relevant items and complementary products, aiming to turn that relevance into sales.",
+      "howTheyDidIt": "Adobe’s joint customer story describes a wider Coca-Cola effort to unify customer and commerce information and act on it quickly. In the US store, the specific AI use case was personalized product discovery: behavioral actions and shopper affinities informed which items appeared as recommendations, while a “frequently bought together” placement suggested extras. Business teams examined recommendation clicks, search conversion and revenue through their analytics tools. The source does not disclose the exact recommendation algorithm, how shoppers were assigned to a comparison group or the period over which the 36% revenue uplift was calculated. A practical rollout would begin with a clean product catalog and event tracking, place recommendations in a high-traffic shopping step, and compare orders and margins with a holdout group.",
+      "whatChanged": "Merchandising became responsive to the individual shopper rather than a single static display. The store could surface a likely next purchase or cross-sell at the moment a customer was choosing products.",
+      "resultsAndLimits": "The Adobe–Coca-Cola account reports 117% more recommendation clicks and a 36% revenue increase for the US store initiative. This is not a 36% rise in The Coca-Cola Company’s global revenue. Without a public control design, the number should be presented as reported revenue influence rather than a fully audited causal estimate.",
+      "businessTakeaway": "A retailer can copy the operating logic: use customer behavior to improve discovery, then judge success on incremental orders, revenue and margin. Clicks are diagnostic; they are not the business outcome."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "pomelo-fashion-personalize",
+    "company": "Pomelo Fashion",
+    "industry": "Retail / e-commerce",
+    "country": "Thailand",
+    "companySize": "About 500 employees at the time of the case study",
+    "caseTitle": "Personalized fashion category pages",
+    "oneSentenceSummary": "Pomelo Fashion reported an 8% increase in incremental gross revenue after replacing static product ranking with personalized recommendations.",
+    "businessFunction": "Sales / e-commerce",
+    "businessProblem": "One daily product ranking gave every shopper in a country almost the same category-page experience.",
+    "beforeAI": "Category pages used recent views, sales and price to set a common ranking.",
+    "aiSolution": "Amazon Personalize sorted items for each shopper using browsing, cart, wishlist and purchase signals.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Collect website, app and kiosk events through Segment and clean the product catalog.\n2. Feed clicks, carts, wish lists, purchases and item attributes to Amazon Personalize.\n3. Start with personalized ranking on the dresses category while keeping a popular-item fallback for new visitors.\n4. Compare category clicks and sales, and tune the ranking after the pilot.\n5. Expand the ranking to other category pages and reuse current recommendations in Braze messages.\n6. Track incremental gross revenue separately from category-page and email engagement metrics.",
+    "implementationSteps": [
+      "Collect website, app and kiosk events through Segment and clean the product catalog.",
+      "Feed clicks, carts, wish lists, purchases and item attributes to Amazon Personalize.",
+      "Start with personalized ranking on the dresses category while keeping a popular-item fallback for new visitors.",
+      "Compare category clicks and sales, and tune the ranking after the pilot.",
+      "Expand the ranking to other category pages and reuse current recommendations in Braze messages.",
+      "Track incremental gross revenue separately from category-page and email engagement metrics."
+    ],
+    "afterAI": "Personalized ranking spread across most categories, with measurable incremental gross revenue reported.",
+    "aiType": [
+      "Recommendation System",
+      "Personalization"
+    ],
+    "technologyUsed": [
+      "Amazon Personalize",
+      "Segment",
+      "Braze"
+    ],
+    "vendors": [
+      "Amazon Web Services",
+      "Segment",
+      "Braze"
+    ],
+    "businessImpact": {
+      "costSavings": "Not disclosed.",
+      "revenueImpact": "AWS and Pomelo report an 8% increase in incremental gross revenue after the expanded personalization rollout; attribution method is not fully disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "18.3% revenue increase in the initial dresses category",
+        "Up to 15% higher gross revenue from category pages",
+        "60% of product views came from personalized recommendations by November 2020"
+      ]
+    },
+    "impactType": [
+      "Revenue generated",
+      "Conversion improvement"
+    ],
+    "implementationDifficulty": "Medium",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "E-commerce product manager, merchandising, analyst, engineers and marketing staff.",
+    "dataRequired": "Clean behavior events, product catalog and attributes, transaction data, customer consent.",
+    "whyItWorked": [
+      "A narrow category pilot reduced rollout risk.",
+      "Existing sales event data enabled personalization.",
+      "The team expanded only after measuring category performance."
+    ],
+    "keyLessons": [
+      "Start with a high-traffic product category.",
+      "Distinguish category lift from overall incremental revenue."
+    ],
+    "risks": [
+      "Opaque uplift methodology",
+      "Cold-start for new visitors",
+      "Privacy and tracking quality",
+      "Recommendations of unavailable sizes"
+    ],
+    "replicability": "High",
+    "whoCouldUseThis": [
+      "Fashion retailers",
+      "Marketplaces",
+      "Large online catalogs"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Fashion retailers",
+        "Marketplaces",
+        "Large online catalogs"
+      ],
+      "probablyNotUsefulFor": [
+        "Very small product catalogs",
+        "Sites with too little traffic for comparison"
+      ],
+      "requirements": [
+        "Reliable product and transaction data",
+        "Event tracking",
+        "Recommendation placement",
+        "Holdout measurement"
+      ]
+    },
+    "evidenceGrade": "C",
+    "evidenceExplanation": "AWS published this customer story with named Pomelo executives and concrete rollout details. The claimed incremental revenue is not independently audited and the counterfactual calculation is not shown.",
+    "sources": [
+      {
+        "title": "Pomelo Fashion Enhances Shoppers’ Experience, Increases Revenue Using Amazon Personalize",
+        "publisher": "Amazon Web Services and Pomelo Fashion",
+        "url": "https://aws.amazon.com/solutions/case-studies/pomelo-case-study/",
+        "date": "2021"
+      }
+    ],
+    "tags": [
+      "retail",
+      "recommendations",
+      "revenue"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "E-commerce Director",
+        "Business Intelligence Director",
+        "Merchandising Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "How to pilot recommendations",
+        "Incremental revenue versus attributed sales",
+        "Using customer behavior without hurting privacy"
+      ]
+    },
+    "article": {
+      "opening": "Pomelo Fashion’s category pages were important storefront real estate: the company said 38% of purchased products were discovered there. Yet its old ranking was recalculated once a day and looked much the same for every shopper in a country. The company tested whether more relevant product order could lift sales.",
+      "howTheyDidIt": "Pomelo had Segment collect customer events from its site, app and kiosks. Those events included clicks, carts, wish lists and purchases, while product records held details such as color, price and category. Amazon Personalize used those signals to rank items for an individual shopper. New visitors initially saw a popular-item ranking; personalization could follow once the shopper gave useful signals. The first focused test was the dresses category, where Pomelo measured a rise in product-page clicks and revenue. The company then extended the ranking to most category pages and used Braze to bring recommendations into email and in-app messages. The source does not disclose an audited contribution-margin calculation or the exact experiment design behind the 8% incremental-revenue claim.",
+      "whatChanged": "The category page became a live merchandising decision, not a single daily list. Marketing could also reuse the same current recommendations in messages, so a customer’s browsing behavior shaped what appeared beyond the website.",
+      "resultsAndLimits": "AWS and Pomelo report 18.3% higher revenue in the initial dresses category, up to 15% higher gross revenue from category pages after expansion, and an 8% gain in incremental gross revenue. These measures have different denominators and should not be added together. The incremental figure is a company/provider claim without a fully published counterfactual.",
+      "businessTakeaway": "The transferable path is unusually clear: fix event data, pilot in one high-traffic category, keep a fallback for new shoppers and expand only after looking at sales rather than engagement alone."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "zurich-chile-claims",
+    "company": "Zurich Chile",
+    "industry": "Insurance",
+    "country": "Chile",
+    "companySize": "Large national insurer within a global group",
+    "caseTitle": "AI automation of health-claim reimbursements",
+    "oneSentenceSummary": "Zurich Chile automated about 33,000 traditionally reimbursed health claims per month and cut typical settlement time from 4.5 days to within a day.",
+    "businessFunction": "Claims / operations",
+    "businessProblem": "Customers who paid providers first had to send bills for slower manual reimbursement.",
+    "beforeAI": "Traditional reimbursement claims were reviewed and settled through a slower human process.",
+    "aiSolution": "Zurich partnered with LISA to read claim materials and automatically settle eligible health reimbursements.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Define the reimbursement stream separately from health claims already settled automatically at the point of sale.\n2. Receive customers’ bills and claim documents through a digital claims route.\n3. Use LISA’s AI platform to read the materials and assess cases against policy requirements.\n4. Automatically settle eligible straightforward claims and leave other cases for human examination.\n5. Measure the share automated within the reimbursement stream and the time from submission to settlement.\n6. Review disputes, payment errors and fraud outcomes before expanding the eligible claim types.",
+    "implementationSteps": [
+      "Define the reimbursement stream separately from health claims already settled automatically at the point of sale.",
+      "Receive customers’ bills and claim documents through a digital claims route.",
+      "Use LISA’s AI platform to read the materials and assess cases against policy requirements.",
+      "Automatically settle eligible straightforward claims and leave other cases for human examination.",
+      "Measure the share automated within the reimbursement stream and the time from submission to settlement.",
+      "Review disputes, payment errors and fraud outcomes before expanding the eligible claim types."
+    ],
+    "afterAI": "By August 2024, 33% of traditionally reimbursed health claims were automatically processed.",
+    "aiType": [
+      "Document Automation",
+      "AI Agent"
+    ],
+    "technologyUsed": [
+      "LISA Insurtech claims platform",
+      "Digital claims submission"
+    ],
+    "vendors": [
+      "LISA Insurtech"
+    ],
+    "businessImpact": {
+      "costSavings": "Not disclosed.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Typical settlement time reportedly fell from about 4.5 days to within 1 day for claims using the new process.",
+      "otherMetrics": [
+        "About 33,000 traditional reimbursement claims automatically processed per month",
+        "33% of traditional reimbursement claims automated by August 2024"
+      ]
+    },
+    "impactType": [
+      "Time saved",
+      "Service improvement",
+      "Productivity capacity released"
+    ],
+    "implementationDifficulty": "High",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Claims leaders, policy experts, fraud and compliance team, data and integration staff, human examiners.",
+    "dataRequired": "Claim documents, policy coverage rules, payment records and exception outcomes.",
+    "whyItWorked": [
+      "The team targeted the slower 35% of claims outside existing point-of-sale automation.",
+      "High volume created many repeatable decisions.",
+      "A specialist partner supplied the claims platform."
+    ],
+    "keyLessons": [
+      "Report the denominator: 33% of traditional claims, not 33% of all health claims.",
+      "Keep complex and disputed claims with examiners."
+    ],
+    "risks": [
+      "Incorrect claim denials or payments",
+      "Fraud",
+      "Sensitive medical information",
+      "Insufficient appeal routes"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Health insurers",
+      "Travel insurers",
+      "Benefits administrators"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Health insurers",
+        "Travel insurers",
+        "Benefits administrators"
+      ],
+      "probablyNotUsefulFor": [
+        "Insurers with few digital claims",
+        "Products with highly bespoke claim terms"
+      ],
+      "requirements": [
+        "Digitized documents",
+        "Clear policy rules",
+        "Human exception and appeal process",
+        "Privacy safeguards"
+      ]
+    },
+    "evidenceGrade": "B",
+    "evidenceExplanation": "Zurich’s own publication quotes its regional chief claims officer and gives the monthly volume and before/after time. It does not disclose a monetary saving or independent causal test.",
+    "sources": [
+      {
+        "title": "Building an innovation mindset",
+        "publisher": "Zurich Insurance Group",
+        "url": "https://www.zurich.com/campaigns/zic/articles/building-an-innovation-mindset",
+        "date": "2024-10-28"
+      }
+    ],
+    "tags": [
+      "insurance",
+      "claims",
+      "processing time"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "Chief Claims Officer",
+        "Claims Automation Lead",
+        "Insurtech Partner Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "Choosing claims suitable for automation",
+        "Managing appeals and fraud",
+        "Measuring customer benefit and unit cost"
+      ]
+    },
+    "article": {
+      "opening": "Zurich Chile already settled many health claims automatically when a patient paid at the point of sale. The more difficult part was reimbursement: a customer paid the provider, collected bills and sent documents to Zurich afterward. Those claims usually needed a slower review.",
+      "howTheyDidIt": "Zurich partnered with LISA Insurtech to automate a portion of this traditional reimbursement stream. The company’s published description says the platform reads and settles eligible claims, but it does not describe every extraction model, coverage rule or fraud check. The operational sequence is clear at a business level: the customer submits documents, the system reads the claim and policy information, straightforward cases are settled automatically, and other cases remain for staff. The useful denominator is the 35% of monthly health claims that used this traditional route, because the other 65% were already automatically settled at the point of sale. A comparable insurer would need digitized bills, policy rules, payment integration and a route for disputes or unusual claims.",
+      "whatChanged": "The claims team shifted routine reimbursement work from a manual queue to automated settlement. Customers in that stream could receive a decision much sooner, while examiners could focus on exceptions.",
+      "resultsAndLimits": "By August 2024 Zurich said AI was automatically processing 33% of traditional reimbursement claims, about 33,000 a month. Its regional claims chief said claims that typically took about four and a half days could be settled within one day. The publication does not quantify claim-processing cost savings, error rates or the portion of the speed gain attributable only to AI.",
+      "businessTakeaway": "The lesson is to choose the part of an operation that remains slow after earlier automation. Report the denominator accurately, and make speed improvements credible with settlement-quality and appeal measures."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "pg-vision-inspection",
+    "company": "Procter & Gamble",
+    "industry": "Consumer goods / manufacturing",
+    "country": "United States",
+    "companySize": "Large global manufacturer",
+    "caseTitle": "AI visual inspection on production lines",
+    "oneSentenceSummary": "P&G and Siemens reported 10–20% lower scrap rates for applicable products after installing AI visual inspection at production speed.",
+    "businessFunction": "Manufacturing / quality",
+    "businessProblem": "High-speed lines and variable materials made consistent inspection hard with fixed rules.",
+    "beforeAI": "Conventional visual checks required frequent reconfiguration and could miss subtle defects.",
+    "aiSolution": "Cameras and AI inspect each product on the line and trigger alerts or removal of defective items.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Capture images of acceptable products and defects on a selected high-speed line.\n2. Configure P&G inspection models for the relevant material, product and packaging variation.\n3. Run Siemens Visual Inspection Cockpit close to the equipment so every passing item can be checked immediately.\n4. Trigger an operator alert or reject an item when inspection identifies a defect.\n5. Let plant engineers update models and examine false rejects, missed defects and scrap trends.\n6. Reuse the standardized application at other lines and compare scrap rates by product.",
+    "implementationSteps": [
+      "Capture images of acceptable products and defects on a selected high-speed line.",
+      "Configure P&G inspection models for the relevant material, product and packaging variation.",
+      "Run Siemens Visual Inspection Cockpit close to the equipment so every passing item can be checked immediately.",
+      "Trigger an operator alert or reject an item when inspection identifies a defect.",
+      "Let plant engineers update models and examine false rejects, missed defects and scrap trends.",
+      "Reuse the standardized application at other lines and compare scrap rates by product."
+    ],
+    "afterAI": "P&G is expanding the jointly developed inspection system across products and plants.",
+    "aiType": [
+      "Computer Vision"
+    ],
+    "technologyUsed": [
+      "Siemens Visual Inspection Cockpit",
+      "Siemens Industrial Edge",
+      "P&G inspection models",
+      "Nvidia GPU hardware"
+    ],
+    "vendors": [
+      "Siemens",
+      "Nvidia"
+    ],
+    "businessImpact": {
+      "costSavings": "No dollar saving disclosed; 10–20% lower scrap rates for certain products imply less material waste but are not a published cost figure.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "Scrap rates reduced 10–20% depending on the product",
+        "New deployments commissioned 5–10 times faster than traditional bespoke vision systems"
+      ]
+    },
+    "impactType": [
+      "Waste reduction",
+      "Cost avoided",
+      "Quality improvement"
+    ],
+    "implementationDifficulty": "High",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Plant engineers, quality managers, machine operators, automation engineers and IT/security staff.",
+    "dataRequired": "Labeled product images, defect examples, line-speed signals, reject decisions and scrap data.",
+    "whyItWorked": [
+      "Inspection ran at line speed.",
+      "Plant engineers could update models locally.",
+      "The application was standardized for reuse."
+    ],
+    "keyLessons": [
+      "Measure false rejects as well as caught defects.",
+      "A reusable deployment pattern lowers the next site’s setup burden."
+    ],
+    "risks": [
+      "False positives that waste good product",
+      "Missed defects",
+      "Image drift after packaging changes",
+      "Industrial system integration risk"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Consumer-goods factories",
+      "Food packaging lines",
+      "Automotive component plants"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Consumer-goods factories",
+        "Food packaging lines",
+        "Automotive component plants"
+      ],
+      "probablyNotUsefulFor": [
+        "Low-volume handmade production",
+        "Plants without stable camera positions or defect examples"
+      ],
+      "requirements": [
+        "Repeatable line",
+        "Camera access",
+        "Labeled defect examples",
+        "Quality baseline",
+        "Safe reject controls"
+      ]
+    },
+    "evidenceGrade": "C",
+    "evidenceExplanation": "A September 2026 joint Siemens–P&G release includes a P&G technical lead and a product-dependent scrap range. No absolute scrap tonnage, cost saving or independently audited comparison is published.",
+    "sources": [
+      {
+        "title": "Siemens and Procter & Gamble scale AI-based quality inspection across global production",
+        "publisher": "Siemens and Procter & Gamble",
+        "url": "https://press.siemens.com/global/en/pressrelease/siemens-and-procter-gamble-scale-ai-based-quality-inspection-across-global-production",
+        "date": "2026-09-15"
+      }
+    ],
+    "tags": [
+      "manufacturing",
+      "computer vision",
+      "scrap"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "P&G Manufacturing Quality Lead",
+        "Plant Manager",
+        "Industrial AI Product Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "How to scale from one line to many",
+        "False rejects and product quality",
+        "Calculating material savings from lower scrap"
+      ]
+    },
+    "article": {
+      "opening": "A fast consumer-goods line can produce thousands of items while materials shift, wrinkle or overlap. Fixed camera rules struggle with this variation; changing a package design can force substantial reprogramming. P&G and Siemens built an AI inspection application that can check products at full production speed.",
+      "howTheyDidIt": "P&G supplied inspection models trained to recognize acceptable variation and defects. Siemens supplied the Visual Inspection Cockpit, industrial computers and an on-site computing platform. Cameras feed images of passing products to the system; the result is processed near the machine so the line can issue an alert or remove a defective item immediately. Plant engineers can configure, train and update models through an engineering tool rather than waiting for a central data-science team for every change. Quality data also feeds back into production analysis. The joint release explains the operational design but does not publish the number of labeled images, false-reject rate or line-by-line cost calculation.",
+      "whatChanged": "Inspection moved from occasional or rigid visual checks toward continuous assessment of each item. Operators receive immediate signals, and plant teams can respond to defect patterns before more material is wasted.",
+      "resultsAndLimits": "The partners report 10–20% lower scrap rates depending on product. They also say standardized deployments are commissioned five to ten times faster than traditional bespoke camera systems. Neither claim supplies a dollar saving; the lower scrap rate must be translated through actual material, labor and rework costs before a financial ROI is stated.",
+      "businessTakeaway": "The reusable method is to make visual inspection part of the line’s control loop, with local model maintenance and feedback to quality teams. The hard work is reliable defect examples and careful management of false positives and misses."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "dbs-change-risk",
+    "company": "DBS Bank",
+    "industry": "Banking",
+    "country": "Singapore",
+    "companySize": "Large regional bank",
+    "caseTitle": "AI review of technology changes before release",
+    "oneSentenceSummary": "DBS reported that AI risk scoring expanded checks from 5% to 100% of change requests and accompanied an 81% drop in change-caused incidents.",
+    "businessFunction": "Risk / IT operations",
+    "businessProblem": "Software changes can cause customer-facing banking incidents, but manual review reached only a small share.",
+    "beforeAI": "Only 5% of change requests received the previous level of risk checking.",
+    "aiSolution": "A model trained on prior change requests scores the risk of every new request for review.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Join historical software change requests to incidents that followed release.\n2. Train the in-house model to recognize change characteristics associated with greater risk.\n3. Score every new change request as it enters the release process.\n4. Give risky changes extra human attention alongside the bank’s existing testing and architecture controls.\n5. Record which changes caused incidents after release and use those outcomes to refine the model.\n6. Measure incident frequency per month while keeping the other resilience initiatives visible in attribution.",
+    "implementationSteps": [
+      "Join historical software change requests to incidents that followed release.",
+      "Train the in-house model to recognize change characteristics associated with greater risk.",
+      "Score every new change request as it enters the release process.",
+      "Give risky changes extra human attention alongside the bank’s existing testing and architecture controls.",
+      "Record which changes caused incidents after release and use those outcomes to refine the model.",
+      "Measure incident frequency per month while keeping the other resilience initiatives visible in attribution."
+    ],
+    "afterAI": "The bank reports full coverage and fewer monthly incidents linked to changes.",
+    "aiType": [
+      "Forecasting",
+      "Optimization"
+    ],
+    "technologyUsed": [
+      "In-house machine-learning risk model",
+      "Change-management records"
+    ],
+    "vendors": [],
+    "businessImpact": {
+      "costSavings": "Not disclosed.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "100% of change requests risk-scored versus 5% previously",
+        "81% decrease in monthly average incidents caused by change requests"
+      ]
+    },
+    "impactType": [
+      "Error reduction",
+      "Improved decision-making",
+      "Productivity capacity released"
+    ],
+    "implementationDifficulty": "High",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Technology risk, release management, incident response, model governance and engineering teams.",
+    "dataRequired": "Historical change records, deployment details, incident labels and post-release outcomes.",
+    "whyItWorked": [
+      "Past changes provided labeled examples.",
+      "Scoring was inserted into an existing approval process.",
+      "The bank measured incident outcomes, not only model accuracy."
+    ],
+    "keyLessons": [
+      "Reviewing all changes can be better than sampling a small fraction.",
+      "Do not assign the bank’s aggregate AI economic value to this one use case."
+    ],
+    "risks": [
+      "False low-risk scores",
+      "Overblocking safe changes",
+      "Changing systems that make historic patterns stale"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Banks",
+      "Large software operators",
+      "Telecom networks",
+      "Hospitals with critical IT systems"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Banks",
+        "Large software operators",
+        "Telecom networks",
+        "Hospitals with critical IT systems"
+      ],
+      "probablyNotUsefulFor": [
+        "Organizations with rare software changes",
+        "Teams without incident records"
+      ],
+      "requirements": [
+        "Change log",
+        "Incident attribution",
+        "Release controls",
+        "Model oversight"
+      ]
+    },
+    "evidenceGrade": "A",
+    "evidenceExplanation": "DBS disclosed the use-case metrics in its 2024 annual report CIO statement. Its SGD 750 million AI economic value covers more than 370 use cases, so none of that figure is attributed to this one risk model.",
+    "sources": [
+      {
+        "title": "DBS Annual Report 2024: CIO statement",
+        "publisher": "DBS Bank",
+        "url": "https://www.dbs.com/annualreports/2024/cio-statement.html",
+        "date": "2025"
+      }
+    ],
+    "tags": [
+      "banking",
+      "risk",
+      "incident reduction"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "Chief Information Officer",
+        "Technology Risk Lead",
+        "Release Management Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "How AI changes release approval",
+        "Measuring fewer incidents",
+        "Governance for high-stakes risk scores"
+      ]
+    },
+    "article": {
+      "opening": "A bank’s software changes are operational events: a flawed change can interrupt a service customers depend on. DBS had a review-coverage problem. Its annual report says the earlier process checked only 5% of change requests at the level later covered by AI risk scoring.",
+      "howTheyDidIt": "DBS trained an in-house machine-learning model on past change requests to classify the risk of new ones. The model gives each proposed change a score so technology teams can examine risky changes before release. The bank says this expanded risk checking to every request. The model sits within a larger resilience program that also includes a near-production testing environment, architecture review and a Testing Centre of Excellence. The source does not disclose the model variables, alert thresholds, review staffing or a controlled study isolating AI from those other measures. For another organization, the practical sequence is to join change logs to incident outcomes, define what a high-risk release looks like, score each change, route flagged changes to reviewers and monitor incidents after deployment.",
+      "whatChanged": "Risk review became universal rather than a small sample. Human release managers could spend more attention where the model anticipated trouble, while the bank retained formal testing and approval controls.",
+      "resultsAndLimits": "DBS reports 100% of change requests checked versus 5% before, alongside an 81% reduction in the monthly average of incidents caused by changes. Its separate SGD 750 million economic-value figure covers more than 370 AI and analytics use cases and cannot be assigned to this one model. The incident reduction also occurred alongside other resilience measures.",
+      "businessTakeaway": "This is a useful example of AI improving the coverage of a business control. The important outcome is fewer service disruptions, measured against release volume and severity, not simply a high model score."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "chimei-clinical-copilots",
+    "company": "Chi Mei Medical Center",
+    "industry": "Healthcare",
+    "country": "Taiwan",
+    "companySize": "Three hospitals; about 2,000 nurses and 700 doctors in the reported system",
+    "caseTitle": "Clinical copilots reduce documentation time",
+    "oneSentenceSummary": "Chi Mei clinicians reported that AI-assisted medical reports fell from about an hour to 15 minutes, while nursing transfer notes fell from 10–20 minutes to under five.",
+    "businessFunction": "Clinical operations",
+    "businessProblem": "Clinical documentation took time away from patient care and drew on scattered hospital records.",
+    "beforeAI": "Doctors and nurses manually assembled notes, instructions and records into reports.",
+    "aiSolution": "Role-specific assistants draft reports and transfer notes from hospital information for clinicians to review and confirm.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Connect approved hospital records and databases to a secure generative-AI platform.\n2. Co-design separate doctor, nurse and pharmacist screens around each role’s actual workflow.\n3. Let the doctor assistant draft reports from admission and progress notes and the nurse assistant draft transfer or shift notes.\n4. Give pharmacists a summarized view of medications, allergies and other patient information from several systems.\n5. Require clinicians to check clinical facts, terminology and language before confirming any generated documentation.\n6. Measure task time, adoption, corrections and safety issues by role rather than assuming one hospital-wide gain.",
+    "implementationSteps": [
+      "Connect approved hospital records and databases to a secure generative-AI platform.",
+      "Co-design separate doctor, nurse and pharmacist screens around each role’s actual workflow.",
+      "Let the doctor assistant draft reports from admission and progress notes and the nurse assistant draft transfer or shift notes.",
+      "Give pharmacists a summarized view of medications, allergies and other patient information from several systems.",
+      "Require clinicians to check clinical facts, terminology and language before confirming any generated documentation.",
+      "Measure task time, adoption, corrections and safety issues by role rather than assuming one hospital-wide gain."
+    ],
+    "afterAI": "Clinicians use role-specific copilots, with manual review still required before documentation is finalized.",
+    "aiType": [
+      "AI Copilot",
+      "Document Automation",
+      "Generative AI"
+    ],
+    "technologyUsed": [
+      "Microsoft Azure OpenAI Service",
+      "Hospital databases",
+      "A+ Doctor and A+ Nurse copilots"
+    ],
+    "vendors": [
+      "Microsoft"
+    ],
+    "businessImpact": {
+      "costSavings": "Not disclosed.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Doctor report drafting: about 60 minutes to 15 minutes in a clinician-reported example. Nurse bed-transfer documentation: 10–20 minutes to under 5 minutes.",
+      "otherMetrics": [
+        "As reported in July 2024, about half of 2,000 nurses and one-third of 700 doctors were using a copilot",
+        "Pharmacy leader reported one pharmacist could see 30 patients per day, up from 15; a role-specific anecdote, not a hospital-wide estimate"
+      ]
+    },
+    "impactType": [
+      "Time saved",
+      "Productivity capacity released"
+    ],
+    "implementationDifficulty": "High",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Clinical leaders, nurses and doctors, health IT, privacy/security, patient-safety and training teams.",
+    "dataRequired": "Electronic health records, clinical notes, instructions, approved terminology and access permissions.",
+    "whyItWorked": [
+      "Clinicians helped design workflows.",
+      "The AI drafted work that professionals still signed off.",
+      "The hospital already had digital medical records."
+    ],
+    "keyLessons": [
+      "Measure edit and review time, not just draft generation time.",
+      "Clinical wording and language localization need explicit QA."
+    ],
+    "risks": [
+      "Hallucinated or imprecise medical language",
+      "Patient privacy",
+      "Automation bias",
+      "Uneven adoption"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Hospitals",
+      "Clinics with high documentation loads"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Hospitals",
+        "Clinics with high documentation loads"
+      ],
+      "probablyNotUsefulFor": [
+        "Clinics without digitized records",
+        "Settings without clinician review capacity"
+      ],
+      "requirements": [
+        "Secure health records",
+        "Clinical governance",
+        "Human sign-off",
+        "Local language quality testing"
+      ]
+    },
+    "evidenceGrade": "C",
+    "evidenceExplanation": "Microsoft’s report includes direct interviews with Chi Mei clinicians and concrete task-level before/after times. The figures are reported examples, not an independent time-motion study or labor-cost saving.",
+    "sources": [
+      {
+        "title": "Taiwan hospital deploys AI copilots to lighten workloads for doctors, nurses and pharmacists",
+        "publisher": "Microsoft and Chi Mei Medical Center",
+        "url": "https://news.microsoft.com/source/asia/features/taiwan-hospital-deploys-ai-copilots-to-lighten-workloads-for-doctors-nurses-and-pharmacists",
+        "date": "2024-07-12"
+      }
+    ],
+    "tags": [
+      "healthcare",
+      "documentation",
+      "time saved"
+    ],
+    "featured": true,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "Clinical Informatics Director",
+        "Nurse Leader",
+        "Patient Safety Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "How clinicians review AI drafts",
+        "Measuring time saved in care settings",
+        "Managing medical-language errors"
+      ]
+    },
+    "article": {
+      "opening": "Chi Mei Medical Center had extensive digital health records, yet doctors, nurses and pharmacists still had to assemble information from several systems and write repetitive documents. The hospital built role-specific assistants so clinical staff could retrieve and draft information inside their normal workflows.",
+      "howTheyDidIt": "Chi Mei connected hospital databases to Microsoft Azure OpenAI Service and developed separate A+ tools for doctors, nurses, pharmacists and other staff. Doctors can turn admission and progress notes into a draft report, then review, edit and confirm it. Nurses use a different workflow for shift and bed-transfer notes. In the pharmacy, one screen brings together medication lists, allergies, tests and other patient details; clinicians still make the care decision. The hospital invited clinicians to help design these workflows and addressed early fears that the tools would replace staff. The source identifies the software platform and user flow but does not disclose a formal accuracy audit, model prompts or deployment costs.",
+      "whatChanged": "The assistant reduced the time spent locating information and composing first drafts. It did not remove the clinician’s responsibility for medical terminology, completeness and final sign-off; nurses reported correcting language that sounded too informal or used the wrong Chinese script.",
+      "resultsAndLimits": "A doctor described medical reports moving from about an hour to fifteen minutes including review; nurses described transfer documentation dropping from 10–20 minutes to under five. A pharmacy leader said one pharmacist could see 30 patients a day rather than 15. These are staff-reported examples, not a controlled hospital-wide estimate of labor savings or patient outcomes.",
+      "businessTakeaway": "The practical pattern is role-specific design on top of trusted records, with visible review before anything becomes part of care. A single generic assistant would miss the different information and safety needs of each clinical role."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "walmart-supplier-negotiation",
+    "company": "Walmart",
+    "industry": "Retail",
+    "country": "United States",
+    "companySize": "Very large global retailer",
+    "caseTitle": "AI negotiation for low-priority supplier contracts",
+    "oneSentenceSummary": "Walmart and its vendor report an average 3% gain on contracts negotiated through an AI chatbot, not on total procurement spend.",
+    "businessFunction": "Procurement",
+    "businessProblem": "Buyers could not individually negotiate with every low-priority supplier.",
+    "beforeAI": "Many smaller suppliers received standard terms because human negotiation would cost more than the likely gain.",
+    "aiSolution": "Pactum’s chatbot negotiates within buyer-approved ranges for price and other contract terms.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Identify supplier contracts that normally receive standard terms because buyer time is scarce.\n2. Have procurement staff set permitted price ranges, payment terms and negotiation trade-offs.\n3. Invite selected suppliers to negotiate asynchronously with Pactum’s agent.\n4. Allow counteroffers within the approved limits and escalate unusual terms or strategic suppliers to buyers.\n5. Finalize agreements through normal procurement and legal controls.\n6. Measure savings only on the contracts negotiated by the agent, plus agreement rates and supplier feedback.",
+    "implementationSteps": [
+      "Identify supplier contracts that normally receive standard terms because buyer time is scarce.",
+      "Have procurement staff set permitted price ranges, payment terms and negotiation trade-offs.",
+      "Invite selected suppliers to negotiate asynchronously with Pactum’s agent.",
+      "Allow counteroffers within the approved limits and escalate unusual terms or strategic suppliers to buyers.",
+      "Finalize agreements through normal procurement and legal controls.",
+      "Measure savings only on the contracts negotiated by the agent, plus agreement rates and supplier feedback."
+    ],
+    "afterAI": "The expanded program reportedly closed agreements with 68% of approached suppliers.",
+    "aiType": [
+      "AI Agent",
+      "Optimization"
+    ],
+    "technologyUsed": [
+      "Pactum autonomous negotiation platform"
+    ],
+    "vendors": [
+      "Pactum"
+    ],
+    "businessImpact": {
+      "costSavings": "Average 3% gain or saving on spend covered by chatbot-negotiated contracts in the expanded program; no total-dollar saving or company-wide procurement percentage disclosed.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "68% agreement rate among suppliers approached in the expanded program",
+        "Average payment terms extended to 35 days in the reported program",
+        "1.5% savings on negotiated spend during the production pilot"
+      ]
+    },
+    "impactType": [
+      "Cost avoided",
+      "Improved decision-making"
+    ],
+    "implementationDifficulty": "Medium",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Procurement category managers, legal, supplier-relations staff and an integration/product owner.",
+    "dataRequired": "Supplier contracts, spend history, approved negotiation ranges, payment terms and supplier feedback.",
+    "whyItWorked": [
+      "The program targeted contracts buyers could not afford to negotiate manually.",
+      "Negotiation limits were set by humans.",
+      "Supplier acceptance was tracked alongside savings."
+    ],
+    "keyLessons": [
+      "Apply the 3% only to negotiated spend, never all Walmart purchasing.",
+      "Protect supplier relationships when automating commercial terms."
+    ],
+    "risks": [
+      "Supplier fairness concerns",
+      "Unapproved contract terms",
+      "Power imbalance",
+      "Savings overstated by weak baselines"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Very large retailers",
+      "Manufacturers with long-tail suppliers",
+      "Large procurement centers"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Very large retailers",
+        "Manufacturers with long-tail suppliers",
+        "Large procurement centers"
+      ],
+      "probablyNotUsefulFor": [
+        "Firms with few suppliers",
+        "Strategic partnerships requiring bespoke negotiation"
+      ],
+      "requirements": [
+        "Large supplier tail",
+        "Approved deal limits",
+        "Legal review",
+        "Supplier escalation route"
+      ]
+    },
+    "evidenceGrade": "C",
+    "evidenceExplanation": "A Pactum client case gives the 3% figure, and an HBR article coauthored by Walmart procurement executives describes the pilot and expansion. Results are scoped to negotiated contracts; they are not audited company-wide savings.",
+    "sources": [
+      {
+        "title": "How Walmart Automated Supplier Negotiations",
+        "publisher": "Harvard Business Review; coauthored by Walmart procurement executives",
+        "url": "https://hbr.org/2022/11/how-walmart-automated-supplier-negotiations",
+        "date": "2022-11-08"
+      },
+      {
+        "title": "Enterprise Client Success with Agentic AI in Procurement",
+        "publisher": "Pactum and Walmart",
+        "url": "https://pactum.com/clients",
+        "date": "Date not stated"
+      }
+    ],
+    "tags": [
+      "procurement",
+      "contract negotiation",
+      "cost avoided"
+    ],
+    "featured": false,
+    "speakerPotential": {
+      "score": "High",
+      "suggestedSpeakerTypes": [
+        "Procurement Transformation Lead",
+        "Strategic Sourcing Executive",
+        "Supplier Relations Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "Automating the long tail of procurement",
+        "How to set negotiation guardrails",
+        "Supplier trust and fair terms"
+      ]
+    },
+    "article": {
+      "opening": "Walmart could negotiate carefully with major suppliers, but a long tail of smaller agreements still received standard terms. Its buyers could not justify spending hours on each low-value contract. The opportunity was not to replace strategic sourcing; it was to negotiate deals that otherwise received little attention.",
+      "howTheyDidIt": "Walmart used Pactum’s negotiation chatbot for selected suppliers. Procurement staff set acceptable commercial boundaries and trade-offs, including price and payment terms. The agent then held structured, asynchronous exchanges with suppliers, allowing a counteroffer within those limits. The first production pilot involved a smaller supplier group; Walmart and Pactum then expanded the program to additional markets. The HBR account was coauthored by Walmart procurement executives, while Pactum’s client page summarizes later results. Neither source gives a full contract-level savings audit or the precise valuation of extended payment terms.",
+      "whatChanged": "A supplier could receive an individual negotiation even when a human buyer lacked time. Human procurement staff focused on exceptions and strategic relationships rather than every standard contract. The procurement team also gained a record of the terms offered, countered and finally accepted across a larger supplier set.",
+      "resultsAndLimits": "The production pilot reported 1.5% savings on negotiated spend; the expanded program reported an average 3% gain on negotiated contracts and a 68% agreement rate among approached suppliers. The percentage applies only to contracts that entered the chatbot process. It cannot be multiplied by all Walmart purchasing, and stronger payment terms are a working-capital benefit rather than immediate profit.",
+      "businessTakeaway": "The use case fits large organizations with thousands of repeatable supplier agreements. Before scaling it, buyers must define hard negotiation limits, supplier-escalation rights and a fair comparison with the terms they would otherwise have accepted."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "accenture-github-copilot",
+    "company": "Accenture",
+    "industry": "Professional services",
+    "country": "Ireland (global operations)",
+    "companySize": "Large global consulting firm",
+    "caseTitle": "Measuring coding copilot effects in enterprise teams",
+    "oneSentenceSummary": "A randomized Accenture–GitHub study reported 8.69% more pull requests and a 15% higher merge rate for developers given GitHub Copilot.",
+    "businessFunction": "Software development",
+    "businessProblem": "Developers spent time on repetitive coding and information search while teams needed reliable delivery.",
+    "beforeAI": "Developers wrote code and prepared changes without an integrated AI suggestion tool.",
+    "aiSolution": "GitHub Copilot suggests code and examples inside a developer’s normal working environment.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Randomly assign comparable developers to Copilot-access and no-access groups.\n2. Install the assistant in the development environment used for normal client and internal work.\n3. Allow developers to accept or reject code suggestions while keeping standard peer review.\n4. Collect pull-request, merge and automated-build outcomes from development systems.\n5. Survey users about adoption, effort and satisfaction, and compare the groups.\n6. Treat workflow gains as evidence of capacity or quality until delivery time, cost or customer value is measured.",
+    "implementationSteps": [
+      "Randomly assign comparable developers to Copilot-access and no-access groups.",
+      "Install the assistant in the development environment used for normal client and internal work.",
+      "Allow developers to accept or reject code suggestions while keeping standard peer review.",
+      "Collect pull-request, merge and automated-build outcomes from development systems.",
+      "Survey users about adoption, effort and satisfaction, and compare the groups.",
+      "Treat workflow gains as evidence of capacity or quality until delivery time, cost or customer value is measured."
+    ],
+    "afterAI": "The trial reported improved code-change measures while normal review remained in place.",
+    "aiType": [
+      "AI Copilot",
+      "Generative AI"
+    ],
+    "technologyUsed": [
+      "GitHub Copilot",
+      "GitHub and Azure DevOps telemetry"
+    ],
+    "vendors": [
+      "GitHub"
+    ],
+    "businessImpact": {
+      "costSavings": "Not disclosed.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "8.69% more pull requests per developer in the reported study; a throughput proxy, not a measured revenue or labor-cost result.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "15% increase in pull-request merge rate",
+        "84% increase in successful builds as reported by GitHub",
+        "About 30% of suggestions accepted"
+      ]
+    },
+    "impactType": [
+      "Productivity capacity released",
+      "Quality improvement"
+    ],
+    "implementationDifficulty": "Medium",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Engineering managers, developers, security reviewers and data/measurement staff.",
+    "dataRequired": "Source code, developer-tool access, build and review telemetry, secure-use policy.",
+    "whyItWorked": [
+      "Randomized comparison strengthened the causal inference.",
+      "The assistant fit into existing tools.",
+      "Review and build outcomes were monitored with throughput."
+    ],
+    "keyLessons": [
+      "Do not equate more pull requests with more customer value.",
+      "Maintain code review and security scans."
+    ],
+    "risks": [
+      "Insecure or licensed code suggestions",
+      "Metric gaming",
+      "Different complexity across code changes"
+    ],
+    "replicability": "High",
+    "whoCouldUseThis": [
+      "Software teams",
+      "Technology-enabled consultancies",
+      "Internal IT organizations"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Software teams",
+        "Technology-enabled consultancies",
+        "Internal IT organizations"
+      ],
+      "probablyNotUsefulFor": [
+        "Organizations with very little software development"
+      ],
+      "requirements": [
+        "Developer tooling",
+        "Code review",
+        "Security policy",
+        "Measured control group"
+      ]
+    },
+    "evidenceGrade": "C",
+    "evidenceExplanation": "GitHub and Accenture collaborated on a randomized trial, giving stronger evidence for the reported development metrics. The publication does not show a financial return or direct customer-value measure.",
+    "sources": [
+      {
+        "title": "Research: Quantifying GitHub Copilot’s impact in the enterprise with Accenture",
+        "publisher": "GitHub and Accenture",
+        "url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/",
+        "date": "2024-05-13"
+      }
+    ],
+    "tags": [
+      "professional services",
+      "software development",
+      "productivity"
+    ],
+    "featured": false,
+    "speakerPotential": {
+      "score": "Medium",
+      "suggestedSpeakerTypes": [
+        "Engineering Productivity Lead",
+        "Consulting Technology Executive"
+      ],
+      "suggestedDiscussionTopics": [
+        "What an AI productivity trial can prove",
+        "Choosing metrics beyond code volume",
+        "Security and code review"
+      ]
+    },
+    "article": {
+      "opening": "Accenture and GitHub wanted to learn whether a coding assistant improved work inside a large consulting organization, rather than only in a short laboratory exercise. The question was whether developers could deliver more reviewed, working changes without simply moving errors downstream.",
+      "howTheyDidIt": "The partners randomly assigned developers to a group with GitHub Copilot access and a comparison group without it. Developers used the tool during ordinary engineering, design and testing work. GitHub and Azure DevOps records provided measures of pull requests, merges and build results, while surveys captured adoption and perceived effort. Crucially, Copilot supplied suggestions inside existing developer tools; peer review and automated builds still decided whether a change was acceptable. The public report does not disclose a dollar-value calculation, a common unit of customer value or a fully reproducible dataset for every team.",
+      "whatChanged": "Developers could accept or reject suggestions while writing code and search less for routine examples. The surrounding process did not disappear: changes still moved through review and tests, which helped the study check quality as well as volume.",
+      "resultsAndLimits": "The study reports 8.69% more pull requests, a 15% higher pull-request merge rate and an 84% increase in successful builds. Those are development-flow measures. They do not establish that Accenture invoiced more, reduced headcount, raised profit or created 8.69% more customer value.",
+      "businessTakeaway": "The strongest transferable lesson is the measurement design: run a comparable pilot, track both throughput and quality, and connect any later financial claim to project delivery or customer outcomes. Managers should also watch rework after release."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  },
+  {
+    "id": "natwest-cora-genai",
+    "company": "NatWest Group",
+    "industry": "Banking",
+    "country": "United Kingdom",
+    "companySize": "Large UK banking group",
+    "caseTitle": "Generative AI improves Cora self-service",
+    "oneSentenceSummary": "NatWest’s 2025 annual report says GenAI-supported Cora journeys resolved about 20 percentage points more queries without a person than comparable non-GenAI journeys.",
+    "businessFunction": "Customer service",
+    "businessProblem": "Customers needed faster routine banking answers without waiting for human support.",
+    "beforeAI": "Earlier digital assistant journeys often transferred queries to staff.",
+    "aiSolution": "NatWest added generative AI to selected Cora customer journeys while retaining human support.",
+    "implementation": "How the method was put to work (steps are reconstructed where the company did not publish a project plan):\n1. Select existing Cora journeys with frequent questions and unnecessary transfers to staff.\n2. Work with IBM to connect the generative-AI upgrade to approved secure bank information.\n3. Pilot Cora+ for 12 weeks in selected journeys and refine responses and controls.\n4. Expand supported journeys, giving direct answers and relevant links instead of a general information page.\n5. Escalate where a human is needed and provide a conversation summary to reduce repetition.\n6. Compare no-human resolution on equivalent GenAI and non-GenAI journeys, then check repeat contacts and quality.",
+    "implementationSteps": [
+      "Select existing Cora journeys with frequent questions and unnecessary transfers to staff.",
+      "Work with IBM to connect the generative-AI upgrade to approved secure bank information.",
+      "Pilot Cora+ for 12 weeks in selected journeys and refine responses and controls.",
+      "Expand supported journeys, giving direct answers and relevant links instead of a general information page.",
+      "Escalate where a human is needed and provide a conversation summary to reduce repetition.",
+      "Compare no-human resolution on equivalent GenAI and non-GenAI journeys, then check repeat contacts and quality."
+    ],
+    "afterAI": "Cora handled 12.9 million conversations in 2025; half needed no human intervention across the whole assistant.",
+    "aiType": [
+      "AI Customer Service",
+      "Generative AI"
+    ],
+    "technologyUsed": [
+      "NatWest Cora digital assistant",
+      "Generative AI for selected journeys",
+      "IBM enterprise AI and data platform for Cora+ pilot"
+    ],
+    "vendors": [
+      "IBM"
+    ],
+    "businessImpact": {
+      "costSavings": "Not disclosed.",
+      "revenueImpact": "Not disclosed.",
+      "profitImpact": "Not disclosed.",
+      "hoursSaved": "Not disclosed.",
+      "productivityImprovement": "Not disclosed.",
+      "processingTimeImprovement": "Not disclosed.",
+      "otherMetrics": [
+        "About 20 percentage-point uplift in no-human resolution for comparable GenAI-supported journeys",
+        "21 GenAI-supported journeys by 2025 year-end",
+        "12.9 million total Cora conversations in 2025, of which 50% needed no human intervention"
+      ]
+    },
+    "impactType": [
+      "Productivity capacity released",
+      "Service improvement"
+    ],
+    "implementationDifficulty": "High",
+    "estimatedTimeToImplement": "Not disclosed; no reliable project-wide estimate is available.",
+    "peopleRequired": "Retail-banking service owners, conversational design, compliance, security, customer agents and analytics staff.",
+    "dataRequired": "Approved banking information, conversation logs, journey taxonomy, escalation and resolution data.",
+    "whyItWorked": [
+      "The bank compared similar journeys rather than an undifferentiated chatbot average.",
+      "It expanded one journey at a time.",
+      "Human handling remained part of the service model."
+    ],
+    "keyLessons": [
+      "A percentage-point uplift is not a percentage increase.",
+      "Resolution without staff is a capacity metric until costs and satisfaction are measured."
+    ],
+    "risks": [
+      "Wrong financial guidance",
+      "Security and identity risks",
+      "Hidden repeat contacts",
+      "Unfair outcomes for vulnerable customers"
+    ],
+    "replicability": "Medium",
+    "whoCouldUseThis": [
+      "Banks",
+      "Insurers",
+      "Telecom providers"
+    ],
+    "businessApplicability": {
+      "goodFitFor": [
+        "Banks",
+        "Insurers",
+        "Telecom providers"
+      ],
+      "probablyNotUsefulFor": [
+        "Low-volume service businesses",
+        "Services without clear escalation"
+      ],
+      "requirements": [
+        "Digital customer channel",
+        "Approved answers",
+        "Human support",
+        "Like-for-like measurement"
+      ]
+    },
+    "evidenceGrade": "A",
+    "evidenceExplanation": "NatWest reported the journey comparison in its 2025 annual report. It did not assign a cost saving to Cora; group cost-ratio changes should not be attributed to this case.",
+    "sources": [
+      {
+        "title": "NatWest Group 2025 Annual Report and Accounts",
+        "publisher": "NatWest Group",
+        "url": "https://investors.natwestgroup.com/~/media/Files/R/RBS-IR-V2/annual-report-2025/2025-annual-report-and-accounts.pdf",
+        "date": "2026"
+      },
+      {
+        "title": "NatWest launches Cora+, the latest generative AI upgrade to the bank’s digital assistant",
+        "publisher": "NatWest Group and IBM",
+        "url": "https://www.natwestgroup.com/news-and-insights/news-room/press-releases/data-and-technology/2024/jun/natwest-launches-cora-plus-the-latest-generative-ai-upgrade-to-t.html",
+        "date": "2024-06-10"
+      }
+    ],
+    "tags": [
+      "banking",
+      "customer service",
+      "resolution"
+    ],
+    "featured": false,
+    "speakerPotential": {
+      "score": "Medium",
+      "suggestedSpeakerTypes": [
+        "Digital Service Lead",
+        "Contact Center Executive",
+        "Banking Conduct Lead"
+      ],
+      "suggestedDiscussionTopics": [
+        "How to compare AI and non-AI journeys",
+        "Quality beyond containment",
+        "Banking escalation and safeguards"
+      ]
+    },
+    "article": {
+      "opening": "NatWest did not start with a blank-page chatbot. Cora had served banking customers since 2017, first guiding basic tasks and later supporting more personalized transactions across app, web and telephone channels. The generative-AI upgrade aimed to make selected journeys easier to resolve without passing customers to staff.",
+      "howTheyDidIt": "NatWest and IBM developed Cora+ as an upgrade to the existing assistant. The bank announced an initial 12-week pilot in 2024. For selected journeys, Cora+ could draw from multiple secure bank information sources and give a more direct answer with relevant links rather than sending a customer to a general page. When a person was needed, the planned handoff summarized the conversation for the agent. NatWest then expanded generative AI to 21 customer journeys by the end of 2025. The bank reports comparison with equivalent non-GenAI journeys, but does not publish the exact matching method, per-conversation cost or full quality breakdown.",
+      "whatChanged": "Some customers could finish a routine inquiry within the digital channel. Staff would receive the cases that still required judgment or help, ideally with less need for the customer to repeat the question.",
+      "resultsAndLimits": "NatWest says GenAI-supported journeys resolved about 20 percentage points more queries without human intervention than equivalent journeys without GenAI. Across all of Cora, 12.9 million conversations occurred in 2025 and half required no human intervention. Those two measures have different scopes. The annual report does not attribute a cash saving to the upgrade.",
+      "businessTakeaway": "The method is to improve specific customer journeys inside an established service system, compare like with like and keep the human handoff usable. “No agent needed” becomes economic value only when quality, repeat contacts and actual service cost are measured."
+    },
+    "methodDisclosure": {
+      "reported": "The article’s company-specific mechanisms and metrics are supported by the listed sources.",
+      "reconstructed": "Implementation steps and transferable advice are a business-level reconstruction where the sources do not publish a full project plan.",
+      "notPublic": "Exact model configuration, full project cost, and complete implementation timetable were not disclosed unless specifically noted in the article."
+    }
+  }
+]

@@ -14,6 +14,12 @@ window.CEIBS_LIBRARY = {
       "color": "green"
     },
     {
+      "id": "ai-business",
+      "name": "AI in business",
+      "icon": "brain-circuit",
+      "color": "green"
+    },
+    {
       "id": "competitions",
       "name": "Case competitions",
       "icon": "trophy",
@@ -28,6 +34,27 @@ window.CEIBS_LIBRARY = {
     }
   ],
   "pages": [
+    {
+      "id": "ai-impact-library",
+      "title": "AI Impact Library",
+      "description": "13 research-backed company cases showing how AI changed costs, revenue, productivity, service, and operations.",
+      "topic": "ai-business",
+      "formats": [
+        "Website",
+        "Research",
+        "Case study"
+      ],
+      "tags": [
+        "AI",
+        "Business impact",
+        "Implementation",
+        "Case studies"
+      ],
+      "detail": "13 company cases \u00b7 source-graded",
+      "path": "pages/ai-impact-library/index.html",
+      "thumbnail": "assets/previews/ai-impact-library.svg",
+      "updated": "2026-09-27"
+    },
     {
       "id": "microeconomics-quiz",
       "title": "Microeconomics practice",

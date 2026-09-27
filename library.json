@@ -2,16 +2,34 @@
   "name": "CEIBS Notes",
   "topics": [
     { "id": "economics", "name": "Economics", "icon": "chart-no-axes-combined", "color": "green" },
+    { "id": "data-analytics", "name": "Data Analytics", "icon": "chart-no-axes-combined", "color": "green" },
+    { "id": "ai-business", "name": "AI in business", "icon": "brain-circuit", "color": "green" },
     { "id": "competitions", "name": "Case competitions", "icon": "trophy", "color": "coral" },
     { "id": "innovatechina", "name": "INNOVATEChina", "parent": "competitions", "icon": "lightbulb", "color": "coral" }
   ],
   "pages": [
+    {
+      "id": "ai-impact-library", "title": "AI Impact Library",
+      "description": "13 research-backed company cases showing how AI changed costs, revenue, productivity, service, and operations.",
+      "topic": "ai-business", "formats": ["Website", "Research", "Case study"],
+      "tags": ["AI", "Business impact", "Implementation", "Case studies"],
+      "detail": "13 company cases · source-graded",
+      "path": "pages/ai-impact-library/index.html",
+      "thumbnail": "assets/previews/ai-impact-library.svg",
+      "updated": "2026-09-27"
+    },
     {
       "id": "microeconomics-quiz", "title": "Microeconomics practice",
       "description": "60 advanced questions, worked solutions, and economic graphs. Study, take an exam, or revisit your answers.",
       "topic": "economics", "formats": ["Interactive"], "tags": ["Microeconomics", "Midterm", "Quiz"], "detail": "60 questions",
       "source": "01 Subjects/MicroEconomics/Microeconomics Quiz.html",
       "path": "pages/economics/microeconomics-quiz.html", "updated": "2026-09-18"
+    },
+    {
+      "id": "da-practice", "title": "Data Analytics practice",
+      "description": "60 advanced questions, worked solutions, and economic graphs. Study, take an exam, or revisit your answers.",
+      "topic": "data-analytics", "formats": ["Interactive"], "tags": ["Data Analytics", "Midterm", "Quiz"], "detail": "60 questions",
+      "path": "pages/data-analytics/da-practice.html", "updated": "2026-09-26", "thumbnail": "assets/previews/microeconomics-quiz.jpg"
     },
     {
       "id": "innovatechina-playbook", "title": "INNOVATEChina 2027",
