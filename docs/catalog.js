@@ -111,6 +111,26 @@ window.CEIBS_LIBRARY = {
       "thumbnail": "assets/previews/innovatechina-playbook.jpg"
     },
     {
+      "id": "gilead-company-overview",
+      "title": "Gilead Sciences company overview",
+      "description": "An interactive company anatomy covering Gilead's business model, portfolio, financial engine, pipeline, strategy, risks, leadership, and case implications.",
+      "topic": "competitions",
+      "formats": [
+        "Research",
+        "Summary"
+      ],
+      "tags": [
+        "Gilead",
+        "Healthcare",
+        "Pharma",
+        "Company strategy"
+      ],
+      "detail": "Company briefing",
+      "path": "pages/competitions/gilead/gilead_company_overview.html",
+      "updated": "2026-09-30",
+      "thumbnail": "assets/previews/gilead-playbook.jpg"
+    },
+    {
       "id": "gilead-playbook",
       "title": "Gilead case competition",
       "description": "A research playbook covering the pharmaceutical landscape, competition preparation, and strategic questions.",
@@ -126,7 +146,7 @@ window.CEIBS_LIBRARY = {
       ],
       "detail": "Research playbook",
       "path": "pages/competitions/gilead/playbook.html",
-      "updated": "2026-09-18",
+      "updated": "2026-09-30",
       "thumbnail": "assets/previews/gilead-playbook.jpg"
     }
   ]

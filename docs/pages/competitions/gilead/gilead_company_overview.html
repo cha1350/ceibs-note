@@ -1,0 +1,1753 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A source-backed interactive company overview of Gilead Sciences for strategy and case competition preparation.">
+  <title>Gilead Sciences Company Overview | Strategy Briefing</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230b4058'/%3E%3Cpath d='M17 16h30v8H25v16h14v-5h-8v-7h16v20H17z' fill='%23fff'/%3E%3Cpath d='M47 16v8H25z' fill='%23f0a34a'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #15252d;
+      --muted: #5d6b72;
+      --paper: #f5f8f8;
+      --white: #ffffff;
+      --navy: #0b4058;
+      --navy-2: #083349;
+      --teal: #007f78;
+      --cyan: #5ab8c2;
+      --orange: #f0a34a;
+      --coral: #d9664a;
+      --green: #31845c;
+      --line: #d5dfe1;
+      --soft-blue: #eaf3f5;
+      --soft-teal: #e7f4f1;
+      --soft-orange: #fff1dd;
+      --soft-red: #fae9e5;
+      --shadow: 0 10px 28px rgba(11, 64, 88, .08);
+      --radius: 8px;
+      --max: 1280px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(11, 64, 88, .032) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(11, 64, 88, .032) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.58;
+    }
+
+    a { color: var(--teal); text-underline-offset: 3px; }
+    a:hover { color: var(--navy); }
+
+    button, input { font: inherit; }
+
+    button:focus-visible,
+    input:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(240, 163, 74, .62);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 16px;
+      top: -80px;
+      z-index: 100;
+      padding: 10px 14px;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: 4px;
+    }
+
+    .skip-link:focus { top: 12px; }
+
+    .topbar {
+      color: var(--white);
+      background: var(--navy-2);
+      border-bottom: 1px solid rgba(255,255,255,.14);
+    }
+
+    .topbar-inner,
+    .hero-inner,
+    .nav-inner,
+    main,
+    footer > div {
+      width: min(calc(100% - 32px), var(--max));
+      margin-inline: auto;
+    }
+
+    .topbar-inner {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: .82rem;
+    }
+
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--white);
+      font-size: .86rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-decoration: none;
+    }
+
+    .wordmark-mark {
+      width: 25px;
+      height: 25px;
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      background: var(--orange);
+      border-radius: 4px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .topbar-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: #d8e7eb;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      display: inline-block;
+      margin-right: 6px;
+      background: #6fd2a2;
+      border-radius: 50%;
+    }
+
+    .hero {
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(5, 41, 59, .98), rgba(11, 64, 88, .94)),
+        var(--navy);
+    }
+
+    .hero-inner {
+      min-height: 440px;
+      padding: 54px 0 42px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(300px, .8fr);
+      gap: 46px;
+      align-items: end;
+    }
+
+    .eyebrow {
+      margin-bottom: 13px;
+      color: #99d8dc;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, h4, p { margin-top: 0; }
+
+    h1 {
+      max-width: 820px;
+      margin-bottom: 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.55rem, 5.6vw, 5.25rem);
+      line-height: .96;
+      letter-spacing: 0;
+      font-weight: 600;
+    }
+
+    .hero-lede {
+      max-width: 760px;
+      margin-bottom: 26px;
+      color: #dbe9ec;
+      font-size: 1.08rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button {
+      min-height: 43px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 14px;
+      color: var(--navy-2);
+      background: var(--orange);
+      border: 1px solid var(--orange);
+      border-radius: 5px;
+      font-weight: 760;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button.secondary {
+      color: var(--white);
+      background: transparent;
+      border-color: rgba(255,255,255,.36);
+    }
+
+    .button:hover { color: var(--navy-2); background: #ffc97f; }
+    .button.secondary:hover { color: var(--white); background: rgba(255,255,255,.1); }
+
+    .icon {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .snapshot {
+      padding: 20px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.17);
+      border-radius: var(--radius);
+      backdrop-filter: blur(6px);
+    }
+
+    .snapshot-title {
+      margin-bottom: 16px;
+      color: #a7dfe2;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .snapshot-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      overflow: hidden;
+      background: rgba(255,255,255,.17);
+      border-radius: 6px;
+    }
+
+    .snapshot-item {
+      min-height: 98px;
+      padding: 14px;
+      background: rgba(6, 48, 68, .9);
+    }
+
+    .snapshot-item strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--white);
+      font-size: 1.6rem;
+      line-height: 1.08;
+    }
+
+    .snapshot-item span { color: #bdd5da; font-size: .8rem; line-height: 1.3; }
+
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 4px 18px rgba(11, 64, 88, .05);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-inner {
+      min-height: 62px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .nav-links a {
+      flex: 0 0 auto;
+      padding: 9px 10px;
+      color: #3b4c54;
+      border-radius: 4px;
+      font-size: .84rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover { color: var(--navy); background: var(--soft-blue); }
+
+    .search-wrap { position: relative; }
+
+    .search-wrap .icon {
+      position: absolute;
+      left: 11px;
+      top: 50%;
+      width: 16px;
+      height: 16px;
+      color: #718086;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    #siteSearch {
+      width: 100%;
+      height: 39px;
+      padding: 8px 34px 8px 35px;
+      color: var(--ink);
+      background: #f7f9f9;
+      border: 1px solid #cbd7d9;
+      border-radius: 5px;
+    }
+
+    #clearSearch {
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      width: 28px;
+      height: 28px;
+      display: none;
+      place-items: center;
+      padding: 0;
+      color: #52636b;
+      background: transparent;
+      border: 0;
+      border-radius: 4px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    #clearSearch.visible { display: grid; }
+
+    .search-status {
+      display: none;
+      padding: 10px 16px;
+      color: var(--navy);
+      background: #fff7e9;
+      border-bottom: 1px solid #efd5ad;
+      text-align: center;
+      font-size: .88rem;
+    }
+
+    .search-status.visible { display: block; }
+
+    main { padding: 34px 0 70px; }
+
+    section {
+      scroll-margin-top: 82px;
+      margin-bottom: 62px;
+    }
+
+    .section-heading {
+      margin-bottom: 23px;
+      display: grid;
+      grid-template-columns: 86px minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .section-number {
+      padding-top: 7px;
+      color: var(--teal);
+      border-top: 3px solid var(--orange);
+      font-size: .77rem;
+      font-weight: 850;
+      letter-spacing: .12em;
+    }
+
+    h2 {
+      margin-bottom: 6px;
+      color: var(--navy-2);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.9rem, 3.3vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      font-weight: 600;
+    }
+
+    .section-heading p { max-width: 820px; margin-bottom: 0; color: var(--muted); }
+
+    h3 {
+      margin-bottom: 10px;
+      color: var(--navy-2);
+      font-size: 1.06rem;
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    h4 { margin-bottom: 7px; color: var(--navy-2); font-size: .94rem; }
+
+    .grid { display: grid; gap: 18px; }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .panel,
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .panel { padding: 24px; }
+    .card { padding: 20px; }
+
+    .card p:last-child,
+    .panel p:last-child { margin-bottom: 0; }
+
+    .fact-strip {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      overflow: hidden;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .fact {
+      min-height: 126px;
+      padding: 18px;
+      background: var(--white);
+    }
+
+    .fact strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--navy);
+      font-size: 1.85rem;
+      line-height: 1;
+    }
+
+    .fact span { display: block; color: var(--muted); font-size: .82rem; line-height: 1.35; }
+
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      color: var(--navy);
+      background: var(--soft-blue);
+      border: 1px solid #c7dfe4;
+      border-radius: 999px;
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .label.analysis { color: #81511e; background: var(--soft-orange); border-color: #eccb9d; }
+    .label.risk { color: #8e3e2d; background: var(--soft-red); border-color: #efc2b7; }
+    .label.current { color: #226846; background: #e6f4eb; border-color: #bee0ca; }
+
+    .legend {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: .8rem;
+    }
+
+    .identity-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+      gap: 18px;
+    }
+
+    .thesis {
+      padding: 28px;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .thesis h3 { color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: 1.65rem; }
+    .thesis p { color: #dce9ec; }
+
+    .plain-list,
+    .check-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .plain-list li,
+    .check-list li {
+      position: relative;
+      padding: 10px 0 10px 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    .plain-list li:first-child,
+    .check-list li:first-child { border-top: 0; }
+
+    .plain-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 18px;
+      width: 8px;
+      height: 8px;
+      background: var(--orange);
+      border-radius: 2px;
+    }
+
+    .check-list li::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      color: var(--teal);
+      font-weight: 900;
+    }
+
+    .value-chain {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 0;
+      overflow: hidden;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .value-step {
+      position: relative;
+      min-height: 190px;
+      padding: 20px 16px;
+      background: var(--white);
+    }
+
+    .value-step + .value-step { border-left: 1px solid var(--line); }
+    .value-step b { display: block; margin-bottom: 11px; color: var(--teal); font-size: .74rem; letter-spacing: .1em; }
+    .value-step p { margin: 0; color: var(--muted); font-size: .82rem; }
+
+    .economic-box {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .economic-box .card strong { display: block; color: var(--navy); font-size: 1.45rem; line-height: 1.1; }
+    .economic-box .card span { color: var(--muted); font-size: .8rem; }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 17px;
+      padding: 6px;
+      background: #e9eff0;
+      border-radius: 7px;
+    }
+
+    .tab-button {
+      min-height: 41px;
+      padding: 8px 13px;
+      color: #405159;
+      background: transparent;
+      border: 0;
+      border-radius: 5px;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .tab-button[aria-selected="true"] {
+      color: var(--white);
+      background: var(--navy);
+      box-shadow: 0 4px 10px rgba(11,64,88,.16);
+    }
+
+    .tab-panel[hidden] { display: none; }
+
+    .portfolio-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: start;
+      margin-bottom: 18px;
+    }
+
+    .portfolio-head p { max-width: 760px; margin-bottom: 0; color: var(--muted); }
+
+    .portfolio-number {
+      min-width: 145px;
+      padding: 15px;
+      color: var(--white);
+      background: var(--teal);
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .portfolio-number strong { display: block; font-size: 1.65rem; line-height: 1; }
+    .portfolio-number span { font-size: .72rem; }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .product {
+      min-height: 160px;
+      padding: 17px;
+      background: #f9fbfb;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--cyan);
+      border-radius: 6px;
+    }
+
+    .product small { color: var(--teal); font-weight: 800; text-transform: uppercase; }
+    .product h4 { margin: 5px 0 6px; font-size: 1rem; }
+    .product p { margin: 0; color: var(--muted); font-size: .82rem; }
+
+    .finance-layout {
+      display: grid;
+      grid-template-columns: minmax(320px, .9fr) minmax(0, 1.1fr);
+      gap: 18px;
+    }
+
+    .donut-layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 22px;
+      align-items: center;
+    }
+
+    .donut {
+      width: 210px;
+      aspect-ratio: 1;
+      position: relative;
+      display: grid;
+      place-items: center;
+      background: conic-gradient(
+        var(--navy) 0 71.8%,
+        var(--teal) 71.8% 82.9%,
+        var(--orange) 82.9% 94.1%,
+        var(--coral) 94.1% 97.3%,
+        #92a5ab 97.3% 100%
+      );
+      border-radius: 50%;
+    }
+
+    .donut::after {
+      content: "";
+      width: 118px;
+      aspect-ratio: 1;
+      position: absolute;
+      background: var(--white);
+      border-radius: 50%;
+    }
+
+    .donut-center { position: relative; z-index: 1; text-align: center; }
+    .donut-center strong { display: block; color: var(--navy); font-size: 1.62rem; line-height: 1; }
+    .donut-center span { color: var(--muted); font-size: .7rem; }
+
+    .legend-list { display: grid; gap: 7px; }
+
+    .legend-row {
+      display: grid;
+      grid-template-columns: 12px 1fr auto;
+      gap: 9px;
+      align-items: center;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #edf1f1;
+      font-size: .82rem;
+    }
+
+    .swatch { width: 10px; height: 10px; border-radius: 2px; }
+
+    .bar-chart { height: 290px; display: flex; align-items: end; gap: 22px; padding: 22px 8px 6px; border-bottom: 1px solid var(--line); }
+
+    .bar-col {
+      flex: 1;
+      min-width: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: stretch;
+      gap: 8px;
+      text-align: center;
+    }
+
+    .bar-value { color: var(--navy); font-size: .8rem; font-weight: 800; }
+    .bar { min-height: 20px; background: linear-gradient(180deg, var(--teal), var(--navy)); border-radius: 4px 4px 0 0; }
+    .bar-col span:last-child { color: var(--muted); font-size: .78rem; }
+
+    .finance-note {
+      margin-top: 16px;
+      padding: 14px;
+      background: var(--soft-orange);
+      border-left: 4px solid var(--orange);
+      border-radius: 4px;
+      font-size: .85rem;
+    }
+
+    .strategy-map {
+      display: grid;
+      grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+      gap: 18px;
+    }
+
+    .ambition {
+      padding: 25px;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: var(--radius);
+    }
+
+    .ambition strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--orange);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.4rem;
+      line-height: 1;
+    }
+
+    .priority-list { display: grid; gap: 10px; }
+
+    .priority {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 13px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    .priority b {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      background: var(--teal);
+      border-radius: 4px;
+    }
+
+    .priority p { margin: 2px 0 0; color: var(--muted); font-size: .82rem; }
+
+    .pipeline-funnel {
+      display: grid;
+      grid-template-columns: 1.53fr 1fr 1fr;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .phase {
+      min-height: 105px;
+      display: grid;
+      place-items: center;
+      padding: 14px;
+      color: var(--white);
+      background: var(--navy);
+      clip-path: polygon(0 0, 94% 0, 100% 50%, 94% 100%, 0 100%, 6% 50%);
+      text-align: center;
+    }
+
+    .phase:first-child { clip-path: polygon(0 0, 94% 0, 100% 50%, 94% 100%, 0 100%); }
+    .phase:nth-child(2) { background: var(--teal); }
+    .phase:nth-child(3) { background: #3a91a0; }
+    .phase strong { display: block; font-size: 1.8rem; line-height: 1; }
+    .phase span { font-size: .76rem; }
+
+    .bet-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+
+    .bet {
+      min-height: 210px;
+      padding: 18px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--orange);
+      border-radius: 6px;
+    }
+
+    .bet p { color: var(--muted); font-size: .82rem; }
+    .bet .label { margin-bottom: 9px; }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 25px;
+      height: 2px;
+      background: #bfd1d5;
+    }
+
+    .milestone { position: relative; padding-top: 47px; }
+
+    .milestone::before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 18px;
+      width: 18px;
+      height: 18px;
+      background: var(--orange);
+      border: 4px solid var(--paper);
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #d49a50;
+    }
+
+    .milestone-card {
+      height: 100%;
+      padding: 16px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    .milestone-card time { color: var(--teal); font-size: .76rem; font-weight: 850; }
+    .milestone-card p { margin: 4px 0 0; color: var(--muted); font-size: .8rem; }
+
+    .risk-matrix {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .risk-card {
+      min-height: 200px;
+      padding: 18px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--coral);
+      border-radius: 6px;
+    }
+
+    .risk-card p { color: var(--muted); font-size: .82rem; }
+    .risk-card strong { color: var(--coral); font-size: .75rem; text-transform: uppercase; }
+
+    .access-band {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      overflow: hidden;
+      background: var(--navy);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .access-copy { padding: 28px; color: var(--white); }
+    .access-copy h3 { color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: 1.6rem; }
+    .access-copy p { color: #d9e7ea; }
+
+    .access-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      background: rgba(255,255,255,.17);
+    }
+
+    .access-metric { min-height: 150px; padding: 22px; background: rgba(255,255,255,.07); }
+    .access-metric strong { display: block; color: var(--orange); font-size: 2rem; line-height: 1; }
+    .access-metric span { color: #d9e7ea; font-size: .8rem; }
+
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .leader {
+      min-height: 132px;
+      padding: 17px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    .leader b { display: block; margin-bottom: 4px; color: var(--navy); }
+    .leader span { display: block; color: var(--muted); font-size: .8rem; }
+    .leader.ceo { color: var(--white); background: var(--navy); grid-column: span 3; }
+    .leader.ceo b { color: var(--white); font-size: 1.2rem; }
+    .leader.ceo span { color: #d7e6e9; }
+
+    .case-framework {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .case-step {
+      position: relative;
+      min-height: 180px;
+      padding: 18px;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: 6px;
+    }
+
+    .case-step:nth-child(2),
+    .case-step:nth-child(4) { background: var(--teal); }
+
+    .case-step b { display: block; margin-bottom: 12px; color: var(--orange); font-size: .77rem; letter-spacing: .09em; }
+    .case-step p { margin: 0; color: #e1ecee; font-size: .82rem; }
+
+    .kpi-table { width: 100%; border-collapse: collapse; }
+    .kpi-table th, .kpi-table td { padding: 12px 13px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .kpi-table th { color: var(--navy); background: var(--soft-blue); font-size: .8rem; }
+    .kpi-table td { font-size: .84rem; }
+
+    details {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    details + details { margin-top: 8px; }
+
+    summary {
+      padding: 14px 16px;
+      color: var(--navy);
+      font-weight: 780;
+      cursor: pointer;
+    }
+
+    details p { padding: 0 16px 16px; margin: 0; color: var(--muted); font-size: .86rem; }
+
+    .source-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .source-list li {
+      min-height: 108px;
+      padding: 16px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    .source-list a { font-weight: 760; }
+    .source-list span { display: block; margin-top: 4px; color: var(--muted); font-size: .78rem; }
+
+    .hidden-by-search { display: none !important; }
+
+    .empty-state {
+      display: none;
+      padding: 34px;
+      color: var(--muted);
+      background: var(--white);
+      border: 1px dashed #aebdc1;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .empty-state.visible { display: block; }
+
+    footer {
+      padding: 30px 0;
+      color: #d5e3e6;
+      background: var(--navy-2);
+      font-size: .8rem;
+    }
+
+    footer > div { display: flex; justify-content: space-between; gap: 20px; }
+    footer a { color: #9edce0; }
+
+    @media print {
+      .sticky-nav, .hero-actions, .skip-link { display: none !important; }
+      body { background: #fff; }
+      .hero { color: #000; background: #fff; border-bottom: 2px solid #000; }
+      .hero-lede, .snapshot-item span, .thesis p, .access-copy p, .access-metric span { color: #333; }
+      .snapshot, .snapshot-item, .thesis, .ambition, .access-band, .access-metric, .case-step { color: #000; background: #fff; border: 1px solid #999; }
+      .snapshot-item strong, .thesis h3, .access-copy h3, .leader.ceo b, .leader.ceo, .leader.ceo span { color: #000; }
+      section { break-inside: avoid; }
+    }
+
+    @media (max-width: 1020px) {
+      .hero-inner,
+      .identity-layout,
+      .finance-layout,
+      .strategy-map,
+      .access-band { grid-template-columns: 1fr; }
+
+      .fact-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .value-chain { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .value-step:nth-child(4) { border-left: 0; }
+      .product-grid, .bet-grid, .risk-matrix, .leadership-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .case-framework { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .leader.ceo { grid-column: span 2; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar-meta span:first-child { display: none; }
+      .hero-inner { min-height: 0; padding: 40px 0 34px; gap: 28px; }
+      h1 { font-size: clamp(2.4rem, 13vw, 4rem); }
+      .nav-inner { grid-template-columns: 1fr; padding: 8px 0; gap: 7px; }
+      .nav-links { order: 2; }
+      main { padding-top: 25px; }
+      section { margin-bottom: 48px; }
+      .section-heading { grid-template-columns: 54px minmax(0, 1fr); gap: 13px; }
+      .fact-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid.two, .grid.three, .grid.four { grid-template-columns: 1fr; }
+      .economic-box { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .donut-layout { grid-template-columns: 1fr; justify-items: center; }
+      .legend-list { width: 100%; }
+      .portfolio-head { grid-template-columns: 1fr; }
+      .portfolio-number { text-align: left; }
+      .product-grid, .bet-grid, .risk-matrix, .leadership-grid, .source-list { grid-template-columns: 1fr; }
+      .leader.ceo { grid-column: span 1; }
+      .pipeline-funnel { grid-template-columns: 1fr; }
+      .phase, .phase:first-child { clip-path: none; border-radius: 6px; }
+      .timeline { grid-template-columns: 1fr; }
+      .timeline::before { left: 25px; top: 0; bottom: 0; width: 2px; height: auto; }
+      .milestone { padding: 0 0 0 54px; }
+      .milestone::before { top: 17px; left: 17px; }
+      .case-framework { grid-template-columns: 1fr; }
+      .kpi-scroll { overflow-x: auto; }
+      footer > div { display: grid; }
+    }
+
+    @media (max-width: 520px) {
+      .topbar-inner, .hero-inner, .nav-inner, main, footer > div { width: min(calc(100% - 22px), var(--max)); }
+      .snapshot-grid, .fact-strip, .economic-box, .access-metrics { grid-template-columns: 1fr; }
+      .value-chain { grid-template-columns: 1fr; }
+      .value-step + .value-step { border-left: 0; border-top: 1px solid var(--line); }
+      .panel, .card { padding: 17px; }
+      .bar-chart { gap: 10px; }
+      .hero-actions { display: grid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to company briefing</a>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="wordmark" href="#top" aria-label="Gilead company overview home">
+        <span class="wordmark-mark">G</span>
+        GILEAD COMPANY BRIEF
+      </a>
+      <div class="topbar-meta">
+        <span><span class="status-dot"></span>Research cutoff: September 30, 2026</span>
+        <span>Standalone report</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Company anatomy / strategy / case preparation</div>
+        <h1>Gilead Sciences, understood.</h1>
+        <p class="hero-lede">
+          A source-backed map of what Gilead sells, how it creates value, where its cash comes from,
+          which scientific bets shape its future, and what tensions matter when you build a strategy for the company.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="playbook.html">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Competition playbook
+          </a>
+          <button class="button secondary" id="printPage" type="button">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+            Print / save PDF
+          </button>
+        </div>
+      </div>
+
+      <aside class="snapshot" aria-label="Gilead at a glance">
+        <div class="snapshot-title">At a glance</div>
+        <div class="snapshot-grid">
+          <div class="snapshot-item"><strong>$29.4B</strong><span>2025 total revenue</span></div>
+          <div class="snapshot-item"><strong>71.8%</strong><span>of 2025 product sales from HIV</span></div>
+          <div class="snapshot-item"><strong>53</strong><span>clinical-stage programs at Q2 2026</span></div>
+          <div class="snapshot-item"><strong>17,000</strong><span>employees at year-end 2025</span></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <nav class="sticky-nav" aria-label="Company overview sections">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="#identity">Identity</a>
+        <a href="#model">Business model</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#financials">Financials</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#history">History</a>
+        <a href="#risks">Risks</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#case-lens">Case lens</a>
+        <a href="#sources">Sources</a>
+      </div>
+      <div class="search-wrap">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <label for="siteSearch" style="position:absolute;clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;width:1px;overflow:hidden">Search this company overview</label>
+        <input id="siteSearch" type="search" placeholder="Search Gilead..." autocomplete="off">
+        <button id="clearSearch" type="button" aria-label="Clear search">x</button>
+      </div>
+    </div>
+    <div class="search-status" id="searchStatus" aria-live="polite"></div>
+  </nav>
+
+  <main id="main">
+    <div class="empty-state" id="emptyState">
+      <h3>No section matches that search.</h3>
+      <p>Try a product name such as Biktarvy, a topic such as oncology, or a term such as acquisition.</p>
+    </div>
+
+    <section id="identity" data-search-block data-search="identity overview company mission founded headquarters countries employees therapeutic areas virology oncology inflammation">
+      <div class="section-heading">
+        <div class="section-number">01 / ID</div>
+        <div>
+          <h2>What kind of company is Gilead?</h2>
+          <p>Gilead is a research-based biopharmaceutical company with a concentrated commercial core and a deliberately expanding portfolio.</p>
+        </div>
+      </div>
+
+      <div class="fact-strip">
+        <div class="fact"><strong>1987</strong><span>Founded in California; incorporated in Delaware</span></div>
+        <div class="fact"><strong>GILD</strong><span>Nasdaq Global Select Market ticker</span></div>
+        <div class="fact"><strong>35+</strong><span>Countries with operations and commercial presence</span></div>
+        <div class="fact"><strong>25+</strong><span>Therapies in the 2025 commercial portfolio</span></div>
+        <div class="fact"><strong>3</strong><span>Core R&amp;D domains: virology, oncology, inflammation</span></div>
+      </div>
+
+      <div class="identity-layout" style="margin-top:18px">
+        <div class="thesis">
+          <span class="label current">Core thesis</span>
+          <h3 style="margin-top:14px">An HIV franchise funding the construction of a broader biopharma company.</h3>
+          <p>
+            Gilead's current economics are dominated by HIV, especially Biktarvy. Its future strategy is a barbell:
+            defend and extend that unusually strong franchise with long-acting medicines, while using internal R&amp;D,
+            partnerships, and acquisitions to build durable growth engines in oncology and inflammation.
+          </p>
+          <p>
+            This makes Gilead financially powerful but strategically exposed. The same franchise that provides funding
+            also creates concentration risk and raises the standard for every diversification investment.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>What it is not</h3>
+          <ul class="plain-list">
+            <li>Not a diversified consumer-health conglomerate.</li>
+            <li>Not only an HIV company, although HIV remains the commercial center.</li>
+            <li>Not purely an internal-discovery model; external innovation is central.</li>
+            <li>Not a single manufacturing model: pills, injectables, biologics, ADCs, and personalized CAR T require different systems.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="legend">
+        <span class="label">Confirmed fact</span> Linked directly to official filings or company sources
+        <span class="label analysis">Analysis</span> Interpretation built from those facts
+      </div>
+    </section>
+
+    <section id="model" data-search-block data-search="business model research development licensing acquisition clinical trials regulatory manufacturing commercialization wholesalers payers gross to net rebates patents value chain">
+      <div class="section-heading">
+        <div class="section-number">02 / MODEL</div>
+        <div>
+          <h2>How Gilead creates and captures value</h2>
+          <p>The company does not simply invent a drug and sell it. Value must survive six linked systems, each with a different failure mode.</p>
+        </div>
+      </div>
+
+      <div class="value-chain">
+        <div class="value-step"><b>01 DISCOVER</b><h3>Find a mechanism</h3><p>Internal science identifies targets, molecules, delivery systems, or cell-therapy approaches.</p></div>
+        <div class="value-step"><b>02 SOURCE</b><h3>Buy or partner</h3><p>Licensing, collaborations, options, and acquisitions add programs and platforms from outside.</p></div>
+        <div class="value-step"><b>03 PROVE</b><h3>Run clinical trials</h3><p>Evidence must establish safety, efficacy, patient fit, and comparative value. Most trial activity is outsourced to CROs.</p></div>
+        <div class="value-step"><b>04 APPROVE</b><h3>Secure the label</h3><p>Regulators determine the population, indication, dosing, warnings, and evidence obligations that define commercial potential.</p></div>
+        <div class="value-step"><b>05 DELIVER</b><h3>Manufacture and launch</h3><p>Tablets, injections, ADCs, and made-to-order CAR T therapies need very different supply and treatment-site networks.</p></div>
+        <div class="value-step"><b>06 REALIZE</b><h3>Win access and use</h3><p>Physicians, patients, payers, health systems, and distributors determine real uptake, net price, and persistence.</p></div>
+      </div>
+
+      <div class="economic-box">
+        <div class="card"><strong>98.2%</strong><span>of 2025 revenue was product sales, not royalties or contracts</span></div>
+        <div class="card"><strong>41%</strong><span>gross-to-net deductions as a share of 2025 gross product sales</span></div>
+        <div class="card"><strong>~90%</strong><span>of historical U.S. gross sales flowed through three major wholesalers</span></div>
+        <div class="card"><strong>79.3%</strong><span>Q2 2026 GAAP product gross margin</span></div>
+      </div>
+
+      <div class="grid two" style="margin-top:18px">
+        <div class="panel">
+          <span class="label">Revenue logic</span>
+          <h3 style="margin-top:12px">The list price is not the revenue.</h3>
+          <p>
+            Gilead records product sales after rebates, chargebacks, co-pay support, prompt-pay discounts,
+            distributor fees, and returns. In 2025, those deductions totaled $20.0 billion, or 41% of gross product sales.
+            A case that models only volume times list price will overstate economics.
+          </p>
+        </div>
+        <div class="panel">
+          <span class="label analysis">Strategic implication</span>
+          <h3 style="margin-top:12px">Commercial success is a system design problem.</h3>
+          <p>
+            Evidence, label, payer policy, provider workflow, manufacturing capacity, patient support, and channel inventory
+            all interact. For Gilead, a scientifically strong idea is incomplete until the access and delivery architecture works.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" data-search-block data-search="portfolio medicines products HIV Biktarvy Descovy Yeztugo Sunlenca Genvoya Odefsey Symtuza liver Epclusa Vemlidy Livdelzi Hepcludex oncology Trodelvy Yescarta Tecartus Veklury AmBisome">
+      <div class="section-heading">
+        <div class="section-number">03 / RX</div>
+        <div>
+          <h2>Commercial portfolio</h2>
+          <p>Use the tabs to see the role of each franchise. Product descriptions are simplified and do not replace prescribing information.</p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="tabs" role="tablist" aria-label="Therapeutic area tabs">
+          <button class="tab-button" type="button" role="tab" aria-selected="true" aria-controls="tab-hiv" id="btn-hiv" data-tab="hiv">HIV</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-liver" id="btn-liver" data-tab="liver">Liver disease</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-oncology" id="btn-oncology" data-tab="oncology">Oncology</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-other" id="btn-other" data-tab="other">Other</button>
+        </div>
+
+        <div class="tab-panel" id="tab-hiv" role="tabpanel" aria-labelledby="btn-hiv">
+          <div class="portfolio-head">
+            <div><h3>The franchise that defines Gilead</h3><p>Gilead spans treatment and prevention, with a long history of simplifying multi-drug therapy into convenient regimens. The next strategic turn is less frequent dosing.</p></div>
+            <div class="portfolio-number"><strong>$20.8B</strong><span>2025 HIV product sales</span></div>
+          </div>
+          <div class="product-grid">
+            <article class="product"><small>Treatment / daily oral</small><h4>Biktarvy</h4><p>Once-daily single-tablet HIV-1 regimen and the company's largest product. $14.3B in 2025 sales.</p></article>
+            <article class="product"><small>Treatment + PrEP</small><h4>Descovy</h4><p>FTC/TAF backbone used in treatment combinations and approved for PrEP in certain at-risk populations. $2.8B in 2025 sales.</p></article>
+            <article class="product"><small>Prevention / twice yearly</small><h4>Yeztugo</h4><p>Lenacapavir-based injectable PrEP approved by FDA in 2025, designed to reduce adherence burden.</p></article>
+            <article class="product"><small>Treatment / twice yearly</small><h4>Sunlenca</h4><p>Lenacapavir for heavily treatment-experienced adults with multidrug-resistant HIV, used with other antiretrovirals.</p></article>
+            <article class="product"><small>Established regimens</small><h4>Genvoya + Odefsey</h4><p>Single-tablet HIV treatment regimens that remain material but declined in 2025 as the portfolio shifts toward newer options.</p></article>
+            <article class="product"><small>Collaboration</small><h4>Symtuza</h4><p>Johnson &amp; Johnson commercializes the regimen; Gilead receives a share of revenue for its components.</p></article>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="tab-liver" role="tabpanel" aria-labelledby="btn-liver" hidden>
+          <div class="portfolio-head">
+            <div><h3>A franchise built on antiviral leadership, now adding rare liver disease</h3><p>HCV cures created extraordinary historical value but naturally reduced the treatable pool. Newer growth comes from HBV, PBC, and HDV.</p></div>
+            <div class="portfolio-number"><strong>$3.2B</strong><span>2025 liver disease sales</span></div>
+          </div>
+          <div class="product-grid">
+            <article class="product"><small>Hepatitis C</small><h4>Epclusa</h4><p>Once-daily sofosbuvir/velpatasvir regimen for chronic HCV across genotypes and multiple disease states.</p></article>
+            <article class="product"><small>Hepatitis B</small><h4>Vemlidy</h4><p>TAF-based daily oral treatment for chronic HBV in eligible adults and adolescents.</p></article>
+            <article class="product"><small>Primary biliary cholangitis</small><h4>Livdelzi</h4><p>Seladelpar for adults with inadequate response or intolerance to standard PBC therapy; a current growth driver.</p></article>
+            <article class="product"><small>Hepatitis D</small><h4>Hepcludex</h4><p>Bulevirtide received FDA accelerated approval in 2026, becoming the first FDA-approved HDV treatment in the U.S.</p></article>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="tab-oncology" role="tabpanel" aria-labelledby="btn-oncology" hidden>
+          <div class="portfolio-head">
+            <div><h3>Two operating models under one oncology ambition</h3><p>Trodelvy is an off-the-shelf antibody-drug conjugate. Kite's Yescarta and Tecartus are individualized CAR T therapies that depend on treatment centers, cell collection, manufacturing, and logistics.</p></div>
+            <div class="portfolio-number"><strong>$3.2B</strong><span>2025 oncology sales</span></div>
+          </div>
+          <div class="product-grid">
+            <article class="product"><small>ADC / solid tumors</small><h4>Trodelvy</h4><p>Trop-2-directed antibody-drug conjugate used in breast cancer, with a 2026 first-line metastatic TNBC expansion.</p></article>
+            <article class="product"><small>CAR T / blood cancer</small><h4>Yescarta</h4><p>Autologous CAR T therapy for multiple lymphoma settings. 2025 sales declined amid competitive pressure.</p></article>
+            <article class="product"><small>CAR T / blood cancer</small><h4>Tecartus</h4><p>Autologous CAR T therapy for mantle cell lymphoma and B-cell precursor acute lymphoblastic leukemia.</p></article>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="tab-other" role="tabpanel" aria-labelledby="btn-other" hidden>
+          <div class="portfolio-head">
+            <div><h3>Smaller but strategically relevant products</h3><p>These products show Gilead's infectious-disease capabilities and the volatility that can follow epidemic-driven demand.</p></div>
+            <div class="portfolio-number"><strong>$1.7B</strong><span>2025 Veklury + other sales</span></div>
+          </div>
+          <div class="product-grid">
+            <article class="product"><small>COVID-19</small><h4>Veklury</h4><p>Remdesivir for eligible hospitalized and high-risk non-hospitalized patients. Sales fell 49% in 2025 and 81% year over year in Q2 2026.</p></article>
+            <article class="product"><small>Serious fungal infections</small><h4>AmBisome</h4><p>Liposomal amphotericin B used for serious invasive fungal infections; also part of long-running global health programs.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="financials" data-search-block data-search="financials revenue sales product mix HIV concentration Biktarvy R&D research development cash acquisitions guidance 2026 margins">
+      <div class="section-heading">
+        <div class="section-number">04 / $</div>
+        <div>
+          <h2>Financial engine</h2>
+          <p>The top line is stable and cash-generative; reported earnings can swing sharply when Gilead acquires or impairs pipeline assets.</p>
+        </div>
+      </div>
+
+      <div class="finance-layout">
+        <div class="panel">
+          <h3>2025 product sales mix</h3>
+          <div class="donut-layout">
+            <div class="donut" role="img" aria-label="2025 product sales mix: HIV 71.8 percent, liver disease 11.1 percent, oncology 11.2 percent, Veklury 3.2 percent, other 2.8 percent">
+              <div class="donut-center"><strong>$28.9B</strong><span>product sales</span></div>
+            </div>
+            <div class="legend-list">
+              <div class="legend-row"><span class="swatch" style="background:var(--navy)"></span><span>HIV</span><strong>71.8%</strong></div>
+              <div class="legend-row"><span class="swatch" style="background:var(--teal)"></span><span>Liver disease</span><strong>11.1%</strong></div>
+              <div class="legend-row"><span class="swatch" style="background:var(--orange)"></span><span>Oncology</span><strong>11.2%</strong></div>
+              <div class="legend-row"><span class="swatch" style="background:var(--coral)"></span><span>Veklury</span><strong>3.2%</strong></div>
+              <div class="legend-row"><span class="swatch" style="background:#92a5ab"></span><span>Other</span><strong>2.8%</strong></div>
+            </div>
+          </div>
+          <div class="finance-note"><strong>Biktarvy alone:</strong> $14.3B, or about 49.6% of all 2025 product sales.</div>
+        </div>
+
+        <div class="panel">
+          <h3>Total revenue trend</h3>
+          <div class="bar-chart" role="img" aria-label="Gilead total revenue: 27.1 billion dollars in 2023, 28.8 billion in 2024, and 29.4 billion in 2025">
+            <div class="bar-col"><span class="bar-value">$27.1B</span><div class="bar" style="height:78%"></div><span>2023</span></div>
+            <div class="bar-col"><span class="bar-value">$28.8B</span><div class="bar" style="height:88%"></div><span>2024</span></div>
+            <div class="bar-col"><span class="bar-value">$29.4B</span><div class="bar" style="height:94%"></div><span>2025</span></div>
+          </div>
+          <p style="margin:14px 0 0;color:var(--muted);font-size:.82rem">2025 R&amp;D expense was $5.8B. Reported net income rebounded to $8.5B after 2024 acquisition and impairment charges depressed GAAP earnings.</p>
+        </div>
+      </div>
+
+      <div class="grid three" style="margin-top:18px">
+        <article class="card">
+          <span class="label current">Q2 2026</span>
+          <h3 style="margin-top:12px">Base business accelerated</h3>
+          <p>Total quarterly revenue rose 10% to $7.8B; HIV sales rose 12%, Trodelvy 26%, and liver disease 10% year over year.</p>
+        </article>
+        <article class="card">
+          <span class="label risk">Balance sheet shift</span>
+          <h3 style="margin-top:12px">Acquisitions consumed liquidity</h3>
+          <p>Cash and marketable debt securities fell from $10.6B at year-end 2025 to $3.2B at June 30, 2026 after $11.3B of acquisition cash outflows.</p>
+        </article>
+        <article class="card">
+          <span class="label analysis">Read correctly</span>
+          <h3 style="margin-top:12px">GAAP losses are not the same as weak sales</h3>
+          <p>Q2 2026 included $11.2B of acquired IPR&amp;D expense. The loss reflected strategic asset purchases, while operating cash flow was $3.6B.</p>
+        </article>
+      </div>
+
+      <div class="panel" style="margin-top:18px">
+        <h3>2026 company guidance as of August 4, 2026</h3>
+        <div class="grid four">
+          <div><strong style="font-size:1.4rem;color:var(--navy)">$30.1-$30.4B</strong><br><span style="color:var(--muted);font-size:.8rem">Product sales</span></div>
+          <div><strong style="font-size:1.4rem;color:var(--navy)">$29.8-$30.1B</strong><br><span style="color:var(--muted);font-size:.8rem">Product sales excluding Veklury</span></div>
+          <div><strong style="font-size:1.4rem;color:var(--navy)">~$300M</strong><br><span style="color:var(--muted);font-size:.8rem">Expected Veklury sales</span></div>
+          <div><strong style="font-size:1.4rem;color:var(--navy)">~79%</strong><br><span style="color:var(--muted);font-size:.8rem">Projected GAAP product gross margin</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="strategy" data-search-block data-search="strategy ambitions priorities 2030 long acting HIV oncology inflammation artificial intelligence AI investment collaboration innovation shareholder value">
+      <div class="section-heading">
+        <div class="section-number">05 / WHY</div>
+        <div>
+          <h2>Corporate strategy</h2>
+          <p>The formal strategy is broad; the operating logic underneath it is more specific.</p>
+        </div>
+      </div>
+
+      <div class="strategy-map">
+        <div class="ambition">
+          <span class="label current">Official ambition</span>
+          <strong style="margin-top:16px">10+</strong>
+          <h3 style="color:white">transformative therapies by 2030</h3>
+          <p style="color:#d7e6e9">Gilead also states ambitions to be a biotech employer and partner of choice and to deliver sustainable, responsible shareholder value.</p>
+        </div>
+        <div class="priority-list">
+          <div class="priority"><b>1</b><div><h3>Maximize long-acting HIV</h3><p>Turn lenacapavir into a platform spanning prevention and treatment, with multiple dosing intervals and combinations.</p></div></div>
+          <div class="priority"><b>2</b><div><h3>Accelerate oncology and inflammation</h3><p>Build depth through ADCs, cell therapy, targeted combinations, and new immune-modulating approaches.</p></div></div>
+          <div class="priority"><b>3</b><div><h3>Scale artificial intelligence</h3><p>Use AI across research, development, operations, and decision-making rather than treating it as a standalone product.</p></div></div>
+          <div class="priority"><b>4</b><div><h3>Prioritize for highest impact</h3><p>Concentrate capital and talent where scientific probability, patient value, and commercial potential justify the spend.</p></div></div>
+          <div class="priority"><b>5</b><div><h3>Strengthen collaboration</h3><p>Move faster with partners, acquired teams, health systems, communities, and governments.</p></div></div>
+        </div>
+      </div>
+
+      <div class="grid three" style="margin-top:18px">
+        <article class="card"><span class="label analysis">Defend</span><h3 style="margin-top:10px">Protect the HIV engine</h3><p>Biktarvy demand, patent durability, and next-generation regimen transitions fund everything else.</p></article>
+        <article class="card"><span class="label analysis">Extend</span><h3 style="margin-top:10px">Own the dosing innovation</h3><p>Daily tablets, weekly oral options, twice-yearly injections, and potentially once-yearly formulations create a portfolio, not one product.</p></article>
+        <article class="card"><span class="label analysis">Diversify</span><h3 style="margin-top:10px">Buy platforms, not only assets</h3><p>Kite, Tubulis, and other deals seek repeatable capabilities in cell therapy, ADCs, and immune disease.</p></article>
+      </div>
+    </section>
+
+    <section id="pipeline" data-search-block data-search="pipeline phase 1 phase 2 phase 3 programs clinical lenacapavir anito-cel Trodelvy Livdelzi Tubulis ADC Ouro gamgertamig oncology inflammation virology">
+      <div class="section-heading">
+        <div class="section-number">06 / R&amp;D</div>
+        <div>
+          <h2>Pipeline and future bets</h2>
+          <p>Pipeline counts show activity, not value. The real question is which programs can change clinical practice and become durable franchises.</p>
+        </div>
+      </div>
+
+      <div class="pipeline-funnel" aria-label="Gilead clinical pipeline by phase as of the end of Q2 2026">
+        <div class="phase"><div><strong>23</strong><span>Phase 1 programs</span></div></div>
+        <div class="phase"><div><strong>15</strong><span>Phase 2 programs</span></div></div>
+        <div class="phase"><div><strong>15</strong><span>Phase 3 programs</span></div></div>
+      </div>
+      <p style="color:var(--muted);font-size:.8rem">Official total: 53 clinical-stage programs plus 4 opt-in programs, updated August 4, 2026 with data through Q2. Counts do not include potential partner opt-ins or publicly announced planned programs.</p>
+
+      <div class="bet-grid">
+        <article class="bet"><span class="label">Virology</span><h3>Lenacapavir platform</h3><p>Twice-yearly PrEP is commercial. Once-weekly oral PrEP has an FDA action date in 2027; once-yearly injection and long-acting treatment combinations seek to extend the platform.</p></article>
+        <article class="bet"><span class="label">Oncology / ADC</span><h3>Trodelvy + next-gen ADCs</h3><p>Trodelvy is moving earlier in breast cancer while the Tubulis acquisition adds GS-8824 and an ADC discovery platform. Trial misses elsewhere show the expansion is not automatic.</p></article>
+        <article class="bet"><span class="label">Oncology / cell therapy</span><h3>Anito-cel</h3><p>The Arcellx acquisition gives Gilead full control of an investigational BCMA-directed CAR T therapy for multiple myeloma and removes future profit-share and royalty obligations.</p></article>
+        <article class="bet"><span class="label">Inflammation</span><h3>Livdelzi expansion</h3><p>Positive 2026 Phase 3 IDEAL results support possible use in a broader PBC population with less-elevated biomarkers but inadequately controlled disease.</p></article>
+        <article class="bet"><span class="label">Inflammation / immune reset</span><h3>Gamgertamig</h3><p>Ouro Medicines brought a BCMAxCD3 T-cell engager being developed for autoimmune disease, co-funded with Lakefront.</p></article>
+        <article class="bet"><span class="label analysis">Portfolio logic</span><h3>Multiple modalities</h3><p>Gilead is spreading scientific and commercial risk across small molecules, injectables, ADCs, autologous cell therapy, in-vivo approaches, and immune engagers.</p></article>
+      </div>
+    </section>
+
+    <section id="history" data-search-block data-search="history founded 1987 Pharmasset Sovaldi HCV hepatitis C Kite acquisition Immunomedics Trodelvy Biktarvy Yeztugo Arcellx Tubulis Ouro timeline acquisitions">
+      <div class="section-heading">
+        <div class="section-number">07 / ARC</div>
+        <div>
+          <h2>The strategic arc</h2>
+          <p>Gilead's history is a sequence of concentrated scientific bets, several of which reshaped the company.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="milestone"><div class="milestone-card"><time>1987</time><h3>Founded</h3><p>Michael Riordan founded Gilead, initially building an antiviral-focused biotechnology company.</p></div></article>
+        <article class="milestone"><div class="milestone-card"><time>2001-2004</time><h3>HIV foundation</h3><p>Viread and then Truvada helped establish Gilead as an antiviral leader and supported combination-regimen strategy.</p></div></article>
+        <article class="milestone"><div class="milestone-card"><time>2011-2013</time><h3>Pharmasset to Sovaldi</h3><p>The roughly $11B Pharmasset purchase brought the compound that became sofosbuvir, transforming HCV treatment and Gilead's economics.</p></div></article>
+        <article class="milestone"><div class="milestone-card"><time>2017</time><h3>Kite, $11.9B</h3><p>Gilead entered cell therapy and gained the platform that became its Kite oncology business.</p></div></article>
+        <article class="milestone"><div class="milestone-card"><time>2018</time><h3>Biktarvy</h3><p>FDA approval launched the single-tablet regimen that became Gilead's largest product.</p></div></article>
+        <article class="milestone"><div class="milestone-card"><time>2020</time><h3>Immunomedics, ~$21B</h3><p>Trodelvy became the cornerstone of the solid-tumor oncology strategy.</p></div></article>
+        <article class="milestone"><div class="milestone-card"><time>2024-2025</time><h3>Livdelzi + Yeztugo</h3><p>CymaBay added Livdelzi; Yeztugo opened a new long-acting HIV prevention era.</p></div></article>
+        <article class="milestone"><div class="milestone-card"><time>2026</time><h3>Platform buying</h3><p>Arcellx, Tubulis, and Ouro expanded cell therapy, ADC, and autoimmune capabilities with $11.3B of first-half acquisition cash outflow.</p></div></article>
+      </div>
+
+      <div class="panel" style="margin-top:18px">
+        <span class="label analysis">Pattern</span>
+        <h3 style="margin-top:12px">Gilead is willing to pay early for concentrated scientific conviction.</h3>
+        <p>
+          Pharmasset became a landmark success; other deals have produced mixed outcomes and impairments. The lesson is not that acquisitions are good or bad.
+          It is that Gilead repeatedly uses its cash flow and development capabilities to convert external science into new franchises, accepting large binary risks.
+        </p>
+      </div>
+    </section>
+
+    <section id="access" data-search-block data-search="access global health voluntary licensing lenacapavir 120 countries equity pricing Sovaldi controversy patient affordability PEPFAR WHO">
+      <div class="section-heading">
+        <div class="section-number">08 / ACCESS</div>
+        <div>
+          <h2>Access is part of the operating model</h2>
+          <p>For infectious disease, scientific impact depends on reach. Access strategy is therefore both mission-critical and reputation-critical.</p>
+        </div>
+      </div>
+
+      <div class="access-band">
+        <div class="access-copy">
+          <span class="label current">Current example</span>
+          <h3 style="margin-top:14px">Lenacapavir access planning started before global launch.</h3>
+          <p>
+            Gilead signed royalty-free voluntary licenses with six manufacturers covering 120 primarily low- and lower-middle-income countries,
+            completed technology transfers, and paired this with government and multilateral partnerships.
+          </p>
+          <p>
+            The strategic tension remains: the company must fund innovation, protect incentives, manage manufacturing and quality,
+            and demonstrate that breakthrough efficacy translates into broad, timely, affordable access.
+          </p>
+        </div>
+        <div class="access-metrics">
+          <div class="access-metric"><strong>6</strong><span>voluntary license manufacturers for lenacapavir PrEP</span></div>
+          <div class="access-metric"><strong>120</strong><span>countries covered by the licensing program</span></div>
+          <div class="access-metric"><strong>2M</strong><span>people targeted over three years in a PEPFAR/Global Fund partnership announced in 2025</span></div>
+          <div class="access-metric"><strong>41%</strong><span>2025 gross-to-net deductions, showing how payer and access economics shape realized revenue</span></div>
+        </div>
+      </div>
+
+      <div class="grid two" style="margin-top:18px">
+        <div class="card">
+          <span class="label">Why Gilead emphasizes access</span>
+          <p style="margin-top:12px">Its HIV and viral hepatitis medicines operate in diseases with large global burdens, significant inequality, stigma, public funding, and strong civil-society involvement.</p>
+        </div>
+        <div class="card">
+          <span class="label risk">Historical trust issue</span>
+          <p style="margin-top:12px">A 2015 U.S. Senate investigation criticized Sovaldi's $84,000 launch price and concluded the pricing strategy prioritized revenue, intensifying scrutiny of affordability and payer access.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="risks" data-search-block data-search="risks concentration patent loss exclusivity clinical trials acquisition impairment competition payer regulation policy pricing manufacturing supply chain trust legal">
+      <div class="section-heading">
+        <div class="section-number">09 / RISK</div>
+        <div>
+          <h2>Strategic tensions to watch</h2>
+          <p>These are the recurring constraints a serious recommendation must acknowledge and manage.</p>
+        </div>
+      </div>
+
+      <div class="risk-matrix">
+        <article class="risk-card"><strong>High structural exposure</strong><h3>HIV concentration</h3><p>HIV generated 71.8% of 2025 product sales; Biktarvy alone supplied almost half. A shift in treatment standards, pricing, competition, or share would matter disproportionately.</p></article>
+        <article class="risk-card"><strong>Lifecycle</strong><h3>Patent and exclusivity clocks</h3><p>Patents are time-limited and challengeable. Biktarvy U.S. generic settlements currently point to April 2036 for full-dose entry, while other products face earlier clocks.</p></article>
+        <article class="risk-card"><strong>Binary evidence</strong><h3>Clinical and regulatory risk</h3><p>Programs may miss endpoints, face safety findings, be placed on hold, receive narrow labels, or never secure approval. Pipeline count cannot neutralize program-level failure.</p></article>
+        <article class="risk-card"><strong>Capital allocation</strong><h3>Acquisition execution</h3><p>Large deals can accelerate strategy but also create integration cost, impairment, and overpayment risk. The 2024 Immunomedics-related impairment is a visible warning.</p></article>
+        <article class="risk-card"><strong>Commercial system</strong><h3>Payer and pricing pressure</h3><p>Rebates, Medicare redesign, government negotiation, most-favored-nation policies, and payer mix can reduce realized price even when prescription demand grows.</p></article>
+        <article class="risk-card"><strong>Delivery</strong><h3>Manufacturing complexity</h3><p>Small molecules, sterile injectables, ADCs, and individualized cell therapies have distinct supply, quality, lead-time, and capacity risks.</p></article>
+        <article class="risk-card"><strong>Market</strong><h3>Competition</h3><p>Products compete on efficacy, safety, convenience, resistance, physician acceptance, reimbursement, and price. Q2 2026 cell-therapy sales fell 14% amid competitive headwinds.</p></article>
+        <article class="risk-card"><strong>Stakeholder</strong><h3>Access and reputation</h3><p>For high-impact infectious-disease products, slow or unequal access can erode trust with patients, advocates, governments, and global health partners.</p></article>
+        <article class="risk-card"><strong>Portfolio tradeoff</strong><h3>Focus versus optionality</h3><p>Too much concentration creates fragility; too many programs dilute capital and leadership attention. Gilead must prune while preserving enough shots on goal.</p></article>
+      </div>
+    </section>
+
+    <section id="leadership" data-search-block data-search="leadership Daniel O'Day Andrew Dickinson Dietmar Berger Flavius Martin Stacey Ma Johanna Mercier Cindy Perettie Jyoti Mehra Keeley Cain Wettan CEO CFO CMO">
+      <div class="section-heading">
+        <div class="section-number">10 / PEOPLE</div>
+        <div>
+          <h2>Leadership map</h2>
+          <p>The operating team separates research, clinical medicine, development/manufacturing, commercialization, and Kite's cell-therapy business.</p>
+        </div>
+      </div>
+
+      <div class="leadership-grid">
+        <div class="leader ceo"><b>Daniel O'Day</b><span>Chairman and Chief Executive Officer; joined Gilead in 2019 after leading Roche Pharmaceuticals.</span></div>
+        <div class="leader"><b>Andrew Dickinson</b><span>Chief Financial Officer; finance, corporate development, IT, operations, and strategy.</span></div>
+        <div class="leader"><b>Dietmar Berger, MD, PhD</b><span>Chief Medical Officer; clinical development and medical leadership.</span></div>
+        <div class="leader"><b>Flavius Martin, MD</b><span>Executive Vice President, Research.</span></div>
+        <div class="leader"><b>Stacey Ma</b><span>Executive Vice President, Pharmaceutical Development and Manufacturing.</span></div>
+        <div class="leader"><b>Johanna Mercier</b><span>Chief Commercial &amp; Corporate Affairs Officer.</span></div>
+        <div class="leader"><b>Cindy Perettie</b><span>Executive Vice President, Kite.</span></div>
+        <div class="leader"><b>Jyoti Mehra</b><span>Executive Vice President, Human Resources.</span></div>
+        <div class="leader"><b>Keeley Cain Wettan</b><span>Executive Vice President &amp; General Counsel, Legal and Compliance.</span></div>
+      </div>
+
+      <div class="panel" style="margin-top:18px">
+        <span class="label analysis">How to read the org</span>
+        <p style="margin-top:12px">
+          A case recommendation crosses several owners: research chooses mechanisms; clinical development proves benefit; development and manufacturing establish a scalable product;
+          commercial and corporate affairs shape launch, access, and stakeholder strategy; finance and corporate development test returns and partnerships; legal and compliance define boundaries.
+          Strong proposals make these handoffs explicit.
+        </p>
+      </div>
+    </section>
+
+    <section id="case-lens" data-search-block data-search="case competition preparation recommendation framework KPIs metrics judge questions patient provider payer launch commercial strategy">
+      <div class="section-heading">
+        <div class="section-number">11 / CASE</div>
+        <div>
+          <h2>Use this company knowledge in a case</h2>
+          <p>A recommendation should sound like it belongs inside Gilead's operating reality, not inside a generic strategy deck.</p>
+        </div>
+      </div>
+
+      <div class="case-framework">
+        <div class="case-step"><b>1 / PATIENT</b><h3 style="color:white">Define the unmet need</h3><p>Specify population, disease burden, journey friction, adherence, stigma, and outcome gap.</p></div>
+        <div class="case-step"><b>2 / EVIDENCE</b><h3 style="color:white">Translate the science</h3><p>Connect mechanism, clinical endpoint, comparator, label, and real-world value.</p></div>
+        <div class="case-step"><b>3 / ACCESS</b><h3 style="color:white">Map the system</h3><p>Show payer, provider, site, channel, policy, equity, and affordability constraints.</p></div>
+        <div class="case-step"><b>4 / ECONOMICS</b><h3 style="color:white">Build net value</h3><p>Model adoption, gross-to-net, investment, capacity, risk-adjusted return, and portfolio fit.</p></div>
+        <div class="case-step"><b>5 / EXECUTION</b><h3 style="color:white">Sequence decisions</h3><p>Name owners, milestones, dependencies, trigger points, and what you will stop doing.</p></div>
+      </div>
+
+      <div class="grid two" style="margin-top:18px">
+        <div class="panel">
+          <h3>Metrics that fit Gilead</h3>
+          <div class="kpi-scroll">
+            <table class="kpi-table">
+              <thead><tr><th>Layer</th><th>Examples</th></tr></thead>
+              <tbody>
+                <tr><td>Patient</td><td>Incidence, viral suppression, progression-free survival, quality of life, adherence/persistence</td></tr>
+                <tr><td>Access</td><td>Coverage rate, time to reimbursement, prior-authorization burden, site readiness, geographic equity</td></tr>
+                <tr><td>Commercial</td><td>Eligible starts, share, time to peak, discontinuation, gross-to-net, lifetime value</td></tr>
+                <tr><td>Evidence</td><td>Enrollment, diversity, endpoint probability, regulatory milestone, real-world evidence generation</td></tr>
+                <tr><td>Operations</td><td>Cycle time, capacity, release success, on-time-in-full supply, cost per treated patient</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Questions your idea must survive</h3>
+          <ul class="check-list">
+            <li>Why is Gilead uniquely positioned to win?</li>
+            <li>What changes for the patient or provider on day one?</li>
+            <li>Which payer or policy obstacle could stop adoption?</li>
+            <li>What does the recommendation do to HIV concentration?</li>
+            <li>Which capability must be built, bought, or partnered?</li>
+            <li>What evidence would change the investment decision?</li>
+            <li>How does access scale beyond high-income markets?</li>
+            <li>What is the downside case and the exit trigger?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:18px">
+        <span class="label analysis">One-sentence test</span>
+        <h3 style="margin-top:12px">A Gilead-quality strategy joins scientific differentiation, patient-centered delivery, scalable access, and disciplined capital allocation.</h3>
+        <p>Remove any one of those four and the recommendation becomes fragile under executive questioning.</p>
+      </div>
+    </section>
+
+    <section id="glossary" data-search-block data-search="glossary ADC CAR T PrEP CRO gross to net IPR&D PBC HDV HCV HIV definitions">
+      <div class="section-heading">
+        <div class="section-number">12 / TERMS</div>
+        <div>
+          <h2>Fast glossary</h2>
+          <p>Useful language for reading filings and discussing biopharma strategy.</p>
+        </div>
+      </div>
+
+      <details><summary>ADC: antibody-drug conjugate</summary><p>An antibody linked to a cytotoxic payload, designed to deliver the drug preferentially to cells expressing a target. Trodelvy is an ADC.</p></details>
+      <details><summary>CAR T: chimeric antigen receptor T-cell therapy</summary><p>A patient's T cells are collected, engineered to recognize a cancer target, manufactured, and infused back. It is both a medicine and a complex service/supply-chain model.</p></details>
+      <details><summary>PrEP: pre-exposure prophylaxis</summary><p>Medicine taken or administered before possible HIV exposure to reduce acquisition risk.</p></details>
+      <details><summary>Gross-to-net</summary><p>The difference between gross product sales and net reported sales after rebates, chargebacks, discounts, assistance, fees, and returns.</p></details>
+      <details><summary>IPR&amp;D: in-process research and development</summary><p>Research and development assets acquired before they have completed development. Acquisitions and impairments can create large GAAP expenses.</p></details>
+      <details><summary>PBC / HBV / HCV / HDV</summary><p>Primary biliary cholangitis; hepatitis B virus; hepatitis C virus; and hepatitis delta virus. Each has a different disease mechanism, patient journey, and treatment market.</p></details>
+    </section>
+
+    <section id="sources" data-search-block data-search="sources evidence official SEC annual report 10-K Q2 2026 pipeline medicines leadership access Senate report">
+      <div class="section-heading">
+        <div class="section-number">13 / SRC</div>
+        <div>
+          <h2>Sources and research boundaries</h2>
+          <p>Primary sources were used wherever possible. Numbers may not sum because of rounding. Pipeline and guidance are forward-looking and can change.</p>
+        </div>
+      </div>
+
+      <ul class="source-list">
+        <li><a href="https://www.sec.gov/Archives/edgar/data/882095/000088209526000006/gild-20251231.htm" target="_blank" rel="noopener">Gilead 2025 Form 10-K</a><span>SEC filing: business model, products, sales, risks, patents, employees, R&amp;D, and financial statements.</span></li>
+        <li><a href="https://www.gilead.com/news/news-details/2026/gilead-sciences-announces-second-quarter-2026-financial-results" target="_blank" rel="noopener">Q2 2026 financial results</a><span>Current sales, guidance, acquisitions, clinical updates, cash flow, and balance sheet.</span></li>
+        <li><a href="https://www.gilead.com/science/pipeline" target="_blank" rel="noopener">Official Gilead pipeline</a><span>Program counts and phases, updated August 4, 2026 with data through Q2.</span></li>
+        <li><a href="https://www.gilead.com/medicines" target="_blank" rel="noopener">Official medicines directory</a><span>Current U.S. commercial portfolio and therapeutic areas.</span></li>
+        <li><a href="https://www.gilead.com/company/leadership" target="_blank" rel="noopener">Leadership team</a><span>Current executive roles and organizational ownership.</span></li>
+        <li><a href="https://www.gilead.com/-/media/files/pdfs/company/annual-impact-reports/2025-impact-report.pdf" target="_blank" rel="noopener">2025 Impact Report</a><span>Global footprint, access, impact, people, and environmental programs.</span></li>
+        <li><a href="https://www.gilead.com/news/news-details/2025/yeztugo-lenacapavir-is-now-the-first-and-only-fda-approved-hiv-prevention-option-offering-6-months-of-protection" target="_blank" rel="noopener">Yeztugo FDA approval announcement</a><span>Indication, efficacy summary, patient barriers, and global filing strategy.</span></li>
+        <li><a href="https://www.gilead.com/company/company-statements/2025/gilead-sciences-update-on-access-strategy-for-lenacapavir-for-hiv-prevention-in-high-incidence-resource-limited-countries" target="_blank" rel="noopener">Lenacapavir access update</a><span>Voluntary licenses, technology transfer, and 120-country access footprint.</span></li>
+        <li><a href="https://www.gilead.com/news/news-details/2026/gilead-sciences-completes-acquisition-of-arcellx-ahead-of-potential-commercial-launch-of-anito-cel" target="_blank" rel="noopener">Arcellx acquisition completion</a><span>Deal logic, price, ownership, and anito-cel strategy.</span></li>
+        <li><a href="https://www.gilead.com/news/news-details/2020/gilead-sciences-to-acquire-immunomedics" target="_blank" rel="noopener">Immunomedics acquisition</a><span>Trodelvy's role in building the solid-tumor oncology franchise.</span></li>
+        <li><a href="https://www.gilead.com/news/news-details/2017/gilead-sciences-to-acquire-kite-pharma-for-119-billion" target="_blank" rel="noopener">Kite acquisition</a><span>Entry into cell therapy and the original strategic rationale.</span></li>
+        <li><a href="https://www.gilead.com/news/news-details/2011/gilead-sciences-to-acquire-pharmasset-inc-for-11-billion" target="_blank" rel="noopener">Pharmasset acquisition</a><span>HCV bet that led to Gilead's sofosbuvir franchise.</span></li>
+        <li><a href="https://www.gilead.com/news/news-details/2018/us-food-and-drug-administration-approves-gileads-biktarvy-bictegravir-emtricitabine-tenofovir-alafenamide-for-treatment-of-hiv-1-infection" target="_blank" rel="noopener">Biktarvy FDA approval announcement</a><span>2018 launch and clinical positioning.</span></li>
+        <li><a href="https://www.govinfo.gov/app/details/CPRT-114SPRT97329" target="_blank" rel="noopener">U.S. Senate report on Sovaldi pricing</a><span>Government investigation used for the historical access and reputation discussion.</span></li>
+      </ul>
+
+      <div class="panel" style="margin-top:18px">
+        <h3>How to use this report</h3>
+        <p>
+          This is an educational strategy briefing, not investment, legal, or medical advice. Commercial indications are intentionally summarized.
+          Consult current prescribing information for medical use and the latest SEC filings for investment decisions. Facts are current to the research cutoff shown above;
+          analytical statements are labeled or written as interpretation.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <span>Gilead Sciences Company Overview / research cutoff September 30, 2026</span>
+      <span><a href="playbook.html">Open the competition research playbook</a></span>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const tabButtons = Array.from(document.querySelectorAll('[data-tab]'));
+      const tabPanels = Array.from(document.querySelectorAll('.tab-panel'));
+
+      function activateTab(button) {
+        const id = button.dataset.tab;
+        tabButtons.forEach((item) => item.setAttribute('aria-selected', String(item === button)));
+        tabPanels.forEach((panel) => { panel.hidden = panel.id !== `tab-${id}`; });
+      }
+
+      tabButtons.forEach((button, index) => {
+        button.addEventListener('click', () => activateTab(button));
+        button.addEventListener('keydown', (event) => {
+          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+          event.preventDefault();
+          let nextIndex = index;
+          if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabButtons.length;
+          if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabButtons.length) % tabButtons.length;
+          if (event.key === 'Home') nextIndex = 0;
+          if (event.key === 'End') nextIndex = tabButtons.length - 1;
+          tabButtons[nextIndex].focus();
+          activateTab(tabButtons[nextIndex]);
+        });
+      });
+
+      const searchInput = document.getElementById('siteSearch');
+      const clearSearch = document.getElementById('clearSearch');
+      const status = document.getElementById('searchStatus');
+      const emptyState = document.getElementById('emptyState');
+      const blocks = Array.from(document.querySelectorAll('[data-search-block]'));
+
+      function normalize(value) {
+        return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+      }
+
+      function runSearch() {
+        const query = normalize(searchInput.value);
+        clearSearch.classList.toggle('visible', Boolean(query));
+
+        if (!query) {
+          blocks.forEach((block) => block.classList.remove('hidden-by-search'));
+          status.classList.remove('visible');
+          emptyState.classList.remove('visible');
+          return;
+        }
+
+        const terms = query.split(' ').filter(Boolean);
+        let matches = 0;
+        blocks.forEach((block) => {
+          const haystack = normalize(`${block.dataset.search || ''} ${block.textContent}`);
+          const matched = terms.every((term) => haystack.includes(term));
+          block.classList.toggle('hidden-by-search', !matched);
+          if (matched) matches += 1;
+        });
+
+        status.textContent = matches === 1 ? '1 section matches your search.' : `${matches} sections match your search.`;
+        status.classList.add('visible');
+        emptyState.classList.toggle('visible', matches === 0);
+      }
+
+      searchInput.addEventListener('input', runSearch);
+      clearSearch.addEventListener('click', () => {
+        searchInput.value = '';
+        runSearch();
+        searchInput.focus();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+          event.preventDefault();
+          searchInput.focus();
+        }
+        if (event.key === 'Escape' && document.activeElement === searchInput) {
+          searchInput.value = '';
+          runSearch();
+        }
+      });
+
+      document.getElementById('printPage').addEventListener('click', () => window.print());
+    })();
+  </script>
+</body>
+</html>
