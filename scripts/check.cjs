@@ -53,7 +53,7 @@ const server = http.createServer((req,res) => {
     assert.deepEqual(pharmaIds, ['gilead-company-overview', 'gilead-playbook']);
     await page.locator('#clear-search').click();
     await page.locator('[data-format="Interactive"]').click();
-    assert.equal(await cards().count(), 2);
+    assert.equal(await cards().count(), catalog.pages.filter(entry => entry.formats.includes('Interactive')).length);
     await page.locator('[data-format="Website"]').click();
     assert.equal(await cards().count(), 1);
     await page.locator('#search').fill('no-such-page-term');
@@ -96,7 +96,7 @@ const server = http.createServer((req,res) => {
     await page.locator('#topics [data-topic="economics"]').click();
     assert.equal(await page.locator('#sidebar').isVisible(), false);
     assert.equal(await page.locator('.workspace').evaluate(el => el.inert), false);
-    await page.locator('.card-body h2 a').click();
+    await page.locator('[data-id="microeconomics-quiz"] .card-body h2 a').click();
     await quiz.locator('.question-meta .id').waitFor();
     await overflow();
     await page.screenshot({path:path.join(out,'reader-mobile.png'),fullPage:true});

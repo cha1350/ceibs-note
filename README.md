@@ -4,6 +4,16 @@ A static HTML library for research, case studies, summaries, and interactive too
 
 Live site: https://cha1350.github.io/ceibs-note/
 
+## Microeconomics final practice
+
+The [final practice page](https://cha1350.github.io/ceibs-note/pages/economics/microeconomics-final.html)
+contains 15 pricing MCQs, 15 game theory MCQs, and two short questions with worked
+answers and self-assessment rubrics. It supports immediate-feedback practice,
+a 60-minute mock, topic filters, shuffled questions, and retrying mistakes or blanks.
+Progress and drafts save in the current browser. The HTML is self-contained and
+can also be opened as a local file. The pricing coverage remains provisional;
+extension questions and assumptions are labeled on the page.
+
 ## AI Impact Library
 
 The [AI Impact Library](https://cha1350.github.io/ceibs-note/pages/ai-impact-library/index.html)

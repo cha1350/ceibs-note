@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f5ef">
+<meta name="description" content="Practise for the microeconomics final: 15 pricing questions, 15 game theory questions and two short answers, with explanations and saved progress.">
+<title>Microeconomics final practice | CEIBS Notes</title>
+<style>
+:root{--paper:#f6f5ef;--white:#fffefa;--ink:#203b32;--muted:#62736b;--line:#dce2d8;--green:#286047;--pale:#e8eee0;--gold:#d9b76e;--red:#a13d36;--red-bg:#fff0eb;--radius:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default;opacity:.45}a{color:var(--green)}button:focus-visible,a:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid #b18a37;outline-offset:4px}[hidden]{display:none!important}h1,h2,h3,p{margin-top:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{font-size:clamp(44px,6vw,76px);line-height:1.03;letter-spacing:-2.5px;margin-bottom:22px}h2{font-size:32px;line-height:1.2}h3{font-size:18px;line-height:1.4}small,.muted{color:var(--muted)}.eyebrow{font-size:11px;font-weight:750;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:14px}.site-header{position:sticky;top:0;z-index:5;background:rgba(246,245,239,.97);border-bottom:1px solid var(--line)}.header-inner{max-width:1160px;margin:auto;min-height:70px;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:12px 28px}.brand{text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:700;font-size:14px}.brand-mark{display:grid;place-items:center;background:var(--green);color:white;width:32px;height:36px;border-radius:8px 8px 13px 3px;font-family:Georgia,serif}.header-tools{display:flex;align-items:center;gap:16px}.text-button{border:0;background:none;color:var(--green);padding:10px 0;font-size:13px;font-weight:650}.save-state{font-size:11px;color:var(--muted)}.wrap{width:min(1104px,calc(100% - 56px));margin:auto}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;padding:66px 0 40px;align-items:center}.hero p{max-width:560px;color:var(--muted);font-size:17px}.hero em{font-style:italic;color:var(--green)}.formula-card{background:var(--green);color:#fffefa;border-radius:var(--radius);padding:38px 34px;position:relative;overflow:hidden}.formula-card:after{content:"";position:absolute;border:1px solid #ffffff20;border-radius:100%;width:210px;height:210px;right:-85px;top:-80px;pointer-events:none}.formula-card .eyebrow{color:#d4dfc5}.exam-count{display:flex;align-items:baseline;gap:12px;font:58px/1.2 Georgia,serif;letter-spacing:-2px}.exam-count i{font:25px Georgia,serif;color:#cbd7bd}.formula-labels{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid #ffffff35;margin-top:22px;padding-top:20px;font-size:12px;gap:15px}.formula-labels strong{display:block;font-weight:600;color:#f4ebc9}.formula-labels span{color:#d5dfce;display:block;font-size:11px;margin-top:4px}.setup{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 12px 40px #203b3205}.setup-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.field-label{display:block;font-size:12px;font-weight:700;margin-bottom:7px}.select{width:100%;border:1px solid var(--line);border-radius:10px;background:var(--white);color:var(--ink);padding:12px;min-height:48px}.setup-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:23px}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);border:1px solid var(--green);color:white;border-radius:11px;min-height:48px;padding:11px 22px;font-size:14px;font-weight:650;text-decoration:none}.button.secondary{background:transparent;color:var(--green);border-color:var(--line)}.button.small{min-height:42px;padding:8px 15px;font-size:13px}.setup-note{font-size:12px;color:var(--muted);margin:16px 0 0}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin:34px 0}.feature{border-top:1px solid var(--line);padding-top:19px}.feature strong{display:block;font-size:13px;margin-bottom:5px}.feature p{font-size:12px;color:var(--muted)}.scope{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding:20px 0 36px}.scope strong{color:var(--ink)}.session-top{padding:28px 0 18px;display:flex;justify-content:space-between;align-items:center;gap:20px}.session-top h1{font:30px/1.2 Georgia,serif;letter-spacing:-.6px;margin:0}.session-sub{font-size:12px;color:var(--muted);margin-top:5px}.timer{font:25px/1.1 Georgia,serif;text-align:right;white-space:nowrap}.timer small{display:block;font:10px/1.7 -apple-system,sans-serif;letter-spacing:1.3px;text-transform:uppercase}.progress-track{height:5px;background:var(--line);border-radius:5px;overflow:hidden;margin-bottom:25px}.progress-fill{height:100%;background:var(--green);transition:width .2s}.quiz-layout{display:grid;grid-template-columns:minmax(0,1fr) 252px;gap:24px;align-items:start}.question-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;min-width:0}.question-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:10px;letter-spacing:.7px;text-transform:uppercase;margin-bottom:18px}.pill{border-radius:6px;padding:4px 8px;background:var(--pale);font-weight:700;color:var(--green)}.pill.extension{background:#f6edd7;color:#86621d}.question-title{font:30px/1.2 Georgia,serif;letter-spacing:-.5px;margin-bottom:21px}.rich{font-size:15px}.rich p:last-child{margin-bottom:0}.rich table{width:100%;border-collapse:collapse;font-size:13px;margin:20px 0}.rich th,.rich td{text-align:center;padding:12px 8px;border:1px solid var(--line)}.rich th{background:#edf1e7;font-weight:650}.rich th:first-child,.rich td:first-child{text-align:left}.rich pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f2ea;border-radius:10px;padding:16px;font:13px/1.7 ui-monospace,SFMono-Regular,monospace;margin:18px 0}.rich h3,.rich h4{font:600 15px/1.5 -apple-system,sans-serif;margin:22px 0 8px}.rich li{padding-left:3px;margin:5px 0}.rich a{overflow-wrap:anywhere}.options{display:grid;gap:10px;margin-top:23px}.option{display:flex;align-items:flex-start;gap:13px;padding:15px;border:1px solid var(--line);border-radius:12px;cursor:pointer;font-size:14px;min-height:54px;transition:background .12s,border .12s}.option:hover{background:#f4f6ee}.option:has(input:checked){border-color:var(--green);background:#eef3e7}.option input{width:18px;height:18px;accent-color:var(--green);flex-shrink:0;margin:3px 0 0}.option.correct{border-color:var(--green);background:#eaf2e2}.option.incorrect{border-color:#c6897c;background:var(--red-bg)}.option .letter{font-size:11px;font-weight:750;display:inline-block;min-width:17px;color:var(--muted)}.answer-tools{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:24px}.feedback{margin-top:25px;padding:23px;border-radius:13px;border:1px solid #d6dfcb;background:#f1f5e9}.feedback.wrong{border-color:#ebc7ba;background:#fff4ed}.feedback-title{font-size:15px;font-weight:750;margin-bottom:11px}.hint{font-size:13px;padding:16px;border-radius:10px;background:#f5efdf;margin-top:18px}.sidebar-card{background:#eeefe6;border:1px solid var(--line);border-radius:16px;padding:20px;position:sticky;top:94px}.sidebar-title{font-size:12px;font-weight:700;display:flex;justify-content:space-between;margin-bottom:15px}.jump-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.jump{min-height:35px;border:1px solid var(--line);background:var(--white);border-radius:7px;font-size:11px;color:var(--muted);padding:4px}.jump.answered{background:#dae7ce;border-color:#bacdae;color:var(--green)}.jump.wrong{background:#f4ded3;border-color:#deb9a8;color:var(--red)}.jump.selected{outline:2px solid var(--green);outline-offset:1px}.legend{font-size:10px;line-height:1.8;color:var(--muted);margin:14px 0}.sidebar-card .button{width:100%;margin-top:8px}.navigation{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 32px}.navigation .muted{font-size:12px}.essay{display:block;width:100%;min-height:220px;resize:vertical;padding:16px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);font-size:15px;line-height:1.7;margin-top:23px}.self-check{border-top:1px solid var(--line);padding-top:17px;margin-top:18px;font-size:13px}.self-check label{display:flex;gap:10px;padding:7px 0;cursor:pointer}.self-check input{width:18px;height:18px;flex-shrink:0;accent-color:var(--green);margin:2px 0}.self-buttons{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}.self-buttons button[aria-pressed=true]{background:var(--green);color:white;border-color:var(--green)}.results{padding:46px 0}.result-head{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;margin-bottom:30px}.result-head h1{font-size:52px}.score-box{background:var(--green);border-radius:20px;padding:30px;color:var(--white)}.big-score{font:64px/1.1 Georgia,serif;letter-spacing:-2px}.big-score span{font-size:28px;color:#d7dfcd;letter-spacing:0}.score-box p{font-size:12px;color:#d7dfcd;margin:12px 0 0}.result-breakdown{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:25px}.result-tile{padding:22px;border:1px solid var(--line);border-radius:13px;background:var(--white);font-size:13px}.result-tile strong{display:block;font:28px Georgia,serif;margin-top:7px}.result-list{display:grid;gap:8px;margin-top:25px}.result-row{display:flex;width:100%;align-items:center;gap:12px;text-align:left;padding:14px 16px;border:1px solid var(--line);background:var(--white);border-radius:10px;color:var(--ink);font-size:13px}.result-row .status{margin-left:auto;flex-shrink:0;font-size:11px;font-weight:700}.good{color:var(--green)}.bad{color:var(--red)}.result-row .number{font-size:11px;color:var(--muted);min-width:24px}.empty{padding:26px;text-align:center;color:var(--muted);font-size:14px}.dialog{border:1px solid var(--line);background:var(--white);color:var(--ink);border-radius:18px;max-width:640px;width:calc(100% - 30px);max-height:85dvh;padding:28px}.dialog::backdrop{background:#132f2475;backdrop-filter:blur(3px)}.dialog header{display:flex;align-items:center;justify-content:space-between;gap:15px}.dialog header h2{font-size:27px;margin:0}.rule{border-top:1px solid var(--line);padding:17px 0;font-size:14px}.rule:first-of-type{margin-top:20px}.rule strong{display:block;margin-bottom:5px}.dialog p{font-size:14px;color:var(--muted);margin-top:15px}.resume-banner{border:1px solid #c5d4b8;background:#eaf0e1;padding:18px 22px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:22px;font-size:13px}.resume-banner strong{display:block}.resume-banner small{display:block}.mobile-finish{display:none}.footer{font-size:11px;display:flex;justify-content:space-between;border-top:1px solid var(--line);margin-top:32px;padding:20px 0 25px;color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:800px){.hero{gap:30px}.exam-count{font-size:48px;gap:8px}.formula-card{padding:28px 24px}.quiz-layout{grid-template-columns:minmax(0,1fr)}.sidebar-card{position:static}.jump-grid{grid-template-columns:repeat(8,1fr)}.sidebar-card .legend{display:none}.sidebar-title{margin-bottom:12px}.sidebar-card{padding:18px}.session-top h1{font-size:25px}.mobile-finish{display:inline-flex}.sidebar-card .finish-button{display:none}}
+@media(max-width:560px){.header-inner{padding:10px 18px;min-height:60px}.header-tools{gap:12px}.brand{font-size:12px}.brand-mark{width:27px;height:30px}.save-state{font-size:10px;max-width:80px;line-height:1.3;text-align:right}.text-button{font-size:12px}.wrap{width:calc(100% - 32px)}.hero{display:block;padding:34px 0 24px}.hero h1{font-size:49px;letter-spacing:-2px}.hero p{font-size:15px;margin-bottom:24px}.formula-card{padding:21px 24px}.formula-card .eyebrow{margin-bottom:8px}.exam-count{font-size:45px;gap:13px}.formula-labels{margin-top:13px;padding-top:13px}.setup{padding:21px;border-radius:16px}.setup-grid{grid-template-columns:1fr;gap:15px}.setup-actions{gap:10px}.setup-actions>.button{flex:1;white-space:nowrap;padding:11px 15px}.setup-actions>.text-button{width:100%;text-align:left}.features{gap:15px;margin:26px 0}.feature p{font-size:11px}.feature strong{font-size:12px}.resume-banner{padding:15px;align-items:flex-start}.resume-banner .button{padding:8px 12px;min-height:42px}.session-top{padding-top:22px;gap:12px}.session-top h1{font-size:24px}.timer{font-size:23px}.question-card{padding:23px 19px;border-radius:16px}.question-title{font-size:27px}.rich{font-size:14px}.rich table{font-size:12px}.rich td,.rich th{padding:10px 5px}.rich pre{font-size:12px;padding:12px}.option{padding:13px 11px;font-size:14px;gap:10px}.answer-tools .button{flex:1}.feedback{padding:17px}.navigation{position:sticky;bottom:0;padding:12px 0 calc(12px + env(safe-area-inset-bottom));background:var(--paper);z-index:3;margin-bottom:8px;box-shadow:0 -8px 12px var(--paper)}.navigation .muted{font-size:10px}.navigation .button{min-height:46px;padding:10px 16px}.result-head{grid-template-columns:1fr;gap:10px}.result-head h1{font-size:43px}.result-breakdown{gap:10px}.result-tile{padding:17px}.result-row{font-size:12px;padding:13px 11px;gap:8px}.result-row .status{font-size:10px}.results{padding-top:30px}.footer{gap:20px}.setup-note{font-size:11px}.scope{font-size:11px}.dialog{padding:23px}.self-buttons button{flex:1}.essay{font-size:16px}.question-meta{font-size:9px}}
+@media(max-width:560px){.jump-grid{grid-template-columns:repeat(6,1fr)}.jump{min-height:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">c</span>CEIBS Notes</a><div class="header-tools"><span class="save-state" id="save-state">Progress saves here</span><button type="button" class="text-button" id="reference-open">Quick reference</button></div></div></header>
+<main class="wrap" id="main">
+<section id="home">
+<div class="hero"><div><div class="eyebrow">Economics / Final exam practice</div><h1>Think it through.<br><em>Make your move.</em></h1><p>Pricing, strategy, and the decisions between them. Work through one question at a time, then learn exactly why the answer works.</p></div><div class="formula-card"><div class="eyebrow">Your practice exam</div><div class="exam-count">15 <i>+</i> 15 <i>+</i> 2</div><div class="formula-labels"><div><strong>Pricing</strong><span>Monopoly & customization</span></div><div><strong>Game theory</strong><span>Payoffs & strategy</span></div><div><strong>Short answers</strong><span>Work it out</span></div></div></div></div>
+<div class="resume-banner" id="resume-banner" hidden><div><strong>A session is waiting.</strong><small id="resume-description"></small></div><button type="button" class="button small" id="resume-button">Resume</button></div>
+<section class="setup" aria-label="Set up your practice"><div class="setup-grid"><div><label class="field-label" for="topic-select">What would you like to practise?</label><select class="select" id="topic-select"><option value="all">Full exam · 32 questions</option><option value="pricing">Pricing · 15 questions</option><option value="games">Game theory · 15 questions</option><option value="short">Short answers · 2 questions</option><option value="mistakes">Mistakes & unanswered questions</option></select></div><div><label class="field-label" for="mode-select">Choose your pace</label><select class="select" id="mode-select"><option value="practice">Practice · feedback after each question</option><option value="exam">Mock exam · answers after finishing</option></select></div></div><div class="setup-actions"><button type="button" class="button" id="start-button">Start practising <span aria-hidden="true">→</span></button><button type="button" class="button secondary" id="hour-button">60-minute mock</button><label class="text-button"><input type="checkbox" id="shuffle-toggle"> Shuffle questions</label></div><p class="setup-note">The 60-minute timer is a practice budget, not the official exam duration. Progress stays in this browser; it does not sync across devices.</p><p class="muted" id="home-message" role="status" hidden></p></section>
+<div class="features"><div class="feature"><strong>Understand each answer</strong><p>Worked calculations, payoff comparisons, and the traps to avoid.</p></div><div class="feature"><strong>Pick up where you left off</strong><p>Your selected answers and short-answer drafts save as you go.</p></div><div class="feature"><strong>Turn mistakes into practice</strong><p>Review the questions that need another attempt.</p></div></div>
+<div class="scope"><strong>A note on coverage.</strong> Original practice based on your reported 15 + 15 + 2 structure. The non-game section provisionally covers monopoly and price customization. Extension questions are marked. The first 30 use multiple choice as a practice assumption.</div>
+</section>
+<section id="session" hidden><div class="session-top"><div><h1 id="session-heading">Your next decision.</h1><div class="session-sub" id="session-sub"></div></div><div class="timer" id="timer" hidden></div></div><div class="progress-track" role="progressbar" aria-label="Questions completed" aria-valuemin="0" aria-valuemax="32" aria-valuenow="0" id="progress"><div class="progress-fill" id="progress-fill"></div></div><div class="quiz-layout"><div><article class="question-card" id="question-card" tabindex="-1"></article><nav class="navigation" aria-label="Question navigation"><button type="button" class="button secondary small" id="previous-button">← Previous</button><span class="muted" id="position"></span><button type="button" class="button small" id="next-button">Next →</button></nav></div><aside class="sidebar-card" aria-label="Question map"><div class="sidebar-title"><span>Your progress</span><span id="map-count"></span></div><div class="jump-grid" id="jump-grid"></div><p class="legend">Green: completed · Coral: revisit<br>Outlined: current question</p><button type="button" class="button small finish-button" id="finish-button">Finish & review</button><button type="button" class="button secondary small" id="pause-button">Save & leave session</button></aside></div><button type="button" class="button secondary mobile-finish" id="mobile-finish">Finish & review</button></section>
+<section class="results" id="results" hidden><div class="result-head"><div><div class="eyebrow">Your practice, reviewed</div><h1>Keep the reasoning.<br><em>Close the gaps.</em></h1><p class="muted" id="result-message"></p></div><div class="score-box"><div class="eyebrow" style="color:#d4dfc5">Multiple-choice score</div><div class="big-score" id="total-score"></div><p id="score-description"></p></div></div><div class="result-breakdown" id="result-breakdown"></div><div class="setup-actions"><button type="button" class="button" id="retry-button">Retry mistakes & blanks</button><button type="button" class="button secondary" id="review-button">Review every answer</button><button type="button" class="text-button" id="home-button">Back to practice setup</button></div><div class="result-list" id="result-list"></div></section>
+<footer class="footer"><span>CEIBS Notes · Microeconomics</span><span>Learn the method. Then trust your reasoning.</span></footer>
+</main>
+<dialog class="dialog" id="reference"><header><h2>Your quick reference</h2><button type="button" class="text-button" id="reference-close">Close ✕</button></header><div class="rule"><strong>Payoff matrix</strong>First number = row player; second = column player. Compare the row player's payoffs vertically and the column player's horizontally.</div><div class="rule"><strong>Nash equilibrium</strong>No player benefits by changing their own strategy alone. Find cells that are best responses for both players.</div><div class="rule"><strong>Dominance</strong>A strictly dominant action is better against every possible opponent action. Check every comparison.</div><div class="rule"><strong>Sequential game</strong>Start at the last decision. Choose what that player actually prefers, then work backward. Test threats after the triggering event.</div><div class="rule"><strong>Monopoly</strong>For P = a − bQ, MR = a − 2bQ. Find Q using MR = MC; find P using demand. Profit = revenue − total cost.</div><div class="rule"><strong>Price customization</strong>Identify groups or self-selection; check resale. With the same MC, less elastic demand supports a higher optimal markup: (P − MC)/P = 1/|ε|.</div><div class="rule"><strong>Repeated interaction</strong>Future punishment can support cooperation if it is credible and the future matters enough. A known finite prisoners' dilemma has different incentives.</div><p>For short answers: state the rule, apply the numbers, then explain the result.</p></dialog>
+<dialog class="dialog" id="finish-dialog"><h2>Ready to review?</h2><p id="finish-summary"></p><div class="setup-actions"><button type="button" class="button" id="confirm-finish">Finish & see answers</button><button type="button" class="button secondary" id="cancel-finish">Keep practising</button></div></dialog>
+<dialog class="dialog" id="replace-dialog"><h2>Start a fresh session?</h2><p>Your current session will be replaced. Your past results remain available for mistake practice.</p><div class="setup-actions"><button type="button" class="button" id="confirm-replace">Start new session</button><button type="button" class="button secondary" id="cancel-replace">Keep current session</button></div></dialog>
+<noscript><p>This interactive practice needs JavaScript enabled in your browser.</p></noscript>
+<script type="application/json" id="question-data">
+[
+  {
+    "id": "q1",
+    "number": 1,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Marginal revenue",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "\u003cp>A uniform-price monopolist faces demand P = 100 − 2Q. Its marginal revenue is:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "100 − Q"
+      },
+      {
+        "letter": "B",
+        "html": "100 − 2Q"
+      },
+      {
+        "letter": "C",
+        "html": "50 − 2Q"
+      },
+      {
+        "letter": "D",
+        "html": "100 − 4Q"
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>TR = P × Q = (100 − 2Q)Q = 100Q − 2Q². Differentiating gives \u003cstrong>MR = 100 − 4Q\u003c/strong>. For linear inverse demand, MR has the same vertical intercept and twice the slope magnitude.\u003c/p>"
+  },
+  {
+    "id": "q2",
+    "number": 2,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Quantity and price",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "\u003cp>With demand P = 100 − 2Q and constant marginal cost of 20, what are the profit-maximizing quantity and price? Assume an interior solution and that operating is preferable to shutting down.\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 40, P = 20"
+      },
+      {
+        "letter": "B",
+        "html": "Q = 20, P = 60"
+      },
+      {
+        "letter": "C",
+        "html": "Q = 20, P = 20"
+      },
+      {
+        "letter": "D",
+        "html": "Q = 25, P = 50"
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>Set MR = MC: 100 − 4Q = 20 → \u003cstrong>Q = 20\u003c/strong>. Substitute into demand: P = 100 − 2(20) = \u003cstrong>60\u003c/strong>. Option C incorrectly reports marginal revenue as the selling price. Option A gives efficient output under the stated no-externality model, rather than the uniform-price monopoly optimum.\u003c/p>"
+  },
+  {
+    "id": "q3",
+    "number": 3,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Profit",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "\u003cp>Demand is P = 100 − 2Q and total cost is TC = 100 + 20Q. At the profit-maximizing output, economic profit is:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "1,200"
+      },
+      {
+        "letter": "B",
+        "html": "800"
+      },
+      {
+        "letter": "C",
+        "html": "700"
+      },
+      {
+        "letter": "D",
+        "html": "400"
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>At Q = 20 and P = 60:\u003c/p>\n\u003cpre>TR = 60 × 20 = 1,200\nTC = 100 + 20 × 20 = 500\nProfit = 1,200 − 500 = 700\u003c/pre>\n\u003cp>Revenue of 1,200 is not profit; contribution of 800 still excludes fixed cost.\u003c/p>"
+  },
+  {
+    "id": "q4",
+    "number": 4,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Fixed cost",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "\u003cp>A uniform-price monopolist faces P = 100 − 2Q and constant MC = 20. Its unavoidable short-run fixed cost increases from 100 to 200. The firm still prefers operating. What happens?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Quantity and price stay the same; profit falls by 100."
+      },
+      {
+        "letter": "B",
+        "html": "Quantity falls by 5 and price rises by 10."
+      },
+      {
+        "letter": "C",
+        "html": "Price rises by 100 to recover the extra cost."
+      },
+      {
+        "letter": "D",
+        "html": "Marginal cost rises by 100."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>The fixed-cost change leaves MC and MR unchanged. The stated interior optimum remains Q = 20 and P = 60; profit falls from 700 to \u003cstrong>600\u003c/strong>. The question specifies that the cost is unavoidable and operating remains preferable.\u003c/p>"
+  },
+  {
+    "id": "q5",
+    "number": 5,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Monopoly deadweight loss",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "\u003cp>Demand is P = 100 − 2Q and marginal cost is 20. There are no externalities. Relative to efficient output, the uniform-price monopoly&#x27;s deadweight loss is:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "800"
+      },
+      {
+        "letter": "B",
+        "html": "200"
+      },
+      {
+        "letter": "C",
+        "html": "400"
+      },
+      {
+        "letter": "D",
+        "html": "1,200"
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>Efficient output solves demand price = MC: 100 − 2Q = 20 → Q = 40. Monopoly produces 20 at price 60. The deadweight-loss triangle has width 40 − 20 = 20 and height 60 − 20 = 40:\u003c/p>\n\u003cp>\u003cstrong>DWL = ½ × 20 × 40 = 400.\u003c/strong>\u003c/p>"
+  },
+  {
+    "id": "q6",
+    "number": 6,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Recognizing discrimination",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "\u003cp>Which is the clearest example of price discrimination?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Express delivery costs the seller 15 more and is priced 15 higher."
+      },
+      {
+        "letter": "B",
+        "html": "A cinema charges verified students less for the same screening and seat category, with equal serving costs."
+      },
+      {
+        "letter": "C",
+        "html": "A retailer raises the price for every buyer after its wholesale cost rises."
+      },
+      {
+        "letter": "D",
+        "html": "A larger product costs more to manufacture and sells for proportionally more."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>The student discount separates customers by an observable characteristic while holding service and serving costs constant. A and D describe cost-based differences; C is one price change applied to all buyers.\u003c/p>"
+  },
+  {
+    "id": "q7",
+    "number": 7,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Resale",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "\u003cp>A seller charges a low price to one group and a high price to another for the same transferable product. Which development most threatens this pricing arrangement?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The groups have different demand elasticities."
+      },
+      {
+        "letter": "B",
+        "html": "Group membership can be verified."
+      },
+      {
+        "letter": "C",
+        "html": "The seller has some market power."
+      },
+      {
+        "letter": "D",
+        "html": "Low-price buyers can cheaply resell to high-price buyers."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>Arbitrage allows buyers in the high-price group to obtain the product through the low-price group, undermining separation. Different elasticities and identifiable groups help discrimination rather than threaten it.\u003c/p>"
+  },
+  {
+    "id": "q8",
+    "number": 8,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "First-degree discrimination",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "\u003cp>In the ideal model of perfect first-degree price discrimination, with full willingness-to-pay information and no other market failure:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The firm sells units until willingness to pay equals MC and captures consumer surplus."
+      },
+      {
+        "letter": "B",
+        "html": "The firm must charge the same price to all consumers."
+      },
+      {
+        "letter": "C",
+        "html": "Quantity must be below the uniform-price monopoly quantity."
+      },
+      {
+        "letter": "D",
+        "html": "Consumer surplus necessarily rises."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>In the ideal first-degree model, the seller captures each buyer&#x27;s willingness to pay and serves units with willingness to pay at least MC. Output reaches the efficient margin, and consumer surplus is extracted. This conclusion uses the question&#x27;s information and no-other-market-failure assumptions.\u003c/p>"
+  },
+  {
+    "id": "q9",
+    "number": 9,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Self-selection",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "\u003cp>A seller designs a menu of quantity packages so buyers reveal their willingness to pay through their package choices. This is most naturally classified as:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "First-degree price discrimination."
+      },
+      {
+        "letter": "B",
+        "html": "Third-degree price discrimination."
+      },
+      {
+        "letter": "C",
+        "html": "Second-degree price discrimination."
+      },
+      {
+        "letter": "D",
+        "html": "Marginal-cost pricing."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>A menu uses self-selection: customers reveal their preferences by choosing a package. That is second-degree discrimination. Observable group membership would point to third degree.\u003c/p>"
+  },
+  {
+    "id": "q10",
+    "number": 10,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Observable groups",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "\u003cp>A transport operator charges a lower fare to customers who present a valid student ID. The service and serving cost are the same. This is most naturally classified as:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "First-degree price discrimination."
+      },
+      {
+        "letter": "B",
+        "html": "Third-degree price discrimination."
+      },
+      {
+        "letter": "C",
+        "html": "Second-degree price discrimination."
+      },
+      {
+        "letter": "D",
+        "html": "A difference explained entirely by cost."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>Verified student status is an observable basis for group pricing. It is not perfect knowledge of each individual&#x27;s willingness to pay, nor selection from a menu available on the same terms to everyone.\u003c/p>"
+  },
+  {
+    "id": "q11",
+    "number": 11,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Elasticity and pricing",
+    "topic": "elasticity",
+    "extension": false,
+    "stemHtml": "\u003cp>A seller can separate two groups and prevent resale. MC is 20 for either group. At their respective optimal prices, absolute demand elasticities are 2 for A and 4 for B. Using the interior markup rule, which prices are consistent with profit maximization?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "PA = 26.67; PB = 40"
+      },
+      {
+        "letter": "B",
+        "html": "PA = 20; PB = 20"
+      },
+      {
+        "letter": "C",
+        "html": "PA = 40; PB = 80"
+      },
+      {
+        "letter": "D",
+        "html": "PA = 40; PB ≈ 26.67"
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>Use P = MC/[1 − 1/|ε|]:\u003c/p>\n\u003cpre>PA = 20/(1 − 1/2) = 40\nPB = 20/(1 − 1/4) = 80/3 ≈ 26.67\u003c/pre>\n\u003cp>Less elastic demand supports the larger proportional markup. Both elasticities are specified at the respective optima; do not assume every demand curve has constant elasticity.\u003c/p>"
+  },
+  {
+    "id": "q12",
+    "number": 12,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Two separated markets",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "\u003cp>Demand in A is PA = 100 − 2QA; demand in B is PB = 60 − QB. Common MC is constant at 20. Both markets are served and resale is prevented. The optimal discriminatory outcome is:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "QA = 20, PA = 60; QB = 20, PB = 40"
+      },
+      {
+        "letter": "B",
+        "html": "QA = 40, PA = 20; QB = 40, PB = 20"
+      },
+      {
+        "letter": "C",
+        "html": "QA = 20, PA = 20; QB = 20, PB = 20"
+      },
+      {
+        "letter": "D",
+        "html": "QA = 25, PA = 50; QB = 30, PB = 30"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cpre>MRA = 100 − 4QA = 20 → QA = 20 → PA = 60\nMRB = 60 − 2QB = 20  → QB = 20 → PB = 40\u003c/pre>\n\u003cp>Both marginal revenues equal the same MC, despite different prices. Setting demand price equal to MC would not maximize uniform-price profit within each group.\u003c/p>"
+  },
+  {
+    "id": "q13",
+    "number": 13,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Two-part tariff",
+    "topic": "tariff",
+    "extension": true,
+    "stemHtml": "\u003cp>Every customer has demand P = 10 − q, MC is 2, and customers have zero outside surplus. Demand is known, customers are identical, and they join when indifferent. In the standard surplus-extraction benchmark, the seller sets:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Usage price 10 and access fee 0."
+      },
+      {
+        "letter": "B",
+        "html": "Usage price 6 and access fee 8."
+      },
+      {
+        "letter": "C",
+        "html": "Usage price 2 and access fee 32."
+      },
+      {
+        "letter": "D",
+        "html": "Usage price 2 and access fee 64."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>At usage price 2, each consumer buys q = 10 − 2 = 8. Their surplus before the access fee is \u003cstrong>½ × (10 − 2) × 8 = 32\u003c/strong>. The seller can set the access fee at 32 under the question&#x27;s purchase-at-indifference and identical-consumer assumptions. Heterogeneous demand would require a different analysis.\u003c/p>"
+  },
+  {
+    "id": "q14",
+    "number": 14,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Bundling",
+    "topic": "bundling",
+    "extension": true,
+    "stemHtml": "\u003cp>Two customers each want at most one unit of X and one unit of Y. A values (X, Y) at (80, 20); B values them at (20, 80). Costs are zero, resale is impossible, and buyers purchase when indifferent. Compare optimal separate pricing with offering only a bundle of X + Y. Which is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Separate prices of 20 for each product yield revenue 200."
+      },
+      {
+        "letter": "B",
+        "html": "Separate prices of 80 for each product yield revenue 160; a bundle price of 100 yields revenue 200."
+      },
+      {
+        "letter": "C",
+        "html": "A bundle price of 160 sells to both customers."
+      },
+      {
+        "letter": "D",
+        "html": "Bundling cannot increase revenue when costs are zero."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>For either product, charging 80 sells one unit and earns 80; charging 20 sells two units and earns 40. Intermediate prices sell one unit for less than 80. Thus optimal separate revenue is \u003cstrong>80 + 80 = 160\u003c/strong>. Each consumer values the bundle at 100; price 100 sells two bundles and earns \u003cstrong>200\u003c/strong>. A higher bundle price sells none.\u003c/p>"
+  },
+  {
+    "id": "q15",
+    "number": 15,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Welfare",
+    "topic": "welfare",
+    "extension": false,
+    "stemHtml": "\u003cp>Compared with uniform monopoly pricing, third-degree price discrimination:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Always eliminates deadweight loss."
+      },
+      {
+        "letter": "B",
+        "html": "Always increases consumer surplus."
+      },
+      {
+        "letter": "C",
+        "html": "Always lowers total output."
+      },
+      {
+        "letter": "D",
+        "html": "Can raise or lower total welfare, depending on output and allocation effects."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>Group pricing changes quantities and who receives the product. It does not inherit the ideal first-degree efficiency result. A statement that welfare or consumer surplus must always rise is too strong.\u003c/p>\n\u003ch3>Part B: Reasoning\u003c/h3>"
+  },
+  {
+    "id": "q16",
+    "number": 16,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Dominant strategy",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "\u003cp>Two firms choose prices simultaneously. Payoffs are \u003ccode>(A, B)\u003c/code>.\u003c/p>\n\u003ctable>\u003cthead>\u003ctr>\u003cth scope=\"col\">A / B\u003c/th>\u003cth scope=\"col\">High\u003c/th>\u003cth scope=\"col\">Low\u003c/th>\u003c/tr>\u003c/thead>\u003ctbody>\u003ctr>\u003ctd>High\u003c/td>\u003ctd>(8, 8)\u003c/td>\u003ctd>(1, 11)\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Low\u003c/td>\u003ctd>(11, 1)\u003c/td>\u003ctd>(4, 4)\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cp>For firm A:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "High strictly dominates Low."
+      },
+      {
+        "letter": "B",
+        "html": "Low strictly dominates High."
+      },
+      {
+        "letter": "C",
+        "html": "Neither action is dominant because B&#x27;s payoff changes."
+      },
+      {
+        "letter": "D",
+        "html": "High is dominant only if A moves first."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>If B chooses High, A compares Low&#x27;s 11 with High&#x27;s 8. If B chooses Low, A compares Low&#x27;s 4 with High&#x27;s 1. Low is strictly better in both columns.\u003c/p>"
+  },
+  {
+    "id": "q17",
+    "number": 17,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Nash equilibrium",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "\u003cp>Two firms choose prices simultaneously. Payoffs are \u003ccode>(A, B)\u003c/code>.\u003c/p>\n\u003ctable>\u003cthead>\u003ctr>\u003cth scope=\"col\">A / B\u003c/th>\u003cth scope=\"col\">High\u003c/th>\u003cth scope=\"col\">Low\u003c/th>\u003c/tr>\u003c/thead>\u003ctbody>\u003ctr>\u003ctd>High\u003c/td>\u003ctd>(8, 8)\u003c/td>\u003ctd>(1, 11)\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Low\u003c/td>\u003ctd>(11, 1)\u003c/td>\u003ctd>(4, 4)\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cp>The unique Nash equilibrium of Matrix 1 is:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "(High, High)"
+      },
+      {
+        "letter": "B",
+        "html": "(High, Low)"
+      },
+      {
+        "letter": "C",
+        "html": "(Low, High)"
+      },
+      {
+        "letter": "D",
+        "html": "(Low, Low)"
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>Both firms have strictly dominant action Low. At (Low, Low), either firm switching alone to High reduces its own payoff from 4 to 1. Every other cell gives at least one player a profitable deviation.\u003c/p>"
+  },
+  {
+    "id": "q18",
+    "number": 18,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Joint profit versus stability",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "\u003cp>Two firms choose prices simultaneously. Payoffs are \u003ccode>(A, B)\u003c/code>.\u003c/p>\n\u003ctable>\u003cthead>\u003ctr>\u003cth scope=\"col\">A / B\u003c/th>\u003cth scope=\"col\">High\u003c/th>\u003cth scope=\"col\">Low\u003c/th>\u003c/tr>\u003c/thead>\u003ctbody>\u003ctr>\u003ctd>High\u003c/td>\u003ctd>(8, 8)\u003c/td>\u003ctd>(1, 11)\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Low\u003c/td>\u003ctd>(11, 1)\u003c/td>\u003ctd>(4, 4)\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cp>Why is (High, High) not a Nash equilibrium in the one-shot game?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Either firm can increase its own payoff from 8 to 11 by switching alone to Low."
+      },
+      {
+        "letter": "B",
+        "html": "Both firms must switch together to make more money."
+      },
+      {
+        "letter": "C",
+        "html": "Nash equilibrium requires equal payoffs at every outcome."
+      },
+      {
+        "letter": "D",
+        "html": "High prices are never permitted in a game-theory model."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>With the other firm fixed at High, changing to Low raises own payoff from 8 to 11. That unilateral incentive defeats Nash stability, even though the firms&#x27; joint payoff is highest at (High, High).\u003c/p>"
+  },
+  {
+    "id": "q19",
+    "number": 19,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Multiple equilibria",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "\u003cp>Payoffs are (A, B), with higher numbers better for each player.\u003c/p>\u003cp>Two firms choose a technology standard simultaneously.\u003c/p>\n\u003ctable>\u003cthead>\u003ctr>\u003cth scope=\"col\">A / B\u003c/th>\u003cth scope=\"col\">X\u003c/th>\u003cth scope=\"col\">Y\u003c/th>\u003c/tr>\u003c/thead>\u003ctbody>\u003ctr>\u003ctd>X\u003c/td>\u003ctd>(6, 6)\u003c/td>\u003ctd>(0, 0)\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Y\u003c/td>\u003ctd>(0, 0)\u003c/td>\u003ctd>(3, 3)\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cp>Which outcomes are pure-strategy Nash equilibria?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Only (X, X)."
+      },
+      {
+        "letter": "B",
+        "html": "Only (Y, Y)."
+      },
+      {
+        "letter": "C",
+        "html": "Both (X, X) and (Y, Y)."
+      },
+      {
+        "letter": "D",
+        "html": "Neither matching outcome."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>At (X, X), switching alone reduces own payoff from 6 to 0. At (Y, Y), switching alone reduces it from 3 to 0. Both are pure Nash equilibria. The question asks for pure equilibria; it does not claim these are the only equilibria when mixing is allowed.\u003c/p>"
+  },
+  {
+    "id": "q20",
+    "number": 20,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Dominance in coordination",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "\u003cp>Payoffs are (A, B), with higher numbers better for each player.\u003c/p>\u003cp>Two firms choose a technology standard simultaneously.\u003c/p>\n\u003ctable>\u003cthead>\u003ctr>\u003cth scope=\"col\">A / B\u003c/th>\u003cth scope=\"col\">X\u003c/th>\u003cth scope=\"col\">Y\u003c/th>\u003c/tr>\u003c/thead>\u003ctbody>\u003ctr>\u003ctd>X\u003c/td>\u003ctd>(6, 6)\u003c/td>\u003ctd>(0, 0)\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Y\u003c/td>\u003ctd>(0, 0)\u003c/td>\u003ctd>(3, 3)\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cp>Which statement is correct for Matrix 2?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "X strictly dominates Y for both firms because 6 &gt; 3."
+      },
+      {
+        "letter": "B",
+        "html": "Neither firm has a dominant strategy; its best choice depends on the other&#x27;s action."
+      },
+      {
+        "letter": "C",
+        "html": "Y strictly dominates X for both firms."
+      },
+      {
+        "letter": "D",
+        "html": "A game without dominant strategies cannot have a Nash equilibrium."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>Against X, choose X for 6 instead of 0. Against Y, choose Y for 3 instead of 0. Comparing the diagonal payoffs 6 and 3 is not a dominance test, because that comparison changes the other player&#x27;s action too.\u003c/p>"
+  },
+  {
+    "id": "q21",
+    "number": 21,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Negative payoffs",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "\u003cp>Holding the opponent&#x27;s action fixed, A receives −5 from Up and −2 from Down. A should choose:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Down, because −2 is a higher payoff than −5."
+      },
+      {
+        "letter": "B",
+        "html": "Up, because 5 is larger than 2."
+      },
+      {
+        "letter": "C",
+        "html": "Neither; negative payoffs cannot occur."
+      },
+      {
+        "letter": "D",
+        "html": "The action that gives the opponent the smaller payoff, regardless of A&#x27;s payoff."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>−2 &gt; −5. Maximize the payoff as written. The question defines the numbers as utility/profit, not prison years or costs to minimize.\u003c/p>"
+  },
+  {
+    "id": "q22",
+    "number": 22,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Eliminating a strategy",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "\u003cp>Consider the following simultaneous game:\u003c/p>\n\u003ctable>\u003cthead>\u003ctr>\u003cth scope=\"col\">A / B\u003c/th>\u003cth scope=\"col\">Left\u003c/th>\u003cth scope=\"col\">Right\u003c/th>\u003c/tr>\u003c/thead>\u003ctbody>\u003ctr>\u003ctd>Up\u003c/td>\u003ctd>(4, 1)\u003c/td>\u003ctd>(2, 3)\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Middle\u003c/td>\u003ctd>(1, 4)\u003c/td>\u003ctd>(1, 2)\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Down\u003c/td>\u003ctd>(2, 3)\u003c/td>\u003ctd>(4, 1)\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cp>Which statement is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Up is strictly dominated by Middle."
+      },
+      {
+        "letter": "B",
+        "html": "Down is strictly dominated by Middle."
+      },
+      {
+        "letter": "C",
+        "html": "Up strictly dominates Down."
+      },
+      {
+        "letter": "D",
+        "html": "Middle is strictly dominated by Up and can be eliminated."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>For A, Up gives 4 &gt; 1 against Left and 2 &gt; 1 against Right. Therefore Up strictly dominates Middle. Up and Down do not dominate one another: Up is better against Left, Down against Right. Use first-number comparisons for A.\u003c/p>"
+  },
+  {
+    "id": "q23",
+    "number": 23,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Defining Nash",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "\u003cp>A strategy profile is a Nash equilibrium when:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It maximizes the sum of players&#x27; payoffs."
+      },
+      {
+        "letter": "B",
+        "html": "Every player receives the same payoff."
+      },
+      {
+        "letter": "C",
+        "html": "No player can gain by changing their own strategy while others keep theirs fixed."
+      },
+      {
+        "letter": "D",
+        "html": "Every player has a strictly dominant strategy."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>Nash is a mutual-best-response condition: nobody benefits by deviating alone with the others held fixed. It does not require equal payoffs, dominant strategies, or maximum joint payoff.\u003c/p>"
+  },
+  {
+    "id": "q24",
+    "number": 24,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Last mover",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "\u003cp>An entrant first chooses \u003cstrong>Out\u003c/strong> or \u003cstrong>Enter\u003c/strong>. The incumbent observes that choice and, following entry, chooses \u003cstrong>Fight\u003c/strong> or \u003cstrong>Accommodate\u003c/strong>. Payoffs are \u003ccode>(entrant, incumbent)\u003c/code>:\u003c/p>\n\u003cpre>Out                   → (0, 8)\nEnter, Fight          → (−2, 1)\nEnter, Accommodate    → (3, 4)\u003c/pre>\n\u003cp>If entry occurs, the incumbent&#x27;s best response is:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Fight, because its payoff without entry would have been 8."
+      },
+      {
+        "letter": "B",
+        "html": "Accommodate, because 4 &gt; 1 after entry."
+      },
+      {
+        "letter": "C",
+        "html": "Fight, because the entrant loses money."
+      },
+      {
+        "letter": "D",
+        "html": "Accommodate only if the entrant agrees to transfer its entire profit."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>After entry, the incumbent&#x27;s available payoffs are 1 from Fight and 4 from Accommodate. Its preference for the unavailable no-entry payoff of 8 does not change the comparison at that node.\u003c/p>"
+  },
+  {
+    "id": "q25",
+    "number": 25,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Backward induction",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "\u003cp>An entrant first chooses \u003cstrong>Out\u003c/strong> or \u003cstrong>Enter\u003c/strong>. The incumbent observes that choice and, following entry, chooses \u003cstrong>Fight\u003c/strong> or \u003cstrong>Accommodate\u003c/strong>. Payoffs are \u003ccode>(entrant, incumbent)\u003c/code>:\u003c/p>\n\u003cpre>Out                   → (0, 8)\nEnter, Fight          → (−2, 1)\nEnter, Accommodate    → (3, 4)\u003c/pre>\n\u003cp>The outcome predicted by backward induction is:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Enter, Accommodate, with payoffs (3, 4)."
+      },
+      {
+        "letter": "B",
+        "html": "Enter, Fight, with payoffs (−2, 1)."
+      },
+      {
+        "letter": "C",
+        "html": "Out, because an announced threat is automatically credible."
+      },
+      {
+        "letter": "D",
+        "html": "Out, because incumbents always move first."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>The entrant anticipates accommodation. Enter gives it 3, compared with 0 from Out. The strategy profile is \u003cstrong>entrant: Enter; incumbent: Accommodate if entry occurs\u003c/strong>. The equilibrium path yields (3, 4).\u003c/p>"
+  },
+  {
+    "id": "q26",
+    "number": 26,
+    "kind": "mcq",
+    "section": "games",
+    "title": "A credible threat",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "\u003cp>An entrant first chooses \u003cstrong>Out\u003c/strong> or \u003cstrong>Enter\u003c/strong>. The incumbent observes that choice and, following entry, chooses \u003cstrong>Fight\u003c/strong> or \u003cstrong>Accommodate\u003c/strong>. Payoffs are \u003ccode>(entrant, incumbent)\u003c/code>:\u003c/p>\n\u003cpre>Out                   → (0, 8)\nEnter, Fight          → (−2, 1)\nEnter, Accommodate    → (3, 4)\u003c/pre>\n\u003cp>Suppose technology changes \u003cstrong>only\u003c/strong> the incumbent&#x27;s payoff from Fight: it rises from 1 to 5. All other payoffs and timing stay the same. The change is known to both players. What is the backward-induction outcome now?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Entry still occurs because the entrant ignores the incumbent&#x27;s incentives."
+      },
+      {
+        "letter": "B",
+        "html": "Entry occurs and the incumbent accommodates."
+      },
+      {
+        "letter": "C",
+        "html": "The entrant enters because the incumbent&#x27;s Fight payoff exceeds its Accommodate payoff."
+      },
+      {
+        "letter": "D",
+        "html": "The entrant stays Out because the incumbent would now choose Fight after entry."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>Now Fight gives the incumbent 5, compared with 4 from Accommodate. The entrant anticipates Fight, so Enter gives −2 instead of Out&#x27;s 0. It stays Out. The incumbent&#x27;s contingent strategy is still specified: Fight if entry occurs, although that node is not reached.\u003c/p>"
+  },
+  {
+    "id": "q27",
+    "number": 27,
+    "kind": "mcq",
+    "section": "games",
+    "title": "First-mover advantage",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "\u003cp>Which statement is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The first mover always receives the larger payoff."
+      },
+      {
+        "letter": "B",
+        "html": "The second mover always receives the larger payoff."
+      },
+      {
+        "letter": "C",
+        "html": "Any advantage depends on the game&#x27;s payoffs, information, and commitment opportunities."
+      },
+      {
+        "letter": "D",
+        "html": "Backward induction requires the first mover to have a dominant strategy."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>Anticipating the follower&#x27;s best response may help or hurt the leader, depending on the game. Timing alone does not establish a first-mover advantage.\u003c/p>"
+  },
+  {
+    "id": "q28",
+    "number": 28,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Known finite repetition",
+    "topic": "repeated",
+    "extension": false,
+    "stemHtml": "\u003cp>Two firms choose prices simultaneously. Payoffs are \u003ccode>(A, B)\u003c/code>.\u003c/p>\n\u003ctable>\u003cthead>\u003ctr>\u003cth scope=\"col\">A / B\u003c/th>\u003cth scope=\"col\">High\u003c/th>\u003cth scope=\"col\">Low\u003c/th>\u003c/tr>\u003c/thead>\u003ctbody>\u003ctr>\u003ctd>High\u003c/td>\u003ctd>(8, 8)\u003c/td>\u003ctd>(1, 11)\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Low\u003c/td>\u003ctd>(11, 1)\u003c/td>\u003ctd>(4, 4)\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cp>Matrix 1 is repeated exactly three times. Both firms maximize their total payoff, have complete information, share common knowledge of rationality, and have no additional reputation or contract mechanism. What does backward induction predict?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "High in rounds 1 and 2, Low in round 3."
+      },
+      {
+        "letter": "B",
+        "html": "Low in all three rounds."
+      },
+      {
+        "letter": "C",
+        "html": "High in all rounds because the relationship is repeated."
+      },
+      {
+        "letter": "D",
+        "html": "The result cannot be analyzed because no discount factor is specified."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>In the last round, Low is strictly dominant. With the last-round outcome fixed under these assumptions, round 2 has no future cooperation reward that can change its one-shot incentive; the same logic applies to round 1. The prediction is \u003cstrong>Low in every round\u003c/strong>. This result is specific to the stated finite, complete-information prisoners&#x27; dilemma setting.\u003c/p>"
+  },
+  {
+    "id": "q29",
+    "number": 29,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Discount factor",
+    "topic": "repeated",
+    "extension": true,
+    "stemHtml": "\u003cp>Two firms choose prices simultaneously. Payoffs are \u003ccode>(A, B)\u003c/code>.\u003c/p>\n\u003ctable>\u003cthead>\u003ctr>\u003cth scope=\"col\">A / B\u003c/th>\u003cth scope=\"col\">High\u003c/th>\u003cth scope=\"col\">Low\u003c/th>\u003c/tr>\u003c/thead>\u003ctbody>\u003ctr>\u003ctd>High\u003c/td>\u003ctd>(8, 8)\u003c/td>\u003ctd>(1, 11)\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Low\u003c/td>\u003ctd>(11, 1)\u003c/td>\u003ctd>(4, 4)\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cp>Matrix 1 is repeated indefinitely with perfect monitoring. Both firms use grim trigger: High until a deviation, then Low forever starting next period. With discount factor δ, cooperation is sustainable when:\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "δ ≥ 3/7"
+      },
+      {
+        "letter": "B",
+        "html": "δ ≤ 3/7"
+      },
+      {
+        "letter": "C",
+        "html": "δ ≥ 7/3"
+      },
+      {
+        "letter": "D",
+        "html": "δ = 0 only"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>Cooperation gives 8/(1 − δ). A one-period deviation gives 11 immediately and 4 per period from the next round:\u003c/p>\n\u003cpre>8/(1 − δ) ≥ 11 + 4δ/(1 − δ)\n8 ≥ 11(1 − δ) + 4δ\n7δ ≥ 3\nδ ≥ 3/7\u003c/pre>\n\u003cp>The punishment of mutual Low is credible because it is the stage-game equilibrium. At equality the player is indifferent. A sufficiently large δ makes these cooperative strategies sustainable; it does not uniquely predict cooperation.\u003c/p>"
+  },
+  {
+    "id": "q30",
+    "number": 30,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Expected payoff",
+    "topic": "expected",
+    "extension": true,
+    "stemHtml": "\u003cp>B chooses Left with probability 0.4 and Right with probability 0.6. A&#x27;s payoff from Up is 6 against Left and 0 against Right. Down gives A a payoff of 2 against either action. A maximizes expected payoff. Which is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Up gives expected payoff 6, so choose Up."
+      },
+      {
+        "letter": "B",
+        "html": "Up gives expected payoff 3.6, so choose Up."
+      },
+      {
+        "letter": "C",
+        "html": "Up gives expected payoff 2.4, so choose Up."
+      },
+      {
+        "letter": "D",
+        "html": "Down gives expected payoff 2.4, so choose Down."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>EU(Up) = 0.4 × 6 + 0.6 × 0 = \u003cstrong>2.4\u003c/strong>. EU(Down) = 0.4 × 2 + 0.6 × 2 = \u003cstrong>2\u003c/strong>. Choose Up. Use probability-weighted averages, rather than the largest possible payoff alone.\u003c/p>"
+  },
+  {
+    "id": "short1",
+    "number": 31,
+    "kind": "short",
+    "section": "short",
+    "title": "Customer-group pricing",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "\u003cp>A seller can charge separate prices to two identifiable groups and prevent resale. Demands are:\u003c/p>\n\u003cpre>PA = 100 − 2QA\nPB = 80 − 2QB\nTotal cost = 100 + 20(QA + QB)\u003c/pre>\n\u003col>\u003cli>Derive marginal revenue in each group and calculate profit-maximizing quantities.\u003c/li>\u003cli>Calculate each price and the seller&#x27;s total profit.\u003c/li>\u003cli>Give two conditions that help make this pricing arrangement workable.\u003c/li>\u003cli>Explain the difference between choosing the highest possible price and choosing a profit-maximizing price.\u003c/li>\u003c/ol>",
+    "answerHtml": "\u003cp>Revenue in each group is:\u003c/p>\n\u003cpre>TRA = (100 − 2QA)QA → MRA = 100 − 4QA\nTRB = (80 − 2QB)QB  → MRB = 80 − 4QB\nMC = 20\u003c/pre>\n\u003cp>Set each MR equal to MC:\u003c/p>\n\u003cpre>100 − 4QA = 20 → QA = 20 → PA = 60\n80 − 4QB = 20  → QB = 15 → PB = 50\u003c/pre>\n\u003cp>Both objective functions are concave quadratics in their quantities, so these interior solutions maximize operating profit. They also yield positive profit after the fixed cost:\u003c/p>\n\u003cpre>TR = 60(20) + 50(15) = 1,950\nTC = 100 + 20(20 + 15) = 800\nProfit = 1,150\u003c/pre>\n\u003cp>Practical conditions include \u003cstrong>identifying the groups\u003c/strong> and \u003cstrong>preventing low-price buyers from reselling to high-price buyers\u003c/strong>. The seller also needs sufficient pricing power and different willingness to pay across groups to make separation useful.\u003c/p>\n\u003cp>The highest possible demand intercept does not maximize profit: at PA = 100, group A buys zero. The optimal price balances the margin earned per unit with the number of units sold. Within each group, the firm chooses quantity where MR = MC, then obtains the associated price from demand.\u003c/p>\n\u003cp>\u003cstrong>Suggested practice rubric, 10 points:\u003c/strong> marginal revenues 2; quantities 2; prices 2; total profit 2; workable conditions and economic explanation 2. This is not an official allocation.\u003c/p>",
+    "checks": [
+      "Derived both marginal revenues and set each equal to 20.",
+      "Found QA = 20 and QB = 15.",
+      "Found PA = 60, PB = 50, and total profit = 1,150.",
+      "Explained segmentation, resale restrictions, and the quantity–margin tradeoff."
+    ]
+  },
+  {
+    "id": "short2",
+    "number": 32,
+    "kind": "short",
+    "section": "short",
+    "title": "Entry and commitment",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "\u003cp>An entrant chooses Out or Enter. After Enter, an incumbent chooses Fight or Accommodate. Initial payoffs are \u003ccode>(entrant, incumbent)\u003c/code>:\u003c/p>\n\u003cpre>Out                   → (0, 9)\nEnter, Fight          → (−2, 1)\nEnter, Accommodate    → (3, 5)\u003c/pre>\n\u003col>\u003cli>Solve by backward induction. State the predicted outcome and whether a threat to Fight is credible.\u003c/li>\u003cli>Before the entrant moves, the incumbent can publicly install defensive technology. This raises its \u003cstrong>gross\u003c/strong> payoff from Fight from 1 to 7. Its other gross payoffs stay the same. Installation costs the incumbent 2, paid once regardless of whether entry occurs. Find the incumbent&#x27;s \u003cstrong>net\u003c/strong> payoffs for all outcomes after installation.\u003c/li>\u003cli>Solve the continuation game after installation. Does the entrant enter?\u003c/li>\u003cli>Compare the incumbent&#x27;s resulting payoff with and without installation. Would it choose to install? Explain why this is a change in incentives.\u003c/li>\u003c/ol>",
+    "answerHtml": "\u003ch3>Before installation\u003c/h3>\n\u003cp>After entry, the incumbent chooses Accommodate because 5 &gt; 1. The entrant anticipates a payoff of 3 from entry versus 0 from Out. The outcome is \u003cstrong>Enter, Accommodate\u003c/strong>, with payoffs \u003cstrong>(3, 5)\u003c/strong>.\u003c/p>\n\u003cp>The threat to Fight is not credible: after entry, fighting gives the incumbent a lower payoff than accommodating. The strategy profile is \u003cstrong>entrant: Enter; incumbent: Accommodate if entry occurs\u003c/strong>.\u003c/p>\n\u003ch3>After installation\u003c/h3>\n\u003cp>Subtract the one-time installation cost of 2 from the incumbent&#x27;s gross payoff in every terminal outcome:\u003c/p>\n\u003ctable>\u003cthead>\u003ctr>\u003cth scope=\"col\">Outcome\u003c/th>\u003cth scope=\"col\">Entrant payoff\u003c/th>\u003cth scope=\"col\">Incumbent gross payoff\u003c/th>\u003cth scope=\"col\">Incumbent net payoff\u003c/th>\u003c/tr>\u003c/thead>\u003ctbody>\u003ctr>\u003ctd>Out\u003c/td>\u003ctd>0\u003c/td>\u003ctd>9\u003c/td>\u003ctd>7\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Enter, Fight\u003c/td>\u003ctd>−2\u003c/td>\u003ctd>7\u003c/td>\u003ctd>5\u003c/td>\u003c/tr>\u003ctr>\u003ctd>Enter, Accommodate\u003c/td>\u003ctd>3\u003c/td>\u003ctd>5\u003c/td>\u003ctd>3\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cp>After entry, Fight now gives 5 &gt; 3. Knowing this, the entrant prefers Out&#x27;s 0 to entry&#x27;s −2. The continuation outcome is \u003cstrong>Out\u003c/strong>, with payoffs \u003cstrong>(0, 7)\u003c/strong>. The contingent strategies are \u003cstrong>entrant: Out; incumbent: Fight if entry occurs\u003c/strong>.\u003c/p>\n\u003cp>At the initial installation decision, the incumbent compares:\u003c/p>\n\u003cul>\u003cli>No installation → entry and accommodation → payoff \u003cstrong>5\u003c/strong>.\u003c/li>\u003cli>Installation → no entry → net payoff \u003cstrong>7\u003c/strong>.\u003c/li>\u003c/ul>\n\u003cp>It therefore \u003cstrong>installs\u003c/strong>, improving its payoff by \u003cstrong>2\u003c/strong>. The technology changes the gross reward from fighting, making the response credible. The installation cost is already sunk when the post-entry decision is made and is subtracted from both continuation options; paying a cost alone would not have reversed their ranking.\u003c/p>\n\u003cp>\u003cstrong>Suggested practice rubric, 10 points:\u003c/strong> initial backward induction and credibility 3; all three net payoffs 2; post-installation response and entry decision 3; initial installation comparison and explanation 2. This is not an official allocation.\u003c/p>",
+    "checks": [
+      "Solved the initial game: Enter, Accommodate, payoffs (3, 5).",
+      "Explained why the initial fighting threat is not credible.",
+      "Subtracted installation cost in every outcome: incumbent net payoffs 7, 5, 3.",
+      "Found that installation deters entry and improves the incumbent payoff from 5 to 7."
+    ]
+  }
+]
+</script>
+<script>
+'use strict';
+const QUESTIONS=JSON.parse(document.getElementById('question-data').textContent);
+const BY_ID=new Map(QUESTIONS.map(q=>[q.id,q]));
+const KEY='ceibs-micro-final-v1';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let storageAvailable=true;
+let state={session:null,history:{}};
+try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved&&saved.version===1){state.history=saved.history||{};const s=saved.session;if(s&&Array.isArray(s.ids)&&s.ids.length&&s.ids.every(id=>BY_ID.has(id))&&['practice','exam'].includes(s.mode)&&s.answers&&Number.isInteger(s.index)&&s.index>=0&&s.index<s.ids.length)state.session=s;}}catch(e){storageAvailable=false;}
+let pendingStart=null;
+function save(){try{localStorage.setItem(KEY,JSON.stringify({version:1,...state}));$('save-state').textContent='Saved on this device';}catch(e){storageAvailable=false;$('save-state').textContent='Saving unavailable';}}
+function isAnswered(q,a){return q.kind==='short'?!!(a&&a.text&&a.text.trim()):!!(a&&a.choice);}
+function isComplete(q,a){return q.kind==='short'?!!(a&&a.rating):!!(a&&a.checked);}
+function isWeak(q,a){return q.kind==='short'?(!a||a.rating!=='got'):(!a||!a.checked||a.choice!==q.answer);}
+function visible(section){for(const id of ['home','session','results'])$(id).hidden=id!==section;}
+function goTop(){window.scrollTo({top:0,behavior:'instant'});}
+function home(){visible('home');const s=state.session;$('resume-banner').hidden=!s;$('resume-button').textContent=s&&s.finished?'See results':'Resume';if(s)$('resume-description').textContent=`${s.mode==='exam'?'Mock exam':'Practice'} · ${s.ids.filter(id=>isAnswered(BY_ID.get(id),s.answers[id])).length} of ${s.ids.length} answered`;$('save-state').textContent=storageAvailable?'Progress saves here':'Saving unavailable';goTop();}
+function chooseIds(topic){return QUESTIONS.filter(q=>topic==='all'||(topic==='pricing'&&q.section==='pricing')||(topic==='games'&&q.section==='games')||(topic==='short'&&q.kind==='short')||(topic==='mistakes'&&isWeak(q,state.history[q.id]))).map(q=>q.id);}
+function start(config){let ids=config.ids||chooseIds(config.topic);if(!ids.length){$('home-message').textContent='No mistakes or unanswered questions left. Start a fresh full exam to practise again.';$('home-message').hidden=false;return;}if(config.shuffle)for(let i=ids.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[ids[i],ids[j]]=[ids[j],ids[i]];}state.session={ids,mode:config.mode,index:0,answers:{},startedAt:Date.now(),deadline:config.timed?Date.now()+60*60*1000:null,finished:false,review:false};save();visible('session');render();goTop();}
+function requestStart(config){if(state.session&&!state.session.finished){pendingStart=config;$('replace-dialog').showModal();}else start(config);}
+function current(){return BY_ID.get(state.session.ids[state.session.index]);}
+function answerFor(q){const s=state.session;if(!s.answers[q.id])s.answers[q.id]={};return s.answers[q.id];}
+function showAnswers(){const s=state.session;return s.mode==='practice'||s.finished;}
+function updateHistory(q,a){state.history[q.id]={...a,updatedAt:Date.now()};}
+function updateProgress(){const s=state.session;const complete=s.ids.filter(id=>isComplete(BY_ID.get(id),s.answers[id])).length;const answered=s.ids.filter(id=>isAnswered(BY_ID.get(id),s.answers[id])).length;const count=s.mode==='exam'&&!s.finished?answered:complete;$('progress-fill').style.width=(count/s.ids.length*100)+'%';$('progress').setAttribute('aria-valuemax',s.ids.length);$('progress').setAttribute('aria-valuenow',count);$('map-count').textContent=`${count}/${s.ids.length}`;$('jump-grid').innerHTML=s.ids.map((id,i)=>{const q=BY_ID.get(id),a=s.answers[id];let cls='jump';if(isAnswered(q,a))cls+=' answered';if(showAnswers()&&a&&((q.kind==='mcq'&&a.checked&&a.choice!==q.answer)||(q.kind==='short'&&a.rating==='work')))cls+=' wrong';if(i===s.index)cls+=' selected';return `<button type="button" class="${cls}" data-jump="${i}" aria-label="Go to question ${q.number}: ${esc(q.title)}" ${i===s.index?'aria-current="step"':''}>${q.number}</button>`;}).join('');}
+function render(){const s=state.session,q=current(),a=answerFor(q);visible('session');$('session-heading').textContent=s.finished?'Review your reasoning.':s.mode==='exam'?'Make your next move.':'One decision at a time.';$('session-sub').textContent=s.finished?'Review mode · explanations unlocked':s.mode==='exam'?'Mock exam · feedback stays hidden until you finish':'Practice mode · check your answer, then keep going';$('position').textContent=`${s.index+1} of ${s.ids.length}`;$('previous-button').disabled=s.index===0;$('next-button').textContent=s.index===s.ids.length-1?'Finish →':'Next →';const reveal=showAnswers()&&(a.checked||a.revealed||s.finished);let content=`<div class="question-meta"><span class="pill">${q.kind==='short'?'Short answer':q.section==='games'?'Game theory':'Pricing'}</span><span>Question ${q.number}</span>${q.extension?'<span class="pill extension">Extension · if taught</span>':''}</div><h2 class="question-title">${esc(q.title)}</h2><div class="rich">${q.stemHtml}</div>`;
+if(q.kind==='mcq'){content+=`<fieldset style="border:0;padding:0;margin:0"><legend class="sr-only">Choose one answer</legend><div class="options">${q.options.map(o=>`<label class="option${reveal&&o.letter===q.answer?' correct':''}${reveal&&a.choice===o.letter&&a.choice!==q.answer?' incorrect':''}"><input type="radio" name="answer" value="${o.letter}" ${a.choice===o.letter?'checked':''} ${reveal?'disabled':''}><span><span class="letter">${o.letter}</span> ${o.html}</span></label>`).join('')}</div></fieldset>`;if(s.mode==='practice'&&!s.finished&&!a.checked)content+='<div class="answer-tools"><button type="button" class="button" id="check-button" '+(!a.choice?'disabled':'')+'>Check answer</button><button type="button" class="text-button" id="hint-button">A little hint</button></div><div class="hint" id="hint" hidden></div>';if(reveal)content+=`<section class="feedback ${a.choice&&a.choice!==q.answer?'wrong':''}" aria-label="Answer explanation"><div class="feedback-title">${!a.choice?'Not answered.':a.choice===q.answer?'Correct. You found it.':'A useful one to revisit.'} Answer: ${q.answer}</div><div class="rich">${q.answerHtml}</div></section>`;
+}else{content+=`<label class="sr-only" for="essay">Your written answer</label><textarea class="essay" id="essay" placeholder="Write your calculations and reasoning here…" ${s.finished?'readonly':''}>${esc(a.text||'')}</textarea><small>Your draft saves as you type.</small>`;if(s.mode==='practice'&&!a.revealed&&!s.finished)content+='<div class="answer-tools"><button type="button" class="button" id="model-button">Compare with model answer</button></div>';if(reveal)content+=`<section class="feedback" aria-label="Model answer"><div class="feedback-title">Compare your reasoning</div><div class="rich">${q.answerHtml}</div><div class="self-check"><strong>Check your own answer</strong>${q.checks.map((c,i)=>`<label><input type="checkbox" data-rubric="${i}" ${a.rubric&&a.rubric[i]?'checked':''}><span>${esc(c)}</span></label>`).join('')}<div class="self-buttons"><button type="button" class="button secondary small" data-rate="work" aria-pressed="${a.rating==='work'}">Needs another try</button><button type="button" class="button secondary small" data-rate="got" aria-pressed="${a.rating==='got'}">I can explain it</button></div><p class="muted" style="font-size:11px;margin-top:12px">Self-assessed. Short answers are not included in the automatic MCQ score.</p></div></section>`;}
+$('question-card').innerHTML=content;$('finish-button').textContent=s.finished?'Back to results':'Finish & review';$('mobile-finish').textContent=s.finished?'Back to results':'Finish & review';updateProgress();tick();save();}
+function navigate(index){const s=state.session;s.index=index;save();render();goTop();$('question-card').focus({preventScroll:true});}
+function requestFinish(){if(state.session.finished){results();return;}const s=state.session,blanks=s.ids.filter(id=>!isAnswered(BY_ID.get(id),s.answers[id])).length;$('finish-summary').textContent=blanks?`${blanks} question${blanks===1?' is':'s are'} unanswered. Blank multiple-choice questions count as incorrect. You can still review every explanation.`:'Your answers are ready. See your MCQ score, read the explanations, and assess your two short answers.';$('finish-dialog').showModal();}
+function finish(){const s=state.session;s.finished=true;s.finishedAt=Date.now();for(const id of s.ids){const q=BY_ID.get(id),a=answerFor(q);if(q.kind==='mcq')a.checked=true;else a.revealed=true;updateHistory(q,a);}save();results();}
+function results(){const s=state.session;visible('results');const mcqs=s.ids.map(id=>BY_ID.get(id)).filter(q=>q.kind==='mcq');const correct=mcqs.filter(q=>s.answers[q.id]&&s.answers[q.id].choice===q.answer).length;const shorts=s.ids.map(id=>BY_ID.get(id)).filter(q=>q.kind==='short');const blanks=mcqs.filter(q=>!s.answers[q.id]||!s.answers[q.id].choice).length;$('total-score').innerHTML=mcqs.length?`${correct}<span> / ${mcqs.length}</span>`:'—';$('score-description').textContent=mcqs.length?`${Math.round(correct/mcqs.length*100)}% correct · ${blanks} unanswered · short answers assessed separately`:'Short-answer session · compare your reasoning and assess it yourself';$('result-message').textContent=correct===mcqs.length&&mcqs.length?'A strong result. Revisit any answers you guessed and check the reasoning behind them.':'Use the explanations to find the exact comparison or calculation you missed.';$('result-breakdown').innerHTML=['pricing','games'].map(section=>{const items=mcqs.filter(q=>q.section===section);return items.length?`<div class="result-tile">${section==='pricing'?'Pricing':'Game theory'}<strong>${items.filter(q=>s.answers[q.id]?.choice===q.answer).length} / ${items.length}</strong></div>`:'';}).join('')+(shorts.length?`<div class="result-tile">Short answers · self-assessed<strong>${shorts.filter(q=>s.answers[q.id]?.rating==='got').length} / ${shorts.length} confident</strong><small>Open each answer to compare and assess.</small></div>`:'');$('result-list').innerHTML=s.ids.map((id,i)=>{const q=BY_ID.get(id),a=s.answers[id];let label=q.kind==='short'?(a?.rating==='got'?'Confident':a?.rating==='work'?'Needs work':'Self-check'):(a?.choice===q.answer?'Correct':a?.choice?'Revisit':'Unanswered');let good=q.kind==='short'?a?.rating==='got':a?.choice===q.answer;return `<button type="button" class="result-row" data-review="${i}"><span class="number">${q.number}</span><span>${esc(q.title)}</span><span class="status ${good?'good':'bad'}">${label} →</span></button>`;}).join('');const weak=s.ids.filter(id=>isWeak(BY_ID.get(id),s.answers[id]));$('retry-button').disabled=!weak.length;$('retry-button').textContent=weak.length?`Retry ${weak.length} to revisit`:'All reviewed';goTop();}
+function tick(){const s=state.session;const on=s&&!s.finished&&s.deadline&&!$('session').hidden;$('timer').hidden=!on;if(!on)return;const remaining=Math.max(0,Math.ceil((s.deadline-Date.now())/1000));$('timer').innerHTML=remaining?`${Math.floor(remaining/60).toString().padStart(2,'0')}:${(remaining%60).toString().padStart(2,'0')}<small>Practice time left</small>`:'Time is up<small>Finish when ready</small>';}
+const hints={monopoly:'Start with revenue = price × quantity. Use MR = MC to choose quantity; then read price from demand.',discrimination:'Ask how customers are separated, whether resale is possible, and whether different costs explain the prices.',elasticity:'For an interior optimum, (P − MC)/P = 1/|ε|. Less elastic demand supports a larger markup.',tariff:'At usage price equal to marginal cost, calculate the triangle of consumer surplus before the fixed fee.',bundling:'Compare each product’s best separate revenue with a bundle price based on each buyer’s total valuation.',welfare:'Distinguish a transfer of surplus from gains from trade that disappear. Different types of discrimination have different effects.',dominance:'Hold the opponent’s action fixed and compare your own payoffs. Repeat for every possible opponent action.',nash:'Hold one player’s action fixed. Can the other improve by switching alone? Check both players.',sequential:'Start after entry. Compare the incumbent’s own continuation payoffs, then ask what the entrant anticipates.',repeated:'Start with the last round if the endpoint is known. For indefinite play, compare today’s gain with future punishment.',expected:'Multiply each payoff by the probability of the opponent action that produces it, then add.'};
+$('start-button').addEventListener('click',()=>requestStart({topic:$('topic-select').value,mode:$('mode-select').value,shuffle:$('shuffle-toggle').checked,timed:false}));
+$('hour-button').addEventListener('click',()=>requestStart({topic:'all',mode:'exam',timed:true,shuffle:false}));
+$('confirm-replace').addEventListener('click',()=>{$('replace-dialog').close();start(pendingStart);pendingStart=null;});$('cancel-replace').addEventListener('click',()=>{$('replace-dialog').close();pendingStart=null;});
+$('resume-button').addEventListener('click',()=>{state.session.finished?results():render();goTop();});
+$('previous-button').addEventListener('click',()=>navigate(Math.max(0,state.session.index-1)));
+$('next-button').addEventListener('click',()=>state.session.index===state.session.ids.length-1?requestFinish():navigate(state.session.index+1));
+$('jump-grid').addEventListener('click',e=>{const b=e.target.closest('[data-jump]');if(b)navigate(Number(b.dataset.jump));});
+$('question-card').addEventListener('change',e=>{const q=current(),a=answerFor(q);if(e.target.name==='answer'){a.choice=e.target.value;if($('check-button'))$('check-button').disabled=false;save();updateProgress();}if(e.target.matches('[data-rubric]')){a.rubric=a.rubric||{};a.rubric[e.target.dataset.rubric]=e.target.checked;updateHistory(q,a);save();}});
+$('question-card').addEventListener('input',e=>{if(e.target.id==='essay'){answerFor(current()).text=e.target.value;save();updateProgress();}});
+$('question-card').addEventListener('click',e=>{const q=current(),a=answerFor(q);if(e.target.closest('#check-button')&&a.choice){a.checked=true;updateHistory(q,a);save();render();}if(e.target.closest('#hint-button')){$('hint').textContent=hints[q.topic]||'Write down the relevant rule, then apply the numbers one step at a time.';$('hint').hidden=false;}if(e.target.closest('#model-button')){a.revealed=true;updateHistory(q,a);save();render();}const rate=e.target.closest('[data-rate]');if(rate){a.rating=rate.dataset.rate;updateHistory(q,a);save();render();}});
+for(const id of ['finish-button','mobile-finish'])$(id).addEventListener('click',requestFinish);
+$('confirm-finish').addEventListener('click',()=>{$('finish-dialog').close();finish();});$('cancel-finish').addEventListener('click',()=>$('finish-dialog').close());
+$('pause-button').addEventListener('click',()=>{save();home();});$('home-button').addEventListener('click',home);
+$('review-button').addEventListener('click',()=>navigate(0));
+$('result-list').addEventListener('click',e=>{const b=e.target.closest('[data-review]');if(b)navigate(Number(b.dataset.review));});
+$('retry-button').addEventListener('click',()=>{const s=state.session;const ids=s.ids.filter(id=>isWeak(BY_ID.get(id),s.answers[id]));start({ids,mode:'practice',timed:false,shuffle:false});});
+$('reference-open').addEventListener('click',()=>$('reference').showModal());$('reference-close').addEventListener('click',()=>$('reference').close());
+setInterval(tick,1000);home();
+</script>
+</body>
+</html>

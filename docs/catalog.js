@@ -35,6 +35,26 @@ window.CEIBS_LIBRARY = {
   ],
   "pages": [
     {
+      "id": "microeconomics-final",
+      "title": "Microeconomics final practice",
+      "description": "15 pricing questions, 15 game theory questions, and 2 short answers. Practise with instant explanations, try a 60-minute mock, and retry mistakes.",
+      "topic": "economics",
+      "formats": [
+        "Interactive"
+      ],
+      "tags": [
+        "Microeconomics",
+        "Final exam",
+        "Game theory",
+        "Pricing",
+        "Quiz"
+      ],
+      "detail": "30 MCQs + 2 short answers",
+      "path": "pages/economics/microeconomics-final.html",
+      "updated": "2026-10-23",
+      "thumbnail": "assets/previews/microeconomics-final.svg"
+    },
+    {
       "id": "ai-impact-library",
       "title": "AI Impact Library",
       "description": "13 research-backed company cases showing how AI changed costs, revenue, productivity, service, and operations.",
