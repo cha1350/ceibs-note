@@ -7,12 +7,19 @@ Live site: https://cha1350.github.io/ceibs-note/
 ## Microeconomics final practice
 
 The [final practice page](https://cha1350.github.io/ceibs-note/pages/economics/microeconomics-final.html)
-contains 15 pricing MCQs, 15 game theory MCQs, and two short questions with worked
-answers and self-assessment rubrics. It supports immediate-feedback practice,
-a 60-minute mock, topic filters, shuffled questions, and retrying mistakes or blanks.
-Progress and drafts save in the current browser. The HTML is self-contained and
+contains 96 questions across three complete mock tests, each with 15 pricing MCQs,
+15 game theory MCQs, and two short questions with worked answers and self-assessment
+rubrics. Choose a named test, generate a fresh balanced mock that prefers unseen
+questions, or study the complete bank. It supports immediate feedback, a 60-minute
+mock, topic filters, question shuffling, and retrying mistakes or blanks.
+Each named test keeps its own resumable session and drafts in the current browser. The HTML is self-contained and
 can also be opened as a local file. The pricing coverage remains provisional;
 extension questions and assumptions are labeled on the page.
+
+Edit `content/microeconomics-final.json`, then run
+`python3 scripts/build_micro_final.py` and `python3 scripts/build.py`.
+Run `node scripts/check_micro_final.cjs` to check balanced selection, fresh-question
+priority, migration of original saved progress, and independent test sessions.
 
 ## AI Impact Library
 

@@ -4,7 +4,7 @@
 <rect x="54" y="25" width="32" height="34" rx="8" fill="#286047"/>
 <text x="65" y="49" font-family="Georgia,serif" font-size="25" fill="#fffefa">c</text>
 <text x="101" y="48" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#203b32">CEIBS Notes</text>
-<text x="60" y="159" font-family="Arial,sans-serif" font-size="14" letter-spacing="3" fill="#286047">MICROECONOMICS / FINAL PRACTICE</text>
+<text x="60" y="159" font-family="Arial,sans-serif" font-size="14" letter-spacing="3" fill="#286047">MICROECONOMICS / 3 MOCK TESTS</text>
 <text x="57" y="250" font-family="Georgia,serif" font-size="69" fill="#203b32">Think it through.</text>
 <text x="57" y="328" font-family="Georgia,serif" font-size="69" font-style="italic" fill="#286047">Make your move.</text>
 <text x="60" y="389" font-family="Arial,sans-serif" font-size="22" fill="#62736b">Pricing. Game theory. Worked explanations.</text>
@@ -16,5 +16,5 @@
 <path d="M728 337H1101" stroke="#ffffff55"/>
 <g font-family="Arial,sans-serif" font-size="17" fill="#f4ebc9"><text x="728" y="377">Pricing</text><text x="862" y="377">Game theory</text><text x="1012" y="377">Short</text><text x="1012" y="400">answers</text></g>
 <text x="728" y="450" font-family="Arial,sans-serif" font-size="15" fill="#d5dfce">Practice · Mock exam · Retry mistakes</text>
-<text x="60" y="582" font-family="Arial,sans-serif" font-size="16" fill="#62736b">30 multiple-choice questions + 2 short answers</text>
+<text x="60" y="582" font-family="Arial,sans-serif" font-size="16" fill="#62736b">96 questions · Fresh mixed mocks · Saved progress</text>
 </svg>

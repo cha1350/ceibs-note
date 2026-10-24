@@ -1,0 +1,2900 @@
+[
+  {
+    "id": "q1",
+    "number": 1,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Marginal revenue",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>A uniform-price monopolist faces demand P = 100 − 2Q. Its marginal revenue is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "100 − Q"
+      },
+      {
+        "letter": "B",
+        "html": "100 − 2Q"
+      },
+      {
+        "letter": "C",
+        "html": "50 − 2Q"
+      },
+      {
+        "letter": "D",
+        "html": "100 − 4Q"
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>TR = P × Q = (100 − 2Q)Q = 100Q − 2Q². Differentiating gives <strong>MR = 100 − 4Q</strong>. For linear inverse demand, MR has the same vertical intercept and twice the slope magnitude.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q2",
+    "number": 2,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Quantity and price",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>With demand P = 100 − 2Q and constant marginal cost of 20, what are the profit-maximizing quantity and price? Assume an interior solution and that operating is preferable to shutting down.</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 40, P = 20"
+      },
+      {
+        "letter": "B",
+        "html": "Q = 20, P = 60"
+      },
+      {
+        "letter": "C",
+        "html": "Q = 20, P = 20"
+      },
+      {
+        "letter": "D",
+        "html": "Q = 25, P = 50"
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Set MR = MC: 100 − 4Q = 20 → <strong>Q = 20</strong>. Substitute into demand: P = 100 − 2(20) = <strong>60</strong>. Option C incorrectly reports marginal revenue as the selling price. Option A gives efficient output under the stated no-externality model, rather than the uniform-price monopoly optimum.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q3",
+    "number": 3,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Profit",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>Demand is P = 100 − 2Q and total cost is TC = 100 + 20Q. At the profit-maximizing output, economic profit is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "1,200"
+      },
+      {
+        "letter": "B",
+        "html": "800"
+      },
+      {
+        "letter": "C",
+        "html": "700"
+      },
+      {
+        "letter": "D",
+        "html": "400"
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>At Q = 20 and P = 60:</p>\n<pre>TR = 60 × 20 = 1,200\nTC = 100 + 20 × 20 = 500\nProfit = 1,200 − 500 = 700</pre>\n<p>Revenue of 1,200 is not profit; contribution of 800 still excludes fixed cost.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q4",
+    "number": 4,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Fixed cost",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>A uniform-price monopolist faces P = 100 − 2Q and constant MC = 20. Its unavoidable short-run fixed cost increases from 100 to 200. The firm still prefers operating. What happens?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Quantity and price stay the same; profit falls by 100."
+      },
+      {
+        "letter": "B",
+        "html": "Quantity falls by 5 and price rises by 10."
+      },
+      {
+        "letter": "C",
+        "html": "Price rises by 100 to recover the extra cost."
+      },
+      {
+        "letter": "D",
+        "html": "Marginal cost rises by 100."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>The fixed-cost change leaves MC and MR unchanged. The stated interior optimum remains Q = 20 and P = 60; profit falls from 700 to <strong>600</strong>. The question specifies that the cost is unavoidable and operating remains preferable.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q5",
+    "number": 5,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Monopoly deadweight loss",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>Demand is P = 100 − 2Q and marginal cost is 20. There are no externalities. Relative to efficient output, the uniform-price monopoly&#x27;s deadweight loss is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "800"
+      },
+      {
+        "letter": "B",
+        "html": "200"
+      },
+      {
+        "letter": "C",
+        "html": "400"
+      },
+      {
+        "letter": "D",
+        "html": "1,200"
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Efficient output solves demand price = MC: 100 − 2Q = 20 → Q = 40. Monopoly produces 20 at price 60. The deadweight-loss triangle has width 40 − 20 = 20 and height 60 − 20 = 40:</p>\n<p><strong>DWL = ½ × 20 × 40 = 400.</strong></p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q6",
+    "number": 6,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Recognizing discrimination",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>Which is the clearest example of price discrimination?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Express delivery costs the seller 15 more and is priced 15 higher."
+      },
+      {
+        "letter": "B",
+        "html": "A cinema charges verified students less for the same screening and seat category, with equal serving costs."
+      },
+      {
+        "letter": "C",
+        "html": "A retailer raises the price for every buyer after its wholesale cost rises."
+      },
+      {
+        "letter": "D",
+        "html": "A larger product costs more to manufacture and sells for proportionally more."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>The student discount separates customers by an observable characteristic while holding service and serving costs constant. A and D describe cost-based differences; C is one price change applied to all buyers.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q7",
+    "number": 7,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Resale",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A seller charges a low price to one group and a high price to another for the same transferable product. Which development most threatens this pricing arrangement?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The groups have different demand elasticities."
+      },
+      {
+        "letter": "B",
+        "html": "Group membership can be verified."
+      },
+      {
+        "letter": "C",
+        "html": "The seller has some market power."
+      },
+      {
+        "letter": "D",
+        "html": "Low-price buyers can cheaply resell to high-price buyers."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Arbitrage allows buyers in the high-price group to obtain the product through the low-price group, undermining separation. Different elasticities and identifiable groups help discrimination rather than threaten it.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q8",
+    "number": 8,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "First-degree discrimination",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>In the ideal model of perfect first-degree price discrimination, with full willingness-to-pay information and no other market failure:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The firm sells units until willingness to pay equals MC and captures consumer surplus."
+      },
+      {
+        "letter": "B",
+        "html": "The firm must charge the same price to all consumers."
+      },
+      {
+        "letter": "C",
+        "html": "Quantity must be below the uniform-price monopoly quantity."
+      },
+      {
+        "letter": "D",
+        "html": "Consumer surplus necessarily rises."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>In the ideal first-degree model, the seller captures each buyer&#x27;s willingness to pay and serves units with willingness to pay at least MC. Output reaches the efficient margin, and consumer surplus is extracted. This conclusion uses the question&#x27;s information and no-other-market-failure assumptions.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q9",
+    "number": 9,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Self-selection",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A seller designs a menu of quantity packages so buyers reveal their willingness to pay through their package choices. This is most naturally classified as:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "First-degree price discrimination."
+      },
+      {
+        "letter": "B",
+        "html": "Third-degree price discrimination."
+      },
+      {
+        "letter": "C",
+        "html": "Second-degree price discrimination."
+      },
+      {
+        "letter": "D",
+        "html": "Marginal-cost pricing."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>A menu uses self-selection: customers reveal their preferences by choosing a package. That is second-degree discrimination. Observable group membership would point to third degree.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q10",
+    "number": 10,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Observable groups",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A transport operator charges a lower fare to customers who present a valid student ID. The service and serving cost are the same. This is most naturally classified as:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "First-degree price discrimination."
+      },
+      {
+        "letter": "B",
+        "html": "Third-degree price discrimination."
+      },
+      {
+        "letter": "C",
+        "html": "Second-degree price discrimination."
+      },
+      {
+        "letter": "D",
+        "html": "A difference explained entirely by cost."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Verified student status is an observable basis for group pricing. It is not perfect knowledge of each individual&#x27;s willingness to pay, nor selection from a menu available on the same terms to everyone.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q11",
+    "number": 11,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Elasticity and pricing",
+    "topic": "elasticity",
+    "extension": false,
+    "stemHtml": "<p>A seller can separate two groups and prevent resale. MC is 20 for either group. At their respective optimal prices, absolute demand elasticities are 2 for A and 4 for B. Using the interior markup rule, which prices are consistent with profit maximization?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "PA = 26.67; PB = 40"
+      },
+      {
+        "letter": "B",
+        "html": "PA = 20; PB = 20"
+      },
+      {
+        "letter": "C",
+        "html": "PA = 40; PB = 80"
+      },
+      {
+        "letter": "D",
+        "html": "PA = 40; PB ≈ 26.67"
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Use P = MC/[1 − 1/|ε|]:</p>\n<pre>PA = 20/(1 − 1/2) = 40\nPB = 20/(1 − 1/4) = 80/3 ≈ 26.67</pre>\n<p>Less elastic demand supports the larger proportional markup. Both elasticities are specified at the respective optima; do not assume every demand curve has constant elasticity.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q12",
+    "number": 12,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Two separated markets",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>Demand in A is PA = 100 − 2QA; demand in B is PB = 60 − QB. Common MC is constant at 20. Both markets are served and resale is prevented. The optimal discriminatory outcome is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "QA = 20, PA = 60; QB = 20, PB = 40"
+      },
+      {
+        "letter": "B",
+        "html": "QA = 40, PA = 20; QB = 40, PB = 20"
+      },
+      {
+        "letter": "C",
+        "html": "QA = 20, PA = 20; QB = 20, PB = 20"
+      },
+      {
+        "letter": "D",
+        "html": "QA = 25, PA = 50; QB = 30, PB = 30"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<pre>MRA = 100 − 4QA = 20 → QA = 20 → PA = 60\nMRB = 60 − 2QB = 20  → QB = 20 → PB = 40</pre>\n<p>Both marginal revenues equal the same MC, despite different prices. Setting demand price equal to MC would not maximize uniform-price profit within each group.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q13",
+    "number": 13,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Two-part tariff",
+    "topic": "tariff",
+    "extension": true,
+    "stemHtml": "<p>Every customer has demand P = 10 − q, MC is 2, and customers have zero outside surplus. Demand is known, customers are identical, and they join when indifferent. In the standard surplus-extraction benchmark, the seller sets:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Usage price 10 and access fee 0."
+      },
+      {
+        "letter": "B",
+        "html": "Usage price 6 and access fee 8."
+      },
+      {
+        "letter": "C",
+        "html": "Usage price 2 and access fee 32."
+      },
+      {
+        "letter": "D",
+        "html": "Usage price 2 and access fee 64."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>At usage price 2, each consumer buys q = 10 − 2 = 8. Their surplus before the access fee is <strong>½ × (10 − 2) × 8 = 32</strong>. The seller can set the access fee at 32 under the question&#x27;s purchase-at-indifference and identical-consumer assumptions. Heterogeneous demand would require a different analysis.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q14",
+    "number": 14,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Bundling",
+    "topic": "bundling",
+    "extension": true,
+    "stemHtml": "<p>Two customers each want at most one unit of X and one unit of Y. A values (X, Y) at (80, 20); B values them at (20, 80). Costs are zero, resale is impossible, and buyers purchase when indifferent. Compare optimal separate pricing with offering only a bundle of X + Y. Which is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Separate prices of 20 for each product yield revenue 200."
+      },
+      {
+        "letter": "B",
+        "html": "Separate prices of 80 for each product yield revenue 160; a bundle price of 100 yields revenue 200."
+      },
+      {
+        "letter": "C",
+        "html": "A bundle price of 160 sells to both customers."
+      },
+      {
+        "letter": "D",
+        "html": "Bundling cannot increase revenue when costs are zero."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>For either product, charging 80 sells one unit and earns 80; charging 20 sells two units and earns 40. Intermediate prices sell one unit for less than 80. Thus optimal separate revenue is <strong>80 + 80 = 160</strong>. Each consumer values the bundle at 100; price 100 sells two bundles and earns <strong>200</strong>. A higher bundle price sells none.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q15",
+    "number": 15,
+    "kind": "mcq",
+    "section": "pricing",
+    "title": "Welfare",
+    "topic": "welfare",
+    "extension": false,
+    "stemHtml": "<p>Compared with uniform monopoly pricing, third-degree price discrimination:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Always eliminates deadweight loss."
+      },
+      {
+        "letter": "B",
+        "html": "Always increases consumer surplus."
+      },
+      {
+        "letter": "C",
+        "html": "Always lowers total output."
+      },
+      {
+        "letter": "D",
+        "html": "Can raise or lower total welfare, depending on output and allocation effects."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Group pricing changes quantities and who receives the product. It does not inherit the ideal first-degree efficiency result. A statement that welfare or consumer surplus must always rise is too strong.</p>\n<h3>Part B: Reasoning</h3>",
+    "set": "mock1"
+  },
+  {
+    "id": "q16",
+    "number": 16,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Dominant strategy",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Two firms choose prices simultaneously. Payoffs are <code>(A, B)</code>.</p>\n<table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">High</th><th scope=\"col\">Low</th></tr></thead><tbody><tr><td>High</td><td>(8, 8)</td><td>(1, 11)</td></tr><tr><td>Low</td><td>(11, 1)</td><td>(4, 4)</td></tr></tbody></table>\n<p>For firm A:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "High strictly dominates Low."
+      },
+      {
+        "letter": "B",
+        "html": "Low strictly dominates High."
+      },
+      {
+        "letter": "C",
+        "html": "Neither action is dominant because B&#x27;s payoff changes."
+      },
+      {
+        "letter": "D",
+        "html": "High is dominant only if A moves first."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>If B chooses High, A compares Low&#x27;s 11 with High&#x27;s 8. If B chooses Low, A compares Low&#x27;s 4 with High&#x27;s 1. Low is strictly better in both columns.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q17",
+    "number": 17,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Nash equilibrium",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>Two firms choose prices simultaneously. Payoffs are <code>(A, B)</code>.</p>\n<table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">High</th><th scope=\"col\">Low</th></tr></thead><tbody><tr><td>High</td><td>(8, 8)</td><td>(1, 11)</td></tr><tr><td>Low</td><td>(11, 1)</td><td>(4, 4)</td></tr></tbody></table>\n<p>The unique Nash equilibrium of Matrix 1 is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "(High, High)"
+      },
+      {
+        "letter": "B",
+        "html": "(High, Low)"
+      },
+      {
+        "letter": "C",
+        "html": "(Low, High)"
+      },
+      {
+        "letter": "D",
+        "html": "(Low, Low)"
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Both firms have strictly dominant action Low. At (Low, Low), either firm switching alone to High reduces its own payoff from 4 to 1. Every other cell gives at least one player a profitable deviation.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q18",
+    "number": 18,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Joint profit versus stability",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>Two firms choose prices simultaneously. Payoffs are <code>(A, B)</code>.</p>\n<table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">High</th><th scope=\"col\">Low</th></tr></thead><tbody><tr><td>High</td><td>(8, 8)</td><td>(1, 11)</td></tr><tr><td>Low</td><td>(11, 1)</td><td>(4, 4)</td></tr></tbody></table>\n<p>Why is (High, High) not a Nash equilibrium in the one-shot game?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Either firm can increase its own payoff from 8 to 11 by switching alone to Low."
+      },
+      {
+        "letter": "B",
+        "html": "Both firms must switch together to make more money."
+      },
+      {
+        "letter": "C",
+        "html": "Nash equilibrium requires equal payoffs at every outcome."
+      },
+      {
+        "letter": "D",
+        "html": "High prices are never permitted in a game-theory model."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>With the other firm fixed at High, changing to Low raises own payoff from 8 to 11. That unilateral incentive defeats Nash stability, even though the firms&#x27; joint payoff is highest at (High, High).</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q19",
+    "number": 19,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Multiple equilibria",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>Payoffs are (A, B), with higher numbers better for each player.</p><p>Two firms choose a technology standard simultaneously.</p>\n<table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">X</th><th scope=\"col\">Y</th></tr></thead><tbody><tr><td>X</td><td>(6, 6)</td><td>(0, 0)</td></tr><tr><td>Y</td><td>(0, 0)</td><td>(3, 3)</td></tr></tbody></table>\n<p>Which outcomes are pure-strategy Nash equilibria?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Only (X, X)."
+      },
+      {
+        "letter": "B",
+        "html": "Only (Y, Y)."
+      },
+      {
+        "letter": "C",
+        "html": "Both (X, X) and (Y, Y)."
+      },
+      {
+        "letter": "D",
+        "html": "Neither matching outcome."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>At (X, X), switching alone reduces own payoff from 6 to 0. At (Y, Y), switching alone reduces it from 3 to 0. Both are pure Nash equilibria. The question asks for pure equilibria; it does not claim these are the only equilibria when mixing is allowed.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q20",
+    "number": 20,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Dominance in coordination",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Payoffs are (A, B), with higher numbers better for each player.</p><p>Two firms choose a technology standard simultaneously.</p>\n<table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">X</th><th scope=\"col\">Y</th></tr></thead><tbody><tr><td>X</td><td>(6, 6)</td><td>(0, 0)</td></tr><tr><td>Y</td><td>(0, 0)</td><td>(3, 3)</td></tr></tbody></table>\n<p>Which statement is correct for Matrix 2?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "X strictly dominates Y for both firms because 6 &gt; 3."
+      },
+      {
+        "letter": "B",
+        "html": "Neither firm has a dominant strategy; its best choice depends on the other&#x27;s action."
+      },
+      {
+        "letter": "C",
+        "html": "Y strictly dominates X for both firms."
+      },
+      {
+        "letter": "D",
+        "html": "A game without dominant strategies cannot have a Nash equilibrium."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Against X, choose X for 6 instead of 0. Against Y, choose Y for 3 instead of 0. Comparing the diagonal payoffs 6 and 3 is not a dominance test, because that comparison changes the other player&#x27;s action too.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q21",
+    "number": 21,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Negative payoffs",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Holding the opponent&#x27;s action fixed, A receives −5 from Up and −2 from Down. A should choose:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Down, because −2 is a higher payoff than −5."
+      },
+      {
+        "letter": "B",
+        "html": "Up, because 5 is larger than 2."
+      },
+      {
+        "letter": "C",
+        "html": "Neither; negative payoffs cannot occur."
+      },
+      {
+        "letter": "D",
+        "html": "The action that gives the opponent the smaller payoff, regardless of A&#x27;s payoff."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>−2 &gt; −5. Maximize the payoff as written. The question defines the numbers as utility/profit, not prison years or costs to minimize.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q22",
+    "number": 22,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Eliminating a strategy",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Consider the following simultaneous game:</p>\n<table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><td>Up</td><td>(4, 1)</td><td>(2, 3)</td></tr><tr><td>Middle</td><td>(1, 4)</td><td>(1, 2)</td></tr><tr><td>Down</td><td>(2, 3)</td><td>(4, 1)</td></tr></tbody></table>\n<p>Which statement is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Up is strictly dominated by Middle."
+      },
+      {
+        "letter": "B",
+        "html": "Down is strictly dominated by Middle."
+      },
+      {
+        "letter": "C",
+        "html": "Up strictly dominates Down."
+      },
+      {
+        "letter": "D",
+        "html": "Middle is strictly dominated by Up and can be eliminated."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>For A, Up gives 4 &gt; 1 against Left and 2 &gt; 1 against Right. Therefore Up strictly dominates Middle. Up and Down do not dominate one another: Up is better against Left, Down against Right. Use first-number comparisons for A.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q23",
+    "number": 23,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Defining Nash",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>A strategy profile is a Nash equilibrium when:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It maximizes the sum of players&#x27; payoffs."
+      },
+      {
+        "letter": "B",
+        "html": "Every player receives the same payoff."
+      },
+      {
+        "letter": "C",
+        "html": "No player can gain by changing their own strategy while others keep theirs fixed."
+      },
+      {
+        "letter": "D",
+        "html": "Every player has a strictly dominant strategy."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Nash is a mutual-best-response condition: nobody benefits by deviating alone with the others held fixed. It does not require equal payoffs, dominant strategies, or maximum joint payoff.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q24",
+    "number": 24,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Last mover",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>An entrant first chooses <strong>Out</strong> or <strong>Enter</strong>. The incumbent observes that choice and, following entry, chooses <strong>Fight</strong> or <strong>Accommodate</strong>. Payoffs are <code>(entrant, incumbent)</code>:</p>\n<pre>Out                   → (0, 8)\nEnter, Fight          → (−2, 1)\nEnter, Accommodate    → (3, 4)</pre>\n<p>If entry occurs, the incumbent&#x27;s best response is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Fight, because its payoff without entry would have been 8."
+      },
+      {
+        "letter": "B",
+        "html": "Accommodate, because 4 &gt; 1 after entry."
+      },
+      {
+        "letter": "C",
+        "html": "Fight, because the entrant loses money."
+      },
+      {
+        "letter": "D",
+        "html": "Accommodate only if the entrant agrees to transfer its entire profit."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>After entry, the incumbent&#x27;s available payoffs are 1 from Fight and 4 from Accommodate. Its preference for the unavailable no-entry payoff of 8 does not change the comparison at that node.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q25",
+    "number": 25,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Backward induction",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>An entrant first chooses <strong>Out</strong> or <strong>Enter</strong>. The incumbent observes that choice and, following entry, chooses <strong>Fight</strong> or <strong>Accommodate</strong>. Payoffs are <code>(entrant, incumbent)</code>:</p>\n<pre>Out                   → (0, 8)\nEnter, Fight          → (−2, 1)\nEnter, Accommodate    → (3, 4)</pre>\n<p>The outcome predicted by backward induction is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Enter, Accommodate, with payoffs (3, 4)."
+      },
+      {
+        "letter": "B",
+        "html": "Enter, Fight, with payoffs (−2, 1)."
+      },
+      {
+        "letter": "C",
+        "html": "Out, because an announced threat is automatically credible."
+      },
+      {
+        "letter": "D",
+        "html": "Out, because incumbents always move first."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>The entrant anticipates accommodation. Enter gives it 3, compared with 0 from Out. The strategy profile is <strong>entrant: Enter; incumbent: Accommodate if entry occurs</strong>. The equilibrium path yields (3, 4).</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q26",
+    "number": 26,
+    "kind": "mcq",
+    "section": "games",
+    "title": "A credible threat",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>An entrant first chooses <strong>Out</strong> or <strong>Enter</strong>. The incumbent observes that choice and, following entry, chooses <strong>Fight</strong> or <strong>Accommodate</strong>. Payoffs are <code>(entrant, incumbent)</code>:</p>\n<pre>Out                   → (0, 8)\nEnter, Fight          → (−2, 1)\nEnter, Accommodate    → (3, 4)</pre>\n<p>Suppose technology changes <strong>only</strong> the incumbent&#x27;s payoff from Fight: it rises from 1 to 5. All other payoffs and timing stay the same. The change is known to both players. What is the backward-induction outcome now?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Entry still occurs because the entrant ignores the incumbent&#x27;s incentives."
+      },
+      {
+        "letter": "B",
+        "html": "Entry occurs and the incumbent accommodates."
+      },
+      {
+        "letter": "C",
+        "html": "The entrant enters because the incumbent&#x27;s Fight payoff exceeds its Accommodate payoff."
+      },
+      {
+        "letter": "D",
+        "html": "The entrant stays Out because the incumbent would now choose Fight after entry."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Now Fight gives the incumbent 5, compared with 4 from Accommodate. The entrant anticipates Fight, so Enter gives −2 instead of Out&#x27;s 0. It stays Out. The incumbent&#x27;s contingent strategy is still specified: Fight if entry occurs, although that node is not reached.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q27",
+    "number": 27,
+    "kind": "mcq",
+    "section": "games",
+    "title": "First-mover advantage",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>Which statement is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The first mover always receives the larger payoff."
+      },
+      {
+        "letter": "B",
+        "html": "The second mover always receives the larger payoff."
+      },
+      {
+        "letter": "C",
+        "html": "Any advantage depends on the game&#x27;s payoffs, information, and commitment opportunities."
+      },
+      {
+        "letter": "D",
+        "html": "Backward induction requires the first mover to have a dominant strategy."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Anticipating the follower&#x27;s best response may help or hurt the leader, depending on the game. Timing alone does not establish a first-mover advantage.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q28",
+    "number": 28,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Known finite repetition",
+    "topic": "repeated",
+    "extension": false,
+    "stemHtml": "<p>Two firms choose prices simultaneously. Payoffs are <code>(A, B)</code>.</p>\n<table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">High</th><th scope=\"col\">Low</th></tr></thead><tbody><tr><td>High</td><td>(8, 8)</td><td>(1, 11)</td></tr><tr><td>Low</td><td>(11, 1)</td><td>(4, 4)</td></tr></tbody></table>\n<p>Matrix 1 is repeated exactly three times. Both firms maximize their total payoff, have complete information, share common knowledge of rationality, and have no additional reputation or contract mechanism. What does backward induction predict?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "High in rounds 1 and 2, Low in round 3."
+      },
+      {
+        "letter": "B",
+        "html": "Low in all three rounds."
+      },
+      {
+        "letter": "C",
+        "html": "High in all rounds because the relationship is repeated."
+      },
+      {
+        "letter": "D",
+        "html": "The result cannot be analyzed because no discount factor is specified."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>In the last round, Low is strictly dominant. With the last-round outcome fixed under these assumptions, round 2 has no future cooperation reward that can change its one-shot incentive; the same logic applies to round 1. The prediction is <strong>Low in every round</strong>. This result is specific to the stated finite, complete-information prisoners&#x27; dilemma setting.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q29",
+    "number": 29,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Discount factor",
+    "topic": "repeated",
+    "extension": true,
+    "stemHtml": "<p>Two firms choose prices simultaneously. Payoffs are <code>(A, B)</code>.</p>\n<table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">High</th><th scope=\"col\">Low</th></tr></thead><tbody><tr><td>High</td><td>(8, 8)</td><td>(1, 11)</td></tr><tr><td>Low</td><td>(11, 1)</td><td>(4, 4)</td></tr></tbody></table>\n<p>Matrix 1 is repeated indefinitely with perfect monitoring. Both firms use grim trigger: High until a deviation, then Low forever starting next period. With discount factor δ, cooperation is sustainable when:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "δ ≥ 3/7"
+      },
+      {
+        "letter": "B",
+        "html": "δ ≤ 3/7"
+      },
+      {
+        "letter": "C",
+        "html": "δ ≥ 7/3"
+      },
+      {
+        "letter": "D",
+        "html": "δ = 0 only"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>Cooperation gives 8/(1 − δ). A one-period deviation gives 11 immediately and 4 per period from the next round:</p>\n<pre>8/(1 − δ) ≥ 11 + 4δ/(1 − δ)\n8 ≥ 11(1 − δ) + 4δ\n7δ ≥ 3\nδ ≥ 3/7</pre>\n<p>The punishment of mutual Low is credible because it is the stage-game equilibrium. At equality the player is indifferent. A sufficiently large δ makes these cooperative strategies sustainable; it does not uniquely predict cooperation.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "q30",
+    "number": 30,
+    "kind": "mcq",
+    "section": "games",
+    "title": "Expected payoff",
+    "topic": "expected",
+    "extension": true,
+    "stemHtml": "<p>B chooses Left with probability 0.4 and Right with probability 0.6. A&#x27;s payoff from Up is 6 against Left and 0 against Right. Down gives A a payoff of 2 against either action. A maximizes expected payoff. Which is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Up gives expected payoff 6, so choose Up."
+      },
+      {
+        "letter": "B",
+        "html": "Up gives expected payoff 3.6, so choose Up."
+      },
+      {
+        "letter": "C",
+        "html": "Up gives expected payoff 2.4, so choose Up."
+      },
+      {
+        "letter": "D",
+        "html": "Down gives expected payoff 2.4, so choose Down."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>EU(Up) = 0.4 × 6 + 0.6 × 0 = <strong>2.4</strong>. EU(Down) = 0.4 × 2 + 0.6 × 2 = <strong>2</strong>. Choose Up. Use probability-weighted averages, rather than the largest possible payoff alone.</p>",
+    "set": "mock1"
+  },
+  {
+    "id": "short1",
+    "number": 31,
+    "kind": "short",
+    "section": "short",
+    "title": "Customer-group pricing",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A seller can charge separate prices to two identifiable groups and prevent resale. Demands are:</p>\n<pre>PA = 100 − 2QA\nPB = 80 − 2QB\nTotal cost = 100 + 20(QA + QB)</pre>\n<ol><li>Derive marginal revenue in each group and calculate profit-maximizing quantities.</li><li>Calculate each price and the seller&#x27;s total profit.</li><li>Give two conditions that help make this pricing arrangement workable.</li><li>Explain the difference between choosing the highest possible price and choosing a profit-maximizing price.</li></ol>",
+    "answerHtml": "<p>Revenue in each group is:</p>\n<pre>TRA = (100 − 2QA)QA → MRA = 100 − 4QA\nTRB = (80 − 2QB)QB  → MRB = 80 − 4QB\nMC = 20</pre>\n<p>Set each MR equal to MC:</p>\n<pre>100 − 4QA = 20 → QA = 20 → PA = 60\n80 − 4QB = 20  → QB = 15 → PB = 50</pre>\n<p>Both objective functions are concave quadratics in their quantities, so these interior solutions maximize operating profit. They also yield positive profit after the fixed cost:</p>\n<pre>TR = 60(20) + 50(15) = 1,950\nTC = 100 + 20(20 + 15) = 800\nProfit = 1,150</pre>\n<p>Practical conditions include <strong>identifying the groups</strong> and <strong>preventing low-price buyers from reselling to high-price buyers</strong>. The seller also needs sufficient pricing power and different willingness to pay across groups to make separation useful.</p>\n<p>The highest possible demand intercept does not maximize profit: at PA = 100, group A buys zero. The optimal price balances the margin earned per unit with the number of units sold. Within each group, the firm chooses quantity where MR = MC, then obtains the associated price from demand.</p>\n<p><strong>Suggested practice rubric, 10 points:</strong> marginal revenues 2; quantities 2; prices 2; total profit 2; workable conditions and economic explanation 2. This is not an official allocation.</p>",
+    "checks": [
+      "Derived both marginal revenues and set each equal to 20.",
+      "Found QA = 20 and QB = 15.",
+      "Found PA = 60, PB = 50, and total profit = 1,150.",
+      "Explained segmentation, resale restrictions, and the quantity–margin tradeoff."
+    ],
+    "set": "mock1"
+  },
+  {
+    "id": "short2",
+    "number": 32,
+    "kind": "short",
+    "section": "short",
+    "title": "Entry and commitment",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>An entrant chooses Out or Enter. After Enter, an incumbent chooses Fight or Accommodate. Initial payoffs are <code>(entrant, incumbent)</code>:</p>\n<pre>Out                   → (0, 9)\nEnter, Fight          → (−2, 1)\nEnter, Accommodate    → (3, 5)</pre>\n<ol><li>Solve by backward induction. State the predicted outcome and whether a threat to Fight is credible.</li><li>Before the entrant moves, the incumbent can publicly install defensive technology. This raises its <strong>gross</strong> payoff from Fight from 1 to 7. Its other gross payoffs stay the same. Installation costs the incumbent 2, paid once regardless of whether entry occurs. Find the incumbent&#x27;s <strong>net</strong> payoffs for all outcomes after installation.</li><li>Solve the continuation game after installation. Does the entrant enter?</li><li>Compare the incumbent&#x27;s resulting payoff with and without installation. Would it choose to install? Explain why this is a change in incentives.</li></ol>",
+    "answerHtml": "<h3>Before installation</h3>\n<p>After entry, the incumbent chooses Accommodate because 5 &gt; 1. The entrant anticipates a payoff of 3 from entry versus 0 from Out. The outcome is <strong>Enter, Accommodate</strong>, with payoffs <strong>(3, 5)</strong>.</p>\n<p>The threat to Fight is not credible: after entry, fighting gives the incumbent a lower payoff than accommodating. The strategy profile is <strong>entrant: Enter; incumbent: Accommodate if entry occurs</strong>.</p>\n<h3>After installation</h3>\n<p>Subtract the one-time installation cost of 2 from the incumbent&#x27;s gross payoff in every terminal outcome:</p>\n<table><thead><tr><th scope=\"col\">Outcome</th><th scope=\"col\">Entrant payoff</th><th scope=\"col\">Incumbent gross payoff</th><th scope=\"col\">Incumbent net payoff</th></tr></thead><tbody><tr><td>Out</td><td>0</td><td>9</td><td>7</td></tr><tr><td>Enter, Fight</td><td>−2</td><td>7</td><td>5</td></tr><tr><td>Enter, Accommodate</td><td>3</td><td>5</td><td>3</td></tr></tbody></table>\n<p>After entry, Fight now gives 5 &gt; 3. Knowing this, the entrant prefers Out&#x27;s 0 to entry&#x27;s −2. The continuation outcome is <strong>Out</strong>, with payoffs <strong>(0, 7)</strong>. The contingent strategies are <strong>entrant: Out; incumbent: Fight if entry occurs</strong>.</p>\n<p>At the initial installation decision, the incumbent compares:</p>\n<ul><li>No installation → entry and accommodation → payoff <strong>5</strong>.</li><li>Installation → no entry → net payoff <strong>7</strong>.</li></ul>\n<p>It therefore <strong>installs</strong>, improving its payoff by <strong>2</strong>. The technology changes the gross reward from fighting, making the response credible. The installation cost is already sunk when the post-entry decision is made and is subtracted from both continuation options; paying a cost alone would not have reversed their ranking.</p>\n<p><strong>Suggested practice rubric, 10 points:</strong> initial backward induction and credibility 3; all three net payoffs 2; post-installation response and entry decision 3; initial installation comparison and explanation 2. This is not an official allocation.</p>",
+    "checks": [
+      "Solved the initial game: Enter, Accommodate, payoffs (3, 5).",
+      "Explained why the initial fighting threat is not credible.",
+      "Subtracted installation cost in every outcome: incumbent net payoffs 7, 5, 3.",
+      "Found that installation deters entry and improves the incumbent payoff from 5 to 7."
+    ],
+    "set": "mock1"
+  },
+  {
+    "id": "q33",
+    "number": 33,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Choosing quantity and price",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>A uniform-price monopolist faces P = 120 − 3Q and constant MC = 30. Assume an interior optimum and that operating is preferable. What quantity and price maximize profit?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 30, P = 30"
+      },
+      {
+        "letter": "B",
+        "html": "Q = 20, P = 60"
+      },
+      {
+        "letter": "C",
+        "html": "Q = 15, P = 75"
+      },
+      {
+        "letter": "D",
+        "html": "Q = 15, P = 30"
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>TR = 120Q − 3Q², so MR = 120 − 6Q. Set MR = 30: Q = 15. Then demand gives P = 120 − 3(15) = 75. Quantity is chosen using MR; the selling price comes from demand.</p>"
+  },
+  {
+    "id": "q34",
+    "number": 34,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Profit after fixed costs",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>Demand is P = 120 − 3Q and TC = 180 + 30Q. At Q = 15 the selling price is 75. What is economic profit?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "495"
+      },
+      {
+        "letter": "B",
+        "html": "675"
+      },
+      {
+        "letter": "C",
+        "html": "1,125"
+      },
+      {
+        "letter": "D",
+        "html": "945"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>Revenue is 75 × 15 = 1,125. Total cost is 180 + 30 × 15 = 630. Economic profit is 1,125 − 630 = 495. The 675 contribution margin still excludes the fixed cost of 180.</p>"
+  },
+  {
+    "id": "q35",
+    "number": 35,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "A monopoly can lose money",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>A monopolist sells 30 units at price 60. At this output, average total cost is 70. Its economic profit is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "300"
+      },
+      {
+        "letter": "B",
+        "html": "1,800"
+      },
+      {
+        "letter": "C",
+        "html": "−70"
+      },
+      {
+        "letter": "D",
+        "html": "−300"
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Profit = (P − ATC)Q = (60 − 70) × 30 = −300. Monopoly power does not guarantee that demand is strong enough to cover total costs. This calculation alone does not establish whether short-run shutdown is preferable; that requires variable-cost information.</p>"
+  },
+  {
+    "id": "q36",
+    "number": 36,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "The inelastic-demand trap",
+    "topic": "elasticity",
+    "extension": false,
+    "stemHtml": "<p>A uniform-price monopolist has positive MC. At its current price, demand is locally inelastic, with |ε| = 0.6. A small price rise would reduce quantity. Which conclusion follows in the standard model?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It must already be maximizing profit."
+      },
+      {
+        "letter": "B",
+        "html": "A small price rise raises revenue and reduces variable cost, so the current point is not an interior profit maximum."
+      },
+      {
+        "letter": "C",
+        "html": "A small price cut must raise revenue."
+      },
+      {
+        "letter": "D",
+        "html": "It should set price equal to marginal revenue."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>With inelastic demand, a small percentage price rise outweighs the percentage quantity decline, raising revenue. The lower output also saves variable cost when MC is positive. Both effects increase profit, so the original point cannot be an interior profit maximum.</p>"
+  },
+  {
+    "id": "q37",
+    "number": 37,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Measuring lost gains from trade",
+    "topic": "welfare",
+    "extension": false,
+    "stemHtml": "<p>Demand is P = 80 − Q and MC = 20, with no externalities. The uniform-price monopoly produces 30 at price 50. What is its deadweight loss relative to efficient output?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "900"
+      },
+      {
+        "letter": "B",
+        "html": "300"
+      },
+      {
+        "letter": "C",
+        "html": "450"
+      },
+      {
+        "letter": "D",
+        "html": "1,800"
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Efficient output solves 80 − Q = 20, so Q = 60. The missing trades run from 30 to 60. The lost-surplus triangle has base 30 and height 50 − 20 = 30, giving DWL = ½ × 30 × 30 = 450.</p>"
+  },
+  {
+    "id": "q38",
+    "number": 38,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "A tax changes marginal cost",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>A monopolist faces P = 100 − Q and constant production MC = 20. A per-unit tax of 10 is introduced. What happens to the profit-maximizing price and quantity? Assume positive production before and after.</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Price rises from 60 to 65; quantity falls from 40 to 35."
+      },
+      {
+        "letter": "B",
+        "html": "Price rises from 60 to 70; quantity stays at 40."
+      },
+      {
+        "letter": "C",
+        "html": "Price stays at 60; quantity falls to 30."
+      },
+      {
+        "letter": "D",
+        "html": "Neither price nor quantity changes."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>Initially, MR = 100 − 2Q = 20 gives Q = 40 and P = 60. The tax raises effective MC to 30. Now 100 − 2Q = 30 gives Q = 35 and P = 65. Half the tax is passed into price in this particular linear-demand, constant-MC example; that is not a universal monopoly pass-through rule.</p>"
+  },
+  {
+    "id": "q39",
+    "number": 39,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Why profit can persist",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>Which explanation best supports persistent positive economic profit for a monopolist in the long run?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "A monopolist never has fixed costs."
+      },
+      {
+        "letter": "B",
+        "html": "Its marginal revenue must exceed price."
+      },
+      {
+        "letter": "C",
+        "html": "Consumers must buy an unlimited quantity."
+      },
+      {
+        "letter": "D",
+        "html": "Barriers prevent profitable entry by competing suppliers."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Barriers to entry can prevent the entry response that would otherwise compete away economic profit. Persistent profit is possible, not guaranteed: the firm still faces demand and costs. Under downward-sloping uniform-price demand, MR is below price at positive output.</p>"
+  },
+  {
+    "id": "q40",
+    "number": 40,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Why offer a student discount?",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A cinema has the same serving cost for students and other customers. Which economic explanation most directly supports a lower profit-maximizing student price?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Students must always have lower income."
+      },
+      {
+        "letter": "B",
+        "html": "Students have more elastic demand at the relevant optimal prices, and the groups can be separated."
+      },
+      {
+        "letter": "C",
+        "html": "A lower price always raises revenue."
+      },
+      {
+        "letter": "D",
+        "html": "Students have fewer substitutes and less elastic demand."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>With common MC and separable groups, more elastic demand supports a smaller proportional markup. Student status is useful only insofar as it identifies a relevant demand difference and can be verified. Lower income alone does not establish an elasticity ranking.</p>"
+  },
+  {
+    "id": "q41",
+    "number": 41,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "When group costs differ",
+    "topic": "elasticity",
+    "extension": false,
+    "stemHtml": "<p>At their optimal prices, group A has |ε| = 2 and serving MC = 10; group B has |ε| = 4 and serving MC = 30. Apply the interior markup rule. Which prices are consistent?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "PA = 40, PB = 20"
+      },
+      {
+        "letter": "B",
+        "html": "PA = 10, PB = 30"
+      },
+      {
+        "letter": "C",
+        "html": "PA = 20, PB = 20"
+      },
+      {
+        "letter": "D",
+        "html": "PA = 20, PB = 40"
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>PA = 10/(1 − 1/2) = 20; PB = 30/(1 − 1/4) = 40. A has the higher proportional markup but a lower price because its MC is much lower. The statement that less elastic demand means a higher price needs the common-MC qualification.</p>"
+  },
+  {
+    "id": "q42",
+    "number": 42,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Calculate the markup price",
+    "topic": "elasticity",
+    "extension": false,
+    "stemHtml": "<p>A separated customer group has absolute demand elasticity 3 at its optimal price. MC = 12. Under the interior markup rule, what is the optimal price?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "12"
+      },
+      {
+        "letter": "B",
+        "html": "24"
+      },
+      {
+        "letter": "C",
+        "html": "18"
+      },
+      {
+        "letter": "D",
+        "html": "36"
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Use (P − 12)/P = 1/3, or P = 12/(1 − 1/3). Therefore P = 18. The markup is 6, which is one-third of price, not one-third of marginal cost.</p>"
+  },
+  {
+    "id": "q43",
+    "number": 43,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Contribution from two markets",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>Separate demands are PA = 80 − QA and PB = 60 − QB. Common MC = 20, resale is prevented, and both markets are served. What is total contribution before fixed cost at the optimum?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "1,300"
+      },
+      {
+        "letter": "B",
+        "html": "2,300"
+      },
+      {
+        "letter": "C",
+        "html": "1,000"
+      },
+      {
+        "letter": "D",
+        "html": "650"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>MRA = 80 − 2QA = 20 gives QA = 30 and PA = 50. MRB = 60 − 2QB = 20 gives QB = 20 and PB = 40. Contribution is (50 − 20)30 + (40 − 20)20 = 900 + 400 = 1,300. Subtract fixed costs if asked for net profit.</p>"
+  },
+  {
+    "id": "q44",
+    "number": 44,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Coupons and self-selection",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>Every customer may use the same coupon, but claiming it takes time. The seller expects price-sensitive buyers to claim it more often. This most closely illustrates:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Perfect first-degree discrimination."
+      },
+      {
+        "letter": "B",
+        "html": "Self-selection as a form of second-degree discrimination."
+      },
+      {
+        "letter": "C",
+        "html": "Third-degree discrimination based on verified age."
+      },
+      {
+        "letter": "D",
+        "html": "A difference in manufacturing cost."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>The seller offers a choice available to everyone, and customers sort themselves by their willingness to incur the coupon-claiming effort. This is self-selection. It differs from assigning a price by an observable category such as verified age or student status.</p>"
+  },
+  {
+    "id": "q45",
+    "number": 45,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Perfect discrimination and output",
+    "topic": "welfare",
+    "extension": false,
+    "stemHtml": "<p>Demand is P = 70 − Q and constant MC = 10. A seller can perfectly price discriminate, knows all willingness to pay, has no fixed cost, and faces no other market failure. Which outcome follows?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 30; consumer surplus = 900."
+      },
+      {
+        "letter": "B",
+        "html": "Q = 60; profit = 600."
+      },
+      {
+        "letter": "C",
+        "html": "Q = 30; profit = 1,800."
+      },
+      {
+        "letter": "D",
+        "html": "Q = 60; profit = 1,800 and consumer surplus = 0."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>The last unit is sold where willingness to pay equals MC: 70 − Q = 10 gives Q = 60. The seller captures the triangular gains from trade: ½ × (70 − 10) × 60 = 1,800. Each buyer pays their willingness to pay, leaving zero consumer surplus in this ideal model.</p>"
+  },
+  {
+    "id": "q46",
+    "number": 46,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "Opening a previously unserved market",
+    "topic": "welfare",
+    "extension": false,
+    "stemHtml": "<p>Group pricing lets a firm sell additional units to a previously unserved group whose willingness to pay exceeds MC. What can be concluded without more information?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Those extra trades create gains, but the total welfare change also depends on what happens in other groups."
+      },
+      {
+        "letter": "B",
+        "html": "Total welfare must fall whenever prices differ."
+      },
+      {
+        "letter": "C",
+        "html": "Consumer surplus must increase in every group."
+      },
+      {
+        "letter": "D",
+        "html": "All other groups must receive lower prices."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>The added trades create surplus when willingness to pay exceeds their resource cost. However, output or allocation can also change elsewhere. You need those effects to assess total welfare. An increase in firm profit alone does not establish a welfare improvement.</p>"
+  },
+  {
+    "id": "q47",
+    "number": 47,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock2",
+    "title": "A fee can exclude customers",
+    "topic": "tariff",
+    "extension": true,
+    "stemHtml": "<p>A seller has high-usage and low-usage customers. Why might setting one access fee equal to the high-usage group’s surplus fail to maximize profit?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Access fees can never earn revenue."
+      },
+      {
+        "letter": "B",
+        "html": "Low-usage customers must have exactly the same surplus."
+      },
+      {
+        "letter": "C",
+        "html": "The fee may exclude low-usage customers, so participation and usage revenue need to be considered."
+      },
+      {
+        "letter": "D",
+        "html": "Usage prices are irrelevant whenever there is a fixed fee."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>A fee that extracts all high-user surplus can exceed low users’ willingness to join. With heterogeneous consumers, the seller must consider who participates and the revenue earned from usage. The simple price-at-MC plus full-surplus fee benchmark assumes identical consumers and known demand.</p>"
+  },
+  {
+    "id": "q48",
+    "number": 48,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Two stable outcomes",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(4, 3)</td><td>(1, 2)</td></tr><tr><th scope=\"row\">Down</th><td>(2, 1)</td><td>(3, 4)</td></tr></tbody></table><p>Which outcomes are pure-strategy Nash equilibria?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Only (Up, Left)."
+      },
+      {
+        "letter": "B",
+        "html": "Both (Up, Left) and (Down, Right)."
+      },
+      {
+        "letter": "C",
+        "html": "Only (Up, Right)."
+      },
+      {
+        "letter": "D",
+        "html": "There is no pure Nash equilibrium."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Against Left, A prefers Up: 4 &gt; 2; against Right, A prefers Down: 3 &gt; 1. Against Up, B prefers Left: 3 &gt; 2; against Down, B prefers Right: 4 &gt; 1. Both matching best-response cells are Nash equilibria.</p>"
+  },
+  {
+    "id": "q49",
+    "number": 49,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Does either player have dominance?",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(4, 3)</td><td>(1, 2)</td></tr><tr><th scope=\"row\">Down</th><td>(2, 1)</td><td>(3, 4)</td></tr></tbody></table><p>Which statement is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Up is strictly dominant for A."
+      },
+      {
+        "letter": "B",
+        "html": "Left is strictly dominant for B."
+      },
+      {
+        "letter": "C",
+        "html": "Neither player has a dominant action."
+      },
+      {
+        "letter": "D",
+        "html": "Both players have strictly dominant actions."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>A’s best response changes from Up against Left to Down against Right. B’s best response changes from Left against Up to Right against Down. Dominance requires an action to be best against every opponent choice; neither player has one here.</p>"
+  },
+  {
+    "id": "q50",
+    "number": 50,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "A best response is conditional",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(4, 3)</td><td>(1, 2)</td></tr><tr><th scope=\"row\">Down</th><td>(2, 1)</td><td>(3, 4)</td></tr></tbody></table><p>If A expects B to choose Right with certainty, A’s best response is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Up, because 4 is the largest number A could ever receive."
+      },
+      {
+        "letter": "B",
+        "html": "Up, because B receives 2 there."
+      },
+      {
+        "letter": "C",
+        "html": "Either action, because the game has two equilibria."
+      },
+      {
+        "letter": "D",
+        "html": "Down, because 3 &gt; 1 in the Right column."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Hold B fixed at Right. A compares its own payoffs: Up gives 1 and Down gives 3. Choose Down. The payoff 4 belongs to another column and is unavailable given B’s specified choice.</p>"
+  },
+  {
+    "id": "q51",
+    "number": 51,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Only one player needs dominance",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(5, 2)</td><td>(1, 4)</td></tr><tr><th scope=\"row\">Down</th><td>(3, 6)</td><td>(0, 3)</td></tr></tbody></table><p>What is the unique Nash equilibrium?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "(Up, Right)."
+      },
+      {
+        "letter": "B",
+        "html": "(Up, Left)."
+      },
+      {
+        "letter": "C",
+        "html": "(Down, Left)."
+      },
+      {
+        "letter": "D",
+        "html": "(Down, Right)."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>Up strictly dominates Down for A: 5 &gt; 3 against Left and 1 &gt; 0 against Right. Given Up, B chooses Right because 4 &gt; 2. Thus (Up, Right) is the unique Nash equilibrium, even though B has no dominant action.</p>"
+  },
+  {
+    "id": "q52",
+    "number": 52,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "The column player’s incentives",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(5, 2)</td><td>(1, 4)</td></tr><tr><th scope=\"row\">Down</th><td>(3, 6)</td><td>(0, 3)</td></tr></tbody></table><p>Which statement about B is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Left strictly dominates Right."
+      },
+      {
+        "letter": "B",
+        "html": "Right strictly dominates Left."
+      },
+      {
+        "letter": "C",
+        "html": "B should compare A’s payoffs to choose its own action."
+      },
+      {
+        "letter": "D",
+        "html": "B prefers Right against Up and Left against Down, so B has no dominant action."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Use second numbers: against Up, Right gives B 4 instead of 2; against Down, Left gives B 6 instead of 3. B’s preferred action depends on A’s choice. A’s dominance does not imply B also has dominance.</p>"
+  },
+  {
+    "id": "q53",
+    "number": 53,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Stable can still be worse",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">High</th><th scope=\"col\">Low</th></tr></thead><tbody><tr><th scope=\"row\">High</th><td>(6, 6)</td><td>(-1, 9)</td></tr><tr><th scope=\"row\">Low</th><td>(9, -1)</td><td>(2, 2)</td></tr></tbody></table><p>Which description fits this one-shot game?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "(High, High) is Nash because total profit is highest there."
+      },
+      {
+        "letter": "B",
+        "html": "(Low, Low) is not Nash because both prefer (High, High)."
+      },
+      {
+        "letter": "C",
+        "html": "The unique Nash equilibrium is (Low, Low), although both would prefer (High, High)."
+      },
+      {
+        "letter": "D",
+        "html": "Both firms are indifferent between High and Low."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Low is strictly dominant for each firm: against High it gives 9 rather than 6, and against Low it gives 2 rather than −1. The equilibrium is (Low, Low). Both earning 6 would be better than both earning 2, but either could profit by cutting alone at (High, High).</p>"
+  },
+  {
+    "id": "q54",
+    "number": 54,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Weak versus strict dominance",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(3, 3)</td><td>(2, 0)</td></tr><tr><th scope=\"row\">Down</th><td>(3, 1)</td><td>(1, 1)</td></tr></tbody></table><p>For A, how does Up compare with Down?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Up strictly dominates Down."
+      },
+      {
+        "letter": "B",
+        "html": "Up weakly dominates Down: equal against Left, strictly better against Right."
+      },
+      {
+        "letter": "C",
+        "html": "Down strictly dominates Up."
+      },
+      {
+        "letter": "D",
+        "html": "Neither weak nor strict dominance applies."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Against Left, both actions give A 3. Against Right, Up gives 2 and Down gives 1. Up is never worse and sometimes strictly better, so it weakly dominates Down. Strict dominance would require a strict improvement in both columns.</p>"
+  },
+  {
+    "id": "q55",
+    "number": 55,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Read the meaning of the numbers",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>The numbers in this question are years in prison, which A wants to minimize. Holding B’s choice fixed, A receives 2 years from Up or 5 years from Down. What should A choose?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Up, because it means fewer years in prison."
+      },
+      {
+        "letter": "B",
+        "html": "Down, because 5 is larger than 2."
+      },
+      {
+        "letter": "C",
+        "html": "Neither action, because all game payoffs must be monetary."
+      },
+      {
+        "letter": "D",
+        "html": "Whichever action gives B the larger sentence."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>A wants to minimize the stated cost, so 2 years is preferable to 5. The rule “choose the larger number” applies when numbers are utility or profit to maximize; first identify what the numbers represent. A utility representation could instead use −2 and −5.</p>"
+  },
+  {
+    "id": "q56",
+    "number": 56,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Work backward from the incumbent",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>The entrant chooses first; the incumbent observes entry and then chooses Fight or Accommodate. Payoffs are (entrant, incumbent).</p><pre>Out → (0, 10)\nEnter, Fight → (−3, 2)\nEnter, Accommodate → (4, 6)</pre><p>What outcome is predicted by backward induction?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Out, because the incumbent prefers earning 10."
+      },
+      {
+        "letter": "B",
+        "html": "Enter, Fight, with payoffs (−3, 2)."
+      },
+      {
+        "letter": "C",
+        "html": "Out, because any threat deters entry."
+      },
+      {
+        "letter": "D",
+        "html": "Enter, Accommodate, with payoffs (4, 6)."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>After entry, the incumbent chooses Accommodate because 6 &gt; 2. Anticipating this, the entrant chooses Enter because 4 &gt; 0. The no-entry payoff of 10 is not available at the incumbent’s decision node once entry has occurred.</p>"
+  },
+  {
+    "id": "q57",
+    "number": 57,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "A wish is not a credible threat",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>The entrant chooses first; the incumbent observes entry and then chooses Fight or Accommodate. Payoffs are (entrant, incumbent).</p><pre>Out → (0, 10)\nEnter, Fight → (−3, 2)\nEnter, Accommodate → (4, 6)</pre><p>Why does the incumbent’s announcement “I will fight” fail to deter a rational entrant in this game?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The incumbent receives equal payoffs from all outcomes."
+      },
+      {
+        "letter": "B",
+        "html": "After entry, accommodating gives the incumbent 6 rather than 2, so fighting is not optimal then."
+      },
+      {
+        "letter": "C",
+        "html": "The entrant must always ignore announcements in every game."
+      },
+      {
+        "letter": "D",
+        "html": "The incumbent’s no-entry payoff is below its accommodation payoff."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Credibility depends on the incumbent’s incentives after entry. It then prefers 6 from accommodation to 2 from fighting. Wanting the initial payoff of 10 does not make fighting optimal later. Announcements matter when they convey information or commitments that actually change incentives.</p>"
+  },
+  {
+    "id": "q58",
+    "number": 58,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "A costly but worthwhile commitment",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>The entrant chooses first; the incumbent observes entry and then chooses Fight or Accommodate. Payoffs are (entrant, incumbent).</p><pre>Out → (0, 10)\nEnter, Fight → (−3, 2)\nEnter, Accommodate → (4, 6)</pre><p>Before entry, the incumbent can publicly install technology costing 2 in every outcome. It changes only the gross Fight payoff from 2 to 7. Gross Out remains 10 and gross Accommodate remains 6. Relative to no installation, what happens?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The threat remains incredible because both continuation payoffs fall by 2."
+      },
+      {
+        "letter": "B",
+        "html": "Installation leads to entry and accommodation, with incumbent net payoff 4."
+      },
+      {
+        "letter": "C",
+        "html": "Installation makes Fight optimal after entry, deters entry, and raises the incumbent’s payoff from 6 to 8."
+      },
+      {
+        "letter": "D",
+        "html": "Installation raises the entrant’s payoff to 7."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>After installation, incumbent net payoffs are Out 8, Fight 5, Accommodate 4. Fighting is now optimal if entry occurs; the entrant would get −3 and stays Out. The incumbent earns 8 rather than the uncommitted outcome of 6. The technology changes the gross Fight payoff; the sunk fee alone would not change continuation rankings.</p>"
+  },
+  {
+    "id": "q59",
+    "number": 59,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Solve both branches",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>A chooses Left or Right first; B observes and chooses Up or Down. Payoffs are (A, B).</p><pre>Left, Up → (2, 5)\nLeft, Down → (7, 1)\nRight, Up → (4, 2)\nRight, Down → (1, 6)</pre><p>Which outcome does backward induction predict?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Left, Up, with payoffs (2, 5)."
+      },
+      {
+        "letter": "B",
+        "html": "Left, Down, with payoffs (7, 1)."
+      },
+      {
+        "letter": "C",
+        "html": "Right, Up, with payoffs (4, 2)."
+      },
+      {
+        "letter": "D",
+        "html": "Right, Down, with payoffs (1, 6)."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>After Left, B chooses Up because 5 &gt; 1. After Right, B chooses Down because 6 &gt; 2. A therefore compares its induced payoff 2 from Left with 1 from Right and chooses Left. A cannot simply choose the terminal outcome giving it 7, because B controls the later move.</p>"
+  },
+  {
+    "id": "q60",
+    "number": 60,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Where finite repetition starts",
+    "topic": "repeated",
+    "extension": false,
+    "stemHtml": "<p>A standard prisoners’ dilemma has a unique one-shot equilibrium of mutual defection. It is repeated a known finite number of times, with complete information, commonly known rationality, and no extra payoff mechanism. The backward-induction argument begins by:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Assuming the first round must involve cooperation."
+      },
+      {
+        "letter": "B",
+        "html": "Solving the last round, where there is no future round in which to punish deviation."
+      },
+      {
+        "letter": "C",
+        "html": "Treating both players as a single joint-profit maximizer."
+      },
+      {
+        "letter": "D",
+        "html": "Assuming the last round does not count toward payoff."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Start at the known final round. With no future consequence within this model, its one-shot incentives imply mutual defection. That outcome is then anticipated in the previous round, and the same reasoning works backward. These assumptions matter; the result is not a claim about every real repeated relationship.</p>"
+  },
+  {
+    "id": "q61",
+    "number": 61,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Repeated does not mean cooperative",
+    "topic": "repeated",
+    "extension": false,
+    "stemHtml": "<p>Which statement about an indefinitely repeated prisoners’ dilemma is most accurate?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Cooperation is guaranteed whenever the game repeats."
+      },
+      {
+        "letter": "B",
+        "html": "Only the first-round payoffs matter."
+      },
+      {
+        "letter": "C",
+        "html": "Future punishments do not need to be credible."
+      },
+      {
+        "letter": "D",
+        "html": "Cooperation may be sustainable when monitoring, credible punishment, and sufficient patience provide incentives."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>The prospect of losing future cooperation can discourage a short-run deviation. For that incentive to work, deviations must be detected adequately, the punishment must be credible, and the future must matter enough. Defection can still be an equilibrium; repetition alone does not guarantee cooperation.</p>"
+  },
+  {
+    "id": "q62",
+    "number": 62,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock2",
+    "title": "Risk-neutral expected profit",
+    "topic": "expected",
+    "extension": false,
+    "stemHtml": "<p>B chooses Left with probability 0.25 and Right with probability 0.75. A’s Up profit is 10 against Left and −2 against Right. Down gives 3 against either action. A maximizes expected profit. Which is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Up has expected profit 10; choose Up."
+      },
+      {
+        "letter": "B",
+        "html": "Up has expected profit 6; choose Up."
+      },
+      {
+        "letter": "C",
+        "html": "Up has expected profit 1; Down has 3, so choose Down."
+      },
+      {
+        "letter": "D",
+        "html": "Up and Down both have expected profit 3."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Expected Up profit = 0.25(10) + 0.75(−2) = 2.5 − 1.5 = 1. Down yields 3 with certainty. A therefore chooses Down. The largest possible payoff is not the same as expected profit.</p>"
+  },
+  {
+    "id": "short3",
+    "number": 63,
+    "kind": "short",
+    "section": "short",
+    "set": "mock2",
+    "title": "A new segmentation calculation",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A seller separates two groups, prevents resale, and faces these demands and total costs:</p><pre>PA = 120 − 2QA\nPB = 80 − QB\nTC = 200 + 20(QA + QB)</pre><ol><li>Derive each marginal revenue and find optimal quantities and prices.</li><li>Calculate total profit after fixed cost.</li><li>Calculate absolute point elasticity in each group at its optimum.</li><li>Explain whether the elasticity ranking is consistent with the price ranking, and state a practical condition for keeping the groups separate.</li></ol>",
+    "answerHtml": "<p>MRA = 120 − 4QA and MRB = 80 − 2QB. Set each equal to common MC = 20.</p><pre>QA = 25 → PA = 70\nQB = 30 → PB = 50\nRevenue = 70(25) + 50(30) = 3,250\nTotal cost = 200 + 20(55) = 1,300\nProfit = 1,950</pre><p>For A, QA = (120 − PA)/2, so |εA| = (1/2)(70/25) = 1.4. For B, QB = 80 − PB, so |εB| = 50/30 = 5/3 ≈ 1.67. A has less elastic demand at its optimum and pays the higher price, consistent with equal MC. Group identification and resale restrictions must be workable; income labels alone do not establish the elasticity ranking.</p><p>Practice self-check: 2 points for marginal revenues, 2 for quantities and prices, 2 for profit, 2 for elasticities, 2 for the explanation. These are practice points, not official marks.</p>",
+    "checks": [
+      "Derived MRA = 120 − 4QA and MRB = 80 − 2QB.",
+      "Found QA = 25, PA = 70; QB = 30, PB = 50.",
+      "Subtracted fixed cost and found profit = 1,950.",
+      "Calculated elasticities 1.4 and 5/3 and explained segmentation/resale."
+    ]
+  },
+  {
+    "id": "short4",
+    "number": 64,
+    "kind": "short",
+    "section": "short",
+    "set": "mock2",
+    "title": "An advertising arms race",
+    "topic": "repeated",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">No advertising</th><th scope=\"col\">Advertise</th></tr></thead><tbody><tr><th scope=\"row\">No advertising</th><td>(7, 7)</td><td>(2, 10)</td></tr><tr><th scope=\"row\">Advertise</th><td>(10, 2)</td><td>(4, 4)</td></tr></tbody></table><ol><li>Identify each firm’s best response to each possible opponent action.</li><li>Find the one-shot Nash equilibrium and give its payoffs.</li><li>Compare that outcome with mutual no-advertising. Why is the higher joint-payoff outcome not stable in the one-shot game?</li><li>Explain how repeated interaction could change incentives, and why cooperation would still not be automatic.</li></ol>",
+    "answerHtml": "<p>For either firm, advertising gives 10 rather than 7 against no advertising, and 4 rather than 2 against advertising. Advertising is strictly dominant for both. The unique one-shot Nash equilibrium is (Advertise, Advertise), giving (4, 4).</p><p>Both firms prefer (No advertising, No advertising), which gives (7, 7), but a firm can deviate alone to advertising and earn 10. That unilateral gain makes mutual no-advertising unstable in the one-shot game.</p><p>In an indefinite relationship, a detectable deviation could trigger a credible future response, such as both firms reverting to their stage-game equilibrium of advertising. If sufficiently valuable future cooperation is lost, that can outweigh today’s gain. Monitoring, credible continuation play, and patience matter; repetition does not guarantee that firms coordinate on cooperation.</p><p>Practice self-check: best-response comparisons 4 points; equilibrium 2; unilateral-deviation explanation 2; repeated-interaction explanation 2. This is not an official rubric.</p>",
+    "checks": [
+      "Compared each firm’s own payoffs against both opponent actions.",
+      "Found the unique equilibrium (Advertise, Advertise), with (4, 4).",
+      "Explained the deviation from 7 to 10 at mutual no-advertising.",
+      "Explained monitoring, credible future consequences, and patience."
+    ]
+  },
+  {
+    "id": "q65",
+    "number": 65,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Revenue is not profit",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>A monopolist faces P = 150 − 2Q and constant MC = 30. Compare the output maximizing revenue with the output maximizing profit. Assume interior solutions.</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Both objectives choose Q = 30."
+      },
+      {
+        "letter": "B",
+        "html": "Revenue is maximized at Q = 37.5; profit at Q = 30."
+      },
+      {
+        "letter": "C",
+        "html": "Revenue is maximized at Q = 30; profit at Q = 37.5."
+      },
+      {
+        "letter": "D",
+        "html": "Both objectives choose Q = 75."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>MR = 150 − 4Q. Revenue is maximized where MR = 0, giving Q = 37.5. Profit is maximized where MR = MC = 30, giving Q = 30. Expanding beyond 30 still raises revenue for a while, but the extra cost exceeds the extra revenue.</p>"
+  },
+  {
+    "id": "q66",
+    "number": 66,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Operate despite a loss?",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>A uniform-price monopolist faces P = 60 − Q, constant variable MC = 10, and unavoidable short-run fixed cost of 800. It can produce any nonnegative quantity. What is its best short-run decision?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Produce Q = 25 at P = 35, losing 175 rather than losing 800 by shutting down."
+      },
+      {
+        "letter": "B",
+        "html": "Shut down because any economic loss requires immediate shutdown."
+      },
+      {
+        "letter": "C",
+        "html": "Produce Q = 50 at P = 10 to eliminate all costs."
+      },
+      {
+        "letter": "D",
+        "html": "Raise price to 800 to recover fixed cost."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>MR = 60 − 2Q = 10 gives Q = 25 and P = 35. Contribution is (35 − 10)25 = 625, so profit after fixed cost is −175. Shutdown leaves the unavoidable 800 cost and gives profit −800. Operating therefore reduces the short-run loss. This does not imply the business is viable in the long run.</p>"
+  },
+  {
+    "id": "q67",
+    "number": 67,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Average versus marginal revenue",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>A uniform-price monopolist sells positive output along downward-sloping demand. Which relationship is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "MR = P and AR &lt; P."
+      },
+      {
+        "letter": "B",
+        "html": "MR &gt; P = AR."
+      },
+      {
+        "letter": "C",
+        "html": "AR = P and MR &lt; P."
+      },
+      {
+        "letter": "D",
+        "html": "AR = MR = 0."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Average revenue is TR/Q = PQ/Q = P. Marginal revenue is below price because expanding sales requires reducing the uniform price on existing units as well as selling the extra unit. Do not carry the competitive-firm rule P = MR into this setting.</p>"
+  },
+  {
+    "id": "q68",
+    "number": 68,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Infer demand elasticity",
+    "topic": "elasticity",
+    "extension": false,
+    "stemHtml": "<p>At an interior profit-maximizing price, a seller charges P = 50 and has MC = 20. Under the standard markup rule, the absolute demand elasticity at this point is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "0.6"
+      },
+      {
+        "letter": "B",
+        "html": "2.5"
+      },
+      {
+        "letter": "C",
+        "html": "1.5"
+      },
+      {
+        "letter": "D",
+        "html": "5/3, approximately 1.67"
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>The proportional markup is (50 − 20)/50 = 0.6. Since this equals 1/|ε|, elasticity is 1/0.6 = 5/3. The markup is measured relative to price, not relative to marginal cost.</p>"
+  },
+  {
+    "id": "q69",
+    "number": 69,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "A service that cannot be resold",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>Why can identity-checked student prices for a personal training session be easier to maintain than group prices for an identical transferable item?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The discounted personal service is harder to resell to a high-price customer."
+      },
+      {
+        "letter": "B",
+        "html": "Services never have marginal costs."
+      },
+      {
+        "letter": "C",
+        "html": "Identity checking makes all demand perfectly inelastic."
+      },
+      {
+        "letter": "D",
+        "html": "Any service must be sold at one price."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>Price separation is easier when low-price customers cannot cheaply resell what they buy to high-price customers. A session tied to a verified individual can restrict that arbitrage. This does not mean the service has no costs or that all customers have the same demand.</p>"
+  },
+  {
+    "id": "q70",
+    "number": 70,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Who chooses the category?",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A service provider offers a per-use plan and a quantity package, both available to everyone, to induce customers with different usage needs to select different effective prices. This is:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Third-degree discrimination based on an externally verified group."
+      },
+      {
+        "letter": "B",
+        "html": "Second-degree discrimination through self-selection."
+      },
+      {
+        "letter": "C",
+        "html": "Perfect first-degree discrimination."
+      },
+      {
+        "letter": "D",
+        "html": "Proof that both plans have identical marginal revenue."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Customers choose from the same menu and sort themselves by their preferences or usage. That is self-selection, the defining mechanism of second-degree discrimination. Third-degree pricing would assign prices using observed group membership.</p>"
+  },
+  {
+    "id": "q71",
+    "number": 71,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Reallocate a fixed output",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A firm serves separated groups A and B. Total output is temporarily fixed. At its current allocation, MRA = 28 and MRB = 16. Moving a small amount of output from B to A leaves total production cost unchanged. What happens?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Profit falls because A already has the higher MR."
+      },
+      {
+        "letter": "B",
+        "html": "Profit is unchanged because total output is unchanged."
+      },
+      {
+        "letter": "C",
+        "html": "Profit rises: revenue gained in A exceeds revenue lost in B."
+      },
+      {
+        "letter": "D",
+        "html": "Profit rises only if PA and PB are equal."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>A small unit shifted to A adds approximately 28 in revenue and removes approximately 16 from B, a net gain of 12 per small unit. Total cost is unchanged by assumption. At an interior optimum with flexible allocation, unequal marginal revenues leave such a profitable reallocation available.</p>"
+  },
+  {
+    "id": "q72",
+    "number": 72,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Adjust the two markets",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A seller has constant common MC = 20 and no capacity constraint. At current quantities, MRA = 28 and MRB = 16. Which small changes raise profit locally?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Reduce A and increase B."
+      },
+      {
+        "letter": "B",
+        "html": "Increase both markets."
+      },
+      {
+        "letter": "C",
+        "html": "Reduce both markets."
+      },
+      {
+        "letter": "D",
+        "html": "Increase A and reduce B."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>In A, another unit adds 28 of revenue and costs 20, so expansion is profitable. In B, another unit adds only 16 but costs 20, so reducing output avoids units that lower profit. With constant common MC, these local comparisons can be made separately.</p>"
+  },
+  {
+    "id": "q73",
+    "number": 73,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Different prices, equal marginal revenue",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>Separated demands are PA = 90 − QA and PB = 50 − QB. Common MC = 10 and there are no fixed costs. What is maximum total profit?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "1,000"
+      },
+      {
+        "letter": "B",
+        "html": "2,000"
+      },
+      {
+        "letter": "C",
+        "html": "3,000"
+      },
+      {
+        "letter": "D",
+        "html": "2,600"
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>MRA = 90 − 2QA = 10 gives QA = 40 and PA = 50. MRB = 50 − 2QB = 10 gives QB = 20 and PB = 30. Profit is (50 − 10)40 + (30 − 10)20 = 1,600 + 400 = 2,000.</p>"
+  },
+  {
+    "id": "q74",
+    "number": 74,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Do not serve every segment",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A seller separates two groups with PA = 60 − QA and PB = 15 − QB. Common MC = 20. Quantities cannot be negative. What is optimal?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Serve A at QA = 20, PA = 40; do not serve B."
+      },
+      {
+        "letter": "B",
+        "html": "Serve A and B at equal positive quantities."
+      },
+      {
+        "letter": "C",
+        "html": "Set QB = −2.5 because MRB = MC gives that answer."
+      },
+      {
+        "letter": "D",
+        "html": "Serve B at PB = 15 even though every unit costs 20."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>A has MRA = 60 − 2QA = 20, giving QA = 20 and PA = 40. B’s maximum willingness to pay is only 15, below MC = 20. It should receive zero output. The negative unconstrained solution signals a boundary solution; negative sales are not feasible.</p>"
+  },
+  {
+    "id": "q75",
+    "number": 75,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Perfect discrimination and surplus",
+    "topic": "welfare",
+    "extension": false,
+    "stemHtml": "<p>Demand is P = 100 − 2Q and MC = 20, with zero fixed cost and no other market failure. Under perfect first-degree discrimination, what are output and producer profit?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 20; profit = 800."
+      },
+      {
+        "letter": "B",
+        "html": "Q = 40; profit = 800."
+      },
+      {
+        "letter": "C",
+        "html": "Q = 20; profit = 1,600."
+      },
+      {
+        "letter": "D",
+        "html": "Q = 40; profit = 1,600."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Serve units until willingness to pay equals MC: 100 − 2Q = 20 gives Q = 40. The firm captures all gains from trade: ½ × (100 − 20) × 40 = 1,600. With no fixed cost this is profit, while consumer surplus is zero.</p>"
+  },
+  {
+    "id": "q76",
+    "number": 76,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Is marginal cost a monopoly supply curve?",
+    "topic": "monopoly",
+    "extension": false,
+    "stemHtml": "<p>Why does a monopolist’s MC curve alone fail to determine the quantity it will sell at a given market price in the way a competitive supply curve does?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "A monopoly has no production costs."
+      },
+      {
+        "letter": "B",
+        "html": "A monopoly always sells the same quantity."
+      },
+      {
+        "letter": "C",
+        "html": "The profit-maximizing choice also depends on demand and the associated MR curve."
+      },
+      {
+        "letter": "D",
+        "html": "Demand is irrelevant once MC is known."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>The monopolist chooses output using the interaction of MR and MC, then obtains price from demand. A change in demand can change MR and its optimal quantity-price pair even with unchanged MC. Therefore there is no demand-independent monopoly supply curve of the competitive kind.</p>"
+  },
+  {
+    "id": "q77",
+    "number": 77,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "An option versus an obligation",
+    "topic": "discrimination",
+    "extension": false,
+    "stemHtml": "<p>A firm can now choose to charge different prices by group, but it may still use its previous uniform price. Assume no added implementation costs or restrictions and unchanged demand and production costs. What follows about maximum attainable profit?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It must fall."
+      },
+      {
+        "letter": "B",
+        "html": "It must rise strictly."
+      },
+      {
+        "letter": "C",
+        "html": "It must become zero."
+      },
+      {
+        "letter": "D",
+        "html": "It cannot be lower, since the previous uniform policy remains feasible."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>The firm has an expanded set of feasible pricing choices. It can always reproduce its old outcome, so maximum attainable profit cannot fall. It need not rise strictly: the best group prices might coincide or segmentation may add no value. Actual implementation costs could change this conclusion, but they are excluded here.</p>"
+  },
+  {
+    "id": "q78",
+    "number": 78,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "Find the best separate prices",
+    "topic": "bundling",
+    "extension": true,
+    "stemHtml": "<p>A values products X and Y at (60, 40); B values them at (40, 60). Each wants at most one of each. Costs are zero, resale is impossible, and buyers purchase at indifference. Compare optimal separate pricing with pure bundling.</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Separate prices of 40 each earn 160; a bundle price of 100 earns 200."
+      },
+      {
+        "letter": "B",
+        "html": "Separate prices of 60 each earn 240."
+      },
+      {
+        "letter": "C",
+        "html": "A bundle price of 120 sells to both buyers."
+      },
+      {
+        "letter": "D",
+        "html": "Separate pricing and bundling must earn the same revenue."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>For each separate product, charging 40 sells two units for 80; charging 60 sells one for 60. Thus the best separate total is 160. Each buyer values the bundle at 100, so two bundles priced at 100 earn 200. The bundle improves revenue by 40 in this example.</p>"
+  },
+  {
+    "id": "q79",
+    "number": 79,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "mock3",
+    "title": "An access fee after a fixed operating cost",
+    "topic": "tariff",
+    "extension": true,
+    "stemHtml": "<p>A seller serves one customer with demand P = 14 − q. MC = 4 and unavoidable fixed operating cost is 20. Under the standard two-part-tariff benchmark, usage price is 4 and the customer joins at indifference. What access fee and net profit result?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Access fee 100; profit 80."
+      },
+      {
+        "letter": "B",
+        "html": "Access fee 50; profit 30."
+      },
+      {
+        "letter": "C",
+        "html": "Access fee 20; profit 50."
+      },
+      {
+        "letter": "D",
+        "html": "Access fee 50; profit 50."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>At usage price 4, quantity is 10. Consumer surplus before the fee is ½ × (14 − 4) × 10 = 50, so the extractable access fee is 50. Usage revenue covers variable costs exactly. Net profit is therefore 50 − 20 = 30.</p>"
+  },
+  {
+    "id": "q80",
+    "number": 80,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "When no cell is stable",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(1, -1)</td><td>(-1, 1)</td></tr><tr><th scope=\"row\">Down</th><td>(-1, 1)</td><td>(1, -1)</td></tr></tbody></table><p>Which statement is correct about pure-strategy equilibria?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Only (Up, Left) is a pure Nash equilibrium."
+      },
+      {
+        "letter": "B",
+        "html": "Both diagonal cells are pure Nash equilibria."
+      },
+      {
+        "letter": "C",
+        "html": "There is no pure-strategy Nash equilibrium."
+      },
+      {
+        "letter": "D",
+        "html": "Every cell is a pure Nash equilibrium."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>At diagonal cells, B can switch to increase its payoff from −1 to 1. At off-diagonal cells, A can switch to increase its payoff from −1 to 1. Every cell therefore permits a profitable unilateral deviation. A finite game can lack a pure equilibrium even though mixing can provide an equilibrium.</p>"
+  },
+  {
+    "id": "q81",
+    "number": 81,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "A mixed equilibrium",
+    "topic": "expected",
+    "extension": true,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(1, -1)</td><td>(-1, 1)</td></tr><tr><th scope=\"row\">Down</th><td>(-1, 1)</td><td>(1, -1)</td></tr></tbody></table><p>In this game, which independent mixing probabilities make both players indifferent between their two actions?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "A always Up; B always Left."
+      },
+      {
+        "letter": "B",
+        "html": "A chooses Up with 1/4; B chooses Left with 3/4."
+      },
+      {
+        "letter": "C",
+        "html": "A chooses Up with 1; B chooses Left with 1/2."
+      },
+      {
+        "letter": "D",
+        "html": "A chooses Up with 1/2; B chooses Left with 1/2."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>If B mixes Left and Right equally, both Up and Down give A expected payoff 0. If A mixes Up and Down equally, both columns give B expected payoff 0. Thus neither player can gain by changing its own mixing probability while the other remains at one-half.</p>"
+  },
+  {
+    "id": "q82",
+    "number": 82,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "Coordination with conflicting preferences",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(5, 2)</td><td>(0, 0)</td></tr><tr><th scope=\"row\">Down</th><td>(0, 0)</td><td>(2, 5)</td></tr></tbody></table><p>Which statement is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Both (Up, Left) and (Down, Right) are pure Nash equilibria, but the players prefer different ones."
+      },
+      {
+        "letter": "B",
+        "html": "Up is strictly dominant for A."
+      },
+      {
+        "letter": "C",
+        "html": "Left is strictly dominant for B."
+      },
+      {
+        "letter": "D",
+        "html": "Only the outcome that maximizes A’s payoff can be Nash."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>At either diagonal cell, changing alone gives 0 rather than a positive payoff, so both are Nash equilibria. A prefers (Up, Left), which gives it 5; B prefers (Down, Right), which gives it 5. Coordination can involve disagreement over which stable outcome to choose.</p>"
+  },
+  {
+    "id": "q83",
+    "number": 83,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "Check both players",
+    "topic": "nash",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(8, 3)</td><td>(2, 4)</td></tr><tr><th scope=\"row\">Down</th><td>(5, 1)</td><td>(1, 2)</td></tr></tbody></table><p>A proposes that (Up, Left) is a Nash equilibrium because Up is A’s best response to Left. Is this sufficient?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Yes; checking the row player is enough."
+      },
+      {
+        "letter": "B",
+        "html": "No; at (Up, Left), B gains by moving to Right, from 3 to 4."
+      },
+      {
+        "letter": "C",
+        "html": "No; A would gain by moving to Down, from 8 to 5."
+      },
+      {
+        "letter": "D",
+        "html": "Yes; all strictly positive payoff cells are Nash."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>A is best responding to Left, but B is not best responding to Up: Right gives B 4 rather than 3. A Nash equilibrium requires both players to be best responding. In fact, (Up, Right) is the unique Nash equilibrium in this matrix.</p>"
+  },
+  {
+    "id": "q84",
+    "number": 84,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "Own payoff versus relative payoff",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Holding B’s action fixed, A gets payoff 3 from Up and payoff 1 from Down. B’s payoff would be 9 under Up. A maximizes its own payoff. What should A choose?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Down, because A should minimize B’s payoff."
+      },
+      {
+        "letter": "B",
+        "html": "Down, because 9 is larger than 3."
+      },
+      {
+        "letter": "C",
+        "html": "Up, because A’s own payoff is 3 rather than 1."
+      },
+      {
+        "letter": "D",
+        "html": "Either action, because A cannot earn as much as B."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>A compares its own feasible payoffs, 3 and 1, with B’s action held fixed. It chooses Up. Receiving less than B does not establish that A made a mistake, and relative payoffs matter only if the stated preferences make them part of A’s objective.</p>"
+  },
+  {
+    "id": "q85",
+    "number": 85,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "Eliminate and solve",
+    "topic": "dominance",
+    "extension": false,
+    "stemHtml": "<p>Choices are simultaneous. Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Middle</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(4, 2)</td><td>(3, 1)</td><td>(2, 0)</td></tr><tr><th scope=\"row\">Down</th><td>(1, 1)</td><td>(2, 0)</td><td>(0, 3)</td></tr></tbody></table><p>First remove A’s strictly dominated action, then find B’s best action in the remaining row. Which outcome results?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "(Down, Right)."
+      },
+      {
+        "letter": "B",
+        "html": "(Up, Right)."
+      },
+      {
+        "letter": "C",
+        "html": "(Down, Left)."
+      },
+      {
+        "letter": "D",
+        "html": "(Up, Left)."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Up gives A 4 &gt; 1 against Left, 3 &gt; 2 against Middle, and 2 &gt; 0 against Right. Remove Down. In the remaining Up row, B compares 2 from Left, 1 from Middle, and 0 from Right, so chooses Left. The resulting outcome is (Up, Left).</p>"
+  },
+  {
+    "id": "q86",
+    "number": 86,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "An action versus a strategy",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>In a sequential game, B may move after either Left or Right by A. What is a complete pure strategy for B?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Only the action B takes on the path that happens."
+      },
+      {
+        "letter": "B",
+        "html": "A contingent plan stating B’s action after Left and B’s action after Right."
+      },
+      {
+        "letter": "C",
+        "html": "A prediction of A’s payoff without specifying B’s choices."
+      },
+      {
+        "letter": "D",
+        "html": "Only the outcome B would prefer overall."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>A strategy is a complete contingent plan. B must specify what it would do at each of its decision points, including one that may not be reached in equilibrium. An action describes a choice at a particular node; it need not describe the whole plan.</p>"
+  },
+  {
+    "id": "q87",
+    "number": 87,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "Nash versus subgame perfection",
+    "topic": "sequential",
+    "extension": true,
+    "stemHtml": "<p>The entrant chooses Out or Enter, then the incumbent observes entry and chooses Fight or Accommodate. Payoffs are (entrant, incumbent).</p><pre>Out → (0, 7)\nEnter, Fight → (−1, 1)\nEnter, Accommodate → (2, 3)</pre><p>Consider the strategic profile: entrant chooses Out; incumbent plans Fight if entry occurs. Which assessment is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It is a Nash equilibrium in complete strategies, but not subgame-perfect because Fight is not optimal after entry."
+      },
+      {
+        "letter": "B",
+        "html": "It is subgame-perfect because any announced threat must be believed."
+      },
+      {
+        "letter": "C",
+        "html": "It cannot be Nash because both players must act on the equilibrium path."
+      },
+      {
+        "letter": "D",
+        "html": "It is not Nash because the incumbent could earn more by changing only its plan while the entrant stays Out."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>With Out fixed, changing the incumbent’s off-path plan leaves its payoff at 7. With Fight fixed, the entrant gets −1 by entering instead of 0 from Out. So neither gains by changing strategy alone: the profile is Nash. But after entry, the incumbent prefers Accommodate (3 &gt; 1); the profile fails the subgame test.</p>"
+  },
+  {
+    "id": "q88",
+    "number": 88,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "The credible continuation",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>The entrant chooses Out or Enter, then the incumbent observes entry and chooses Fight or Accommodate. Payoffs are (entrant, incumbent).</p><pre>Out → (0, 7)\nEnter, Fight → (−1, 1)\nEnter, Accommodate → (2, 3)</pre><p>What is the backward-induction outcome of this entry game?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Out, because the incumbent’s no-entry payoff is highest."
+      },
+      {
+        "letter": "B",
+        "html": "Enter, Fight, because the incumbent controls the second move."
+      },
+      {
+        "letter": "C",
+        "html": "Enter, Accommodate, with payoffs (2, 3)."
+      },
+      {
+        "letter": "D",
+        "html": "Out, because all Nash equilibria must use credible threats."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Solve after entry first: Accommodate gives the incumbent 3 rather than 1. Anticipating that response, the entrant gets 2 from Enter rather than 0 from Out. The subgame-perfect strategies are Enter and Accommodate if entry occurs.</p>"
+  },
+  {
+    "id": "q89",
+    "number": 89,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "Credible but too expensive",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>The entrant chooses Out or Enter, then the incumbent observes entry and chooses Fight or Accommodate. Payoffs are (entrant, incumbent).</p><pre>Out → (0, 7)\nEnter, Fight → (−1, 1)\nEnter, Accommodate → (2, 3)</pre><p>Before the entry game, a technology costing 10 in every outcome could raise the incumbent’s gross Fight payoff from 1 to 5. Gross Out remains 7 and gross Accommodate remains 3. Which statement is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Installation must be profitable because it deters entry."
+      },
+      {
+        "letter": "B",
+        "html": "Installation cannot change the credibility of fighting."
+      },
+      {
+        "letter": "C",
+        "html": "Once installed, the incumbent accommodates because both net continuation payoffs are negative."
+      },
+      {
+        "letter": "D",
+        "html": "Installation makes fighting credible and deters entry, but its net payoff of −3 is worse than 3 without installation."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>After installation, Fight gives 5 − 10 = −5, which is better than Accommodate’s 3 − 10 = −7. Entry would give the entrant −1, so it stays Out. However, the incumbent then earns 7 − 10 = −3, versus 3 from accommodation without installation. A credible commitment need not be worth its upfront cost.</p>"
+  },
+  {
+    "id": "q90",
+    "number": 90,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "When moving first helps",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>For the baseline payoff table: Payoffs are (A, B); A chooses a row, B a column. Higher payoffs are better.</p><table><thead><tr><th scope=\"col\">A / B</th><th scope=\"col\">Left</th><th scope=\"col\">Right</th></tr></thead><tbody><tr><th scope=\"row\">Up</th><td>(5, 2)</td><td>(0, 0)</td></tr><tr><th scope=\"row\">Down</th><td>(0, 0)</td><td>(2, 5)</td></tr></tbody></table><p>Use the coordination payoffs below, but make choices sequential and observable. The first mover chooses its row/column, and the second observes and responds. How does A’s payoff compare when A moves first versus B moving first?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "A earns 2 either way."
+      },
+      {
+        "letter": "B",
+        "html": "A earns 5 when it moves first and 2 when B moves first."
+      },
+      {
+        "letter": "C",
+        "html": "A earns 0 whenever choices are sequential."
+      },
+      {
+        "letter": "D",
+        "html": "A earns 2 when it moves first and 5 when B moves first."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>If A moves first, choosing Up induces B to choose Left, yielding A 5; choosing Down induces Right, yielding A 2. A chooses Up. If B moves first, Left induces Up and gives B 2; Right induces Down and gives B 5. B chooses Right, leaving A 2. This specific game has a first-mover advantage; timing does not guarantee one in every game.</p>"
+  },
+  {
+    "id": "q91",
+    "number": 91,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "Timing versus information",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>A chooses Monday; B chooses Tuesday but cannot observe A’s choice before deciding. In the standard strategic sense, their current choices are:</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Simultaneous, because neither choice is conditioned on observing the other’s current action."
+      },
+      {
+        "letter": "B",
+        "html": "Sequential with perfect observation, because Tuesday follows Monday."
+      },
+      {
+        "letter": "C",
+        "html": "Automatically a repeated game."
+      },
+      {
+        "letter": "D",
+        "html": "A guarantee that B earns the higher payoff."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>“Simultaneous” concerns the information available when choosing, not identical clock times. Here B does not observe A’s current action, so the choice problem can be modeled as simultaneous. A sequential perfect-information game would require B to observe the relevant earlier action.</p>"
+  },
+  {
+    "id": "q92",
+    "number": 92,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "An end date changes incentives",
+    "topic": "repeated",
+    "extension": false,
+    "stemHtml": "<p>In the known final round of a standard repeated prisoners’ dilemma, under complete information and commonly known rationality, why does the usual future-punishment argument fail?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The last round has no payoff."
+      },
+      {
+        "letter": "B",
+        "html": "Players are required to cooperate in the last round."
+      },
+      {
+        "letter": "C",
+        "html": "There is no later round within the game in which to impose the threatened punishment."
+      },
+      {
+        "letter": "D",
+        "html": "The players cannot observe each other’s earlier actions."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>The final round still contributes to payoff, but there is no future round within the specified game to reward cooperation or punish defection. The one-shot incentives therefore govern that final choice. An additional reputation payoff or uncertain endpoint would be a different model.</p>"
+  },
+  {
+    "id": "q93",
+    "number": 93,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "Exactly at the cooperation threshold",
+    "topic": "repeated",
+    "extension": true,
+    "stemHtml": "<p>In an indefinitely repeated prisoners’ dilemma, mutual cooperation gives 5 each period, unilateral deviation gives 8 immediately, and mutual punishment gives 2 each later period. Monitoring is perfect, punishment is credible grim trigger, and δ = 0.5. Which is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Cooperation and one-period deviation both have value 10; the player is indifferent, so the no-deviation constraint holds weakly."
+      },
+      {
+        "letter": "B",
+        "html": "Cooperation gives 5 and deviation gives 8, so only the first period matters."
+      },
+      {
+        "letter": "C",
+        "html": "Cooperation gives 10 and deviation gives 12, so cooperation cannot be sustained."
+      },
+      {
+        "letter": "D",
+        "html": "Cooperation is strictly preferred because repetition always guarantees cooperation."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>Cooperating forever gives 5/(1 − 0.5) = 10. Deviating now gives 8 + 0.5 × 2/(1 − 0.5) = 10. The threshold is (8 − 5)/(8 − 2) = 1/2. At equality there is no strictly profitable deviation, although cooperation is not uniquely predicted.</p>"
+  },
+  {
+    "id": "q94",
+    "number": 94,
+    "kind": "mcq",
+    "section": "games",
+    "set": "mock3",
+    "title": "Whose mixing probability?",
+    "topic": "expected",
+    "extension": true,
+    "stemHtml": "<p>B chooses Left with probability q. A earns 6 from Up against Left and 0 from Up against Right. Down gives A 2 against either action. Which q makes A indifferent?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "q = 2/3, and it is A’s probability of Up."
+      },
+      {
+        "letter": "B",
+        "html": "q = 1/2, because every mixed equilibrium uses equal probabilities."
+      },
+      {
+        "letter": "C",
+        "html": "q = 3, because 6q = 2."
+      },
+      {
+        "letter": "D",
+        "html": "q = 1/3, and it is B’s probability of Left."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>EU(Up) = 6q and EU(Down) = 2. Set 6q = 2 to obtain q = 1/3. This finds B’s mixing probability by making A indifferent. To find a complete mixed equilibrium, you also need B’s payoffs to determine the probability with which A mixes.</p>"
+  },
+  {
+    "id": "short5",
+    "number": 95,
+    "kind": "short",
+    "section": "short",
+    "set": "mock3",
+    "title": "Uniform pricing versus perfect discrimination",
+    "topic": "welfare",
+    "extension": false,
+    "stemHtml": "<p>A seller faces demand P = 120 − 2Q and total cost TC = 100 + 40Q. There are no externalities or other market failures. Assume all units can be served at the stated costs.</p><ol><li>Under one uniform price, calculate the optimal quantity, price, and profit.</li><li>Calculate consumer surplus and deadweight loss under uniform pricing.</li><li>Under ideal first-degree price discrimination, calculate output, profit, and consumer surplus.</li><li>Explain one efficiency difference and one practical obstacle to the ideal discrimination policy.</li></ol>",
+    "answerHtml": "<p>Under uniform pricing, TR = 120Q − 2Q² and MR = 120 − 4Q. Set MR = MC = 40 to find Q = 20. Demand then gives P = 80.</p><pre>Uniform revenue = 80(20) = 1,600\nUniform total cost = 100 + 40(20) = 900\nUniform profit = 700\nConsumer surplus = ½(120 − 80)(20) = 400</pre><p>Efficient output solves willingness to pay = MC: 120 − 2Q = 40, giving Q = 40. Uniform pricing leaves a deadweight-loss triangle of ½ × (40 − 20) × (80 − 40) = 400.</p><p>With perfect discrimination, all units up to Q = 40 are served, and the firm captures all gains from trade. Contribution before fixed cost is ½ × (120 − 40) × 40 = 1,600; profit after the fixed cost is 1,500. Consumer surplus is zero, and the output distortion disappears in this ideal model.</p><p>The policy increases output efficiency but transfers the gains to the producer. Exact willingness-to-pay information, personalized enforcement, and prevention of resale are major practical obstacles. There is no single common selling price under perfect discrimination.</p><p>Practice self-check: uniform solution 3 points; consumer surplus and DWL 2; perfect-discrimination solution 3; interpretation and practical obstacle 2. Not official marks.</p>",
+    "checks": [
+      "Found uniform Q = 20, P = 80, profit = 700.",
+      "Calculated uniform consumer surplus = 400 and DWL = 400.",
+      "Found perfect-discrimination Q = 40, profit = 1,500, and consumer surplus = 0.",
+      "Separated output efficiency from distribution and gave an implementation obstacle."
+    ]
+  },
+  {
+    "id": "short6",
+    "number": 96,
+    "kind": "short",
+    "section": "short",
+    "set": "mock3",
+    "title": "A contingent payment changes the game",
+    "topic": "sequential",
+    "extension": false,
+    "stemHtml": "<p>A chooses a Small or Large launch. B observes and chooses Support or Decline. Payoffs are (A, B).</p><pre>Small, Support → (4, 3)\nSmall, Decline → (1, 2)\nLarge, Support → (8, 1)\nLarge, Decline → (−2, 4)</pre><ol><li>Find B’s best response after each launch size and give the complete contingent strategy.</li><li>Solve A’s initial choice by backward induction.</li><li>A can offer an enforceable transfer t from A to B, paid only if A launches Large and B Supports. For which t does B strictly prefer Support after Large?</li><li>For which t does A also strictly prefer the resulting Large outcome to the original Small outcome? Give one transfer satisfying both requirements.</li></ol>",
+    "answerHtml": "<p>After Small, B chooses Support because 3 &gt; 2. After Large without a transfer, B chooses Decline because 4 &gt; 1. B’s complete strategy is therefore Support after Small, Decline after Large. Anticipating those actions, A compares 4 from Small with −2 from Large and chooses Small. The original outcome is (Small, Support), with (4, 3).</p><p>With an enforceable transfer t paid only under (Large, Support), that outcome becomes (8 − t, 1 + t). All other payoffs stay the same. B strictly prefers Support after Large when 1 + t &gt; 4, so t &gt; 3.</p><p>A strictly prefers the induced Large outcome to its original payoff 4 when 8 − t &gt; 4, so t &lt; 4. Both strict conditions hold for 3 &lt; t &lt; 4. For example, t = 3.5 gives (4.5, 4.5) under (Large, Support), making B’s response credible and making Large preferable for A. At t = 3 or t = 4, one of the required strict comparisons becomes indifference.</p><p>Practice self-check: contingent responses 3 points; original outcome 2; B’s incentive inequality 2; A’s inequality and feasible example 3. These are practice points, not an official allocation.</p>",
+    "checks": [
+      "Specified B’s response after both Small and Large.",
+      "Found original outcome (Small, Support), payoffs (4, 3).",
+      "Derived t > 3 from B’s strict incentive to Support.",
+      "Derived t < 4 for A, and gave an example such as t = 3.5."
+    ]
+  }
+]
