@@ -37,7 +37,7 @@ window.CEIBS_LIBRARY = {
     {
       "id": "microeconomics-final",
       "title": "Microeconomics final practice",
-      "description": "96 questions across three full mocks. Choose a test, generate a fresh 15 + 15 + 2 exam, check worked explanations, and retry mistakes.",
+      "description": "160 questions across five mocks, mapped to 24 final-exam topics. Includes market failure, externalities, hold-up, AI launch, mover advantages, and topic drills.",
       "topic": "economics",
       "formats": [
         "Interactive"
@@ -49,7 +49,7 @@ window.CEIBS_LIBRARY = {
         "Pricing",
         "Quiz"
       ],
-      "detail": "3 mocks \u00b7 96 questions",
+      "detail": "5 mocks \u00b7 160 questions \u00b7 24 topics",
       "path": "pages/economics/microeconomics-final.html",
       "updated": "2026-10-24",
       "thumbnail": "assets/previews/microeconomics-final.svg"

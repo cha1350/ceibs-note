@@ -11,7 +11,7 @@
     {
       "id": "microeconomics-final",
       "title": "Microeconomics final practice",
-      "description": "96 questions across three full mocks. Choose a test, generate a fresh 15 + 15 + 2 exam, check worked explanations, and retry mistakes.",
+      "description": "160 questions across five mocks, mapped to 24 final-exam topics. Includes market failure, externalities, hold-up, AI launch, mover advantages, and topic drills.",
       "topic": "economics",
       "formats": [
         "Interactive"
@@ -23,7 +23,7 @@
         "Pricing",
         "Quiz"
       ],
-      "detail": "3 mocks · 96 questions",
+      "detail": "5 mocks · 160 questions · 24 topics",
       "source": "01 Subjects/MicroEconomics/Final Exam Practice.html",
       "path": "pages/economics/microeconomics-final.html",
       "updated": "2026-10-24",
