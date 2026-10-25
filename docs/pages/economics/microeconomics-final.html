@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f6f5ef">
-<meta name="description" content="160 questions covering your microeconomics final topics: market failure, monopoly, price customization, and game theory. Five mocks and 24 topic drills.">
+<meta name="description" content="192 questions: five final-exam mocks plus a focused market-failure and monopoly review. Includes tax, subsidy and monopoly graphs, information problems, and game theory.">
 <title>Microeconomics final practice | CEIBS Notes</title>
 <style>
 :root{--paper:#f6f5ef;--white:#fffefa;--ink:#203b32;--muted:#62736b;--line:#dce2d8;--green:#286047;--pale:#e8eee0;--gold:#d9b76e;--red:#a13d36;--red-bg:#fff0eb;--radius:20px}
@@ -20,18 +20,19 @@
 <header class="site-header"><div class="header-inner"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">c</span>CEIBS Notes</a><div class="header-tools"><span class="save-state" id="save-state">Progress saves here</span><button type="button" class="text-button" id="reference-open">Quick reference</button></div></div></header>
 <main class="wrap" id="main">
 <section id="home">
-<div class="hero"><div><div class="eyebrow">Economics / 5 tests · 160 questions</div><h1>Think it through.<br><em>Make your move.</em></h1><p>Your exam topics, mapped to practice. Market failure, monopoly, pricing, and strategy—five full tests, focused topic drills, and worked explanations.</p></div><div class="formula-card"><div class="eyebrow">Your practice exam</div><div class="exam-count">15 <i>+</i> 15 <i>+</i> 2</div><div class="formula-labels"><div><strong>Markets & policy</strong><span>Failure, monopoly & pricing</span></div><div><strong>Game theory</strong><span>Payoffs & strategy</span></div><div><strong>Short answers</strong><span>Work it out</span></div></div></div></div>
+<div class="hero"><div><div class="eyebrow">Economics / 192 questions · 5 mocks + focused review</div><h1>Think it through.<br><em>Make your move.</em></h1><p>Your exam topics, mapped to practice. Market failure, monopoly, pricing, and strategy. Five full mocks, a new market & monopoly review, and worked explanations for every question.</p></div><div class="formula-card"><div class="eyebrow">Your practice exam</div><div class="exam-count">15 <i>+</i> 15 <i>+</i> 2</div><div class="formula-labels"><div><strong>Markets & policy</strong><span>Failure, monopoly & pricing</span></div><div><strong>Game theory</strong><span>Payoffs & strategy</span></div><div><strong>Short answers</strong><span>Work it out</span></div></div></div></div>
 <div class="resume-banner" id="resume-banner" hidden><div><strong>A session is waiting.</strong><small id="resume-description"></small></div><button type="button" class="button small" id="resume-button">Resume</button></div>
-<section class="setup" aria-label="Set up your practice"><div class="setup-grid"><div style="grid-column:1/-1"><label class="field-label" for="set-select">Choose your practice test</label><select class="select" id="set-select"><option value="mock4" selected>Test 4 · Your topic list (32 questions)</option><option value="mock5">Test 5 · Policy & game applications (32 questions)</option><option value="mock2">Test 2 · Earlier applications (32 questions)</option><option value="mock3">Test 3 · Earlier calculations & strategy (32 questions)</option><option value="mock1">Test 1 · Original mock (32 questions)</option><option value="random">Fresh mixed mock · 15 + 15 + 2</option><option value="bank">Full question bank · 160 questions</option></select></div><div><label class="field-label" for="topic-select">What would you like to practise?</label><select class="select" id="topic-select"><option value="all">Whole selected test · 32 questions</option><option value="pricing">Markets & policy · 15 questions</option><option value="games">Game theory · 15 questions</option><option value="short">Short answers · 2 questions</option><option value="mistakes">Mistakes & unanswered in this set</option></select></div><div><label class="field-label" for="mode-select">Choose your pace</label><select class="select" id="mode-select"><option value="practice">Practice · feedback after each question</option><option value="exam">Mock exam · answers after finishing</option></select></div></div><div class="setup-actions"><button type="button" class="button" id="start-button">Start practising <span aria-hidden="true">→</span></button><button type="button" class="button secondary" id="hour-button">60-minute mock</button><button type="button" class="text-button" id="selected-resume" hidden>Resume this test</button><label class="text-button"><input type="checkbox" id="shuffle-toggle"> Shuffle questions</label></div><p class="setup-note">The 60-minute timer is a practice budget, not the official exam duration. Progress stays in this browser; it does not sync across devices.</p><p class="muted" id="home-message" role="status" hidden></p></section>
+<section class="setup" aria-label="Set up your practice"><div class="setup-grid"><div style="grid-column:1/-1"><label class="field-label" for="set-select">Choose your practice test</label><select class="select" id="set-select"><option value="market-review" selected>New · Market & monopoly review (30 MCQs + 2 short)</option><option value="mock4">Test 4 · Your topic list (32 questions)</option><option value="mock5">Test 5 · Policy & game applications (32 questions)</option><option value="mock2">Test 2 · Earlier applications (32 questions)</option><option value="mock3">Test 3 · Earlier calculations & strategy (32 questions)</option><option value="mock1">Test 1 · Original mock (32 questions)</option><option value="random">Fresh mixed mock · 15 + 15 + 2</option><option value="bank">Full question bank · 192 questions</option></select></div><div><label class="field-label" for="topic-select">What would you like to practise?</label><select class="select" id="topic-select"><option value="all">Whole selected review · 32 questions</option><option value="pricing">Markets & policy · 30 questions</option><option value="games" disabled>Game theory · 0 in this review</option><option value="short">Short answers · 2 questions</option><option value="mistakes">Mistakes & unanswered in this set</option></select></div><div><label class="field-label" for="mode-select">Choose your pace</label><select class="select" id="mode-select"><option value="practice">Practice · feedback after each question</option><option value="exam">Mock exam · answers after finishing</option></select></div></div><div class="setup-actions"><button type="button" class="button" id="start-button">Start practising <span aria-hidden="true">→</span></button><button type="button" class="button secondary" id="hour-button">60-minute mock</button><button type="button" class="text-button" id="selected-resume" hidden>Resume this test</button><label class="text-button"><input type="checkbox" id="shuffle-toggle"> Shuffle questions</label></div><p class="setup-note">The 60-minute timer is a practice budget, not the official exam duration. Progress stays in this browser; it does not sync across devices.</p><p class="muted" id="home-message" role="status" hidden></p></section>
+<details class="coverage-panel" id="market-coverage-panel" open><summary>Your latest list · 18 detailed topic drills</summary><p class="muted">Market failure and monopoly are also in the broader checklist below. These finer checks compare with the previous 160-question bank. Each drill includes worked explanations.</p><div id="market-coverage-list"></div></details>
 <details class="coverage-panel" id="coverage-panel"><summary>Practise any exam topic · 24 headings</summary><p class="muted">Pick a topic for a focused drill across the whole bank. “Added” marks a gap in the earlier practice; “Expanded” marks a topic that needed more depth.</p><div id="coverage-list"></div></details>
 <div class="features"><div class="feature"><strong>Understand each answer</strong><p>Worked calculations, payoff comparisons, and the traps to avoid.</p></div><div class="feature"><strong>Keep your progress</strong><p>Original answers stay saved. New tests start with fresh questions and separate results.</p></div><div class="feature"><strong>Turn mistakes into practice</strong><p>Review the questions that need another attempt.</p></div></div>
-<div class="scope"><strong>A note on coverage.</strong> Mapped to your supplied exam-topic list. Tests 4–5 include market failure; Tests 1–3 retain their earlier monopoly/pricing focus. Named-case applications use original hypothetical payoffs, with lecture-case details unverified. Extension questions remain marked. Multiple choice and the timer are practice formats, not confirmed official rules.</div>
+<div class="scope"><strong>A note on coverage.</strong> Mapped to your supplied exam-topic lists. The focused market review has 30 market/policy MCQs and 2 short answers; it is a topic drill. Full mocks keep the 15 + 15 + 2 structure. Tests 4–5 include market failure; Tests 1–3 retain their earlier monopoly/pricing focus. Named-case applications use original hypothetical payoffs, with lecture-case details unverified. Extension questions remain marked. Multiple choice and the timer are practice formats, not confirmed official rules.</div>
 </section>
 <section id="session" hidden><div class="session-top"><div><h1 id="session-heading">Your next decision.</h1><div class="session-sub" id="session-sub"></div></div><div class="timer" id="timer" hidden></div></div><div class="progress-track" role="progressbar" aria-label="Questions completed" aria-valuemin="0" aria-valuemax="32" aria-valuenow="0" id="progress"><div class="progress-fill" id="progress-fill"></div></div><div class="quiz-layout"><div><article class="question-card" id="question-card" tabindex="-1"></article><nav class="navigation" aria-label="Question navigation"><button type="button" class="button secondary small" id="previous-button">← Previous</button><span class="muted" id="position"></span><button type="button" class="button small" id="next-button">Next →</button></nav></div><aside class="sidebar-card" aria-label="Question map"><div class="sidebar-title"><span>Your progress</span><span id="map-count"></span></div><div class="jump-grid" id="jump-grid"></div><p class="legend">Green: completed · Coral: revisit<br>Outlined: current question</p><button type="button" class="button small finish-button" id="finish-button">Finish & review</button><button type="button" class="button secondary small" id="pause-button">Save & leave session</button></aside></div><button type="button" class="button secondary mobile-finish" id="mobile-finish">Finish & review</button></section>
 <section class="results" id="results" hidden><div class="result-head"><div><div class="eyebrow">Your practice, reviewed</div><h1>Keep the reasoning.<br><em>Close the gaps.</em></h1><p class="muted" id="result-message"></p></div><div class="score-box"><div class="eyebrow" style="color:#d4dfc5">Multiple-choice score</div><div class="big-score" id="total-score"></div><p id="score-description"></p></div></div><div class="result-breakdown" id="result-breakdown"></div><div class="setup-actions"><button type="button" class="button" id="retry-button">Retry mistakes & blanks</button><button type="button" class="button secondary" id="review-button">Review every answer</button><button type="button" class="text-button" id="home-button">Back to practice setup</button></div><div class="result-list" id="result-list"></div></section>
 <footer class="footer"><span>CEIBS Notes · Microeconomics</span><span>Learn the method. Then trust your reasoning.</span></footer>
 </main>
-<dialog class="dialog" id="reference"><header><h2>Your quick reference</h2><button type="button" class="text-button" id="reference-close">Close ✕</button></header><div class="rule"><strong>Market failure and externalities</strong>MSC = MPC + marginal external damage. Efficient output satisfies MSB = MSC. A corrective tax equals marginal external damage at efficient output in the standard competitive model.</div><div class="rule"><strong>Hold-up problem</strong>Relationship-specific investment can be discouraged when later bargaining leaves the investor too little of the return. Distinguish the decision before investing from the decision after the cost is sunk.</div><div class="rule"><strong>First or second mover?</strong>Use the actual information, feasible actions, and credible commitments. Moving first can help or hurt; observation can benefit the second mover.</div><div class="rule"><strong>Payoff matrix</strong>First number = row player; second = column player. Compare the row player's payoffs vertically and the column player's horizontally.</div><div class="rule"><strong>Nash equilibrium</strong>No player benefits by changing their own strategy alone. Find cells that are best responses for both players.</div><div class="rule"><strong>Dominance</strong>A strictly dominant action is better against every possible opponent action. Check every comparison.</div><div class="rule"><strong>Sequential game</strong>Start at the last decision. Choose what that player actually prefers, then work backward. Test threats after the triggering event.</div><div class="rule"><strong>Monopoly</strong>For P = a − bQ, MR = a − 2bQ. Find Q using MR = MC; find P using demand. Profit = revenue − total cost.</div><div class="rule"><strong>Price customization</strong>Identify groups or self-selection; check resale. With the same MC, less elastic demand supports a higher optimal markup: (P − MC)/P = 1/|ε|.</div><div class="rule"><strong>Repeated interaction</strong>Future punishment can support cooperation if it is credible and the future matters enough. A known finite prisoners' dilemma has different incentives.</div><p>For short answers: state the rule, apply the numbers, then explain the result.</p></dialog>
+<dialog class="dialog" id="reference"><header><h2>Your quick reference</h2><button type="button" class="text-button" id="reference-close">Close ✕</button></header><div class="rule"><strong>Market failure and externalities</strong>MSC = MPC + marginal external damage. Efficient output satisfies MSB = MSC. A corrective tax equals marginal external damage at efficient output in the standard competitive model.</div><div class="rule"><strong>Five externality approaches</strong>Taxes/subsidies; private bargaining; legal rules (injunction or liability); sale/auction of rights; direct regulation.</div><div class="rule"><strong>Tax and subsidy graphs</strong>With an external cost, MSC lies above MPC and private output is too high. Tax: buyer price − seller net price = tax. With an external benefit, MSB lies above MPB and private output is too low. Subsidy: seller receipt − buyer price = subsidy.</div><div class="rule"><strong>Information problems</strong>Adverse selection: hidden characteristics. Moral hazard: hidden actions and changed incentives. Search while expected marginal benefit exceeds marginal cost. Warranties, certification, reputation and contract design can help; governments can also face information and incentive problems.</div><div class="rule"><strong>Lerner index and monopoly horizons</strong>L = (P − MC) / P. At an interior single-price monopoly optimum, L = 1/|ε|. Profit = (P − ATC)Q. Short run: compare operating contribution with avoidable costs. Long run: exit if no feasible continuation covers opportunity costs. Entry barriers can sustain profit, but do not guarantee it.</div><div class="rule"><strong>Hold-up problem</strong>Relationship-specific investment can be discouraged when later bargaining leaves the investor too little of the return. Distinguish the decision before investing from the decision after the cost is sunk.</div><div class="rule"><strong>First or second mover?</strong>Use the actual information, feasible actions, and credible commitments. Moving first can help or hurt; observation can benefit the second mover.</div><div class="rule"><strong>Payoff matrix</strong>First number = row player; second = column player. Compare the row player's payoffs vertically and the column player's horizontally.</div><div class="rule"><strong>Nash equilibrium</strong>No player benefits by changing their own strategy alone. Find cells that are best responses for both players.</div><div class="rule"><strong>Dominance</strong>A strictly dominant action is better against every possible opponent action. Check every comparison.</div><div class="rule"><strong>Sequential game</strong>Start at the last decision. Choose what that player actually prefers, then work backward. Test threats after the triggering event.</div><div class="rule"><strong>Monopoly</strong>For P = a − bQ, MR = a − 2bQ. Find Q using MR = MC; find P using demand. Profit = revenue − total cost.</div><div class="rule"><strong>Price customization</strong>Identify groups or self-selection; check resale. With the same MC, less elastic demand supports a higher optimal markup: (P − MC)/P = 1/|ε|.</div><div class="rule"><strong>Repeated interaction</strong>Future punishment can support cooperation if it is credible and the future matters enough. A known finite prisoners' dilemma has different incentives.</div><p>For short answers: state the rule, apply the numbers, then explain the result.</p></dialog>
 <dialog class="dialog" id="finish-dialog"><h2>Ready to review?</h2><p id="finish-summary"></p><div class="setup-actions"><button type="button" class="button" id="confirm-finish">Finish & see answers</button><button type="button" class="button secondary" id="cancel-finish">Keep practising</button></div></dialog>
 <dialog class="dialog" id="replace-dialog"><h2>Start a fresh session?</h2><p>Your current session will be replaced. Your past results remain available for mistake practice.</p><div class="setup-actions"><button type="button" class="button" id="confirm-replace">Start new session</button><button type="button" class="button secondary" id="cancel-replace">Keep current session</button></div></dialog>
 <noscript><p>This interactive practice needs JavaScript enabled in your browser.</p></noscript>
@@ -68,7 +69,8 @@
     "answerHtml": "\u003cp>TR = P × Q = (100 − 2Q)Q = 100Q − 2Q². Differentiating gives \u003cstrong>MR = 100 − 4Q\u003c/strong>. For linear inverse demand, MR has the same vertical intercept and twice the slope magnitude.\u003c/p>",
     "set": "mock1",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -103,7 +105,8 @@
     "answerHtml": "\u003cp>Set MR = MC: 100 − 4Q = 20 → \u003cstrong>Q = 20\u003c/strong>. Substitute into demand: P = 100 − 2(20) = \u003cstrong>60\u003c/strong>. Option C incorrectly reports marginal revenue as the selling price. Option A gives efficient output under the stated no-externality model, rather than the uniform-price monopoly optimum.\u003c/p>",
     "set": "mock1",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -138,7 +141,8 @@
     "answerHtml": "\u003cp>At Q = 20 and P = 60:\u003c/p>\n\u003cpre>TR = 60 × 20 = 1,200\nTC = 100 + 20 × 20 = 500\nProfit = 1,200 − 500 = 700\u003c/pre>\n\u003cp>Revenue of 1,200 is not profit; contribution of 800 still excludes fixed cost.\u003c/p>",
     "set": "mock1",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -1213,7 +1217,8 @@
     "answer": "C",
     "answerHtml": "\u003cp>TR = 120Q − 3Q², so MR = 120 − 6Q. Set MR = 30: Q = 15. Then demand gives P = 120 − 3(15) = 75. Quantity is chosen using MR; the selling price comes from demand.\u003c/p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -1424,7 +1429,9 @@
     "answer": "D",
     "answerHtml": "\u003cp>Barriers to entry can prevent the entry response that would otherwise compete away economic profit. Persistent profit is possible, not guaranteed: the firm still faces demand and costs. Under downward-sloping uniform-price demand, MR is below price at positive output.\u003c/p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "entry-barriers",
+      "monopoly-horizons"
     ],
     "strand": "monopoly"
   },
@@ -2386,7 +2393,8 @@
     "answer": "A",
     "answerHtml": "\u003cp>MR = 60 − 2Q = 10 gives Q = 25 and P = 35. Contribution is (35 − 10)25 = 625, so profit after fixed cost is −175. Shutdown leaves the unavoidable 800 cost and gives profit −800. Operating therefore reduces the short-run loss. This does not imply the business is viable in the long run.\u003c/p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-horizons"
     ],
     "strand": "monopoly"
   },
@@ -2421,7 +2429,8 @@
     "answer": "C",
     "answerHtml": "\u003cp>Average revenue is TR/Q = PQ/Q = P. Marginal revenue is below price because expanding sales requires reducing the uniform price on existing units as well as selling the extra unit. Do not carry the competitive-firm rule P = MR into this setting.\u003c/p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -2456,7 +2465,9 @@
     "answer": "D",
     "answerHtml": "\u003cp>The proportional markup is (50 − 20)/50 = 0.6. Since this equals 1/|ε|, elasticity is 1/0.6 = 5/3. The markup is measured relative to price, not relative to marginal cost.\u003c/p>",
     "coverage": [
-      "price-customization"
+      "price-customization",
+      "market-power",
+      "lerner-index"
     ],
     "strand": "price-customization"
   },
@@ -2737,7 +2748,8 @@
     "answer": "C",
     "answerHtml": "\u003cp>The monopolist chooses output using the interaction of MR and MC, then obtains price from demand. A change in demand can change MR and its optimal quantity-price pair even with unchanged MC. Therefore there is no demand-independent monopoly supply curve of the competitive kind.\u003c/p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "price-variable"
     ],
     "strand": "monopoly"
   },
@@ -3468,7 +3480,8 @@
     "topic": "market-failure",
     "extension": false,
     "coverage": [
-      "market-failure"
+      "market-failure",
+      "government-market"
     ],
     "stemHtml": "\u003cp>Which best describes market failure?\u003c/p>",
     "options": [
@@ -3504,7 +3517,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "msc"
     ],
     "stemHtml": "\u003cp>Producing an additional unit costs the firm 24 and causes 6 of uncompensated damage to neighbours. Marginal social cost is:\u003c/p>",
     "options": [
@@ -3540,7 +3554,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "externality-graphs"
     ],
     "stemHtml": "\u003csvg class=\"externality-graph\" viewBox=\"0 0 360 285\" role=\"img\" aria-label=\"Demand intersects marginal private cost at quantity 40 and marginal social cost at quantity 30\">\u003ctitle>Negative production externality\u003c/title>\u003cg fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\">\u003cpath d=\"M45 25V240H330\"/>\u003cpath d=\"M45 70L285 172\" stroke=\"#286047\" stroke-width=\"2\"/>\u003cpath d=\"M45 206L285 104\" stroke=\"#bd9141\" stroke-width=\"2\"/>\u003cpath d=\"M45 172L285 70\" stroke=\"#a25a43\" stroke-width=\"2\"/>\u003cpath d=\"M165 121V240M205 138V240\" stroke-dasharray=\"4 4\"/>\u003c/g>\u003cpath d=\"M165 121L205 138L205 104Z\" fill=\"#a25a43\" fill-opacity=\".18\"/>\u003cg font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\">\u003ctext x=\"8\" y=\"22\">Price / cost\u003c/text>\u003ctext x=\"317\" y=\"262\">Q\u003c/text>\u003ctext x=\"290\" y=\"175\">Demand\u003c/text>\u003ctext x=\"290\" y=\"107\">MPC\u003c/text>\u003ctext x=\"290\" y=\"73\">MSC\u003c/text>\u003ctext x=\"159\" y=\"259\">30\u003c/text>\u003ctext x=\"199\" y=\"259\">40\u003c/text>\u003ctext x=\"50\" y=\"280\">Private output exceeds efficient output.\u003c/text>\u003c/g>\u003c/svg>\u003cp>In a competitive market, demand is P = 100 − Q, marginal private cost is 20 + Q, and marginal external damage is a constant 20. There are no external benefits. Which quantities are correct?\u003c/p>",
     "options": [
@@ -3611,7 +3626,8 @@
     "topic": "market-failure",
     "extension": false,
     "coverage": [
-      "market-failure"
+      "market-failure",
+      "imperfect-info"
     ],
     "stemHtml": "\u003cp>A used-car seller knows the car’s quality before sale, but buyers cannot distinguish high-quality cars from low-quality cars. The resulting change in who is willing to trade is primarily:\u003c/p>",
     "options": [
@@ -3786,7 +3802,8 @@
     "topic": "monopoly",
     "extension": false,
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "entry-barriers"
     ],
     "stemHtml": "\u003cp>Which statement about a monopoly is correct?\u003c/p>",
     "options": [
@@ -4634,7 +4651,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "externalities"
     ],
     "stemHtml": "\u003cp>Which situation is a negative externality in production?\u003c/p>",
     "options": [
@@ -4670,7 +4688,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "msc"
     ],
     "stemHtml": "\u003cp>MPC = 10 + 2Q and marginal external damage = Q. What is MSC?\u003c/p>",
     "options": [
@@ -4778,7 +4797,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "bargaining"
     ],
     "stemHtml": "\u003cp>Which conditions most directly support a Coase-style efficient bargain over an externality?\u003c/p>",
     "options": [
@@ -4849,7 +4869,8 @@
     "topic": "market-failure",
     "extension": false,
     "coverage": [
-      "market-failure"
+      "market-failure",
+      "imperfect-info"
     ],
     "stemHtml": "\u003cp>Which is the clearest adverse-selection example?\u003c/p>",
     "options": [
@@ -4884,7 +4905,8 @@
     "topic": "market-failure",
     "extension": false,
     "coverage": [
-      "market-failure"
+      "market-failure",
+      "moral-hazard"
     ],
     "stemHtml": "\u003cp>After purchasing insurance, a person takes less costly care because some accident costs are borne by the insurer. The action is difficult to observe. This primarily illustrates:\u003c/p>",
     "options": [
@@ -4919,7 +4941,8 @@
     "topic": "monopoly",
     "extension": false,
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "stemHtml": "\u003cp>Demand is P = 100 − 2Q and marginal cost is MC = 20 + Q. Assuming an interior maximum, what quantity and price maximize profit?\u003c/p>",
     "options": [
@@ -4989,7 +5012,8 @@
     "topic": "monopoly",
     "extension": false,
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-horizons"
     ],
     "stemHtml": "\u003cp>A patented product faces weak demand. At the firm’s best positive output, price exceeds AVC but lies below ATC. Fixed costs are unavoidable in the short run. What is the appropriate interpretation?\u003c/p>",
     "options": [
@@ -5024,7 +5048,8 @@
     "topic": "monopoly",
     "extension": false,
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "market-power"
     ],
     "stemHtml": "\u003cp>With downward-sloping demand, positive MC, one uniform price, and no other market failure, the standard monopoly outcome typically has:\u003c/p>",
     "options": [
@@ -5758,7 +5783,9 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "tax-graphs",
+      "bargaining"
     ],
     "stemHtml": "\u003cp>A competitive market has demand P = 140 − 2Q, marginal private cost MPC = 20 + Q, and constant marginal external damage 30. There are no external benefits.\u003c/p>\u003col>\u003cli>Find the unregulated market quantity and transaction price.\u003c/li>\u003cli>Find the efficient quantity and the willingness to pay at that output.\u003c/li>\u003cli>Find the corrective per-unit tax and distinguish the consumer and producer prices after the tax.\u003c/li>\u003cli>Calculate the original deadweight loss from the externality. Explain a condition needed for private bargaining to be a useful alternative.\u003c/li>\u003c/ol>",
     "answerHtml": "\u003cpre>Unregulated: 140 − 2Q = 20 + Q → Q = 40; price = 60\nMSC = 50 + Q\nEfficient: 140 − 2Q = 50 + Q → Q = 30\nConsumer willingness to pay at Q = 30: 80\nCorrective tax: 30\nConsumer price after tax: 80\nProducer price net of tax: 50 = MPC(30)\nOriginal DWL: ½ × (40 − 30) × 30 = 150\u003c/pre>\u003cp>The tax wedge is 80 − 50 = 30, equal to marginal external damage. The private and social output conditions differ because producers initially omit damage to outsiders. Private bargaining is more promising when relevant rights are clear and transaction costs and other bargaining barriers are sufficiently low. Initial rights affect compensation; efficient activity need not be zero.\u003c/p>\u003cp>Self-check: unregulated result 2 points, social result 2, tax and two prices 3, DWL and bargaining condition 3. Practice points only.\u003c/p>",
@@ -5800,6 +5827,1188 @@
       "Explained observation and commitment instead of relying on the order of announcements."
     ],
     "sourceNote": "Original application for this named topic. The lecture case’s story and payoffs have not been verified."
+  },
+  {
+    "id": "q161",
+    "number": 161,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "The five approaches to externalities",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "five-approaches",
+      "externalities"
+    ],
+    "stemHtml": "\u003cp>Which list matches the five approaches in Lecture 5?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Taxes; subsidies; tariffs; quotas on imports; exchange-rate controls."
+      },
+      {
+        "letter": "B",
+        "html": "Taxes/subsidies; private bargaining; legal rules; sale or auction of externality rights; direct regulation."
+      },
+      {
+        "letter": "C",
+        "html": "Perfect competition; monopoly; oligopoly; monopolistic competition; monopsony."
+      },
+      {
+        "letter": "D",
+        "html": "Advertising; packaging; distribution; branding; product design."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>The lecture groups taxes and subsidies as one approach. The other four are bargaining, legal rules and procedures, rights such as tradable pollution permits, and direct government regulation. Each changes incentives or allowable behavior; none is automatically best in every setting.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q162",
+    "number": 162,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Build marginal social cost",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "msc",
+      "externalities",
+      "negative-externalities"
+    ],
+    "stemHtml": "\u003cp>Demand is MSB = 80 − Q, marginal private cost is MPC = 20 + Q, and marginal external damage is Q. With no other distortions, which social cost and efficient output are correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "MSC = 20 + Q; efficient Q = 30."
+      },
+      {
+        "letter": "B",
+        "html": "MSC = 20; efficient Q = 60."
+      },
+      {
+        "letter": "C",
+        "html": "MSC = 20 + 2Q; efficient Q = 20."
+      },
+      {
+        "letter": "D",
+        "html": "MSC = 20 + 3Q; efficient Q = 15."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>Add marginal damage to private marginal cost: \u003cstrong>MSC = 20 + Q + Q = 20 + 2Q\u003c/strong>. Efficiency requires 80 − Q = 20 + 2Q, so Q = 20. The private market would produce 30. Total damage and marginal damage are different concepts.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q163",
+    "number": 163,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Read the externality triangle",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "externality-graphs",
+      "externalities",
+      "msc",
+      "negative-externalities"
+    ],
+    "stemHtml": "\u003csvg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Demand crosses MPC at (40,60) and MSC at (30,70). The triangle between quantities 30 and 40 is deadweight loss.\">\u003ctitle>Negative externality: private versus efficient output\u003c/title>\u003cpath d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/>\u003cpolygon points=\"159.0,130.5 196.0,149.0 196.0,112.0\" fill=\"#a25a43\" fill-opacity=\".18\"/>\u003cpolyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/>\u003ctext x=\"299.6\" y=\"197.1\" fill=\"#286047\" font-size=\"13\">D = MSB\u003c/text>\u003cpolyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/>\u003ctext x=\"307.0\" y=\"89.8\" fill=\"#ad802e\" font-size=\"13\">MPC\u003c/text>\u003cpolyline points=\"48.0,186.0 288.5,65.8\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/>\u003ctext x=\"288.5\" y=\"60.2\" fill=\"#a25a43\" font-size=\"13\">MSC\u003c/text>\u003cpath d=\"M48 130.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"159.0\" cy=\"130.5\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"164.0\" y=\"123.5\" font-size=\"13\" fill=\"#203b32\">Efficient\u003c/text>\u003cpath d=\"M48 149.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"196.0\" cy=\"149.0\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"201.0\" y=\"142.0\" font-size=\"13\" fill=\"#203b32\">Private\u003c/text>\u003cg font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\">\u003ctext x=\"8\" y=\"22\">Price / cost / benefit\u003c/text>\u003ctext x=\"375\" y=\"265\">Q\u003c/text>\u003ctext x=\"38\" y=\"278\">0\u003c/text>\u003ctext x=\"115.0\" y=\"278\">20\u003c/text>\u003ctext x=\"189.0\" y=\"278\">40\u003c/text>\u003ctext x=\"263.0\" y=\"278\">60\u003c/text>\u003ctext x=\"337.0\" y=\"278\">80\u003c/text>\u003c/g>\u003c/svg>\u003cp>Demand is 100 − Q, MPC = 20 + Q, and marginal damage is 20. The graph marks efficient output 30 and private output 40. What is the original deadweight loss?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "100"
+      },
+      {
+        "letter": "B",
+        "html": "200"
+      },
+      {
+        "letter": "C",
+        "html": "600"
+      },
+      {
+        "letter": "D",
+        "html": "800"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>At Q = 30, MSC equals demand. At Q = 40, MSC = 80 and demand = 60: the net social loss on the last unit is 20. The shaded triangle has base 10 and height 20, so \u003cstrong>DWL = ½ × 10 × 20 = 100\u003c/strong>. It is neither total pollution damage nor tax revenue.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q164",
+    "number": 164,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Read a tax graph and two prices",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "tax-graphs",
+      "externality-graphs",
+      "negative-externalities",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003csvg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Demand is 100 minus Q. Supply is 20 plus Q. A tax of 20 moves output from 40 to 30; buyers pay 70 and sellers receive 50.\">\u003ctitle>Corrective tax wedge\u003c/title>\u003cpath d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/>\u003cpolygon points=\"48.0,167.5 159.0,167.5 159.0,130.5 48.0,130.5\" fill=\"#466e94\" fill-opacity=\".18\"/>\u003cpolyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/>\u003ctext x=\"310.7\" y=\"204.5\" fill=\"#286047\" font-size=\"13\">D\u003c/text>\u003cpolyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/>\u003ctext x=\"292.2\" y=\"86.1\" fill=\"#ad802e\" font-size=\"13\">S = MPC\u003c/text>\u003cpolyline points=\"48.0,186.0 288.5,65.8\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/>\u003ctext x=\"284.8\" y=\"58.3\" fill=\"#a25a43\" font-size=\"13\">S + tax\u003c/text>\u003cpath d=\"M48 130.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"159.0\" cy=\"130.5\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"164.0\" y=\"123.5\" font-size=\"13\" fill=\"#203b32\">Buyer 70\u003c/text>\u003cpath d=\"M48 167.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"159.0\" cy=\"167.5\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"164.0\" y=\"160.5\" font-size=\"13\" fill=\"#203b32\">Seller 50\u003c/text>\u003cg font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\">\u003ctext x=\"8\" y=\"22\">Price / cost / benefit\u003c/text>\u003ctext x=\"375\" y=\"265\">Q\u003c/text>\u003ctext x=\"38\" y=\"278\">0\u003c/text>\u003ctext x=\"115.0\" y=\"278\">20\u003c/text>\u003ctext x=\"189.0\" y=\"278\">40\u003c/text>\u003ctext x=\"263.0\" y=\"278\">60\u003c/text>\u003ctext x=\"337.0\" y=\"278\">80\u003c/text>\u003c/g>\u003c/svg>\u003cp>A competitive market has D: P = 100 − Q and S: P = 20 + Q. A per-unit tax of 20 is collected from sellers. Which output, buyer price, seller net price, and tax revenue follow?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 40; buyer 60; seller 40; revenue 800."
+      },
+      {
+        "letter": "B",
+        "html": "Q = 30; buyer 50; seller 70; revenue 600."
+      },
+      {
+        "letter": "C",
+        "html": "Q = 20; buyer 80; seller 60; revenue 400."
+      },
+      {
+        "letter": "D",
+        "html": "Q = 30; buyer 70; seller 50; revenue 600."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>The buyer price equals seller net price plus 20: 100 − Q = 20 + Q + 20. Thus \u003cstrong>Q = 30, P\u003csub>b\u003c/sub> = 70, P\u003csub>s\u003c/sub> = 50\u003c/strong>. Revenue is 20 × 30 = 600. In the negative-externality model with marginal damage 20, this tax reaches efficient output. The blue rectangle is revenue, not deadweight loss.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q165",
+    "number": 165,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Who bears the corrective tax?",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "tax-graphs",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003cp>In the preceding competitive schedules D: P = 100 − Q and S: P = 20 + Q, price before tax is 60. With a tax of 20, buyers pay 70 and sellers receive 50. What happens if the same per-unit tax is legally collected from buyers instead?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Buyers necessarily bear all 20 because they send the payment."
+      },
+      {
+        "letter": "B",
+        "html": "The same output and economic burden arise under the standard model; each side bears 10 here."
+      },
+      {
+        "letter": "C",
+        "html": "Sellers necessarily bear all 20 because supply slopes upward."
+      },
+      {
+        "letter": "D",
+        "html": "There is no tax wedge when buyers remit the payment."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>The wedge remains P\u003csub>b\u003c/sub> − P\u003csub>s\u003c/sub> = 20 whether buyers or sellers remit it. Relative supply and demand responsiveness determines economic incidence. Here buyer price rises by 10 and seller net price falls by 10 because the linear slopes are equal.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q166",
+    "number": 166,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Read a subsidy graph",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "subsidy-graphs",
+      "externalities",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003csvg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Private demand 80 minus Q crosses supply 20 plus Q at Q30. MSB is 100 minus Q. With subsidy 20, Q is 40, buyers pay 40 and sellers receive 60.\">\u003ctitle>Positive externality and subsidy\u003c/title>\u003cpath d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/>\u003cpolyline points=\"48.0,112.0 307.0,241.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/>\u003ctext x=\"310.7\" y=\"241.5\" fill=\"#286047\" font-size=\"13\">MPB\u003c/text>\u003cpolyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/>\u003ctext x=\"310.7\" y=\"204.5\" fill=\"#a25a43\" font-size=\"13\">MSB\u003c/text>\u003cpolyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/>\u003ctext x=\"292.2\" y=\"82.4\" fill=\"#ad802e\" font-size=\"13\">S = MSC\u003c/text>\u003cpolyline points=\"48.0,260.0 307.0,130.5\" fill=\"none\" stroke=\"#466e94\" stroke-width=\"2.5\"/>\u003ctext x=\"288.5\" y=\"136.1\" fill=\"#466e94\" font-size=\"13\">S − subsidy\u003c/text>\u003cpath d=\"M48 167.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"159.0\" cy=\"167.5\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"164.0\" y=\"160.5\" font-size=\"13\" fill=\"#203b32\">Private\u003c/text>\u003cpath d=\"M48 149.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"196.0\" cy=\"149.0\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"201.0\" y=\"142.0\" font-size=\"13\" fill=\"#203b32\">Seller 60\u003c/text>\u003cpath d=\"M48 186.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"196.0\" cy=\"186.0\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"201.0\" y=\"179.0\" font-size=\"13\" fill=\"#203b32\">Buyer 40\u003c/text>\u003cg font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\">\u003ctext x=\"8\" y=\"22\">Price / cost / benefit\u003c/text>\u003ctext x=\"375\" y=\"265\">Q\u003c/text>\u003ctext x=\"38\" y=\"278\">0\u003c/text>\u003ctext x=\"115.0\" y=\"278\">20\u003c/text>\u003ctext x=\"189.0\" y=\"278\">40\u003c/text>\u003ctext x=\"263.0\" y=\"278\">60\u003c/text>\u003ctext x=\"337.0\" y=\"278\">80\u003c/text>\u003c/g>\u003c/svg>\u003cp>MPB = 80 − Q, MSC = supply = 20 + Q, and marginal external benefit is 20. There are no external costs. A per-unit subsidy of 20 is paid to sellers. Which outcome is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 30; buyers pay 50; sellers receive 50; subsidy spending 600."
+      },
+      {
+        "letter": "B",
+        "html": "Q = 40; buyers pay 60; sellers receive 40; spending 800."
+      },
+      {
+        "letter": "C",
+        "html": "Q = 40; buyers pay 40; sellers receive 60; spending 800."
+      },
+      {
+        "letter": "D",
+        "html": "Q = 20; buyers pay 60; sellers receive 80; spending 400."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>MSB = MPB + external benefit = 100 − Q. Efficient output solves 100 − Q = 20 + Q, giving \u003cstrong>Q = 40\u003c/strong>. With a subsidy, P\u003csub>s\u003c/sub> − P\u003csub>b\u003c/sub> = 20; 80 − Q = 20 + Q − 20 gives the same Q. Buyers pay 40, sellers receive 60, and the budget cost is 20 × 40 = 800. The unassisted market produces only 30.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q167",
+    "number": 167,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Choose the direction of the policy",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "externalities",
+      "negative-externalities",
+      "subsidy-graphs",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003cp>A competitive industry overproduces because each unit creates uncompensated external damage. With no other distortions, what would a subsidy per unit of this output tend to do?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Expand output further and worsen the original overproduction."
+      },
+      {
+        "letter": "B",
+        "html": "Always reduce output to the efficient level."
+      },
+      {
+        "letter": "C",
+        "html": "Eliminate the external cost without changing incentives."
+      },
+      {
+        "letter": "D",
+        "html": "Make marginal social cost equal to zero."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>A subsidy for the polluting output encourages more of that output. A corrective output tax discourages it. Distinguish an output subsidy from a subsidy for verified pollution abatement: the rewarded activity matters.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q168",
+    "number": 168,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Bargaining when the factory owns the right",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "bargaining",
+      "externalities",
+      "negative-externalities",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003cp>A factory may legally pollute. Pollution causes a neighbor damage of 80; installing a filter costs the factory 50 and eliminates the damage. Rights are clear, transfers are possible, and bargaining is costless. Which agreement can make both strictly better off?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The factory pays the neighbor 90 and installs no filter."
+      },
+      {
+        "letter": "B",
+        "html": "The neighbor pays the factory 60 to install the filter."
+      },
+      {
+        "letter": "C",
+        "html": "The neighbor pays 40, and the factory voluntarily incurs cost 50."
+      },
+      {
+        "letter": "D",
+        "html": "No agreement is possible because the factory has the legal right."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>Filtering creates a net social gain of 80 − 50 = 30. A payment strictly between 50 and 80 shares that gain. At 60, the factory gains 10 after the filter cost and the neighbor avoids damage 80 at a cost of 60, gaining 20. Initial rights determine the bargaining starting point and transfers; they need not prevent efficient action under these assumptions.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q169",
+    "number": 169,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "When bargaining becomes difficult",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "bargaining",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003cp>Pollution affects 20,000 households. Identifying victims, measuring harm, organizing negotiation, and enforcing agreements would cost more than the possible gains. Which conclusion follows?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The Coase result guarantees efficient bargaining regardless of those costs."
+      },
+      {
+        "letter": "B",
+        "html": "Simply assigning a right makes all transaction costs disappear."
+      },
+      {
+        "letter": "C",
+        "html": "High transaction costs can prevent private bargaining from reaching the efficient allocation."
+      },
+      {
+        "letter": "D",
+        "html": "The socially efficient pollution level must be zero."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>The low-transaction-cost condition matters. Many affected parties can create coordination, free-rider, holdout, information, and enforcement problems. Clear rights help, but do not by themselves eliminate these impediments. Compare feasible alternatives and their costs.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q170",
+    "number": 170,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Injunction or liability?",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "legal-rules",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003cp>A court considers two remedies: (i) an order prohibiting a factory from continuing the harmful activity, and (ii) a requirement to compensate victims for damage. What are these remedies?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Both are taxes collected for general government revenue."
+      },
+      {
+        "letter": "B",
+        "html": "(i) Liability; (ii) an injunction."
+      },
+      {
+        "letter": "C",
+        "html": "(i) A subsidy; (ii) a tradable permit."
+      },
+      {
+        "letter": "D",
+        "html": "(i) An injunction; (ii) a liability rule."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>An \u003cstrong>injunction\u003c/strong> forbids continuation of specified harmful behavior. A \u003cstrong>liability rule\u003c/strong> requires compensation for imposed harm. These are the two legal mechanisms identified in Lecture 5. Their effectiveness depends on how rights, damages, monitoring, and enforcement work.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q171",
+    "number": 171,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "How liability changes incentives",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "legal-rules",
+      "msc",
+      "negative-externalities"
+    ],
+    "stemHtml": "\u003cp>One unit of activity yields a private net benefit of 12 before external damage. It causes damage of 20. A fully enforced liability rule requires the actor to pay exactly that damage. With no other costs or benefits, what is the efficient private response?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Continue, because the private benefit is positive before compensation."
+      },
+      {
+        "letter": "B",
+        "html": "Stop this unit: benefit 12 is below the damage payment 20."
+      },
+      {
+        "letter": "C",
+        "html": "Continue, because compensation makes the physical damage vanish."
+      },
+      {
+        "letter": "D",
+        "html": "Stop only if government also imposes an additional tax of 20."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>The actor now faces the external damage through a liability payment. Its net gain is 12 − 20 = −8, so it does not undertake that unit. Compensation changes incentives; it does not erase physical harm. Adding a second identical charge would count the same external damage twice in this simplified model.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q172",
+    "number": 172,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Trade the right to pollute",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "five-approaches",
+      "negative-externalities"
+    ],
+    "stemHtml": "\u003cp>A regulator fixes a total emissions cap and makes permits tradable. Firm A can abate an additional unit for 3; firm B would spend 11. A permit transfers at price 7. What cost-saving trade is possible?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "A abates one extra unit and sells a permit to B; total permitted emissions stay fixed."
+      },
+      {
+        "letter": "B",
+        "html": "B abates one extra unit and sells a permit to A because B has the higher abatement cost."
+      },
+      {
+        "letter": "C",
+        "html": "Both firms increase emissions by one without changing permits."
+      },
+      {
+        "letter": "D",
+        "html": "Permit trading necessarily removes the cap."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>A spends 3 to free a permit and sells it for 7, gaining 4. B buys at 7 instead of abating at 11, gaining 4. The same aggregate cap is met with total abatement cost lower by 8. Trading changes where abatement occurs; the regulator chooses the cap.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q173",
+    "number": 173,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Direct regulation and unequal abatement costs",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003cp>Two units of pollution must be abated. A’s first two marginal abatement costs are 2 and 4; B’s are 8 and 10. Compare a rule requiring one unit from each firm with a flexible allocation requiring both from A.\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "One each costs 6; both from A cost 10."
+      },
+      {
+        "letter": "B",
+        "html": "Both allocations cost 10."
+      },
+      {
+        "letter": "C",
+        "html": "One each costs 10; both from A cost 6. A uniform rule achieves the target at higher cost here."
+      },
+      {
+        "letter": "D",
+        "html": "Regulation cannot reduce pollution."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>A one-unit requirement per firm costs 2 + 8 = 10. Both units from A cost 2 + 4 = 6. A uniform standard can meet an emissions target without minimizing cost when firms’ abatement costs differ. Regulation can still be useful; assess the particular rule and information available.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q174",
+    "number": 174,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Hidden types versus hidden actions",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "imperfect-info",
+      "moral-hazard"
+    ],
+    "stemHtml": "\u003cp>Scenario I: people who privately know they are high risk are especially likely to buy insurance. Scenario II: a person becomes less careful after obtaining comprehensive insurance. Which classification is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "I is moral hazard; II is adverse selection."
+      },
+      {
+        "letter": "B",
+        "html": "I is adverse selection; II is moral hazard."
+      },
+      {
+        "letter": "C",
+        "html": "Both are moral hazard because insurance is involved."
+      },
+      {
+        "letter": "D",
+        "html": "Neither involves imperfect information."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>\u003cstrong>Adverse selection\u003c/strong> concerns hidden characteristics affecting who trades or which contract is chosen. \u003cstrong>Moral hazard\u003c/strong> concerns actions that change when protection changes incentives and actions are difficult to observe or contract on. The distinction is the information and incentive problem, not simply whether insurance appears.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q175",
+    "number": 175,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "A deductible and moral hazard",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "moral-hazard",
+      "information-solutions"
+    ],
+    "stemHtml": "\u003cp>An insurer introduces a deductible so the insured pays the first part of a loss. What is the principal incentive effect and tradeoff?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It fully removes all uncertainty at no cost to the insured."
+      },
+      {
+        "letter": "B",
+        "html": "It solves every adverse-selection problem automatically."
+      },
+      {
+        "letter": "C",
+        "html": "It necessarily makes careful behavior less attractive."
+      },
+      {
+        "letter": "D",
+        "html": "It makes the insured bear more marginal loss, encouraging care, while providing less complete risk protection."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>A deductible can reduce moral hazard by restoring an incentive to avoid losses. The cost is greater risk borne by the insured. Monitoring, contract design, and the relation between effort and losses determine how effective it is; a deductible is not a universal cure.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q176",
+    "number": 176,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "A market response to hidden quality",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "imperfect-info",
+      "information-solutions"
+    ],
+    "stemHtml": "\u003cp>Buyers cannot initially distinguish reliable machines from unreliable ones. A warranty must be honored, and failures are substantially less costly for reliable producers. Why might a credible warranty help?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It can signal quality because honoring the same warranty is less costly for a reliable producer."
+      },
+      {
+        "letter": "B",
+        "html": "Any promise reveals quality even if the seller cannot be held to it."
+      },
+      {
+        "letter": "C",
+        "html": "It makes buyers indifferent to every possible product defect."
+      },
+      {
+        "letter": "D",
+        "html": "It necessarily eliminates all information costs and fraud."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>When the promise is credible and costs differ by type, a warranty can help good-quality sellers distinguish themselves. Reputation, repeat business, independent certification, and inspections can also reduce information gaps. A cheap, unenforceable promise need not be informative.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q177",
+    "number": 177,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "The efficient amount of information search",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "information-solutions",
+      "imperfect-info"
+    ],
+    "stemHtml": "\u003cp>The next inspection has expected marginal benefit 12 and cost 8. A second additional inspection would have expected marginal benefit 4 and cost 8. The information cannot otherwise be obtained and there are no spillovers. What should the buyer do?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Buy both inspections because more information is always better."
+      },
+      {
+        "letter": "B",
+        "html": "Buy the first additional inspection, then stop."
+      },
+      {
+        "letter": "C",
+        "html": "Buy neither because information is imperfect."
+      },
+      {
+        "letter": "D",
+        "html": "Continue until all uncertainty has disappeared, regardless of cost."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>Gather information while expected marginal benefit exceeds marginal cost. The first inspection adds expected net benefit 4; the next would reduce it by 4. Stop after one. In a smooth interior case, the stopping condition is MB = MC; with discrete inspections, compare each increment.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q178",
+    "number": 178,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Why government might supply information",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "government-market",
+      "information-solutions",
+      "imperfect-info"
+    ],
+    "stemHtml": "\u003cp>A reliable public safety report is costly to produce once, and one person reading it does not reduce anyone else’s ability to use it. Which argument supports possible public provision?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Information is always free to produce."
+      },
+      {
+        "letter": "B",
+        "html": "Nonrival information is automatically impossible to exclude from sale."
+      },
+      {
+        "letter": "C",
+        "html": "Shared production may avoid costly duplicated research because the information is nonrival in use."
+      },
+      {
+        "letter": "D",
+        "html": "Public provision guarantees that no errors or incentive problems can occur."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>Nonrival use means one person’s use does not reduce availability for others. Producing and distributing information once may be cheaper than many individuals duplicating costly research. Nonrivalry is distinct from nonexcludability. This is a possible efficiency argument, subject to production costs and institutional incentives.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q179",
+    "number": 179,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Government and the market",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "government-market",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003cp>Officials know an externality exists but estimate marginal damage imprecisely. Monitoring is expensive and the policy agency faces weak incentives. What is the sound conclusion?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Compare feasible policies’ benefits and costs; identifying market failure alone does not prove any proposed intervention improves allocation."
+      },
+      {
+        "letter": "B",
+        "html": "Every government intervention must improve efficiency."
+      },
+      {
+        "letter": "C",
+        "html": "No externality can ever justify intervention."
+      },
+      {
+        "letter": "D",
+        "html": "Set the highest possible tax because harm is uncertain."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>Lecture 5 discusses measurement difficulties, imperfect knowledge of preferences, weak market discipline, and officials’ incentives. Government action can improve an allocation, but government failure is also possible. Evaluate workable policies, including bargaining and legal approaches, against the actual costs and benefits.\u003c/p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q180",
+    "number": 180,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Imperfect competition and market power",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "market-power"
+    ],
+    "stemHtml": "\u003cp>Several restaurants sell differentiated meals. Each faces downward-sloping demand for its own meals and can raise price somewhat without losing every customer. Which statement is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Market power exists only when a firm is the sole seller of every good in the economy."
+      },
+      {
+        "letter": "B",
+        "html": "The presence of more than one restaurant proves every restaurant is a price taker."
+      },
+      {
+        "letter": "C",
+        "html": "A high market share alone proves positive economic profit at every output."
+      },
+      {
+        "letter": "D",
+        "html": "Differentiation can give a firm pricing discretion; pure monopoly is an extreme market structure."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>Market power means some ability to influence price, constrained by customers’ substitutes and demand. It can arise in imperfectly competitive markets with several firms. Pure monopoly concerns one seller in a relevant market with no close substitutes and barriers to entry. Pricing discretion does not guarantee profit.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q181",
+    "number": 181,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Calculate the Lerner index",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "lerner-index",
+      "market-power"
+    ],
+    "stemHtml": "\u003cp>A firm charges P = 80 and marginal cost is MC = 50. What is its Lerner index, using L = (P − MC)/P?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "0.375"
+      },
+      {
+        "letter": "B",
+        "html": "0.60"
+      },
+      {
+        "letter": "C",
+        "html": "0.625"
+      },
+      {
+        "letter": "D",
+        "html": "30"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>\u003cstrong>L = (80 − 50)/80 = 0.375\u003c/strong>. The markup is 37.5% of price. Dividing by MC instead gives 30/50 = 0.60, a different markup measure. Use parentheses: the numerator is P − MC.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q182",
+    "number": 182,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Connect the Lerner index to elasticity",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "lerner-index",
+      "market-power",
+      "monopoly-decisions"
+    ],
+    "stemHtml": "\u003cp>A single-price monopolist has MC = 40 and faces demand elasticity ε = −3 at an interior profit-maximizing solution. With no other distortions, which price and Lerner index satisfy the markup rule?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "P = 120; L = 3."
+      },
+      {
+        "letter": "B",
+        "html": "P = 60; L = 1/3."
+      },
+      {
+        "letter": "C",
+        "html": "P = 40; L = 0."
+      },
+      {
+        "letter": "D",
+        "html": "P = 80; L = 1/3."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>At an interior single-price optimum, L = 1/|ε| = 1/3. Therefore (P − 40)/P = 1/3, giving \u003cstrong>P = 60\u003c/strong>. This elasticity identity is an optimal-pricing condition under the model, not a definition that holds for every arbitrary observed price.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q183",
+    "number": 183,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "A positive markup can coexist with a loss",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "lerner-index",
+      "market-power",
+      "monopoly-horizons"
+    ],
+    "stemHtml": "\u003cp>At its chosen output Q = 10, a firm has P = 50, MC = 20 and ATC = 55. Which statement is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "L = 0.6, so economic profit must be positive."
+      },
+      {
+        "letter": "B",
+        "html": "L = 0.4 and total economic profit is 300."
+      },
+      {
+        "letter": "C",
+        "html": "L = 0.6 and total economic profit is −50."
+      },
+      {
+        "letter": "D",
+        "html": "L = −0.1 because ATC exceeds price."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>The Lerner index uses marginal cost: (50 − 20)/50 = \u003cstrong>0.6\u003c/strong>. Economic profit uses total or average total cost: (50 − 55) × 10 = \u003cstrong>−50\u003c/strong>. A price above MC does not imply price exceeds ATC, especially when fixed costs are substantial.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q184",
+    "number": 184,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Identify different entry barriers",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "entry-barriers",
+      "market-power"
+    ],
+    "stemHtml": "\u003cp>Which mapping of entry barriers is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Patent: economies of scale; exclusive control of a crucial input: a legal license."
+      },
+      {
+        "letter": "B",
+        "html": "Patent: legal protection; natural monopoly: economies of scale over relevant demand; exclusive essential input: resource control."
+      },
+      {
+        "letter": "C",
+        "html": "Advertising is always an absolute legal prohibition on entry."
+      },
+      {
+        "letter": "D",
+        "html": "A high current profit is itself a permanent legal barrier."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>Legal protection can restrict entry; economies of scale can make one supplier least costly over the relevant range; and control of a crucial input without close substitutes can impede rivals. A natural monopoly is defined by cost conditions, not simply by receiving a government license. Barriers can permit persistent profit without guaranteeing it.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q185",
+    "number": 185,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Define pure monopoly carefully",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "entry-barriers",
+      "market-power"
+    ],
+    "stemHtml": "\u003cp>Which set of conditions best describes pure monopoly?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Many sellers, identical goods, and free entry."
+      },
+      {
+        "letter": "B",
+        "html": "One buyer with many competing sellers."
+      },
+      {
+        "letter": "C",
+        "html": "One seller in the relevant market, no close substitutes, and barriers that prevent effective entry."
+      },
+      {
+        "letter": "D",
+        "html": "Any firm charging a different price from a rival."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>A monopolist is the sole seller in the relevant market and faces the market demand curve. No close substitutes and effective entry barriers sustain that position. The relevant market and available substitutes matter: being the only seller of a particular brand is insufficient by itself.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q186",
+    "number": 186,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Price: an additional decision variable",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "price-variable",
+      "monopoly-decisions",
+      "market-power"
+    ],
+    "stemHtml": "\u003cp>Unlike a price taker, a monopolist has pricing discretion. It faces P = 120 − 2Q. If it plans to sell Q = 20, which statement about its price choice is correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It can sell 20 at any price it chooses."
+      },
+      {
+        "letter": "B",
+        "html": "Demand supports P = 80; price and quantity cannot be chosen independently."
+      },
+      {
+        "letter": "C",
+        "html": "It must charge P = MC regardless of demand."
+      },
+      {
+        "letter": "D",
+        "html": "Its price must be 120 because that is the intercept."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>At Q = 20, P = 120 − 40 = \u003cstrong>80\u003c/strong>. Pricing discretion is the substantive point of treating price as an additional decision variable: the firm chooses along a demand curve, rather than accepting a market price. Raising price changes the quantity demanded. Price and output remain linked.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q187",
+    "number": 187,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Read monopoly output, price and profit",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "monopoly-decisions",
+      "price-variable"
+    ],
+    "stemHtml": "\u003csvg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Demand is 100 minus Q, MR is 100 minus twice Q, and MC is 20. MR meets MC at Q40. Demand at Q40 gives P60. ATC at Q40 is 30.\">\u003ctitle>Monopoly output, price and profit\u003c/title>\u003cpath d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/>\u003cpolygon points=\"48.0,204.5 196.0,204.5 196.0,149.0 48.0,149.0\" fill=\"#466e94\" fill-opacity=\".18\"/>\u003cpolyline points=\"48.0,75.0 325.5,213.8\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/>\u003ctext x=\"329.2\" y=\"211.9\" fill=\"#286047\" font-size=\"13\">D\u003c/text>\u003cpolyline points=\"48.0,75.0 233.0,260.0\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/>\u003ctext x=\"229.3\" y=\"250.8\" fill=\"#a25a43\" font-size=\"13\">MR\u003c/text>\u003cpolyline points=\"48.0,223.0 325.5,223.0\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/>\u003ctext x=\"329.2\" y=\"223.0\" fill=\"#ad802e\" font-size=\"13\">MC\u003c/text>\u003cpath d=\"M48 149.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"196.0\" cy=\"149.0\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"201.0\" y=\"142.0\" font-size=\"13\" fill=\"#203b32\">P = 60\u003c/text>\u003cpath d=\"M48 223.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"196.0\" cy=\"223.0\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"201.0\" y=\"216.0\" font-size=\"13\" fill=\"#203b32\">MR = MC\u003c/text>\u003cg font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\">\u003ctext x=\"8\" y=\"22\">Price / cost / benefit\u003c/text>\u003ctext x=\"375\" y=\"265\">Q\u003c/text>\u003ctext x=\"38\" y=\"278\">0\u003c/text>\u003ctext x=\"115.0\" y=\"278\">20\u003c/text>\u003ctext x=\"189.0\" y=\"278\">40\u003c/text>\u003ctext x=\"263.0\" y=\"278\">60\u003c/text>\u003ctext x=\"337.0\" y=\"278\">80\u003c/text>\u003c/g>\u003ctext x=\"48\" y=\"301\" font-family=\"sans-serif\" font-size=\"13\" fill=\"#466e94\">Rectangle base: ATC at Qm = 30\u003c/text>\u003c/svg>\u003cp>D: P = 100 − Q, MR = 100 − 2Q, MC = 20. At the maximizing output, ATC = 30. The shaded rectangle extends from cost 30 to price 60. Which output, price and economic profit are correct?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 80; P = 20; profit −800."
+      },
+      {
+        "letter": "B",
+        "html": "Q = 40; P = 20; profit −400."
+      },
+      {
+        "letter": "C",
+        "html": "Q = 50; P = 50; profit 1,000."
+      },
+      {
+        "letter": "D",
+        "html": "Q = 40; P = 60; profit 1,200."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "\u003cp>Find Q at MR = MC: 100 − 2Q = 20 gives \u003cstrong>Q = 40\u003c/strong>. Read P from demand: P = 60. Economic profit is (P − ATC)Q = (60 − 30) × 40 = \u003cstrong>1,200\u003c/strong>, the shaded rectangle. The MR–MC intersection determines output, not the price charged.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q188",
+    "number": 188,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Avoid the monopoly price trap",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "monopoly-decisions",
+      "price-variable"
+    ],
+    "stemHtml": "\u003cp>A student solves MR = MC = 20 at Q = 40, then concludes: “The monopolist charges 20.” For demand P = 100 − Q, what is the correct correction?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Charge 100, the highest point on demand, and still sell 40."
+      },
+      {
+        "letter": "B",
+        "html": "Set Q = 20 because marginal cost is 20."
+      },
+      {
+        "letter": "C",
+        "html": "Use demand at Q = 40 to obtain P = 60; MR = MC locates output."
+      },
+      {
+        "letter": "D",
+        "html": "A monopolist never uses marginal cost."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "\u003cp>Marginal revenue is below price for a single-price monopolist with downward-sloping demand. \u003cstrong>MR = MC determines Q\u003c/strong>. The demand curve gives the price customers will pay for that Q. Here the output is 40 and the price is 60.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q189",
+    "number": 189,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Monopoly in the short run: operate or shut?",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "monopoly-horizons",
+      "monopoly-decisions"
+    ],
+    "stemHtml": "\u003cp>At the profit-maximizing positive output Q = 100, P = 18, AVC = 12, and ATC = 25. Fixed costs are unavoidable this period; shutdown avoids variable costs only. What should the monopolist do in the short run?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Shut down because any loss means producing is worse."
+      },
+      {
+        "letter": "B",
+        "html": "Operate: loss is 700, smaller than the 1,300 fixed-cost loss on shutdown."
+      },
+      {
+        "letter": "C",
+        "html": "Operate because economic profit is 600."
+      },
+      {
+        "letter": "D",
+        "html": "Shut down and avoid all fixed costs immediately."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "\u003cp>TR = 1,800; TVC = 1,200; TC = 2,500, so operating profit is \u003cstrong>−700\u003c/strong>. Fixed cost is (25 − 12) × 100 = 1,300, which would be lost on shutdown. Operating contributes 600 toward it. This comparison assumes the stated positive output is the best operating choice and the fixed cost is unavoidable.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q190",
+    "number": 190,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Monopoly in the long run",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "monopoly-horizons",
+      "entry-barriers"
+    ],
+    "stemHtml": "\u003cp>A monopolist can keep rivals out. Nevertheless, under every feasible long-run price/output and plant choice, its revenue is below the total opportunity cost of staying in the business. Assume it can exit and avoid all future business costs. What should it do?\u003c/p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Exit; entry barriers do not create profitable demand or justify persistent avoidable economic losses."
+      },
+      {
+        "letter": "B",
+        "html": "Remain forever because every monopoly earns positive profit."
+      },
+      {
+        "letter": "C",
+        "html": "Set price independently of quantity and demand to guarantee a profit."
+      },
+      {
+        "letter": "D",
+        "html": "Remain because all long-run costs are necessarily sunk."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "\u003cp>In the short run, operating can minimize a loss when revenue covers avoidable variable costs and fixed costs are sunk. In the long run, the firm can adjust or exit. If the best feasible continuation still fails to cover opportunity costs, exit is preferable. Barriers allow positive monopoly profit to persist when demand and costs support it; they do not ensure it.\u003c/p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "short11",
+    "number": 191,
+    "kind": "short",
+    "section": "short",
+    "set": "market-review",
+    "title": "Draw and compare a tax and a subsidy",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "externalities",
+      "msc",
+      "negative-externalities",
+      "externality-graphs",
+      "tax-graphs",
+      "subsidy-graphs",
+      "five-approaches"
+    ],
+    "stemHtml": "\u003cp>\u003cstrong>A. External cost:\u003c/strong> D = 100 − Q, MPC = 20 + Q, and constant marginal damage = 20.\u003c/p>\u003col>\u003cli>Sketch demand, MPC and MSC. Mark private and efficient output.\u003c/li>\u003cli>Find the corrective tax, buyer and seller prices, tax revenue and original DWL. Mark the tax wedge and DWL triangle.\u003c/li>\u003c/ol>\u003cp>\u003cstrong>B. External benefit:\u003c/strong> MPB = 80 − Q, supply = MSC = 20 + Q, and constant marginal external benefit = 20.\u003c/p>\u003col start=\"3\">\u003cli>Sketch MPB, MSB and MSC. Find private and efficient output and the corrective subsidy.\u003c/li>\u003cli>Find the buyer and seller prices with the subsidy and the government budget cost. Explain why tax revenue or subsidy expenditure is not itself a deadweight-loss measure.\u003c/li>\u003cli>Name all five lecture approaches to externalities.\u003c/li>\u003c/ol>",
+    "answerHtml": "\u003ch3>A. Negative externality\u003c/h3>\u003cpre>Private: 100 − Q = 20 + Q → Q = 40, P = 60\nMSC = MPC + damage = 40 + Q\nEfficient: 100 − Q = 40 + Q → Q = 30\nCorrective tax = marginal damage = 20\nBuyer price = 100 − 30 = 70\nSeller net price = 20 + 30 = 50\nRevenue = 20 × 30 = 600\nOriginal DWL = ½ × (40 − 30) × 20 = 100\u003c/pre>\u003csvg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Demand is 100 minus Q. Supply is 20 plus Q. A tax of 20 moves output from 40 to 30; buyers pay 70 and sellers receive 50.\">\u003ctitle>Corrective tax wedge\u003c/title>\u003cpath d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/>\u003cpolygon points=\"48.0,167.5 159.0,167.5 159.0,130.5 48.0,130.5\" fill=\"#466e94\" fill-opacity=\".18\"/>\u003cpolyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/>\u003ctext x=\"310.7\" y=\"204.5\" fill=\"#286047\" font-size=\"13\">D\u003c/text>\u003cpolyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/>\u003ctext x=\"292.2\" y=\"86.1\" fill=\"#ad802e\" font-size=\"13\">S = MPC\u003c/text>\u003cpolyline points=\"48.0,186.0 288.5,65.8\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/>\u003ctext x=\"284.8\" y=\"58.3\" fill=\"#a25a43\" font-size=\"13\">S + tax\u003c/text>\u003cpath d=\"M48 130.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"159.0\" cy=\"130.5\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"164.0\" y=\"123.5\" font-size=\"13\" fill=\"#203b32\">Buyer 70\u003c/text>\u003cpath d=\"M48 167.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"159.0\" cy=\"167.5\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"164.0\" y=\"160.5\" font-size=\"13\" fill=\"#203b32\">Seller 50\u003c/text>\u003cg font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\">\u003ctext x=\"8\" y=\"22\">Price / cost / benefit\u003c/text>\u003ctext x=\"375\" y=\"265\">Q\u003c/text>\u003ctext x=\"38\" y=\"278\">0\u003c/text>\u003ctext x=\"115.0\" y=\"278\">20\u003c/text>\u003ctext x=\"189.0\" y=\"278\">40\u003c/text>\u003ctext x=\"263.0\" y=\"278\">60\u003c/text>\u003ctext x=\"337.0\" y=\"278\">80\u003c/text>\u003c/g>\u003c/svg>\u003cp>Draw MSC 20 above MPC; the tax-inclusive supply coincides with MSC. Original DWL lies between MSC and demand from Q = 30 to 40, as in the externality triangle question.\u003c/p>\u003ch3>B. Positive externality\u003c/h3>\u003cpre>Private: 80 − Q = 20 + Q → Q = 30, P = 50\nMSB = MPB + external benefit = 100 − Q\nEfficient: 100 − Q = 20 + Q → Q = 40\nCorrective subsidy = marginal external benefit = 20\nBuyer price = 80 − 40 = 40\nSeller receipt = 20 + 40 = 60\nBudget cost = 20 × 40 = 800\u003c/pre>\u003csvg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Private demand 80 minus Q crosses supply 20 plus Q at Q30. MSB is 100 minus Q. With subsidy 20, Q is 40, buyers pay 40 and sellers receive 60.\">\u003ctitle>Positive externality and subsidy\u003c/title>\u003cpath d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/>\u003cpolyline points=\"48.0,112.0 307.0,241.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/>\u003ctext x=\"310.7\" y=\"241.5\" fill=\"#286047\" font-size=\"13\">MPB\u003c/text>\u003cpolyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/>\u003ctext x=\"310.7\" y=\"204.5\" fill=\"#a25a43\" font-size=\"13\">MSB\u003c/text>\u003cpolyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/>\u003ctext x=\"292.2\" y=\"82.4\" fill=\"#ad802e\" font-size=\"13\">S = MSC\u003c/text>\u003cpolyline points=\"48.0,260.0 307.0,130.5\" fill=\"none\" stroke=\"#466e94\" stroke-width=\"2.5\"/>\u003ctext x=\"288.5\" y=\"136.1\" fill=\"#466e94\" font-size=\"13\">S − subsidy\u003c/text>\u003cpath d=\"M48 167.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"159.0\" cy=\"167.5\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"164.0\" y=\"160.5\" font-size=\"13\" fill=\"#203b32\">Private\u003c/text>\u003cpath d=\"M48 149.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"196.0\" cy=\"149.0\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"201.0\" y=\"142.0\" font-size=\"13\" fill=\"#203b32\">Seller 60\u003c/text>\u003cpath d=\"M48 186.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/>\u003ccircle cx=\"196.0\" cy=\"186.0\" r=\"3.5\" fill=\"#203b32\"/>\u003ctext x=\"201.0\" y=\"179.0\" font-size=\"13\" fill=\"#203b32\">Buyer 40\u003c/text>\u003cg font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\">\u003ctext x=\"8\" y=\"22\">Price / cost / benefit\u003c/text>\u003ctext x=\"375\" y=\"265\">Q\u003c/text>\u003ctext x=\"38\" y=\"278\">0\u003c/text>\u003ctext x=\"115.0\" y=\"278\">20\u003c/text>\u003ctext x=\"189.0\" y=\"278\">40\u003c/text>\u003ctext x=\"263.0\" y=\"278\">60\u003c/text>\u003ctext x=\"337.0\" y=\"278\">80\u003c/text>\u003c/g>\u003c/svg>\u003cp>In this model the subsidy-inclusive seller receipt exceeds the buyer price by 20. Government revenue/expenditure is a transfer; a welfare assessment includes external effects and real resource costs. Raising public funds can create additional costs outside this simplified model.\u003c/p>\u003ch3>Five approaches\u003c/h3>\u003cp>Taxes/subsidies; private bargaining; legal rules and procedures; sale/auction of externality rights; direct government regulation.\u003c/p>",
+    "checks": [
+      "Drew MSC above MPC and marked private Q = 40 and efficient Q = 30.",
+      "Found tax 20, buyer price 70 and seller net price 50.",
+      "Calculated tax revenue 600 and original DWL 100, and distinguished the areas.",
+      "Drew MSB above MPB for the external benefit and found Q = 30 versus 40.",
+      "Found subsidy 20, buyer price 40, seller receipt 60 and spending 800.",
+      "Named all five approaches and explained the transfer versus welfare distinction."
+    ]
+  },
+  {
+    "id": "short12",
+    "number": 192,
+    "kind": "short",
+    "section": "short",
+    "set": "market-review",
+    "title": "Monopoly: pricing power and two time horizons",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "market-power",
+      "lerner-index",
+      "entry-barriers",
+      "price-variable",
+      "monopoly-decisions",
+      "monopoly-horizons"
+    ],
+    "stemHtml": "\u003cp>A single-price monopolist faces P = 120 − 2Q. Variable cost is 20Q and fixed cost is initially 800. There are no externalities.\u003c/p>\u003col>\u003cli>Derive MR and calculate profit-maximizing Q, P, revenue and economic profit.\u003c/li>\u003cli>Calculate the Lerner index. Under the interior monopoly markup rule, what is the absolute demand elasticity at that output?\u003c/li>\u003cli>If unavoidable short-run fixed cost rises to 1,800, find the new optimal output, price, operating profit, and shutdown payoff. Should it operate?\u003c/li>\u003cli>If every feasible long-run continuation yields an avoidable economic loss, explain the exit decision. Explain why barriers allow profit to persist but cannot guarantee profit; give two types of barrier.\u003c/li>\u003c/ol>",
+    "answerHtml": "\u003cpre>MR = 120 − 4Q; MC = 20\nMR = MC → Q = 25\nP = 120 − 2(25) = 70\nTR = 70 × 25 = 1,750\nInitial TC = 800 + 20(25) = 1,300\nInitial profit = 450\nL = (70 − 20)/70 = 5/7 ≈ 0.7143\n|ε| = 1/L = 7/5 = 1.4\nWith fixed cost 1,800: Q = 25 and P = 70 stay the same\nOperating profit = 1,750 − 500 − 1,800 = −550\nShutdown payoff = −1,800\nOperate: contribution to fixed cost = 1,250\u003c/pre>\u003cp>A fixed-cost increase does not change MR or MC in this example. In the short run, the firm loses less by operating because variable costs are covered. In the long run, if the best continuation cannot cover avoidable opportunity costs, it should exit. Legal protection such as a patent, economies of scale over relevant demand, or control of an essential input can obstruct entry and allow profits to persist. None guarantees sufficient demand or low costs.\u003c/p>\u003cp>The Lerner index uses MC; profit uses all economic costs. Pricing power and positive economic profit are different observations.\u003c/p>",
+    "checks": [
+      "Derived MR = 120 − 4Q and found Q = 25, P = 70.",
+      "Found revenue 1,750 and initial economic profit 450.",
+      "Calculated L = 5/7 and |elasticity| = 1.4 under the markup rule.",
+      "Kept Q and P unchanged after the fixed-cost increase.",
+      "Compared operating loss 550 with shutdown loss 1,800 and chose operation.",
+      "Explained long-run exit and gave at least two entry barriers without claiming guaranteed profit."
+    ]
   }
 ]
 </script>
@@ -5826,7 +7035,27 @@
       "q134",
       "q135",
       "q136",
-      "short9"
+      "short9",
+      "q161",
+      "q162",
+      "q163",
+      "q164",
+      "q165",
+      "q166",
+      "q167",
+      "q168",
+      "q169",
+      "q170",
+      "q171",
+      "q172",
+      "q173",
+      "q174",
+      "q175",
+      "q176",
+      "q177",
+      "q178",
+      "q179",
+      "short11"
     ],
     "addedIds": [
       "q97",
@@ -5843,8 +7072,31 @@
       "q134",
       "q135",
       "q136",
-      "short9"
-    ]
+      "short9",
+      "q161",
+      "q162",
+      "q163",
+      "q164",
+      "q165",
+      "q166",
+      "q167",
+      "q168",
+      "q169",
+      "q170",
+      "q171",
+      "q172",
+      "q173",
+      "q174",
+      "q175",
+      "q176",
+      "q177",
+      "q178",
+      "q179",
+      "short11"
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "markets"
   },
   {
     "id": "monopoly",
@@ -5902,7 +7154,19 @@
       "q137",
       "q138",
       "q139",
-      "q140"
+      "q140",
+      "q180",
+      "q181",
+      "q182",
+      "q183",
+      "q184",
+      "q185",
+      "q186",
+      "q187",
+      "q188",
+      "q189",
+      "q190",
+      "short12"
     ],
     "addedIds": [
       "q102",
@@ -5913,8 +7177,23 @@
       "q137",
       "q138",
       "q139",
-      "q140"
-    ]
+      "q140",
+      "q180",
+      "q181",
+      "q182",
+      "q183",
+      "q184",
+      "q185",
+      "q186",
+      "q187",
+      "q188",
+      "q189",
+      "q190",
+      "short12"
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "markets"
   },
   {
     "id": "strategy-games",
@@ -6080,7 +7359,10 @@
       "q157",
       "q158",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "price-wars",
@@ -6112,7 +7394,10 @@
       "q114",
       "q115",
       "q154"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "ai-launch",
@@ -6133,7 +7418,10 @@
       "q144",
       "q145",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "timing",
@@ -6169,7 +7457,10 @@
       "q152",
       "q153",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "payoff-matrices",
@@ -6251,7 +7542,10 @@
       "q153",
       "q156",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "game-trees",
@@ -6297,7 +7591,10 @@
       "q124",
       "q157",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "optimal-strategies",
@@ -6467,7 +7764,10 @@
       "q157",
       "q158",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "dominant-strategies",
@@ -6507,7 +7807,10 @@
       "q112",
       "q117",
       "q158"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "prisoners-dilemma",
@@ -6549,7 +7852,10 @@
       "q154",
       "q155",
       "q158"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "escaping-dilemma",
@@ -6581,7 +7887,10 @@
       "q125",
       "q154",
       "q155"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "long-term",
@@ -6613,7 +7922,10 @@
       "q114",
       "q125",
       "q154"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "repeated-games",
@@ -6645,7 +7957,10 @@
       "q114",
       "q125",
       "q154"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "no-dominance",
@@ -6681,7 +7996,10 @@
       "q152",
       "q156",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "negative-externalities",
@@ -6700,7 +8018,15 @@
       "q132",
       "q133",
       "q134",
-      "short9"
+      "short9",
+      "q162",
+      "q163",
+      "q164",
+      "q167",
+      "q168",
+      "q171",
+      "q172",
+      "short11"
     ],
     "addedIds": [
       "q98",
@@ -6713,8 +8039,19 @@
       "q132",
       "q133",
       "q134",
-      "short9"
-    ]
+      "short9",
+      "q162",
+      "q163",
+      "q164",
+      "q167",
+      "q168",
+      "q171",
+      "q172",
+      "short11"
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "markets"
   },
   {
     "id": "nash",
@@ -6762,7 +8099,10 @@
       "q156",
       "q158",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "find-ne",
@@ -6810,7 +8150,10 @@
       "q156",
       "q158",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "sequential-games",
@@ -6888,7 +8231,10 @@
       "q153",
       "q157",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "mover-advantage",
@@ -6916,7 +8262,10 @@
       "q148",
       "q149",
       "q153"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "hold-up",
@@ -6937,7 +8286,10 @@
       "short8",
       "q146",
       "q147"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "underdog",
@@ -6954,7 +8306,10 @@
       "q123",
       "q150",
       "q151"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "giant",
@@ -6971,7 +8326,10 @@
       "q124",
       "q152",
       "q153"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "price-customization",
@@ -7067,7 +8425,484 @@
       "q141",
       "q142",
       "q143"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "markets"
+  },
+  {
+    "id": "externalities",
+    "label": "Externalities: costs and benefits",
+    "before": "partial",
+    "note": "External costs were present; positive external benefits and subsidies needed explicit practice.",
+    "originalIds": [
+      "q129"
+    ],
+    "questionIds": [
+      "q129",
+      "q161",
+      "q162",
+      "q163",
+      "q166",
+      "q167",
+      "q168",
+      "short11"
+    ],
+    "addedIds": [
+      "q161",
+      "q162",
+      "q163",
+      "q166",
+      "q167",
+      "q168",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "msc",
+    "label": "Marginal social cost",
+    "before": "covered",
+    "note": "MSC = MPC + marginal damage was already tested; added construction and graphs.",
+    "originalIds": [
+      "q98",
+      "q130"
+    ],
+    "questionIds": [
+      "q98",
+      "q130",
+      "q162",
+      "q163",
+      "q171",
+      "short11"
+    ],
+    "addedIds": [
+      "q162",
+      "q163",
+      "q171",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "five-approaches",
+    "label": "Five approaches to externalities",
+    "before": "missing",
+    "note": "Individual remedies appeared, but the complete five-part lecture classification was absent.",
+    "originalIds": [],
+    "questionIds": [
+      "q161",
+      "q164",
+      "q165",
+      "q166",
+      "q167",
+      "q168",
+      "q169",
+      "q170",
+      "q172",
+      "q173",
+      "q179",
+      "short11"
+    ],
+    "addedIds": [
+      "q161",
+      "q164",
+      "q165",
+      "q166",
+      "q167",
+      "q168",
+      "q169",
+      "q170",
+      "q172",
+      "q173",
+      "q179",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "externality-graphs",
+    "label": "Externality graph and welfare loss",
+    "before": "covered",
+    "note": "An MSC/MPC graph was already present; added the DWL triangle and drawing practice.",
+    "originalIds": [
+      "q99"
+    ],
+    "questionIds": [
+      "q99",
+      "q163",
+      "q164",
+      "short11"
+    ],
+    "addedIds": [
+      "q163",
+      "q164",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "tax-graphs",
+    "label": "Taxes: graph, wedge and revenue",
+    "before": "partial",
+    "note": "Tax quantities and two prices were calculated, but no tax-wedge diagram was supplied.",
+    "originalIds": [
+      "short9"
+    ],
+    "questionIds": [
+      "short9",
+      "q164",
+      "q165",
+      "short11"
+    ],
+    "addedIds": [
+      "q164",
+      "q165",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "subsidy-graphs",
+    "label": "Subsidies: graph and external benefits",
+    "before": "missing",
+    "note": "No positive-externality subsidy graph or calculation was present.",
+    "originalIds": [],
+    "questionIds": [
+      "q166",
+      "q167",
+      "short11"
+    ],
+    "addedIds": [
+      "q166",
+      "q167",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "bargaining",
+    "label": "Bargaining and negotiation",
+    "before": "covered",
+    "note": "Coase conditions were present; added a feasible transfer and transaction-cost application.",
+    "originalIds": [
+      "q133",
+      "short9"
+    ],
+    "questionIds": [
+      "q133",
+      "short9",
+      "q168",
+      "q169"
+    ],
+    "addedIds": [
+      "q168",
+      "q169"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "legal-rules",
+    "label": "Legal rules: injunction and liability",
+    "before": "missing",
+    "note": "No dedicated legal-remedy distinction or liability incentive problem was present.",
+    "originalIds": [],
+    "questionIds": [
+      "q170",
+      "q171"
+    ],
+    "addedIds": [
+      "q170",
+      "q171"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "imperfect-info",
+    "label": "Imperfect information and adverse selection",
+    "before": "covered",
+    "note": "Hidden quality and adverse selection were present; expanded contrasting applications.",
+    "originalIds": [
+      "q101",
+      "q135"
+    ],
+    "questionIds": [
+      "q101",
+      "q135",
+      "q174",
+      "q176",
+      "q177",
+      "q178"
+    ],
+    "addedIds": [
+      "q174",
+      "q176",
+      "q177",
+      "q178"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "moral-hazard",
+    "label": "Moral hazard and incentives",
+    "before": "covered",
+    "note": "Moral hazard was tested; added deductibles and their risk-protection tradeoff.",
+    "originalIds": [
+      "q136"
+    ],
+    "questionIds": [
+      "q136",
+      "q174",
+      "q175"
+    ],
+    "addedIds": [
+      "q174",
+      "q175"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "information-solutions",
+    "label": "Market solutions and information search",
+    "before": "missing",
+    "note": "No dedicated warranty, information-search stopping rule, or incentive-remedy question was present.",
+    "originalIds": [],
+    "questionIds": [
+      "q175",
+      "q176",
+      "q177",
+      "q178"
+    ],
+    "addedIds": [
+      "q175",
+      "q176",
+      "q177",
+      "q178"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "government-market",
+    "label": "Government information and government failure",
+    "before": "partial",
+    "note": "Intervention costs were briefly noted; nonrival information and government-failure reasoning needed questions.",
+    "originalIds": [
+      "q97"
+    ],
+    "questionIds": [
+      "q97",
+      "q178",
+      "q179"
+    ],
+    "addedIds": [
+      "q178",
+      "q179"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "market-power",
+    "label": "Imperfect markets and market power",
+    "before": "partial",
+    "note": "Monopoly markup and inefficiency were covered; added differentiation and the distinction between power and profit.",
+    "originalIds": [
+      "q68",
+      "q140"
+    ],
+    "questionIds": [
+      "q68",
+      "q140",
+      "q180",
+      "q181",
+      "q182",
+      "q183",
+      "q184",
+      "q185",
+      "q186",
+      "short12"
+    ],
+    "addedIds": [
+      "q180",
+      "q181",
+      "q182",
+      "q183",
+      "q184",
+      "q185",
+      "q186",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "lerner-index",
+    "label": "Lerner index: (P − MC) / P",
+    "before": "partial",
+    "note": "The markup calculation was present without naming the Lerner index or contrasting price-based and cost-based markups.",
+    "originalIds": [
+      "q68"
+    ],
+    "questionIds": [
+      "q68",
+      "q181",
+      "q182",
+      "q183",
+      "short12"
+    ],
+    "addedIds": [
+      "q181",
+      "q182",
+      "q183",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "entry-barriers",
+    "label": "Barriers to entry",
+    "before": "partial",
+    "note": "Barrier effects were present; the legal, scale, and resource categories needed explicit practice.",
+    "originalIds": [
+      "q39",
+      "q106"
+    ],
+    "questionIds": [
+      "q39",
+      "q106",
+      "q184",
+      "q185",
+      "q190",
+      "short12"
+    ],
+    "addedIds": [
+      "q184",
+      "q185",
+      "q190",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "price-variable",
+    "label": "Price as a decision variable",
+    "before": "partial",
+    "note": "The demand constraint was implicit; added an explicit pricing-discretion question. The exact first three variable labels were not available.",
+    "originalIds": [
+      "q76"
+    ],
+    "questionIds": [
+      "q76",
+      "q186",
+      "q187",
+      "q188",
+      "short12"
+    ],
+    "addedIds": [
+      "q186",
+      "q187",
+      "q188",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "monopoly-decisions",
+    "label": "Pure monopoly: price, output and profit graphs",
+    "before": "covered",
+    "note": "MR = MC, price from demand, and profits were already tested; added an explicit monopoly graph.",
+    "originalIds": [
+      "q1",
+      "q2",
+      "q3",
+      "q33",
+      "q67",
+      "q137"
+    ],
+    "questionIds": [
+      "q1",
+      "q2",
+      "q3",
+      "q33",
+      "q67",
+      "q137",
+      "q182",
+      "q186",
+      "q187",
+      "q188",
+      "q189",
+      "short12"
+    ],
+    "addedIds": [
+      "q182",
+      "q186",
+      "q187",
+      "q188",
+      "q189",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "monopoly-horizons",
+    "label": "Monopoly in the short and long run",
+    "before": "covered",
+    "note": "Persistent profit and short-run losses were covered; expanded shutdown, exit, and fixed-cost comparisons.",
+    "originalIds": [
+      "q39",
+      "q66",
+      "q139"
+    ],
+    "questionIds": [
+      "q39",
+      "q66",
+      "q139",
+      "q183",
+      "q189",
+      "q190",
+      "short12"
+    ],
+    "addedIds": [
+      "q183",
+      "q189",
+      "q190",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
   }
 ]
 </script>
@@ -7076,10 +8911,10 @@
 const QUESTIONS=JSON.parse(document.getElementById('question-data').textContent);
 const BY_ID=new Map(QUESTIONS.map(q=>[q.id,q]));
 const COVERAGE=JSON.parse(document.getElementById('topic-coverage').textContent);
-const NAMED_PACKS=['mock1','mock2','mock3','mock4','mock5'];
-const REQUIRED_GAME_TOPICS=[...COVERAGE.filter(t=>!['market-failure','negative-externalities','monopoly','price-customization'].includes(t.id)).map(t=>t.id),'visual-tree','first-mover','second-mover'];
+const NAMED_PACKS=['mock1','mock2','mock3','mock4','mock5','market-review'];
+const REQUIRED_GAME_TOPICS=[...COVERAGE.filter(t=>t.group==='core'&&t.domain==='games').map(t=>t.id),'visual-tree','first-mover','second-mover'];
 const KEY='ceibs-micro-final-v1';
-const PACKS={mock1:'Test 1 · Original mock',mock2:'Test 2 · Earlier applications',mock3:'Test 3 · Earlier calculations & strategy',mock4:'Test 4 · Your topic list',mock5:'Test 5 · Policy & game applications',random:'Fresh topic-matched mock',bank:'Full question bank'};
+const PACKS={'market-review':'Market & monopoly review',mock1:'Test 1 · Original mock',mock2:'Test 2 · Earlier applications',mock3:'Test 3 · Earlier calculations & strategy',mock4:'Test 4 · Your topic list',mock5:'Test 5 · Policy & game applications',random:'Fresh topic-matched mock',bank:'Full question bank'};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let storageAvailable=true;
@@ -7098,9 +8933,9 @@ function home(){visible('home');const s=state.session;$('resume-banner').hidden=
 function shuffled(items){const out=[...items];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
 function sampleFresh(items,count){const unseen=shuffled(items.filter(q=>!state.history[q.id]));const seen=shuffled(items.filter(q=>state.history[q.id]));return [...unseen,...seen].slice(0,count);}
 function coverGameTopics(){const pool=QUESTIONS.filter(q=>q.section==='games');const selected=[];const uncovered=new Set(REQUIRED_GAME_TOPICS);while(uncovered.size&&selected.length<15){const remaining=pool.filter(q=>!selected.includes(q));const unseen=remaining.filter(q=>!state.history[q.id]);const unseenTags=new Set(unseen.flatMap(q=>q.coverage));const eligible=[...uncovered].every(t=>unseenTags.has(t))?unseen:remaining;let best=null,bestScore=0;for(const q of shuffled(eligible)){const score=q.coverage.filter(t=>uncovered.has(t)).length;if(score>bestScore){best=q;bestScore=score;}}if(!best)throw new Error('Missing game-topic coverage');selected.push(best);for(const t of best.coverage)uncovered.delete(t);}if(uncovered.size)throw new Error('Game coverage exceeds the mock size');return [...selected,...sampleFresh(pool.filter(q=>!selected.includes(q)),15-selected.length)];}
-function setPool(pack){if(pack==='bank')return QUESTIONS;if(pack==='random'){const policy=QUESTIONS.filter(q=>q.strand==='market-failure');const negative=sampleFresh(policy.filter(q=>q.coverage.includes('negative-externalities')),1);const markets=[...negative,...sampleFresh(policy.filter(q=>!negative.includes(q)),3),...sampleFresh(QUESTIONS.filter(q=>q.strand==='monopoly'),5),...sampleFresh(QUESTIONS.filter(q=>q.strand==='price-customization'),6)];const shortMarkets=QUESTIONS.filter(q=>q.kind==='short'&&(q.coverage.includes('market-failure')||q.coverage.includes('price-customization')));const shortGames=QUESTIONS.filter(q=>q.kind==='short'&&!shortMarkets.includes(q));return [...markets,...coverGameTopics(),...sampleFresh(shortMarkets,1),...sampleFresh(shortGames,1)];}return QUESTIONS.filter(q=>q.set===pack);}
-function renderCoverage(){$('coverage-list').innerHTML=COVERAGE.map(t=>`<div class="coverage-row"><div><strong>${esc(t.label)}</strong><small>${t.questionIds.length} questions · ${t.before==='missing'?'Added':t.before==='partial'?'Expanded':'Already covered'}</small></div><button type="button" class="button secondary small" data-coverage="${t.id}" aria-label="Practise ${esc(t.label)}">Practise</button></div>`).join('');}
-function updateSetLabels(){const isBank=$('set-select').value==='bank';const labels={all:isBank?`Whole bank · ${QUESTIONS.length} questions`:'Whole selected test · 32 questions',pricing:`Markets & policy · ${isBank?QUESTIONS.filter(q=>q.section==='pricing').length:15} questions`,games:`Game theory · ${isBank?QUESTIONS.filter(q=>q.section==='games').length:15} questions`,short:`Short answers · ${isBank?QUESTIONS.filter(q=>q.kind==='short').length:2} questions`,mistakes:'Mistakes & unanswered in this set'};for(const option of $('topic-select').options)option.textContent=labels[option.value];const saved=state.savedSessions[$('set-select').value];$('selected-resume').hidden=!saved;$('selected-resume').textContent=saved&&saved.finished?'See this test’s results':'Resume this test';}
+function setPool(pack){if(pack==='bank')return QUESTIONS;if(pack==='random'){const policy=QUESTIONS.filter(q=>q.strand==='market-failure');const negative=sampleFresh(policy.filter(q=>q.coverage.includes('negative-externalities')),1);const markets=[...negative,...sampleFresh(policy.filter(q=>!negative.includes(q)),3),...sampleFresh(QUESTIONS.filter(q=>q.strand==='monopoly'),5),...sampleFresh(QUESTIONS.filter(q=>q.strand==='price-customization'),6)];const shortMarkets=QUESTIONS.filter(q=>q.kind==='short'&&(q.coverage.includes('market-failure')||q.coverage.includes('monopoly')||q.coverage.includes('price-customization')));const shortGames=QUESTIONS.filter(q=>q.kind==='short'&&!shortMarkets.includes(q));return [...markets,...coverGameTopics(),...sampleFresh(shortMarkets,1),...sampleFresh(shortGames,1)];}return QUESTIONS.filter(q=>q.set===pack);}
+function renderCoverage(){for(const [group,target] of [['core','coverage-list'],['markets-detail','market-coverage-list']])$(target).innerHTML=COVERAGE.filter(t=>t.group===group).map(t=>`<div class="coverage-row"><div><strong>${esc(t.label)}</strong><small>${t.questionIds.length} questions · ${t.before==='missing'?'Added':t.before==='partial'?'Expanded':'Already covered · reinforced'}</small></div><button type="button" class="button secondary small" data-coverage="${t.id}" aria-label="Practise ${esc(t.label)}">Practise</button></div>`).join('');}
+function updateSetLabels(){const pack=$('set-select').value;const pool=pack==='random'?null:setPool(pack);const counts=pool?{all:pool.length,pricing:pool.filter(q=>q.section==='pricing').length,games:pool.filter(q=>q.section==='games').length,short:pool.filter(q=>q.kind==='short').length}:{all:32,pricing:15,games:15,short:2};const labels={all:`${pack==='bank'?'Whole bank':pack==='market-review'?'Whole selected review':'Whole selected test'} · ${counts.all} questions`,pricing:`Markets & policy · ${counts.pricing} questions`,games:`Game theory · ${counts.games} questions`,short:`Short answers · ${counts.short} questions`,mistakes:'Mistakes & unanswered in this set'};for(const option of $('topic-select').options){option.textContent=labels[option.value];option.disabled=option.value!=='mistakes'&&counts[option.value]===0;}if($('topic-select').selectedOptions[0]?.disabled)$('topic-select').value='all';$('hour-button').textContent=pack==='market-review'?'60-minute review':'60-minute mock';const saved=state.savedSessions[pack];$('selected-resume').hidden=!saved;$('selected-resume').textContent=saved&&saved.finished?'See this test’s results':'Resume this test';}
 function chooseIds(topic,pack='mock4'){return setPool(pack).filter(q=>topic==='all'||(topic==='pricing'&&q.section==='pricing')||(topic==='games'&&q.section==='games')||(topic==='short'&&q.kind==='short')||(topic==='mistakes'&&isWeak(q,state.history[q.id]))).map(q=>q.id);}
 function start(config){let ids=config.ids||chooseIds(config.topic,config.pack);if(!ids.length){$('home-message').textContent='No mistakes or unanswered questions remain in this set. Choose another test for fresh practice.';$('home-message').hidden=false;return;}if(config.shuffle)ids=shuffled(ids);save();state.session={ids,mode:config.mode,pack:config.pack||null,label:config.label||PACKS[config.pack]||'Retry practice',index:0,answers:{},startedAt:Date.now(),deadline:config.timed?Date.now()+60*60*1000:null,finished:false,review:false};save();visible('session');render();goTop();}
 function requestStart(config){if(state.session&&!state.session.finished&&(config.pack===state.session.pack||!NAMED_PACKS.includes(state.session.pack))){pendingStart=config;$('replace-dialog').showModal();}else start(config);}
@@ -7120,7 +8955,7 @@ function results(){const s=state.session;visible('results');const mcqs=s.ids.map
 function tick(){const s=state.session;const on=s&&!s.finished&&s.deadline&&!$('session').hidden;$('timer').hidden=!on;if(!on)return;const remaining=Math.max(0,Math.ceil((s.deadline-Date.now())/1000));$('timer').innerHTML=remaining?`${Math.floor(remaining/60).toString().padStart(2,'0')}:${(remaining%60).toString().padStart(2,'0')}<small>Practice time left</small>`:'Time is up<small>Finish when ready</small>';}
 const hints={'market-failure':'Identify the private cost or benefit omitted from the transaction. Use MSB = MSC for the efficient margin and damage at efficient output for a corrective tax.','hold-up':'Separate the avoidable investment cost before investing from the sunk cost afterward. Compare the investor’s own captured return with its investment cost.',monopoly:'Start with revenue = price × quantity. Use MR = MC to choose quantity; then read price from demand.',discrimination:'Ask how customers are separated, whether resale is possible, and whether different costs explain the prices.',elasticity:'For an interior optimum, (P − MC)/P = 1/|ε|. Less elastic demand supports a larger markup.',tariff:'At usage price equal to marginal cost, calculate the triangle of consumer surplus before the fixed fee.',bundling:'Compare each product’s best separate revenue with a bundle price based on each buyer’s total valuation.',welfare:'Distinguish a transfer of surplus from gains from trade that disappear. Different types of discrimination have different effects.',dominance:'Hold the opponent’s action fixed and compare your own payoffs. Repeat for every possible opponent action.',nash:'Hold one player’s action fixed. Can the other improve by switching alone? Check both players.',sequential:'Start after entry. Compare the incumbent’s own continuation payoffs, then ask what the entrant anticipates.',repeated:'Start with the last round if the endpoint is known. For indefinite play, compare today’s gain with future punishment.',expected:'Multiply each payoff by the probability of the opponent action that produces it, then add.'};
 $('set-select').addEventListener('change',updateSetLabels);
-$('coverage-list').addEventListener('click',e=>{const b=e.target.closest('[data-coverage]');if(!b)return;const topic=COVERAGE.find(t=>t.id===b.dataset.coverage);requestStart({ids:topic.questionIds,label:'Topic · '+topic.label,pack:null,mode:'practice',timed:false,shuffle:false});});
+$('home').addEventListener('click',e=>{const b=e.target.closest('[data-coverage]');if(!b)return;const topic=COVERAGE.find(t=>t.id===b.dataset.coverage);requestStart({ids:topic.questionIds,label:'Topic · '+topic.label,pack:null,mode:'practice',timed:false,shuffle:false});});
 $('selected-resume').addEventListener('click',()=>{const saved=state.savedSessions[$('set-select').value];if(!saved)return;save();state.session=saved;save();state.session.finished?results():render();goTop();});
 $('start-button').addEventListener('click',()=>requestStart({pack:$('set-select').value,topic:$('topic-select').value,mode:$('mode-select').value,shuffle:$('shuffle-toggle').checked,timed:false}));
 $('hour-button').addEventListener('click',()=>requestStart({pack:$('set-select').value==='bank'?'random':$('set-select').value,topic:'all',mode:'exam',timed:true,shuffle:false}));

@@ -30,7 +30,8 @@
     "answerHtml": "<p>TR = P × Q = (100 − 2Q)Q = 100Q − 2Q². Differentiating gives <strong>MR = 100 − 4Q</strong>. For linear inverse demand, MR has the same vertical intercept and twice the slope magnitude.</p>",
     "set": "mock1",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -65,7 +66,8 @@
     "answerHtml": "<p>Set MR = MC: 100 − 4Q = 20 → <strong>Q = 20</strong>. Substitute into demand: P = 100 − 2(20) = <strong>60</strong>. Option C incorrectly reports marginal revenue as the selling price. Option A gives efficient output under the stated no-externality model, rather than the uniform-price monopoly optimum.</p>",
     "set": "mock1",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -100,7 +102,8 @@
     "answerHtml": "<p>At Q = 20 and P = 60:</p>\n<pre>TR = 60 × 20 = 1,200\nTC = 100 + 20 × 20 = 500\nProfit = 1,200 − 500 = 700</pre>\n<p>Revenue of 1,200 is not profit; contribution of 800 still excludes fixed cost.</p>",
     "set": "mock1",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -1175,7 +1178,8 @@
     "answer": "C",
     "answerHtml": "<p>TR = 120Q − 3Q², so MR = 120 − 6Q. Set MR = 30: Q = 15. Then demand gives P = 120 − 3(15) = 75. Quantity is chosen using MR; the selling price comes from demand.</p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -1386,7 +1390,9 @@
     "answer": "D",
     "answerHtml": "<p>Barriers to entry can prevent the entry response that would otherwise compete away economic profit. Persistent profit is possible, not guaranteed: the firm still faces demand and costs. Under downward-sloping uniform-price demand, MR is below price at positive output.</p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "entry-barriers",
+      "monopoly-horizons"
     ],
     "strand": "monopoly"
   },
@@ -2348,7 +2354,8 @@
     "answer": "A",
     "answerHtml": "<p>MR = 60 − 2Q = 10 gives Q = 25 and P = 35. Contribution is (35 − 10)25 = 625, so profit after fixed cost is −175. Shutdown leaves the unavoidable 800 cost and gives profit −800. Operating therefore reduces the short-run loss. This does not imply the business is viable in the long run.</p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-horizons"
     ],
     "strand": "monopoly"
   },
@@ -2383,7 +2390,8 @@
     "answer": "C",
     "answerHtml": "<p>Average revenue is TR/Q = PQ/Q = P. Marginal revenue is below price because expanding sales requires reducing the uniform price on existing units as well as selling the extra unit. Do not carry the competitive-firm rule P = MR into this setting.</p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "strand": "monopoly"
   },
@@ -2418,7 +2426,9 @@
     "answer": "D",
     "answerHtml": "<p>The proportional markup is (50 − 20)/50 = 0.6. Since this equals 1/|ε|, elasticity is 1/0.6 = 5/3. The markup is measured relative to price, not relative to marginal cost.</p>",
     "coverage": [
-      "price-customization"
+      "price-customization",
+      "market-power",
+      "lerner-index"
     ],
     "strand": "price-customization"
   },
@@ -2699,7 +2709,8 @@
     "answer": "C",
     "answerHtml": "<p>The monopolist chooses output using the interaction of MR and MC, then obtains price from demand. A change in demand can change MR and its optimal quantity-price pair even with unchanged MC. Therefore there is no demand-independent monopoly supply curve of the competitive kind.</p>",
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "price-variable"
     ],
     "strand": "monopoly"
   },
@@ -3430,7 +3441,8 @@
     "topic": "market-failure",
     "extension": false,
     "coverage": [
-      "market-failure"
+      "market-failure",
+      "government-market"
     ],
     "stemHtml": "<p>Which best describes market failure?</p>",
     "options": [
@@ -3466,7 +3478,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "msc"
     ],
     "stemHtml": "<p>Producing an additional unit costs the firm 24 and causes 6 of uncompensated damage to neighbours. Marginal social cost is:</p>",
     "options": [
@@ -3502,7 +3515,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "externality-graphs"
     ],
     "stemHtml": "<svg class=\"externality-graph\" viewBox=\"0 0 360 285\" role=\"img\" aria-label=\"Demand intersects marginal private cost at quantity 40 and marginal social cost at quantity 30\"><title>Negative production externality</title><g fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"><path d=\"M45 25V240H330\"/><path d=\"M45 70L285 172\" stroke=\"#286047\" stroke-width=\"2\"/><path d=\"M45 206L285 104\" stroke=\"#bd9141\" stroke-width=\"2\"/><path d=\"M45 172L285 70\" stroke=\"#a25a43\" stroke-width=\"2\"/><path d=\"M165 121V240M205 138V240\" stroke-dasharray=\"4 4\"/></g><path d=\"M165 121L205 138L205 104Z\" fill=\"#a25a43\" fill-opacity=\".18\"/><g font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\"><text x=\"8\" y=\"22\">Price / cost</text><text x=\"317\" y=\"262\">Q</text><text x=\"290\" y=\"175\">Demand</text><text x=\"290\" y=\"107\">MPC</text><text x=\"290\" y=\"73\">MSC</text><text x=\"159\" y=\"259\">30</text><text x=\"199\" y=\"259\">40</text><text x=\"50\" y=\"280\">Private output exceeds efficient output.</text></g></svg><p>In a competitive market, demand is P = 100 − Q, marginal private cost is 20 + Q, and marginal external damage is a constant 20. There are no external benefits. Which quantities are correct?</p>",
     "options": [
@@ -3573,7 +3587,8 @@
     "topic": "market-failure",
     "extension": false,
     "coverage": [
-      "market-failure"
+      "market-failure",
+      "imperfect-info"
     ],
     "stemHtml": "<p>A used-car seller knows the car’s quality before sale, but buyers cannot distinguish high-quality cars from low-quality cars. The resulting change in who is willing to trade is primarily:</p>",
     "options": [
@@ -3748,7 +3763,8 @@
     "topic": "monopoly",
     "extension": false,
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "entry-barriers"
     ],
     "stemHtml": "<p>Which statement about a monopoly is correct?</p>",
     "options": [
@@ -4596,7 +4612,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "externalities"
     ],
     "stemHtml": "<p>Which situation is a negative externality in production?</p>",
     "options": [
@@ -4632,7 +4649,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "msc"
     ],
     "stemHtml": "<p>MPC = 10 + 2Q and marginal external damage = Q. What is MSC?</p>",
     "options": [
@@ -4740,7 +4758,8 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "bargaining"
     ],
     "stemHtml": "<p>Which conditions most directly support a Coase-style efficient bargain over an externality?</p>",
     "options": [
@@ -4811,7 +4830,8 @@
     "topic": "market-failure",
     "extension": false,
     "coverage": [
-      "market-failure"
+      "market-failure",
+      "imperfect-info"
     ],
     "stemHtml": "<p>Which is the clearest adverse-selection example?</p>",
     "options": [
@@ -4846,7 +4866,8 @@
     "topic": "market-failure",
     "extension": false,
     "coverage": [
-      "market-failure"
+      "market-failure",
+      "moral-hazard"
     ],
     "stemHtml": "<p>After purchasing insurance, a person takes less costly care because some accident costs are borne by the insurer. The action is difficult to observe. This primarily illustrates:</p>",
     "options": [
@@ -4881,7 +4902,8 @@
     "topic": "monopoly",
     "extension": false,
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-decisions"
     ],
     "stemHtml": "<p>Demand is P = 100 − 2Q and marginal cost is MC = 20 + Q. Assuming an interior maximum, what quantity and price maximize profit?</p>",
     "options": [
@@ -4951,7 +4973,8 @@
     "topic": "monopoly",
     "extension": false,
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "monopoly-horizons"
     ],
     "stemHtml": "<p>A patented product faces weak demand. At the firm’s best positive output, price exceeds AVC but lies below ATC. Fixed costs are unavoidable in the short run. What is the appropriate interpretation?</p>",
     "options": [
@@ -4986,7 +5009,8 @@
     "topic": "monopoly",
     "extension": false,
     "coverage": [
-      "monopoly"
+      "monopoly",
+      "market-power"
     ],
     "stemHtml": "<p>With downward-sloping demand, positive MC, one uniform price, and no other market failure, the standard monopoly outcome typically has:</p>",
     "options": [
@@ -5720,7 +5744,9 @@
     "extension": false,
     "coverage": [
       "market-failure",
-      "negative-externalities"
+      "negative-externalities",
+      "tax-graphs",
+      "bargaining"
     ],
     "stemHtml": "<p>A competitive market has demand P = 140 − 2Q, marginal private cost MPC = 20 + Q, and constant marginal external damage 30. There are no external benefits.</p><ol><li>Find the unregulated market quantity and transaction price.</li><li>Find the efficient quantity and the willingness to pay at that output.</li><li>Find the corrective per-unit tax and distinguish the consumer and producer prices after the tax.</li><li>Calculate the original deadweight loss from the externality. Explain a condition needed for private bargaining to be a useful alternative.</li></ol>",
     "answerHtml": "<pre>Unregulated: 140 − 2Q = 20 + Q → Q = 40; price = 60\nMSC = 50 + Q\nEfficient: 140 − 2Q = 50 + Q → Q = 30\nConsumer willingness to pay at Q = 30: 80\nCorrective tax: 30\nConsumer price after tax: 80\nProducer price net of tax: 50 = MPC(30)\nOriginal DWL: ½ × (40 − 30) × 30 = 150</pre><p>The tax wedge is 80 − 50 = 30, equal to marginal external damage. The private and social output conditions differ because producers initially omit damage to outsiders. Private bargaining is more promising when relevant rights are clear and transaction costs and other bargaining barriers are sufficiently low. Initial rights affect compensation; efficient activity need not be zero.</p><p>Self-check: unregulated result 2 points, social result 2, tax and two prices 3, DWL and bargaining condition 3. Practice points only.</p>",
@@ -5762,5 +5788,1187 @@
       "Explained observation and commitment instead of relying on the order of announcements."
     ],
     "sourceNote": "Original application for this named topic. The lecture case’s story and payoffs have not been verified."
+  },
+  {
+    "id": "q161",
+    "number": 161,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "The five approaches to externalities",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "five-approaches",
+      "externalities"
+    ],
+    "stemHtml": "<p>Which list matches the five approaches in Lecture 5?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Taxes; subsidies; tariffs; quotas on imports; exchange-rate controls."
+      },
+      {
+        "letter": "B",
+        "html": "Taxes/subsidies; private bargaining; legal rules; sale or auction of externality rights; direct regulation."
+      },
+      {
+        "letter": "C",
+        "html": "Perfect competition; monopoly; oligopoly; monopolistic competition; monopsony."
+      },
+      {
+        "letter": "D",
+        "html": "Advertising; packaging; distribution; branding; product design."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>The lecture groups taxes and subsidies as one approach. The other four are bargaining, legal rules and procedures, rights such as tradable pollution permits, and direct government regulation. Each changes incentives or allowable behavior; none is automatically best in every setting.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q162",
+    "number": 162,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Build marginal social cost",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "msc",
+      "externalities",
+      "negative-externalities"
+    ],
+    "stemHtml": "<p>Demand is MSB = 80 − Q, marginal private cost is MPC = 20 + Q, and marginal external damage is Q. With no other distortions, which social cost and efficient output are correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "MSC = 20 + Q; efficient Q = 30."
+      },
+      {
+        "letter": "B",
+        "html": "MSC = 20; efficient Q = 60."
+      },
+      {
+        "letter": "C",
+        "html": "MSC = 20 + 2Q; efficient Q = 20."
+      },
+      {
+        "letter": "D",
+        "html": "MSC = 20 + 3Q; efficient Q = 15."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Add marginal damage to private marginal cost: <strong>MSC = 20 + Q + Q = 20 + 2Q</strong>. Efficiency requires 80 − Q = 20 + 2Q, so Q = 20. The private market would produce 30. Total damage and marginal damage are different concepts.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q163",
+    "number": 163,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Read the externality triangle",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "externality-graphs",
+      "externalities",
+      "msc",
+      "negative-externalities"
+    ],
+    "stemHtml": "<svg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Demand crosses MPC at (40,60) and MSC at (30,70). The triangle between quantities 30 and 40 is deadweight loss.\"><title>Negative externality: private versus efficient output</title><path d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/><polygon points=\"159.0,130.5 196.0,149.0 196.0,112.0\" fill=\"#a25a43\" fill-opacity=\".18\"/><polyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/><text x=\"299.6\" y=\"197.1\" fill=\"#286047\" font-size=\"13\">D = MSB</text><polyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/><text x=\"307.0\" y=\"89.8\" fill=\"#ad802e\" font-size=\"13\">MPC</text><polyline points=\"48.0,186.0 288.5,65.8\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/><text x=\"288.5\" y=\"60.2\" fill=\"#a25a43\" font-size=\"13\">MSC</text><path d=\"M48 130.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"159.0\" cy=\"130.5\" r=\"3.5\" fill=\"#203b32\"/><text x=\"164.0\" y=\"123.5\" font-size=\"13\" fill=\"#203b32\">Efficient</text><path d=\"M48 149.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"196.0\" cy=\"149.0\" r=\"3.5\" fill=\"#203b32\"/><text x=\"201.0\" y=\"142.0\" font-size=\"13\" fill=\"#203b32\">Private</text><g font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\"><text x=\"8\" y=\"22\">Price / cost / benefit</text><text x=\"375\" y=\"265\">Q</text><text x=\"38\" y=\"278\">0</text><text x=\"115.0\" y=\"278\">20</text><text x=\"189.0\" y=\"278\">40</text><text x=\"263.0\" y=\"278\">60</text><text x=\"337.0\" y=\"278\">80</text></g></svg><p>Demand is 100 − Q, MPC = 20 + Q, and marginal damage is 20. The graph marks efficient output 30 and private output 40. What is the original deadweight loss?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "100"
+      },
+      {
+        "letter": "B",
+        "html": "200"
+      },
+      {
+        "letter": "C",
+        "html": "600"
+      },
+      {
+        "letter": "D",
+        "html": "800"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>At Q = 30, MSC equals demand. At Q = 40, MSC = 80 and demand = 60: the net social loss on the last unit is 20. The shaded triangle has base 10 and height 20, so <strong>DWL = ½ × 10 × 20 = 100</strong>. It is neither total pollution damage nor tax revenue.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q164",
+    "number": 164,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Read a tax graph and two prices",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "tax-graphs",
+      "externality-graphs",
+      "negative-externalities",
+      "five-approaches"
+    ],
+    "stemHtml": "<svg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Demand is 100 minus Q. Supply is 20 plus Q. A tax of 20 moves output from 40 to 30; buyers pay 70 and sellers receive 50.\"><title>Corrective tax wedge</title><path d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/><polygon points=\"48.0,167.5 159.0,167.5 159.0,130.5 48.0,130.5\" fill=\"#466e94\" fill-opacity=\".18\"/><polyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/><text x=\"310.7\" y=\"204.5\" fill=\"#286047\" font-size=\"13\">D</text><polyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/><text x=\"292.2\" y=\"86.1\" fill=\"#ad802e\" font-size=\"13\">S = MPC</text><polyline points=\"48.0,186.0 288.5,65.8\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/><text x=\"284.8\" y=\"58.3\" fill=\"#a25a43\" font-size=\"13\">S + tax</text><path d=\"M48 130.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"159.0\" cy=\"130.5\" r=\"3.5\" fill=\"#203b32\"/><text x=\"164.0\" y=\"123.5\" font-size=\"13\" fill=\"#203b32\">Buyer 70</text><path d=\"M48 167.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"159.0\" cy=\"167.5\" r=\"3.5\" fill=\"#203b32\"/><text x=\"164.0\" y=\"160.5\" font-size=\"13\" fill=\"#203b32\">Seller 50</text><g font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\"><text x=\"8\" y=\"22\">Price / cost / benefit</text><text x=\"375\" y=\"265\">Q</text><text x=\"38\" y=\"278\">0</text><text x=\"115.0\" y=\"278\">20</text><text x=\"189.0\" y=\"278\">40</text><text x=\"263.0\" y=\"278\">60</text><text x=\"337.0\" y=\"278\">80</text></g></svg><p>A competitive market has D: P = 100 − Q and S: P = 20 + Q. A per-unit tax of 20 is collected from sellers. Which output, buyer price, seller net price, and tax revenue follow?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 40; buyer 60; seller 40; revenue 800."
+      },
+      {
+        "letter": "B",
+        "html": "Q = 30; buyer 50; seller 70; revenue 600."
+      },
+      {
+        "letter": "C",
+        "html": "Q = 20; buyer 80; seller 60; revenue 400."
+      },
+      {
+        "letter": "D",
+        "html": "Q = 30; buyer 70; seller 50; revenue 600."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>The buyer price equals seller net price plus 20: 100 − Q = 20 + Q + 20. Thus <strong>Q = 30, P<sub>b</sub> = 70, P<sub>s</sub> = 50</strong>. Revenue is 20 × 30 = 600. In the negative-externality model with marginal damage 20, this tax reaches efficient output. The blue rectangle is revenue, not deadweight loss.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q165",
+    "number": 165,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Who bears the corrective tax?",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "tax-graphs",
+      "five-approaches"
+    ],
+    "stemHtml": "<p>In the preceding competitive schedules D: P = 100 − Q and S: P = 20 + Q, price before tax is 60. With a tax of 20, buyers pay 70 and sellers receive 50. What happens if the same per-unit tax is legally collected from buyers instead?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Buyers necessarily bear all 20 because they send the payment."
+      },
+      {
+        "letter": "B",
+        "html": "The same output and economic burden arise under the standard model; each side bears 10 here."
+      },
+      {
+        "letter": "C",
+        "html": "Sellers necessarily bear all 20 because supply slopes upward."
+      },
+      {
+        "letter": "D",
+        "html": "There is no tax wedge when buyers remit the payment."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>The wedge remains P<sub>b</sub> − P<sub>s</sub> = 20 whether buyers or sellers remit it. Relative supply and demand responsiveness determines economic incidence. Here buyer price rises by 10 and seller net price falls by 10 because the linear slopes are equal.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q166",
+    "number": 166,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Read a subsidy graph",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "subsidy-graphs",
+      "externalities",
+      "five-approaches"
+    ],
+    "stemHtml": "<svg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Private demand 80 minus Q crosses supply 20 plus Q at Q30. MSB is 100 minus Q. With subsidy 20, Q is 40, buyers pay 40 and sellers receive 60.\"><title>Positive externality and subsidy</title><path d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/><polyline points=\"48.0,112.0 307.0,241.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/><text x=\"310.7\" y=\"241.5\" fill=\"#286047\" font-size=\"13\">MPB</text><polyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/><text x=\"310.7\" y=\"204.5\" fill=\"#a25a43\" font-size=\"13\">MSB</text><polyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/><text x=\"292.2\" y=\"82.4\" fill=\"#ad802e\" font-size=\"13\">S = MSC</text><polyline points=\"48.0,260.0 307.0,130.5\" fill=\"none\" stroke=\"#466e94\" stroke-width=\"2.5\"/><text x=\"288.5\" y=\"136.1\" fill=\"#466e94\" font-size=\"13\">S − subsidy</text><path d=\"M48 167.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"159.0\" cy=\"167.5\" r=\"3.5\" fill=\"#203b32\"/><text x=\"164.0\" y=\"160.5\" font-size=\"13\" fill=\"#203b32\">Private</text><path d=\"M48 149.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"196.0\" cy=\"149.0\" r=\"3.5\" fill=\"#203b32\"/><text x=\"201.0\" y=\"142.0\" font-size=\"13\" fill=\"#203b32\">Seller 60</text><path d=\"M48 186.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"196.0\" cy=\"186.0\" r=\"3.5\" fill=\"#203b32\"/><text x=\"201.0\" y=\"179.0\" font-size=\"13\" fill=\"#203b32\">Buyer 40</text><g font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\"><text x=\"8\" y=\"22\">Price / cost / benefit</text><text x=\"375\" y=\"265\">Q</text><text x=\"38\" y=\"278\">0</text><text x=\"115.0\" y=\"278\">20</text><text x=\"189.0\" y=\"278\">40</text><text x=\"263.0\" y=\"278\">60</text><text x=\"337.0\" y=\"278\">80</text></g></svg><p>MPB = 80 − Q, MSC = supply = 20 + Q, and marginal external benefit is 20. There are no external costs. A per-unit subsidy of 20 is paid to sellers. Which outcome is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 30; buyers pay 50; sellers receive 50; subsidy spending 600."
+      },
+      {
+        "letter": "B",
+        "html": "Q = 40; buyers pay 60; sellers receive 40; spending 800."
+      },
+      {
+        "letter": "C",
+        "html": "Q = 40; buyers pay 40; sellers receive 60; spending 800."
+      },
+      {
+        "letter": "D",
+        "html": "Q = 20; buyers pay 60; sellers receive 80; spending 400."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>MSB = MPB + external benefit = 100 − Q. Efficient output solves 100 − Q = 20 + Q, giving <strong>Q = 40</strong>. With a subsidy, P<sub>s</sub> − P<sub>b</sub> = 20; 80 − Q = 20 + Q − 20 gives the same Q. Buyers pay 40, sellers receive 60, and the budget cost is 20 × 40 = 800. The unassisted market produces only 30.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q167",
+    "number": 167,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Choose the direction of the policy",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "externalities",
+      "negative-externalities",
+      "subsidy-graphs",
+      "five-approaches"
+    ],
+    "stemHtml": "<p>A competitive industry overproduces because each unit creates uncompensated external damage. With no other distortions, what would a subsidy per unit of this output tend to do?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Expand output further and worsen the original overproduction."
+      },
+      {
+        "letter": "B",
+        "html": "Always reduce output to the efficient level."
+      },
+      {
+        "letter": "C",
+        "html": "Eliminate the external cost without changing incentives."
+      },
+      {
+        "letter": "D",
+        "html": "Make marginal social cost equal to zero."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>A subsidy for the polluting output encourages more of that output. A corrective output tax discourages it. Distinguish an output subsidy from a subsidy for verified pollution abatement: the rewarded activity matters.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q168",
+    "number": 168,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Bargaining when the factory owns the right",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "bargaining",
+      "externalities",
+      "negative-externalities",
+      "five-approaches"
+    ],
+    "stemHtml": "<p>A factory may legally pollute. Pollution causes a neighbor damage of 80; installing a filter costs the factory 50 and eliminates the damage. Rights are clear, transfers are possible, and bargaining is costless. Which agreement can make both strictly better off?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The factory pays the neighbor 90 and installs no filter."
+      },
+      {
+        "letter": "B",
+        "html": "The neighbor pays the factory 60 to install the filter."
+      },
+      {
+        "letter": "C",
+        "html": "The neighbor pays 40, and the factory voluntarily incurs cost 50."
+      },
+      {
+        "letter": "D",
+        "html": "No agreement is possible because the factory has the legal right."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Filtering creates a net social gain of 80 − 50 = 30. A payment strictly between 50 and 80 shares that gain. At 60, the factory gains 10 after the filter cost and the neighbor avoids damage 80 at a cost of 60, gaining 20. Initial rights determine the bargaining starting point and transfers; they need not prevent efficient action under these assumptions.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q169",
+    "number": 169,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "When bargaining becomes difficult",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "bargaining",
+      "five-approaches"
+    ],
+    "stemHtml": "<p>Pollution affects 20,000 households. Identifying victims, measuring harm, organizing negotiation, and enforcing agreements would cost more than the possible gains. Which conclusion follows?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "The Coase result guarantees efficient bargaining regardless of those costs."
+      },
+      {
+        "letter": "B",
+        "html": "Simply assigning a right makes all transaction costs disappear."
+      },
+      {
+        "letter": "C",
+        "html": "High transaction costs can prevent private bargaining from reaching the efficient allocation."
+      },
+      {
+        "letter": "D",
+        "html": "The socially efficient pollution level must be zero."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>The low-transaction-cost condition matters. Many affected parties can create coordination, free-rider, holdout, information, and enforcement problems. Clear rights help, but do not by themselves eliminate these impediments. Compare feasible alternatives and their costs.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q170",
+    "number": 170,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Injunction or liability?",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "legal-rules",
+      "five-approaches"
+    ],
+    "stemHtml": "<p>A court considers two remedies: (i) an order prohibiting a factory from continuing the harmful activity, and (ii) a requirement to compensate victims for damage. What are these remedies?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Both are taxes collected for general government revenue."
+      },
+      {
+        "letter": "B",
+        "html": "(i) Liability; (ii) an injunction."
+      },
+      {
+        "letter": "C",
+        "html": "(i) A subsidy; (ii) a tradable permit."
+      },
+      {
+        "letter": "D",
+        "html": "(i) An injunction; (ii) a liability rule."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>An <strong>injunction</strong> forbids continuation of specified harmful behavior. A <strong>liability rule</strong> requires compensation for imposed harm. These are the two legal mechanisms identified in Lecture 5. Their effectiveness depends on how rights, damages, monitoring, and enforcement work.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q171",
+    "number": 171,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "How liability changes incentives",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "legal-rules",
+      "msc",
+      "negative-externalities"
+    ],
+    "stemHtml": "<p>One unit of activity yields a private net benefit of 12 before external damage. It causes damage of 20. A fully enforced liability rule requires the actor to pay exactly that damage. With no other costs or benefits, what is the efficient private response?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Continue, because the private benefit is positive before compensation."
+      },
+      {
+        "letter": "B",
+        "html": "Stop this unit: benefit 12 is below the damage payment 20."
+      },
+      {
+        "letter": "C",
+        "html": "Continue, because compensation makes the physical damage vanish."
+      },
+      {
+        "letter": "D",
+        "html": "Stop only if government also imposes an additional tax of 20."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>The actor now faces the external damage through a liability payment. Its net gain is 12 − 20 = −8, so it does not undertake that unit. Compensation changes incentives; it does not erase physical harm. Adding a second identical charge would count the same external damage twice in this simplified model.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q172",
+    "number": 172,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Trade the right to pollute",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "five-approaches",
+      "negative-externalities"
+    ],
+    "stemHtml": "<p>A regulator fixes a total emissions cap and makes permits tradable. Firm A can abate an additional unit for 3; firm B would spend 11. A permit transfers at price 7. What cost-saving trade is possible?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "A abates one extra unit and sells a permit to B; total permitted emissions stay fixed."
+      },
+      {
+        "letter": "B",
+        "html": "B abates one extra unit and sells a permit to A because B has the higher abatement cost."
+      },
+      {
+        "letter": "C",
+        "html": "Both firms increase emissions by one without changing permits."
+      },
+      {
+        "letter": "D",
+        "html": "Permit trading necessarily removes the cap."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>A spends 3 to free a permit and sells it for 7, gaining 4. B buys at 7 instead of abating at 11, gaining 4. The same aggregate cap is met with total abatement cost lower by 8. Trading changes where abatement occurs; the regulator chooses the cap.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q173",
+    "number": 173,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Direct regulation and unequal abatement costs",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "five-approaches"
+    ],
+    "stemHtml": "<p>Two units of pollution must be abated. A’s first two marginal abatement costs are 2 and 4; B’s are 8 and 10. Compare a rule requiring one unit from each firm with a flexible allocation requiring both from A.</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "One each costs 6; both from A cost 10."
+      },
+      {
+        "letter": "B",
+        "html": "Both allocations cost 10."
+      },
+      {
+        "letter": "C",
+        "html": "One each costs 10; both from A cost 6. A uniform rule achieves the target at higher cost here."
+      },
+      {
+        "letter": "D",
+        "html": "Regulation cannot reduce pollution."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>A one-unit requirement per firm costs 2 + 8 = 10. Both units from A cost 2 + 4 = 6. A uniform standard can meet an emissions target without minimizing cost when firms’ abatement costs differ. Regulation can still be useful; assess the particular rule and information available.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q174",
+    "number": 174,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Hidden types versus hidden actions",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "imperfect-info",
+      "moral-hazard"
+    ],
+    "stemHtml": "<p>Scenario I: people who privately know they are high risk are especially likely to buy insurance. Scenario II: a person becomes less careful after obtaining comprehensive insurance. Which classification is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "I is moral hazard; II is adverse selection."
+      },
+      {
+        "letter": "B",
+        "html": "I is adverse selection; II is moral hazard."
+      },
+      {
+        "letter": "C",
+        "html": "Both are moral hazard because insurance is involved."
+      },
+      {
+        "letter": "D",
+        "html": "Neither involves imperfect information."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p><strong>Adverse selection</strong> concerns hidden characteristics affecting who trades or which contract is chosen. <strong>Moral hazard</strong> concerns actions that change when protection changes incentives and actions are difficult to observe or contract on. The distinction is the information and incentive problem, not simply whether insurance appears.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q175",
+    "number": 175,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "A deductible and moral hazard",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "moral-hazard",
+      "information-solutions"
+    ],
+    "stemHtml": "<p>An insurer introduces a deductible so the insured pays the first part of a loss. What is the principal incentive effect and tradeoff?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It fully removes all uncertainty at no cost to the insured."
+      },
+      {
+        "letter": "B",
+        "html": "It solves every adverse-selection problem automatically."
+      },
+      {
+        "letter": "C",
+        "html": "It necessarily makes careful behavior less attractive."
+      },
+      {
+        "letter": "D",
+        "html": "It makes the insured bear more marginal loss, encouraging care, while providing less complete risk protection."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>A deductible can reduce moral hazard by restoring an incentive to avoid losses. The cost is greater risk borne by the insured. Monitoring, contract design, and the relation between effort and losses determine how effective it is; a deductible is not a universal cure.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q176",
+    "number": 176,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "A market response to hidden quality",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "imperfect-info",
+      "information-solutions"
+    ],
+    "stemHtml": "<p>Buyers cannot initially distinguish reliable machines from unreliable ones. A warranty must be honored, and failures are substantially less costly for reliable producers. Why might a credible warranty help?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It can signal quality because honoring the same warranty is less costly for a reliable producer."
+      },
+      {
+        "letter": "B",
+        "html": "Any promise reveals quality even if the seller cannot be held to it."
+      },
+      {
+        "letter": "C",
+        "html": "It makes buyers indifferent to every possible product defect."
+      },
+      {
+        "letter": "D",
+        "html": "It necessarily eliminates all information costs and fraud."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>When the promise is credible and costs differ by type, a warranty can help good-quality sellers distinguish themselves. Reputation, repeat business, independent certification, and inspections can also reduce information gaps. A cheap, unenforceable promise need not be informative.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q177",
+    "number": 177,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "The efficient amount of information search",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "information-solutions",
+      "imperfect-info"
+    ],
+    "stemHtml": "<p>The next inspection has expected marginal benefit 12 and cost 8. A second additional inspection would have expected marginal benefit 4 and cost 8. The information cannot otherwise be obtained and there are no spillovers. What should the buyer do?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Buy both inspections because more information is always better."
+      },
+      {
+        "letter": "B",
+        "html": "Buy the first additional inspection, then stop."
+      },
+      {
+        "letter": "C",
+        "html": "Buy neither because information is imperfect."
+      },
+      {
+        "letter": "D",
+        "html": "Continue until all uncertainty has disappeared, regardless of cost."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Gather information while expected marginal benefit exceeds marginal cost. The first inspection adds expected net benefit 4; the next would reduce it by 4. Stop after one. In a smooth interior case, the stopping condition is MB = MC; with discrete inspections, compare each increment.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q178",
+    "number": 178,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Why government might supply information",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "government-market",
+      "information-solutions",
+      "imperfect-info"
+    ],
+    "stemHtml": "<p>A reliable public safety report is costly to produce once, and one person reading it does not reduce anyone else’s ability to use it. Which argument supports possible public provision?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Information is always free to produce."
+      },
+      {
+        "letter": "B",
+        "html": "Nonrival information is automatically impossible to exclude from sale."
+      },
+      {
+        "letter": "C",
+        "html": "Shared production may avoid costly duplicated research because the information is nonrival in use."
+      },
+      {
+        "letter": "D",
+        "html": "Public provision guarantees that no errors or incentive problems can occur."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Nonrival use means one person’s use does not reduce availability for others. Producing and distributing information once may be cheaper than many individuals duplicating costly research. Nonrivalry is distinct from nonexcludability. This is a possible efficiency argument, subject to production costs and institutional incentives.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q179",
+    "number": 179,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Government and the market",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "government-market",
+      "five-approaches"
+    ],
+    "stemHtml": "<p>Officials know an externality exists but estimate marginal damage imprecisely. Monitoring is expensive and the policy agency faces weak incentives. What is the sound conclusion?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Compare feasible policies’ benefits and costs; identifying market failure alone does not prove any proposed intervention improves allocation."
+      },
+      {
+        "letter": "B",
+        "html": "Every government intervention must improve efficiency."
+      },
+      {
+        "letter": "C",
+        "html": "No externality can ever justify intervention."
+      },
+      {
+        "letter": "D",
+        "html": "Set the highest possible tax because harm is uncertain."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>Lecture 5 discusses measurement difficulties, imperfect knowledge of preferences, weak market discipline, and officials’ incentives. Government action can improve an allocation, but government failure is also possible. Evaluate workable policies, including bargaining and legal approaches, against the actual costs and benefits.</p>",
+    "strand": "market-failure"
+  },
+  {
+    "id": "q180",
+    "number": 180,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Imperfect competition and market power",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "market-power"
+    ],
+    "stemHtml": "<p>Several restaurants sell differentiated meals. Each faces downward-sloping demand for its own meals and can raise price somewhat without losing every customer. Which statement is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Market power exists only when a firm is the sole seller of every good in the economy."
+      },
+      {
+        "letter": "B",
+        "html": "The presence of more than one restaurant proves every restaurant is a price taker."
+      },
+      {
+        "letter": "C",
+        "html": "A high market share alone proves positive economic profit at every output."
+      },
+      {
+        "letter": "D",
+        "html": "Differentiation can give a firm pricing discretion; pure monopoly is an extreme market structure."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Market power means some ability to influence price, constrained by customers’ substitutes and demand. It can arise in imperfectly competitive markets with several firms. Pure monopoly concerns one seller in a relevant market with no close substitutes and barriers to entry. Pricing discretion does not guarantee profit.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q181",
+    "number": 181,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Calculate the Lerner index",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "lerner-index",
+      "market-power"
+    ],
+    "stemHtml": "<p>A firm charges P = 80 and marginal cost is MC = 50. What is its Lerner index, using L = (P − MC)/P?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "0.375"
+      },
+      {
+        "letter": "B",
+        "html": "0.60"
+      },
+      {
+        "letter": "C",
+        "html": "0.625"
+      },
+      {
+        "letter": "D",
+        "html": "30"
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p><strong>L = (80 − 50)/80 = 0.375</strong>. The markup is 37.5% of price. Dividing by MC instead gives 30/50 = 0.60, a different markup measure. Use parentheses: the numerator is P − MC.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q182",
+    "number": 182,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Connect the Lerner index to elasticity",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "lerner-index",
+      "market-power",
+      "monopoly-decisions"
+    ],
+    "stemHtml": "<p>A single-price monopolist has MC = 40 and faces demand elasticity ε = −3 at an interior profit-maximizing solution. With no other distortions, which price and Lerner index satisfy the markup rule?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "P = 120; L = 3."
+      },
+      {
+        "letter": "B",
+        "html": "P = 60; L = 1/3."
+      },
+      {
+        "letter": "C",
+        "html": "P = 40; L = 0."
+      },
+      {
+        "letter": "D",
+        "html": "P = 80; L = 1/3."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>At an interior single-price optimum, L = 1/|ε| = 1/3. Therefore (P − 40)/P = 1/3, giving <strong>P = 60</strong>. This elasticity identity is an optimal-pricing condition under the model, not a definition that holds for every arbitrary observed price.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q183",
+    "number": 183,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "A positive markup can coexist with a loss",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "lerner-index",
+      "market-power",
+      "monopoly-horizons"
+    ],
+    "stemHtml": "<p>At its chosen output Q = 10, a firm has P = 50, MC = 20 and ATC = 55. Which statement is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "L = 0.6, so economic profit must be positive."
+      },
+      {
+        "letter": "B",
+        "html": "L = 0.4 and total economic profit is 300."
+      },
+      {
+        "letter": "C",
+        "html": "L = 0.6 and total economic profit is −50."
+      },
+      {
+        "letter": "D",
+        "html": "L = −0.1 because ATC exceeds price."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>The Lerner index uses marginal cost: (50 − 20)/50 = <strong>0.6</strong>. Economic profit uses total or average total cost: (50 − 55) × 10 = <strong>−50</strong>. A price above MC does not imply price exceeds ATC, especially when fixed costs are substantial.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q184",
+    "number": 184,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Identify different entry barriers",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "entry-barriers",
+      "market-power"
+    ],
+    "stemHtml": "<p>Which mapping of entry barriers is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Patent: economies of scale; exclusive control of a crucial input: a legal license."
+      },
+      {
+        "letter": "B",
+        "html": "Patent: legal protection; natural monopoly: economies of scale over relevant demand; exclusive essential input: resource control."
+      },
+      {
+        "letter": "C",
+        "html": "Advertising is always an absolute legal prohibition on entry."
+      },
+      {
+        "letter": "D",
+        "html": "A high current profit is itself a permanent legal barrier."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>Legal protection can restrict entry; economies of scale can make one supplier least costly over the relevant range; and control of a crucial input without close substitutes can impede rivals. A natural monopoly is defined by cost conditions, not simply by receiving a government license. Barriers can permit persistent profit without guaranteeing it.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q185",
+    "number": 185,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Define pure monopoly carefully",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "entry-barriers",
+      "market-power"
+    ],
+    "stemHtml": "<p>Which set of conditions best describes pure monopoly?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Many sellers, identical goods, and free entry."
+      },
+      {
+        "letter": "B",
+        "html": "One buyer with many competing sellers."
+      },
+      {
+        "letter": "C",
+        "html": "One seller in the relevant market, no close substitutes, and barriers that prevent effective entry."
+      },
+      {
+        "letter": "D",
+        "html": "Any firm charging a different price from a rival."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>A monopolist is the sole seller in the relevant market and faces the market demand curve. No close substitutes and effective entry barriers sustain that position. The relevant market and available substitutes matter: being the only seller of a particular brand is insufficient by itself.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q186",
+    "number": 186,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Price: an additional decision variable",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "price-variable",
+      "monopoly-decisions",
+      "market-power"
+    ],
+    "stemHtml": "<p>Unlike a price taker, a monopolist has pricing discretion. It faces P = 120 − 2Q. If it plans to sell Q = 20, which statement about its price choice is correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "It can sell 20 at any price it chooses."
+      },
+      {
+        "letter": "B",
+        "html": "Demand supports P = 80; price and quantity cannot be chosen independently."
+      },
+      {
+        "letter": "C",
+        "html": "It must charge P = MC regardless of demand."
+      },
+      {
+        "letter": "D",
+        "html": "Its price must be 120 because that is the intercept."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>At Q = 20, P = 120 − 40 = <strong>80</strong>. Pricing discretion is the substantive point of treating price as an additional decision variable: the firm chooses along a demand curve, rather than accepting a market price. Raising price changes the quantity demanded. Price and output remain linked.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q187",
+    "number": 187,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Read monopoly output, price and profit",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "monopoly-decisions",
+      "price-variable"
+    ],
+    "stemHtml": "<svg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Demand is 100 minus Q, MR is 100 minus twice Q, and MC is 20. MR meets MC at Q40. Demand at Q40 gives P60. ATC at Q40 is 30.\"><title>Monopoly output, price and profit</title><path d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/><polygon points=\"48.0,204.5 196.0,204.5 196.0,149.0 48.0,149.0\" fill=\"#466e94\" fill-opacity=\".18\"/><polyline points=\"48.0,75.0 325.5,213.8\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/><text x=\"329.2\" y=\"211.9\" fill=\"#286047\" font-size=\"13\">D</text><polyline points=\"48.0,75.0 233.0,260.0\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/><text x=\"229.3\" y=\"250.8\" fill=\"#a25a43\" font-size=\"13\">MR</text><polyline points=\"48.0,223.0 325.5,223.0\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/><text x=\"329.2\" y=\"223.0\" fill=\"#ad802e\" font-size=\"13\">MC</text><path d=\"M48 149.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"196.0\" cy=\"149.0\" r=\"3.5\" fill=\"#203b32\"/><text x=\"201.0\" y=\"142.0\" font-size=\"13\" fill=\"#203b32\">P = 60</text><path d=\"M48 223.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"196.0\" cy=\"223.0\" r=\"3.5\" fill=\"#203b32\"/><text x=\"201.0\" y=\"216.0\" font-size=\"13\" fill=\"#203b32\">MR = MC</text><g font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\"><text x=\"8\" y=\"22\">Price / cost / benefit</text><text x=\"375\" y=\"265\">Q</text><text x=\"38\" y=\"278\">0</text><text x=\"115.0\" y=\"278\">20</text><text x=\"189.0\" y=\"278\">40</text><text x=\"263.0\" y=\"278\">60</text><text x=\"337.0\" y=\"278\">80</text></g><text x=\"48\" y=\"301\" font-family=\"sans-serif\" font-size=\"13\" fill=\"#466e94\">Rectangle base: ATC at Qm = 30</text></svg><p>D: P = 100 − Q, MR = 100 − 2Q, MC = 20. At the maximizing output, ATC = 30. The shaded rectangle extends from cost 30 to price 60. Which output, price and economic profit are correct?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Q = 80; P = 20; profit −800."
+      },
+      {
+        "letter": "B",
+        "html": "Q = 40; P = 20; profit −400."
+      },
+      {
+        "letter": "C",
+        "html": "Q = 50; P = 50; profit 1,000."
+      },
+      {
+        "letter": "D",
+        "html": "Q = 40; P = 60; profit 1,200."
+      }
+    ],
+    "answer": "D",
+    "answerHtml": "<p>Find Q at MR = MC: 100 − 2Q = 20 gives <strong>Q = 40</strong>. Read P from demand: P = 60. Economic profit is (P − ATC)Q = (60 − 30) × 40 = <strong>1,200</strong>, the shaded rectangle. The MR–MC intersection determines output, not the price charged.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q188",
+    "number": 188,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Avoid the monopoly price trap",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "monopoly-decisions",
+      "price-variable"
+    ],
+    "stemHtml": "<p>A student solves MR = MC = 20 at Q = 40, then concludes: “The monopolist charges 20.” For demand P = 100 − Q, what is the correct correction?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Charge 100, the highest point on demand, and still sell 40."
+      },
+      {
+        "letter": "B",
+        "html": "Set Q = 20 because marginal cost is 20."
+      },
+      {
+        "letter": "C",
+        "html": "Use demand at Q = 40 to obtain P = 60; MR = MC locates output."
+      },
+      {
+        "letter": "D",
+        "html": "A monopolist never uses marginal cost."
+      }
+    ],
+    "answer": "C",
+    "answerHtml": "<p>Marginal revenue is below price for a single-price monopolist with downward-sloping demand. <strong>MR = MC determines Q</strong>. The demand curve gives the price customers will pay for that Q. Here the output is 40 and the price is 60.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q189",
+    "number": 189,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Monopoly in the short run: operate or shut?",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "monopoly-horizons",
+      "monopoly-decisions"
+    ],
+    "stemHtml": "<p>At the profit-maximizing positive output Q = 100, P = 18, AVC = 12, and ATC = 25. Fixed costs are unavoidable this period; shutdown avoids variable costs only. What should the monopolist do in the short run?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Shut down because any loss means producing is worse."
+      },
+      {
+        "letter": "B",
+        "html": "Operate: loss is 700, smaller than the 1,300 fixed-cost loss on shutdown."
+      },
+      {
+        "letter": "C",
+        "html": "Operate because economic profit is 600."
+      },
+      {
+        "letter": "D",
+        "html": "Shut down and avoid all fixed costs immediately."
+      }
+    ],
+    "answer": "B",
+    "answerHtml": "<p>TR = 1,800; TVC = 1,200; TC = 2,500, so operating profit is <strong>−700</strong>. Fixed cost is (25 − 12) × 100 = 1,300, which would be lost on shutdown. Operating contributes 600 toward it. This comparison assumes the stated positive output is the best operating choice and the fixed cost is unavoidable.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "q190",
+    "number": 190,
+    "kind": "mcq",
+    "section": "pricing",
+    "set": "market-review",
+    "title": "Monopoly in the long run",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "monopoly-horizons",
+      "entry-barriers"
+    ],
+    "stemHtml": "<p>A monopolist can keep rivals out. Nevertheless, under every feasible long-run price/output and plant choice, its revenue is below the total opportunity cost of staying in the business. Assume it can exit and avoid all future business costs. What should it do?</p>",
+    "options": [
+      {
+        "letter": "A",
+        "html": "Exit; entry barriers do not create profitable demand or justify persistent avoidable economic losses."
+      },
+      {
+        "letter": "B",
+        "html": "Remain forever because every monopoly earns positive profit."
+      },
+      {
+        "letter": "C",
+        "html": "Set price independently of quantity and demand to guarantee a profit."
+      },
+      {
+        "letter": "D",
+        "html": "Remain because all long-run costs are necessarily sunk."
+      }
+    ],
+    "answer": "A",
+    "answerHtml": "<p>In the short run, operating can minimize a loss when revenue covers avoidable variable costs and fixed costs are sunk. In the long run, the firm can adjust or exit. If the best feasible continuation still fails to cover opportunity costs, exit is preferable. Barriers allow positive monopoly profit to persist when demand and costs support it; they do not ensure it.</p>",
+    "strand": "monopoly"
+  },
+  {
+    "id": "short11",
+    "number": 191,
+    "kind": "short",
+    "section": "short",
+    "set": "market-review",
+    "title": "Draw and compare a tax and a subsidy",
+    "topic": "market-failure",
+    "extension": false,
+    "coverage": [
+      "market-failure",
+      "externalities",
+      "msc",
+      "negative-externalities",
+      "externality-graphs",
+      "tax-graphs",
+      "subsidy-graphs",
+      "five-approaches"
+    ],
+    "stemHtml": "<p><strong>A. External cost:</strong> D = 100 − Q, MPC = 20 + Q, and constant marginal damage = 20.</p><ol><li>Sketch demand, MPC and MSC. Mark private and efficient output.</li><li>Find the corrective tax, buyer and seller prices, tax revenue and original DWL. Mark the tax wedge and DWL triangle.</li></ol><p><strong>B. External benefit:</strong> MPB = 80 − Q, supply = MSC = 20 + Q, and constant marginal external benefit = 20.</p><ol start=\"3\"><li>Sketch MPB, MSB and MSC. Find private and efficient output and the corrective subsidy.</li><li>Find the buyer and seller prices with the subsidy and the government budget cost. Explain why tax revenue or subsidy expenditure is not itself a deadweight-loss measure.</li><li>Name all five lecture approaches to externalities.</li></ol>",
+    "answerHtml": "<h3>A. Negative externality</h3><pre>Private: 100 − Q = 20 + Q → Q = 40, P = 60\nMSC = MPC + damage = 40 + Q\nEfficient: 100 − Q = 40 + Q → Q = 30\nCorrective tax = marginal damage = 20\nBuyer price = 100 − 30 = 70\nSeller net price = 20 + 30 = 50\nRevenue = 20 × 30 = 600\nOriginal DWL = ½ × (40 − 30) × 20 = 100</pre><svg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Demand is 100 minus Q. Supply is 20 plus Q. A tax of 20 moves output from 40 to 30; buyers pay 70 and sellers receive 50.\"><title>Corrective tax wedge</title><path d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/><polygon points=\"48.0,167.5 159.0,167.5 159.0,130.5 48.0,130.5\" fill=\"#466e94\" fill-opacity=\".18\"/><polyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/><text x=\"310.7\" y=\"204.5\" fill=\"#286047\" font-size=\"13\">D</text><polyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/><text x=\"292.2\" y=\"86.1\" fill=\"#ad802e\" font-size=\"13\">S = MPC</text><polyline points=\"48.0,186.0 288.5,65.8\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/><text x=\"284.8\" y=\"58.3\" fill=\"#a25a43\" font-size=\"13\">S + tax</text><path d=\"M48 130.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"159.0\" cy=\"130.5\" r=\"3.5\" fill=\"#203b32\"/><text x=\"164.0\" y=\"123.5\" font-size=\"13\" fill=\"#203b32\">Buyer 70</text><path d=\"M48 167.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"159.0\" cy=\"167.5\" r=\"3.5\" fill=\"#203b32\"/><text x=\"164.0\" y=\"160.5\" font-size=\"13\" fill=\"#203b32\">Seller 50</text><g font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\"><text x=\"8\" y=\"22\">Price / cost / benefit</text><text x=\"375\" y=\"265\">Q</text><text x=\"38\" y=\"278\">0</text><text x=\"115.0\" y=\"278\">20</text><text x=\"189.0\" y=\"278\">40</text><text x=\"263.0\" y=\"278\">60</text><text x=\"337.0\" y=\"278\">80</text></g></svg><p>Draw MSC 20 above MPC; the tax-inclusive supply coincides with MSC. Original DWL lies between MSC and demand from Q = 30 to 40, as in the externality triangle question.</p><h3>B. Positive externality</h3><pre>Private: 80 − Q = 20 + Q → Q = 30, P = 50\nMSB = MPB + external benefit = 100 − Q\nEfficient: 100 − Q = 20 + Q → Q = 40\nCorrective subsidy = marginal external benefit = 20\nBuyer price = 80 − 40 = 40\nSeller receipt = 20 + 40 = 60\nBudget cost = 20 × 40 = 800</pre><svg class=\"externality-graph\" viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"Private demand 80 minus Q crosses supply 20 plus Q at Q30. MSB is 100 minus Q. With subsidy 20, Q is 40, buyers pay 40 and sellers receive 60.\"><title>Positive externality and subsidy</title><path d=\"M48 35V260H365\" fill=\"none\" stroke=\"#78917c\" stroke-width=\"1.5\"/><polyline points=\"48.0,112.0 307.0,241.5\" fill=\"none\" stroke=\"#286047\" stroke-width=\"2.5\"/><text x=\"310.7\" y=\"241.5\" fill=\"#286047\" font-size=\"13\">MPB</text><polyline points=\"48.0,75.0 307.0,204.5\" fill=\"none\" stroke=\"#a25a43\" stroke-width=\"2.5\"/><text x=\"310.7\" y=\"204.5\" fill=\"#a25a43\" font-size=\"13\">MSB</text><polyline points=\"48.0,223.0 307.0,93.5\" fill=\"none\" stroke=\"#ad802e\" stroke-width=\"2.5\"/><text x=\"292.2\" y=\"82.4\" fill=\"#ad802e\" font-size=\"13\">S = MSC</text><polyline points=\"48.0,260.0 307.0,130.5\" fill=\"none\" stroke=\"#466e94\" stroke-width=\"2.5\"/><text x=\"288.5\" y=\"136.1\" fill=\"#466e94\" font-size=\"13\">S − subsidy</text><path d=\"M48 167.5H159.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"159.0\" cy=\"167.5\" r=\"3.5\" fill=\"#203b32\"/><text x=\"164.0\" y=\"160.5\" font-size=\"13\" fill=\"#203b32\">Private</text><path d=\"M48 149.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"196.0\" cy=\"149.0\" r=\"3.5\" fill=\"#203b32\"/><text x=\"201.0\" y=\"142.0\" font-size=\"13\" fill=\"#203b32\">Seller 60</text><path d=\"M48 186.0H196.0V260\" fill=\"none\" stroke=\"#78917c\" stroke-dasharray=\"4 4\"/><circle cx=\"196.0\" cy=\"186.0\" r=\"3.5\" fill=\"#203b32\"/><text x=\"201.0\" y=\"179.0\" font-size=\"13\" fill=\"#203b32\">Buyer 40</text><g font-family=\"sans-serif\" font-size=\"12\" fill=\"#203b32\"><text x=\"8\" y=\"22\">Price / cost / benefit</text><text x=\"375\" y=\"265\">Q</text><text x=\"38\" y=\"278\">0</text><text x=\"115.0\" y=\"278\">20</text><text x=\"189.0\" y=\"278\">40</text><text x=\"263.0\" y=\"278\">60</text><text x=\"337.0\" y=\"278\">80</text></g></svg><p>In this model the subsidy-inclusive seller receipt exceeds the buyer price by 20. Government revenue/expenditure is a transfer; a welfare assessment includes external effects and real resource costs. Raising public funds can create additional costs outside this simplified model.</p><h3>Five approaches</h3><p>Taxes/subsidies; private bargaining; legal rules and procedures; sale/auction of externality rights; direct government regulation.</p>",
+    "checks": [
+      "Drew MSC above MPC and marked private Q = 40 and efficient Q = 30.",
+      "Found tax 20, buyer price 70 and seller net price 50.",
+      "Calculated tax revenue 600 and original DWL 100, and distinguished the areas.",
+      "Drew MSB above MPB for the external benefit and found Q = 30 versus 40.",
+      "Found subsidy 20, buyer price 40, seller receipt 60 and spending 800.",
+      "Named all five approaches and explained the transfer versus welfare distinction."
+    ]
+  },
+  {
+    "id": "short12",
+    "number": 192,
+    "kind": "short",
+    "section": "short",
+    "set": "market-review",
+    "title": "Monopoly: pricing power and two time horizons",
+    "topic": "monopoly",
+    "extension": false,
+    "coverage": [
+      "monopoly",
+      "market-power",
+      "lerner-index",
+      "entry-barriers",
+      "price-variable",
+      "monopoly-decisions",
+      "monopoly-horizons"
+    ],
+    "stemHtml": "<p>A single-price monopolist faces P = 120 − 2Q. Variable cost is 20Q and fixed cost is initially 800. There are no externalities.</p><ol><li>Derive MR and calculate profit-maximizing Q, P, revenue and economic profit.</li><li>Calculate the Lerner index. Under the interior monopoly markup rule, what is the absolute demand elasticity at that output?</li><li>If unavoidable short-run fixed cost rises to 1,800, find the new optimal output, price, operating profit, and shutdown payoff. Should it operate?</li><li>If every feasible long-run continuation yields an avoidable economic loss, explain the exit decision. Explain why barriers allow profit to persist but cannot guarantee profit; give two types of barrier.</li></ol>",
+    "answerHtml": "<pre>MR = 120 − 4Q; MC = 20\nMR = MC → Q = 25\nP = 120 − 2(25) = 70\nTR = 70 × 25 = 1,750\nInitial TC = 800 + 20(25) = 1,300\nInitial profit = 450\nL = (70 − 20)/70 = 5/7 ≈ 0.7143\n|ε| = 1/L = 7/5 = 1.4\nWith fixed cost 1,800: Q = 25 and P = 70 stay the same\nOperating profit = 1,750 − 500 − 1,800 = −550\nShutdown payoff = −1,800\nOperate: contribution to fixed cost = 1,250</pre><p>A fixed-cost increase does not change MR or MC in this example. In the short run, the firm loses less by operating because variable costs are covered. In the long run, if the best continuation cannot cover avoidable opportunity costs, it should exit. Legal protection such as a patent, economies of scale over relevant demand, or control of an essential input can obstruct entry and allow profits to persist. None guarantees sufficient demand or low costs.</p><p>The Lerner index uses MC; profit uses all economic costs. Pricing power and positive economic profit are different observations.</p>",
+    "checks": [
+      "Derived MR = 120 − 4Q and found Q = 25, P = 70.",
+      "Found revenue 1,750 and initial economic profit 450.",
+      "Calculated L = 5/7 and |elasticity| = 1.4 under the markup rule.",
+      "Kept Q and P unchanged after the fixed-cost increase.",
+      "Compared operating loss 550 with shutdown loss 1,800 and chose operation.",
+      "Explained long-run exit and gave at least two entry barriers without claiming guaranteed profit."
+    ]
   }
 ]

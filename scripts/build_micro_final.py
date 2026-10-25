@@ -12,7 +12,7 @@ def main():
     parser.add_argument('--notes-root', type=Path, help='Also refresh the local standalone notes copy')
     args = parser.parse_args()
     bank = json.loads((ROOT / 'content/microeconomics-final.json').read_text())
-    assert len(bank) == 160, 'Expected five complete 32-question tests'
+    assert len(bank) == 192, 'Expected five 32-question mocks and a 32-question market review'
     assert len({q['id'] for q in bank}) == len(bank), 'Duplicate question IDs'
     assert len({q['number'] for q in bank}) == len(bank), 'Duplicate question numbers'
     for test in ('mock1', 'mock2', 'mock3', 'mock4', 'mock5'):
@@ -21,6 +21,10 @@ def main():
         assert sum(q['section'] == 'pricing' and q['kind'] == 'mcq' for q in items) == 15
         assert sum(q['section'] == 'games' and q['kind'] == 'mcq' for q in items) == 15
         assert sum(q['kind'] == 'short' for q in items) == 2
+    review = [q for q in bank if q['set'] == 'market-review']
+    assert len(review) == 32
+    assert sum(q['section'] == 'pricing' and q['kind'] == 'mcq' for q in review) == 30
+    assert sum(q['kind'] == 'short' for q in review) == 2
     for q in bank:
         assert q['stemHtml'] and q['answerHtml'] and q['title'] and q['topic'], q['id']
         assert isinstance(q['coverage'], list), q['id']
@@ -39,7 +43,9 @@ def main():
     assert count == 1, 'Question-data slot not found'
     coverage = json.loads((ROOT / 'content/microeconomics-final-coverage.json').read_text())
     ids = {q['id'] for q in bank}
-    assert len(coverage) == 24, 'Expected every supplied topic heading'
+    assert len({t['id'] for t in coverage}) == len(coverage)
+    assert sum(t['group'] == 'core' for t in coverage) == 24
+    assert sum(t['group'] == 'markets-detail' for t in coverage) == 18
     for topic in coverage:
         assert topic['questionIds'] and set(topic['questionIds']) <= ids, topic['id']
         assert set(topic['questionIds']) == {q['id'] for q in bank if topic['id'] in q['coverage']}, topic['id']
@@ -54,7 +60,7 @@ def main():
     page.write_text(content)
     if args.notes_root:
         (args.notes_root / '01 Subjects/MicroEconomics/Final Exam Practice.html').write_text(content)
-    print('Built 160 questions across five tests and verified all 24 supplied topic headings.')
+    print('Built 192 questions: five balanced mocks, a focused market review, and 42 audited headings.')
 
 
 if __name__ == '__main__':

@@ -20,7 +20,27 @@
       "q134",
       "q135",
       "q136",
-      "short9"
+      "short9",
+      "q161",
+      "q162",
+      "q163",
+      "q164",
+      "q165",
+      "q166",
+      "q167",
+      "q168",
+      "q169",
+      "q170",
+      "q171",
+      "q172",
+      "q173",
+      "q174",
+      "q175",
+      "q176",
+      "q177",
+      "q178",
+      "q179",
+      "short11"
     ],
     "addedIds": [
       "q97",
@@ -37,8 +57,31 @@
       "q134",
       "q135",
       "q136",
-      "short9"
-    ]
+      "short9",
+      "q161",
+      "q162",
+      "q163",
+      "q164",
+      "q165",
+      "q166",
+      "q167",
+      "q168",
+      "q169",
+      "q170",
+      "q171",
+      "q172",
+      "q173",
+      "q174",
+      "q175",
+      "q176",
+      "q177",
+      "q178",
+      "q179",
+      "short11"
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "markets"
   },
   {
     "id": "monopoly",
@@ -96,7 +139,19 @@
       "q137",
       "q138",
       "q139",
-      "q140"
+      "q140",
+      "q180",
+      "q181",
+      "q182",
+      "q183",
+      "q184",
+      "q185",
+      "q186",
+      "q187",
+      "q188",
+      "q189",
+      "q190",
+      "short12"
     ],
     "addedIds": [
       "q102",
@@ -107,8 +162,23 @@
       "q137",
       "q138",
       "q139",
-      "q140"
-    ]
+      "q140",
+      "q180",
+      "q181",
+      "q182",
+      "q183",
+      "q184",
+      "q185",
+      "q186",
+      "q187",
+      "q188",
+      "q189",
+      "q190",
+      "short12"
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "markets"
   },
   {
     "id": "strategy-games",
@@ -274,7 +344,10 @@
       "q157",
       "q158",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "price-wars",
@@ -306,7 +379,10 @@
       "q114",
       "q115",
       "q154"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "ai-launch",
@@ -327,7 +403,10 @@
       "q144",
       "q145",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "timing",
@@ -363,7 +442,10 @@
       "q152",
       "q153",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "payoff-matrices",
@@ -445,7 +527,10 @@
       "q153",
       "q156",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "game-trees",
@@ -491,7 +576,10 @@
       "q124",
       "q157",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "optimal-strategies",
@@ -661,7 +749,10 @@
       "q157",
       "q158",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "dominant-strategies",
@@ -701,7 +792,10 @@
       "q112",
       "q117",
       "q158"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "prisoners-dilemma",
@@ -743,7 +837,10 @@
       "q154",
       "q155",
       "q158"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "escaping-dilemma",
@@ -775,7 +872,10 @@
       "q125",
       "q154",
       "q155"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "long-term",
@@ -807,7 +907,10 @@
       "q114",
       "q125",
       "q154"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "repeated-games",
@@ -839,7 +942,10 @@
       "q114",
       "q125",
       "q154"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "no-dominance",
@@ -875,7 +981,10 @@
       "q152",
       "q156",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "negative-externalities",
@@ -894,7 +1003,15 @@
       "q132",
       "q133",
       "q134",
-      "short9"
+      "short9",
+      "q162",
+      "q163",
+      "q164",
+      "q167",
+      "q168",
+      "q171",
+      "q172",
+      "short11"
     ],
     "addedIds": [
       "q98",
@@ -907,8 +1024,19 @@
       "q132",
       "q133",
       "q134",
-      "short9"
-    ]
+      "short9",
+      "q162",
+      "q163",
+      "q164",
+      "q167",
+      "q168",
+      "q171",
+      "q172",
+      "short11"
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "markets"
   },
   {
     "id": "nash",
@@ -956,7 +1084,10 @@
       "q156",
       "q158",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "find-ne",
@@ -1004,7 +1135,10 @@
       "q156",
       "q158",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "sequential-games",
@@ -1082,7 +1216,10 @@
       "q153",
       "q157",
       "short10"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "mover-advantage",
@@ -1110,7 +1247,10 @@
       "q148",
       "q149",
       "q153"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "hold-up",
@@ -1131,7 +1271,10 @@
       "short8",
       "q146",
       "q147"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "underdog",
@@ -1148,7 +1291,10 @@
       "q123",
       "q150",
       "q151"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "giant",
@@ -1165,7 +1311,10 @@
       "q124",
       "q152",
       "q153"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "games"
   },
   {
     "id": "price-customization",
@@ -1261,6 +1410,483 @@
       "q141",
       "q142",
       "q143"
-    ]
+    ],
+    "group": "core",
+    "baseline": 96,
+    "domain": "markets"
+  },
+  {
+    "id": "externalities",
+    "label": "Externalities: costs and benefits",
+    "before": "partial",
+    "note": "External costs were present; positive external benefits and subsidies needed explicit practice.",
+    "originalIds": [
+      "q129"
+    ],
+    "questionIds": [
+      "q129",
+      "q161",
+      "q162",
+      "q163",
+      "q166",
+      "q167",
+      "q168",
+      "short11"
+    ],
+    "addedIds": [
+      "q161",
+      "q162",
+      "q163",
+      "q166",
+      "q167",
+      "q168",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "msc",
+    "label": "Marginal social cost",
+    "before": "covered",
+    "note": "MSC = MPC + marginal damage was already tested; added construction and graphs.",
+    "originalIds": [
+      "q98",
+      "q130"
+    ],
+    "questionIds": [
+      "q98",
+      "q130",
+      "q162",
+      "q163",
+      "q171",
+      "short11"
+    ],
+    "addedIds": [
+      "q162",
+      "q163",
+      "q171",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "five-approaches",
+    "label": "Five approaches to externalities",
+    "before": "missing",
+    "note": "Individual remedies appeared, but the complete five-part lecture classification was absent.",
+    "originalIds": [],
+    "questionIds": [
+      "q161",
+      "q164",
+      "q165",
+      "q166",
+      "q167",
+      "q168",
+      "q169",
+      "q170",
+      "q172",
+      "q173",
+      "q179",
+      "short11"
+    ],
+    "addedIds": [
+      "q161",
+      "q164",
+      "q165",
+      "q166",
+      "q167",
+      "q168",
+      "q169",
+      "q170",
+      "q172",
+      "q173",
+      "q179",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "externality-graphs",
+    "label": "Externality graph and welfare loss",
+    "before": "covered",
+    "note": "An MSC/MPC graph was already present; added the DWL triangle and drawing practice.",
+    "originalIds": [
+      "q99"
+    ],
+    "questionIds": [
+      "q99",
+      "q163",
+      "q164",
+      "short11"
+    ],
+    "addedIds": [
+      "q163",
+      "q164",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "tax-graphs",
+    "label": "Taxes: graph, wedge and revenue",
+    "before": "partial",
+    "note": "Tax quantities and two prices were calculated, but no tax-wedge diagram was supplied.",
+    "originalIds": [
+      "short9"
+    ],
+    "questionIds": [
+      "short9",
+      "q164",
+      "q165",
+      "short11"
+    ],
+    "addedIds": [
+      "q164",
+      "q165",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "subsidy-graphs",
+    "label": "Subsidies: graph and external benefits",
+    "before": "missing",
+    "note": "No positive-externality subsidy graph or calculation was present.",
+    "originalIds": [],
+    "questionIds": [
+      "q166",
+      "q167",
+      "short11"
+    ],
+    "addedIds": [
+      "q166",
+      "q167",
+      "short11"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "bargaining",
+    "label": "Bargaining and negotiation",
+    "before": "covered",
+    "note": "Coase conditions were present; added a feasible transfer and transaction-cost application.",
+    "originalIds": [
+      "q133",
+      "short9"
+    ],
+    "questionIds": [
+      "q133",
+      "short9",
+      "q168",
+      "q169"
+    ],
+    "addedIds": [
+      "q168",
+      "q169"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "legal-rules",
+    "label": "Legal rules: injunction and liability",
+    "before": "missing",
+    "note": "No dedicated legal-remedy distinction or liability incentive problem was present.",
+    "originalIds": [],
+    "questionIds": [
+      "q170",
+      "q171"
+    ],
+    "addedIds": [
+      "q170",
+      "q171"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "imperfect-info",
+    "label": "Imperfect information and adverse selection",
+    "before": "covered",
+    "note": "Hidden quality and adverse selection were present; expanded contrasting applications.",
+    "originalIds": [
+      "q101",
+      "q135"
+    ],
+    "questionIds": [
+      "q101",
+      "q135",
+      "q174",
+      "q176",
+      "q177",
+      "q178"
+    ],
+    "addedIds": [
+      "q174",
+      "q176",
+      "q177",
+      "q178"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "moral-hazard",
+    "label": "Moral hazard and incentives",
+    "before": "covered",
+    "note": "Moral hazard was tested; added deductibles and their risk-protection tradeoff.",
+    "originalIds": [
+      "q136"
+    ],
+    "questionIds": [
+      "q136",
+      "q174",
+      "q175"
+    ],
+    "addedIds": [
+      "q174",
+      "q175"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "information-solutions",
+    "label": "Market solutions and information search",
+    "before": "missing",
+    "note": "No dedicated warranty, information-search stopping rule, or incentive-remedy question was present.",
+    "originalIds": [],
+    "questionIds": [
+      "q175",
+      "q176",
+      "q177",
+      "q178"
+    ],
+    "addedIds": [
+      "q175",
+      "q176",
+      "q177",
+      "q178"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "government-market",
+    "label": "Government information and government failure",
+    "before": "partial",
+    "note": "Intervention costs were briefly noted; nonrival information and government-failure reasoning needed questions.",
+    "originalIds": [
+      "q97"
+    ],
+    "questionIds": [
+      "q97",
+      "q178",
+      "q179"
+    ],
+    "addedIds": [
+      "q178",
+      "q179"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "market-power",
+    "label": "Imperfect markets and market power",
+    "before": "partial",
+    "note": "Monopoly markup and inefficiency were covered; added differentiation and the distinction between power and profit.",
+    "originalIds": [
+      "q68",
+      "q140"
+    ],
+    "questionIds": [
+      "q68",
+      "q140",
+      "q180",
+      "q181",
+      "q182",
+      "q183",
+      "q184",
+      "q185",
+      "q186",
+      "short12"
+    ],
+    "addedIds": [
+      "q180",
+      "q181",
+      "q182",
+      "q183",
+      "q184",
+      "q185",
+      "q186",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "lerner-index",
+    "label": "Lerner index: (P − MC) / P",
+    "before": "partial",
+    "note": "The markup calculation was present without naming the Lerner index or contrasting price-based and cost-based markups.",
+    "originalIds": [
+      "q68"
+    ],
+    "questionIds": [
+      "q68",
+      "q181",
+      "q182",
+      "q183",
+      "short12"
+    ],
+    "addedIds": [
+      "q181",
+      "q182",
+      "q183",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "entry-barriers",
+    "label": "Barriers to entry",
+    "before": "partial",
+    "note": "Barrier effects were present; the legal, scale, and resource categories needed explicit practice.",
+    "originalIds": [
+      "q39",
+      "q106"
+    ],
+    "questionIds": [
+      "q39",
+      "q106",
+      "q184",
+      "q185",
+      "q190",
+      "short12"
+    ],
+    "addedIds": [
+      "q184",
+      "q185",
+      "q190",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "price-variable",
+    "label": "Price as a decision variable",
+    "before": "partial",
+    "note": "The demand constraint was implicit; added an explicit pricing-discretion question. The exact first three variable labels were not available.",
+    "originalIds": [
+      "q76"
+    ],
+    "questionIds": [
+      "q76",
+      "q186",
+      "q187",
+      "q188",
+      "short12"
+    ],
+    "addedIds": [
+      "q186",
+      "q187",
+      "q188",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "monopoly-decisions",
+    "label": "Pure monopoly: price, output and profit graphs",
+    "before": "covered",
+    "note": "MR = MC, price from demand, and profits were already tested; added an explicit monopoly graph.",
+    "originalIds": [
+      "q1",
+      "q2",
+      "q3",
+      "q33",
+      "q67",
+      "q137"
+    ],
+    "questionIds": [
+      "q1",
+      "q2",
+      "q3",
+      "q33",
+      "q67",
+      "q137",
+      "q182",
+      "q186",
+      "q187",
+      "q188",
+      "q189",
+      "short12"
+    ],
+    "addedIds": [
+      "q182",
+      "q186",
+      "q187",
+      "q188",
+      "q189",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
+  },
+  {
+    "id": "monopoly-horizons",
+    "label": "Monopoly in the short and long run",
+    "before": "covered",
+    "note": "Persistent profit and short-run losses were covered; expanded shutdown, exit, and fixed-cost comparisons.",
+    "originalIds": [
+      "q39",
+      "q66",
+      "q139"
+    ],
+    "questionIds": [
+      "q39",
+      "q66",
+      "q139",
+      "q183",
+      "q189",
+      "q190",
+      "short12"
+    ],
+    "addedIds": [
+      "q183",
+      "q189",
+      "q190",
+      "short12"
+    ],
+    "group": "markets-detail",
+    "domain": "markets",
+    "baseline": 160
   }
 ]

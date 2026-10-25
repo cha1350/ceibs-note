@@ -7,12 +7,19 @@ Live site: https://cha1350.github.io/ceibs-note/
 ## Microeconomics final practice
 
 The [final practice page](https://cha1350.github.io/ceibs-note/pages/economics/microeconomics-final.html)
-contains 160 questions across five complete mock tests. Each test has 15 market/policy
+contains 192 questions: five complete mock tests and a focused market-failure and
+monopoly review. Each full mock has 15 market/policy
 MCQs, 15 game theory MCQs, and two short questions with worked answers and rubrics.
 Tests 4–5 follow the student’s supplied topic list, including market failure and
 negative externalities; Tests 1–3 keep their earlier monopoly/pricing emphasis.
-The topic panel provides drills for all 24 supplied headings and reports which
-were already covered, expanded, or added. AI launch, underdog, and giant applications
+The focused review contains 30 market/policy MCQs and two short answers. It adds
+externality, tax, subsidy and monopoly graphs; all five externality approaches;
+bargaining and legal remedies; information search and remedies; government failure;
+the Lerner index; entry barriers; and monopoly pricing, shutdown and exit decisions.
+It is a topic drill, with no game questions, rather than an additional balanced mock.
+The panels provide drills for 24 broad headings plus 18 detailed market headings.
+The broad audit compares with the original 96 questions; the detailed audit compares
+with the 160-question bank before the focused review. AI launch, underdog, and giant applications
 use clearly labeled original hypothetical scenarios; lecture-case stories and
 payoffs have not been verified.
 
