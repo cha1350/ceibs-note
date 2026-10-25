@@ -36,8 +36,8 @@ window.CEIBS_LIBRARY = {
   "pages": [
     {
       "id": "microeconomics-past-papers",
-      "title": "2022 & 2025 \u00b7 Final-topic practice",
-      "description": "Selected from the uploaded papers: 26 MCQs and four written excerpts on monopoly, price customization, externalities, subsidy graphs, and games. Reviewed study solutions and original question numbers.",
+      "title": "Six past papers \u00b7 Final-topic practice",
+      "description": "37 MCQs and one written excerpt from six uploaded papers. Externalities, tax/subsidy graphs, price customization and dominant strategies. Corrected final scope with reviewed explanations.",
       "topic": "economics",
       "formats": [
         "Interactive"
@@ -46,10 +46,10 @@ window.CEIBS_LIBRARY = {
         "Microeconomics",
         "Final exam",
         "Past papers",
-        "Monopoly",
+        "Externalities",
         "Game theory"
       ],
-      "detail": "Final topics only \u00b7 30 selected items",
+      "detail": "Updated final topics \u00b7 38 selected items",
       "path": "pages/economics/microeconomics-past-papers.html",
       "updated": "2026-10-25",
       "thumbnail": "assets/previews/microeconomics-past-papers.svg"
@@ -57,7 +57,7 @@ window.CEIBS_LIBRARY = {
     {
       "id": "microeconomics-final",
       "title": "Microeconomics final practice",
-      "description": "192 questions: five balanced mocks plus a focused market-failure and monopoly review. Tax, subsidy and monopoly graphs, five approaches, information problems, Lerner index, and game theory.",
+      "description": "123 in-scope questions on market failure, information, price customization and the remaining game topics. Fresh 15 + 15 + 2 mocks, filtered topic drills and saved progress.",
       "topic": "economics",
       "formats": [
         "Interactive"
@@ -69,7 +69,7 @@ window.CEIBS_LIBRARY = {
         "Pricing",
         "Quiz"
       ],
-      "detail": "5 mocks + focused review \u00b7 192 questions",
+      "detail": "Corrected final scope \u00b7 123 questions",
       "path": "pages/economics/microeconomics-final.html",
       "updated": "2026-10-25",
       "thumbnail": "assets/previews/microeconomics-final.svg"

@@ -3,6 +3,7 @@ import argparse
 import json
 import re
 from pathlib import Path
+from micro_scope import apply_scope, active_coverage
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -34,7 +35,9 @@ def main():
             assert len({o['html'] for o in q['options']}) == 4, q['id']
         else:
             assert len(q['checks']) >= 4, q['id']
-    payload = json.dumps(bank, ensure_ascii=False, indent=2).replace('<', '\\u003c')
+    scope = json.loads((ROOT / 'content/microeconomics-final-scope.json').read_text())
+    active = apply_scope(bank, scope)
+    payload = json.dumps(active, ensure_ascii=False, indent=2).replace('<', '\\u003c')
     page = ROOT / 'docs/pages/economics/microeconomics-final.html'
     content, count = re.subn(
         r'(<script type="application/json" id="question-data">\n)[\s\S]*?(\n</script>)',
@@ -51,7 +54,8 @@ def main():
         assert set(topic['questionIds']) == {q['id'] for q in bank if topic['id'] in q['coverage']}, topic['id']
         if topic['before'] == 'missing':
             assert not topic['originalIds'] and topic['addedIds'], topic['id']
-    coverage_payload = json.dumps(coverage, ensure_ascii=False, indent=2).replace('<', '\\u003c')
+    selected_coverage = active_coverage(coverage, active, scope)
+    coverage_payload = json.dumps(selected_coverage, ensure_ascii=False, indent=2).replace('<', '\\u003c')
     slot = '<script type="application/json" id="topic-coverage">\n' + coverage_payload + '\n</script>'
     if 'id="topic-coverage"' in content:
         content = re.sub(r'<script type="application/json" id="topic-coverage">[\s\S]*?</script>', lambda _: slot, content, count=1)
@@ -60,7 +64,7 @@ def main():
     page.write_text(content)
     if args.notes_root:
         (args.notes_root / '01 Subjects/MicroEconomics/Final Exam Practice.html').write_text(content)
-    print('Built 192 questions: five balanced mocks, a focused market review, and 42 audited headings.')
+    print(f'Built {len(active)} in-scope questions and {len(selected_coverage)} topic drills; confirmed exclusions applied.')
 
 
 if __name__ == '__main__':

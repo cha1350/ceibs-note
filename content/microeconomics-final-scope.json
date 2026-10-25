@@ -1,0 +1,154 @@
+{
+  "updated": "2026-10-25",
+  "basis": "User confirmed monopoly, hold-up problem and Nash equilibrium are excluded, and price customization / price discrimination remains included.",
+  "excludedTopics": [
+    "monopoly",
+    "hold-up",
+    "nash"
+  ],
+  "excludedCoverage": [
+    "monopoly",
+    "market-power",
+    "lerner-index",
+    "entry-barriers",
+    "price-variable",
+    "monopoly-decisions",
+    "monopoly-horizons",
+    "hold-up",
+    "nash",
+    "find-ne"
+  ],
+  "excludedQuestionIds": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5",
+    "q17",
+    "q18",
+    "q19",
+    "q20",
+    "q23",
+    "q33",
+    "q34",
+    "q35",
+    "q36",
+    "q37",
+    "q38",
+    "q39",
+    "q48",
+    "q51",
+    "q53",
+    "short4",
+    "q65",
+    "q66",
+    "q67",
+    "q68",
+    "q76",
+    "q80",
+    "q81",
+    "q82",
+    "q83",
+    "q87",
+    "q88",
+    "q94",
+    "short5",
+    "q102",
+    "q103",
+    "q104",
+    "q105",
+    "q106",
+    "q113",
+    "q116",
+    "q121",
+    "q122",
+    "q126",
+    "short8",
+    "q137",
+    "q138",
+    "q139",
+    "q140",
+    "q144",
+    "q146",
+    "q147",
+    "q152",
+    "q153",
+    "q156",
+    "q158",
+    "short10",
+    "q180",
+    "q181",
+    "q182",
+    "q183",
+    "q184",
+    "q185",
+    "q186",
+    "q187",
+    "q188",
+    "q189",
+    "q190",
+    "short12"
+  ],
+  "textReplacements": {
+    "q25": [
+      [
+        "The equilibrium path yields",
+        "The predicted sequence yields"
+      ]
+    ],
+    "q29": [
+      [
+        "it is the stage-game equilibrium",
+        "Low is a best choice against the other player choosing Low"
+      ]
+    ],
+    "q50": [
+      [
+        "the game has two equilibria",
+        "the two players always receive identical payoffs"
+      ]
+    ],
+    "q60": [
+      [
+        "A standard prisoners’ dilemma has a unique one-shot equilibrium of mutual defection.",
+        "In a standard prisoners’ dilemma, defection is strictly dominant for each player in a single round."
+      ]
+    ],
+    "q61": [
+      [
+        "Defection can still be an equilibrium",
+        "Both players may still choose defection"
+      ]
+    ],
+    "q86": [
+      [
+        "may not be reached in equilibrium",
+        "may not be reached in the predicted play"
+      ]
+    ],
+    "q125": [
+      [
+        "Defection may remain an equilibrium",
+        "Both players may still choose defection"
+      ]
+    ],
+    "q8": [
+      [
+        "uniform-price monopoly quantity",
+        "uniform-price quantity"
+      ]
+    ],
+    "q15": [
+      [
+        "uniform monopoly pricing",
+        "uniform pricing"
+      ]
+    ],
+    "q161": [
+      [
+        "Perfect competition; monopoly; oligopoly; monopolistic competition; monopsony.",
+        "Private benefit; social benefit; total cost; fixed cost; variable cost."
+      ]
+    ]
+  }
+}
