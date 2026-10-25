@@ -1,0 +1,1109 @@
+{
+  "title": "Past papers · Your final topics",
+  "updated": "2026-10-25",
+  "selection": {
+    "2022": [
+      11,
+      15,
+      17,
+      24,
+      25,
+      33,
+      43,
+      45,
+      49,
+      50
+    ],
+    "2025": [
+      12,
+      16,
+      21,
+      24,
+      26,
+      28,
+      34,
+      39,
+      41,
+      42,
+      46,
+      50,
+      53,
+      57,
+      58,
+      59
+    ]
+  },
+  "questions": [
+    {
+      "id": "intl-2022-q11",
+      "year": "2022",
+      "originalNumber": "11",
+      "kind": "mcq",
+      "pages": [
+        6
+      ],
+      "title": "Sources of market power",
+      "topic": "monopoly",
+      "stemHtml": "<p>Which of the following is NOT a potential source of market power?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "A government-issued patent"
+        },
+        {
+          "letter": "B",
+          "html": "Economies of scale in production"
+        },
+        {
+          "letter": "C",
+          "html": "Copyright protection law"
+        },
+        {
+          "letter": "D",
+          "html": "Sole access to a key natural resource"
+        },
+        {
+          "letter": "E",
+          "html": "Perfect information for all firms"
+        }
+      ],
+      "answer": "E",
+      "answerHtml": "<p>Patents and copyrights provide legal protection; scale economies and control of a crucial resource can obstruct entry. Perfect information alone does not create an entry barrier or an ability to keep price above marginal cost.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2022-q15",
+      "year": "2022",
+      "originalNumber": "15",
+      "kind": "mcq",
+      "pages": [
+        7
+      ],
+      "title": "Antitrust and competition",
+      "topic": "monopoly",
+      "stemHtml": "<p>A goal of antitrust policy is to</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "prevent monopolistic competition"
+        },
+        {
+          "letter": "B",
+          "html": "increase producer surplus"
+        },
+        {
+          "letter": "C",
+          "html": "promote competition"
+        },
+        {
+          "letter": "D",
+          "html": "facilitate collusion"
+        },
+        {
+          "letter": "E",
+          "html": "eliminate foreign trade"
+        }
+      ],
+      "answer": "C",
+      "answerHtml": "<p>The intended goal is to promote competition and constrain harmful exercises of market power. The question asks the general economic goal, rather than the details of any current jurisdiction’s law.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2022-q17",
+      "year": "2022",
+      "originalNumber": "17",
+      "kind": "mcq",
+      "pages": [
+        7
+      ],
+      "title": "Find best responses without dominance",
+      "topic": "games",
+      "stemHtml": "<p>Graham R&D and Leady Research independently and simultaneously choose projects. Each knows all payoffs. The first payoff belongs to Graham R&D; the second belongs to Leady Research. Which statement is true?</p><table><thead><tr><th>Graham R&D / Leady Research</th><th>Project A</th><th>Project B</th></tr></thead><tbody><tr><td>Project J</td><td>$500, $400</td><td>$350, $100</td></tr><tr><td>Project K</td><td>$700, $450</td><td>$300, $500</td></tr></tbody></table>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "If Leady chooses B, Graham’s best response is K."
+        },
+        {
+          "letter": "B",
+          "html": "Graham has a dominant strategy to choose K."
+        },
+        {
+          "letter": "C",
+          "html": "Leady choosing A and Graham choosing K is a Nash equilibrium."
+        },
+        {
+          "letter": "D",
+          "html": "Leady choosing A and Graham choosing J is a Nash equilibrium."
+        },
+        {
+          "letter": "E",
+          "html": "Neither firm has a dominant strategy."
+        }
+      ],
+      "answer": "E",
+      "answerHtml": "<p>If Leady chooses A, Graham chooses K because 700 > 500; if Leady chooses B, Graham chooses J because 350 > 300. If Graham chooses J, Leady chooses A because 400 > 100; if Graham chooses K, Leady chooses B because 500 > 450. Neither has a dominant strategy, and no cell is a mutual best response. There is no pure-strategy Nash equilibrium; a mixed equilibrium exists but is outside this question.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2022-q24",
+      "year": "2022",
+      "originalNumber": "24",
+      "kind": "mcq",
+      "pages": [
+        9
+      ],
+      "title": "Patent expiry and substitutes",
+      "topic": "monopoly",
+      "stemHtml": "<p>A patent runs out on a brand-name pharmaceutical drug, and substitute generic drugs enter the market. The most likely result will be</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "an increase in the industry profits associated with the drug"
+        },
+        {
+          "letter": "B",
+          "html": "an increase in the supply of the brand-name drug"
+        },
+        {
+          "letter": "C",
+          "html": "an increase in the price of the brand-name drug"
+        },
+        {
+          "letter": "D",
+          "html": "a decrease in the demand for the brand-name drug"
+        },
+        {
+          "letter": "E",
+          "html": "an increase in the demand for the brand-name drug"
+        }
+      ],
+      "answer": "D",
+      "answerHtml": "<p>Generic substitutes divert buyers from the original brand at a given price, shifting the brand’s demand left. Expiry removes a legal entry barrier and weakens the incumbent’s pricing power.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2022-q25",
+      "year": "2022",
+      "originalNumber": "25",
+      "kind": "mcq",
+      "pages": [
+        9
+      ],
+      "title": "Perfect price discrimination",
+      "topic": "pricing",
+      "stemHtml": "<p>Which statement is NOT true about a monopolist engaging in perfect price discrimination?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "The monopolist needs to know each consumer’s maximum willingness to pay."
+        },
+        {
+          "letter": "B",
+          "html": "The monopolist’s profit is total surplus minus fixed costs."
+        },
+        {
+          "letter": "C",
+          "html": "Perfect price discrimination results in zero deadweight loss in the market."
+        },
+        {
+          "letter": "D",
+          "html": "Perfect price discrimination is allocatively inefficient."
+        },
+        {
+          "letter": "E",
+          "html": "The monopolist produces where demand intersects marginal cost."
+        }
+      ],
+      "answer": "D",
+      "answerHtml": "<p>Under the ideal model, each buyer pays their willingness to pay and every unit with willingness to pay at least MC is sold. Output is allocatively efficient, consumer surplus is zero, and monopoly deadweight loss disappears. Thus the claim of allocative inefficiency is false. Fixed costs still matter for profit; there are no externalities or implementation costs in this model.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2022-q33",
+      "year": "2022",
+      "originalNumber": "33",
+      "kind": "mcq",
+      "pages": [
+        11
+      ],
+      "title": "The monopoly output rule",
+      "topic": "monopoly",
+      "stemHtml": "<p>To maximize profits, a monopoly should produce the quantity of output where which condition holds?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Price equals average total cost."
+        },
+        {
+          "letter": "B",
+          "html": "Price equals marginal cost."
+        },
+        {
+          "letter": "C",
+          "html": "Marginal revenue equals average total cost."
+        },
+        {
+          "letter": "D",
+          "html": "Marginal revenue equals marginal cost."
+        },
+        {
+          "letter": "E",
+          "html": "Price equals marginal revenue."
+        }
+      ],
+      "answer": "D",
+      "answerHtml": "<p>For a standard interior optimum, choose output where MR = MC, with MC crossing MR appropriately. Then obtain price from demand. MR = MC locates the quantity; it does not mean the selling price equals MC. Operation must also be preferable to shutdown.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2022-q43",
+      "year": "2022",
+      "originalNumber": "43",
+      "kind": "mcq",
+      "pages": [
+        14
+      ],
+      "title": "Dominance and Nash equilibrium",
+      "topic": "games",
+      "stemHtml": "<p>Scifa and Galaxy each independently and simultaneously choose one project and know every payoff. The first number is Scifa’s payoff; the second is Galaxy’s. Which statement is true?</p><table><thead><tr><th>Scifa / Galaxy</th><th>Project X</th><th>Project Y</th></tr></thead><tbody><tr><td>Project A</td><td>$300, $400</td><td>$250, $250</td></tr><tr><td>Project B</td><td>$350, $250</td><td>$400, $300</td></tr></tbody></table>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Scifa chooses A regardless of Galaxy’s choice."
+        },
+        {
+          "letter": "B",
+          "html": "Galaxy chooses X regardless of Scifa’s choice."
+        },
+        {
+          "letter": "C",
+          "html": "Galaxy has a dominant strategy to choose Y."
+        },
+        {
+          "letter": "D",
+          "html": "At (A,Y), neither firm can gain by changing its project alone."
+        },
+        {
+          "letter": "E",
+          "html": "At (B,Y), neither firm can gain by changing its project alone."
+        }
+      ],
+      "answer": "E",
+      "answerHtml": "<p>Scifa prefers B against X (350 > 300) and against Y (400 > 250), so B is dominant. Galaxy prefers X against A (400 > 250), and Y against B (300 > 250), so it has no dominant strategy. At (B,Y), both are best responding: this is the unique pure-strategy Nash equilibrium.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2022-q45",
+      "year": "2022",
+      "originalNumber": "45",
+      "kind": "mcq",
+      "pages": [
+        15
+      ],
+      "title": "A rise in monopoly fixed costs",
+      "topic": "monopoly",
+      "stemHtml": "<p>A profit-maximizing monopolist earns a profit of $200 by selling 100 units. Its fixed costs rise by $100 because rent increases. What happens to output and profits?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Output decreases; profit falls by $100."
+        },
+        {
+          "letter": "B",
+          "html": "Output decreases; profit falls by more than $100."
+        },
+        {
+          "letter": "C",
+          "html": "Output is unchanged; profit falls by $100."
+        },
+        {
+          "letter": "D",
+          "html": "Output is unchanged; profit falls by less than $100."
+        },
+        {
+          "letter": "E",
+          "html": "Output increases; profit is unchanged."
+        }
+      ],
+      "answer": "C",
+      "answerHtml": "<p>A fixed-cost increase changes neither MR nor MC. The optimal output remains 100 and profit falls from $200 to $100. This example remains profitable, so the rent increase does not introduce a shutdown issue.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2022-q49",
+      "year": "2022",
+      "originalNumber": "49",
+      "kind": "mcq",
+      "pages": [
+        17
+      ],
+      "title": "Read the external benefit",
+      "topic": "failure",
+      "stemHtml": "<figure><a href=\"past-papers-assets/2022-external-benefit.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"past-papers-assets/2022-external-benefit.jpg\" alt=\"At Q = 400, MSB is 44 and MPB and MSC are 30. At Q = 500, MSB and MSC are 34 and MPB is 20.\" loading=\"lazy\"></a><figcaption>Diagram from the uploaded paper · tap to enlarge</figcaption></figure><p>The graph illustrates a market with which externality?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "A positive externality in consumption of $14 per unit"
+        },
+        {
+          "letter": "B",
+          "html": "A negative externality in consumption of $10 per unit"
+        },
+        {
+          "letter": "C",
+          "html": "A positive externality in production of 100 units"
+        },
+        {
+          "letter": "D",
+          "html": "A positive externality in production of $4 per unit"
+        },
+        {
+          "letter": "E",
+          "html": "A negative externality in production of $10 per unit"
+        }
+      ],
+      "answer": "A",
+      "answerHtml": "<p>MSB lies above MPB, so consumption creates an external benefit. Compare the two benefits at the same quantity: 44 − 30 = $14 at Q = 400, or 34 − 20 = $14 at Q = 500. The 100-unit output gap is not a dollar measure of the marginal external benefit.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2022-q50",
+      "year": "2022",
+      "originalNumber": "50",
+      "kind": "mcq",
+      "pages": [
+        17
+      ],
+      "title": "Deadweight loss shown in the paper",
+      "topic": "failure",
+      "stemHtml": "<figure><a href=\"past-papers-assets/2022-external-benefit.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"past-papers-assets/2022-external-benefit.jpg\" alt=\"At Q = 400, MSB is 44 and MPB and MSC are 30. At Q = 500, MSB and MSC are 34 and MPB is 20.\" loading=\"lazy\"></a><figcaption>Diagram from the uploaded paper · tap to enlarge</figcaption></figure><p>If this market is unregulated, its deadweight loss is</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "$200"
+        },
+        {
+          "letter": "B",
+          "html": "$500"
+        },
+        {
+          "letter": "C",
+          "html": "$700"
+        },
+        {
+          "letter": "D",
+          "html": "$1,000"
+        },
+        {
+          "letter": "E",
+          "html": "$1,400"
+        }
+      ],
+      "answer": "C",
+      "answerHtml": "<p>The private market produces 400, where MPB equals MSC (and MPC in this model). Efficient output is 500, where MSB equals MSC. The missing trades between 400 and 500 have social benefit above social cost. The triangle has base 100 and height 14, so DWL = ½ × 100 × 14 = $700. This numerical DWL calculation is present in this uploaded paper; it is not proof that your professor requires it on the CEIBS final.</p>",
+      "answerOrigin": "Study solution checked against the supplied key"
+    },
+    {
+      "id": "intl-2025-q12",
+      "year": "2025",
+      "originalNumber": "12",
+      "kind": "mcq",
+      "pages": [
+        3,
+        4
+      ],
+      "title": "Price customization and substitutes",
+      "topic": "pricing",
+      "stemHtml": "<p>A firm sells its product in two separate markets. If it practices price discrimination, it is most likely to charge a higher price in the market that</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "has lower marginal cost"
+        },
+        {
+          "letter": "B",
+          "html": "has no barriers to entry"
+        },
+        {
+          "letter": "C",
+          "html": "contains a binding price ceiling"
+        },
+        {
+          "letter": "D",
+          "html": "has fewer substitutes available"
+        },
+        {
+          "letter": "E",
+          "html": "allows resale of the product"
+        }
+      ],
+      "answer": "D",
+      "answerHtml": "<p>Fewer close substitutes generally make demand less price elastic. Under the usual comparison with the same MC and effective market separation, the less elastic market supports a higher optimal price. Different marginal costs could change the comparison; resale can undermine discrimination.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q16",
+      "year": "2025",
+      "originalNumber": "16",
+      "kind": "mcq",
+      "pages": [
+        4,
+        5
+      ],
+      "title": "Advertising dominant strategies",
+      "topic": "games",
+      "stemHtml": "<p>Nick’s Barbecue and Frank’s Barbecue choose independently and simultaneously with complete information. The first entry is Nick’s payoff; the second is Frank’s. Which pair describes their dominant strategies?</p><table><thead><tr><th>Nick’s / Frank’s</th><th>Advertise</th><th>Not advertise</th></tr></thead><tbody><tr><td>Advertise</td><td>$600, $100</td><td>$360, $250</td></tr><tr><td>Not advertise</td><td>$370, $140</td><td>$350, $150</td></tr></tbody></table>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Nick: Advertise; Frank: Advertise."
+        },
+        {
+          "letter": "B",
+          "html": "Nick: Advertise; Frank: Not advertise."
+        },
+        {
+          "letter": "C",
+          "html": "Nick: Not advertise; Frank: Advertise."
+        },
+        {
+          "letter": "D",
+          "html": "Nick: Not advertise; Frank: Not advertise."
+        },
+        {
+          "letter": "E",
+          "html": "Nick: Advertise; Frank: no dominant strategy."
+        }
+      ],
+      "answer": "B",
+      "answerHtml": "<p>Nick prefers advertising against either Frank action: 600 > 370 and 360 > 350. Frank prefers not advertising against either Nick action: 250 > 100 and 150 > 140. Thus the dominant-strategy outcome is (Advertise, Not advertise), with payoffs (360,250).</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q21",
+      "year": "2025",
+      "originalNumber": "21",
+      "kind": "mcq",
+      "pages": [
+        7
+      ],
+      "title": "The competitive benchmark",
+      "topic": "monopoly",
+      "stemHtml": "<p>Which statement is always true for a perfectly competitive market?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Firms have no market power."
+        },
+        {
+          "letter": "B",
+          "html": "Firms produce differentiated products."
+        },
+        {
+          "letter": "C",
+          "html": "Firms earn positive economic profit."
+        },
+        {
+          "letter": "D",
+          "html": "There are high barriers to entry."
+        },
+        {
+          "letter": "E",
+          "html": "There are relatively few competitors."
+        }
+      ],
+      "answer": "A",
+      "answerHtml": "<p>An individual perfectly competitive firm is a price taker. It cannot influence the market price through its own output. Positive profit is possible in the short run but is not a defining requirement. This is the benchmark for understanding a firm with pricing discretion.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q24",
+      "year": "2025",
+      "originalNumber": "24",
+      "kind": "mcq",
+      "pages": [
+        8,
+        9
+      ],
+      "title": "Price versus marginal cost",
+      "topic": "monopoly",
+      "stemHtml": "<p>Which comparison differentiates a profit-maximizing perfectly competitive firm from an imperfectly competitive firm in the standard single-price model? Each option lists the competitive firm first, then the imperfectly competitive firm.</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Price maker; price taker."
+        },
+        {
+          "letter": "B",
+          "html": "Minimizes ATC in the short run; maximizes total revenue in the short run."
+        },
+        {
+          "letter": "C",
+          "html": "Earns zero economic profit in the short run; does not earn economic profit in the short run."
+        },
+        {
+          "letter": "D",
+          "html": "Produces where P = MC; produces where P > MC."
+        },
+        {
+          "letter": "E",
+          "html": "Produces in the elastic region of demand; produces in the inelastic region of demand."
+        }
+      ],
+      "answer": "D",
+      "answerHtml": "<p>A competitive firm has P = MR and chooses MR = MC, giving P = MC. With downward-sloping firm demand and single-price selling, MR < P; the interior MR = MC choice gives P > MC. This is the price–cost wedge captured by the Lerner index, although the source question does not ask for the index itself.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q26",
+      "year": "2025",
+      "originalNumber": "26",
+      "kind": "mcq",
+      "pages": [
+        10
+      ],
+      "title": "Shifts in monopoly costs and demand",
+      "topic": "monopoly",
+      "stemHtml": "<p>Which change will definitely reduce a monopoly’s profit-maximizing output in the standard demand-shift diagram?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Lower variable costs and the ability to perfectly price discriminate"
+        },
+        {
+          "letter": "B",
+          "html": "Lower variable costs and lower demand for its output"
+        },
+        {
+          "letter": "C",
+          "html": "Higher variable costs and lower demand for its output"
+        },
+        {
+          "letter": "D",
+          "html": "Higher fixed costs and higher demand for its output"
+        },
+        {
+          "letter": "E",
+          "html": "Higher fixed costs and the ability to perfectly price discriminate"
+        }
+      ],
+      "answer": "C",
+      "answerHtml": "<p>The intended diagram has higher variable costs shifting MC upward and lower demand shifting MR downward. Both reduce the MR = MC quantity. A pure fixed-cost change does not shift MC. When one change raises output and another reduces it, the net effect is generally ambiguous. The answer uses the standard inward/parallel demand-shift interpretation of the exam.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q28",
+      "year": "2025",
+      "originalNumber": "28",
+      "kind": "mcq",
+      "pages": [
+        10
+      ],
+      "title": "Recognize a negative production externality",
+      "topic": "failure",
+      "stemHtml": "<p>Which is an example of a negative externality in production?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "An electronics store cuts television prices during the holidays."
+        },
+        {
+          "letter": "B",
+          "html": "A car insurer charges teenage drivers a higher price."
+        },
+        {
+          "letter": "C",
+          "html": "A local paper mill emits an odor, imposing additional costs on nearby residents."
+        },
+        {
+          "letter": "D",
+          "html": "A pine tree in a public park provides pleasant shade for residents."
+        },
+        {
+          "letter": "E",
+          "html": "A photographer accepts a price below marginal cost."
+        }
+      ],
+      "answer": "C",
+      "answerHtml": "<p>The paper mill’s production imposes a cost on neighbors outside the transaction. This can make MSC exceed MPC and lead to excessive production. A price change or a producer’s loss is not, by itself, evidence of an externality.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q34",
+      "year": "2025",
+      "originalNumber": "34",
+      "kind": "mcq",
+      "pages": [
+        12
+      ],
+      "title": "Economies of scale and natural monopoly",
+      "topic": "monopoly",
+      "stemHtml": "<p>Markus Corporation is initially the only aluminum producer. The government breaks it into two firms. Each firm’s long-run average total cost is higher than when Markus operated alone. This suggests the original firm benefited from</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "monopolistic competition"
+        },
+        {
+          "letter": "B",
+          "html": "Nash equilibrium"
+        },
+        {
+          "letter": "C",
+          "html": "decreasing returns to scale"
+        },
+        {
+          "letter": "D",
+          "html": "economies of scale"
+        },
+        {
+          "letter": "E",
+          "html": "diseconomies of scale"
+        }
+      ],
+      "answer": "D",
+      "answerHtml": "<p>When splitting output among smaller firms raises average cost, the larger scale of the original producer had a cost advantage. Economies of scale over relevant demand can support a natural monopoly and form an entry barrier. A single firm is not automatically efficient in every other respect.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q39",
+      "year": "2025",
+      "originalNumber": "39",
+      "kind": "mcq",
+      "pages": [
+        15
+      ],
+      "title": "Collusion and lost surplus",
+      "topic": "games",
+      "stemHtml": "<p>The only two firms in an industry collude to charge a higher price and produce less than the socially optimal quantity. What happens to consumer surplus and total economic surplus in the short run?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Consumer surplus decreases; total surplus stays the same."
+        },
+        {
+          "letter": "B",
+          "html": "Consumer surplus decreases; total surplus increases."
+        },
+        {
+          "letter": "C",
+          "html": "Consumer surplus increases; total surplus decreases."
+        },
+        {
+          "letter": "D",
+          "html": "Both increase."
+        },
+        {
+          "letter": "E",
+          "html": "Both decrease."
+        }
+      ],
+      "answer": "E",
+      "answerHtml": "<p>Consumers lose surplus because of the higher price and fewer purchases. Some of that loss transfers to producers, but restricting beneficial trades creates deadweight loss, reducing total surplus. A transfer alone does not account for all of the consumer loss.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q41",
+      "year": "2025",
+      "originalNumber": "41",
+      "kind": "mcq",
+      "pages": [
+        15
+      ],
+      "title": "Government spending on a subsidy",
+      "topic": "failure",
+      "stemHtml": "<figure><a href=\"past-papers-assets/2025-subsidy-areas.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"past-papers-assets/2025-subsidy-areas.jpg\" alt=\"A producer subsidy moves output from Q1 to Q2. Buyers pay P3 and sellers receive P1 after the subsidy; the original price is P2. Regions are labeled A through K.\" loading=\"lazy\"></a><figcaption>Diagram from the uploaded paper · tap to enlarge</figcaption></figure><p>The letters represent enclosed areas. What is the total cost of the per-unit producer subsidy to the government?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Areas B, C, and J"
+        },
+        {
+          "letter": "B",
+          "html": "Areas B, C, and D"
+        },
+        {
+          "letter": "C",
+          "html": "Areas A, F, and G"
+        },
+        {
+          "letter": "D",
+          "html": "Areas A, B, C, F, G, H, and J"
+        },
+        {
+          "letter": "E",
+          "html": "Areas A, B, C, D, F, J, and K"
+        }
+      ],
+      "answer": "D",
+      "answerHtml": "<p>The subsidy per unit is the seller receipt P1 minus the buyer price P3. Multiply this wedge by Q2. The resulting rectangle covers A + B + C + F + G + H + J. This is the government’s budget cost, not automatically the welfare loss. The source’s “Supply + Subsidy” label denotes the lower effective supply curve facing buyers.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q42",
+      "year": "2025",
+      "originalNumber": "42",
+      "kind": "mcq",
+      "pages": [
+        15,
+        16
+      ],
+      "title": "Consumer surplus after a subsidy",
+      "topic": "failure",
+      "stemHtml": "<figure><a href=\"past-papers-assets/2025-subsidy-areas.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"past-papers-assets/2025-subsidy-areas.jpg\" alt=\"A producer subsidy moves output from Q1 to Q2. Buyers pay P3 and sellers receive P1 after the subsidy; the original price is P2. Regions are labeled A through K.\" loading=\"lazy\"></a><figcaption>Diagram from the uploaded paper · tap to enlarge</figcaption></figure><p>The increase in consumer surplus caused by this producer subsidy equals</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "zero"
+        },
+        {
+          "letter": "B",
+          "html": "Area A"
+        },
+        {
+          "letter": "C",
+          "html": "Area J"
+        },
+        {
+          "letter": "D",
+          "html": "Areas J and K"
+        },
+        {
+          "letter": "E",
+          "html": "Areas B, C, and J"
+        }
+      ],
+      "answer": "E",
+      "answerHtml": "<p>Consumer surplus expands when the buyer price falls from P2 to P3 and purchases rise from Q1 to Q2. Relative to the original consumer-surplus triangle A, the added area is B + C + J. The subsidy budget rectangle is larger than this consumer gain.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q46",
+      "year": "2025",
+      "originalNumber": "46",
+      "kind": "mcq",
+      "pages": [
+        17
+      ],
+      "title": "Perfect discrimination removes monopoly DWL",
+      "topic": "pricing",
+      "stemHtml": "<figure><a href=\"past-papers-assets/2025-price-discrimination.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"past-papers-assets/2025-price-discrimination.jpg\" alt=\"Single-price monopoly output is 20, where MR meets MC at 30. Demand at that output is 60. Demand meets MC at output 26 and price 51.\" loading=\"lazy\"></a><figcaption>Diagram from the uploaded paper · tap to enlarge</figcaption></figure><p>The firm produces its profit-maximizing quantity in an imperfectly competitive market. If it could perfectly price discriminate, what would happen to consumer surplus and deadweight loss?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Consumer surplus becomes $0; DWL decreases by $90."
+        },
+        {
+          "letter": "B",
+          "html": "Consumer surplus becomes $0; DWL increases by $90."
+        },
+        {
+          "letter": "C",
+          "html": "Consumer surplus becomes $507; DWL decreases by $90."
+        },
+        {
+          "letter": "D",
+          "html": "Consumer surplus becomes $300; DWL increases by $180."
+        },
+        {
+          "letter": "E",
+          "html": "Consumer surplus becomes $630; DWL decreases by $180."
+        }
+      ],
+      "answer": "A",
+      "answerHtml": "<p>The single-price output is 20. Perfect discrimination expands output to 26, where demand meets MC, and captures each buyer’s willingness to pay. Consumer surplus becomes zero. The old DWL triangle has base 26 − 20 = 6 and height 60 − 30 = 30, so the reduction is ½ × 6 × 30 = $90, assuming the ideal model and no externalities.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q50",
+      "year": "2025",
+      "originalNumber": "50",
+      "kind": "mcq",
+      "pages": [
+        18,
+        19
+      ],
+      "title": "Break-even monopoly regulation",
+      "topic": "monopoly",
+      "stemHtml": "<p>Two monopolies have identical costs. One is an unregulated profit maximizer; the other is regulated to break even. Which comparison is correct? Each option describes the unregulated monopoly first, then the regulated monopoly.</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "P = ATC; P = MC."
+        },
+        {
+          "letter": "B",
+          "html": "Creates DWL; eliminates DWL."
+        },
+        {
+          "letter": "C",
+          "html": "Experiences economies of scale; experiences diseconomies of scale."
+        },
+        {
+          "letter": "D",
+          "html": "Collects all consumer surplus; transfers all consumer surplus to government."
+        },
+        {
+          "letter": "E",
+          "html": "Produces where MR = MC; produces where P = ATC."
+        }
+      ],
+      "answer": "E",
+      "answerHtml": "<p>The unregulated monopoly follows MR = MC. Break-even regulation requires revenue to cover economic costs: P = ATC at the regulated output. Break-even pricing need not equal MC, so it need not eliminate deadweight loss. Do not confuse average-cost pricing with marginal-cost pricing.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q53",
+      "year": "2025",
+      "originalNumber": "53",
+      "kind": "mcq",
+      "pages": [
+        20
+      ],
+      "title": "Recognize a dominant strategy",
+      "topic": "games",
+      "stemHtml": "<p>Ally’s Candles and Bob’s Candles each consider increasing or decreasing prices. Ally finds that increasing its price raises its profit regardless of Bob’s choice. Which concept describes Ally’s situation?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Nash equilibrium"
+        },
+        {
+          "letter": "B",
+          "html": "Price discrimination"
+        },
+        {
+          "letter": "C",
+          "html": "Dominant strategy"
+        },
+        {
+          "letter": "D",
+          "html": "Prisoner’s dilemma"
+        },
+        {
+          "letter": "E",
+          "html": "Collusion"
+        }
+      ],
+      "answer": "C",
+      "answerHtml": "<p>Increasing price is better for Ally against every possible Bob action, so it is a dominant strategy. A Nash equilibrium requires a best-response choice for both firms. The information given does not establish a prisoner’s dilemma or a cooperative agreement.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q57",
+      "year": "2025",
+      "originalNumber": "57",
+      "kind": "mcq",
+      "pages": [
+        21
+      ],
+      "title": "Entry weakens an incumbent’s position",
+      "topic": "monopoly",
+      "stemHtml": "<p>Lindser Landscaping is the sole provider of landscaping services in a small city. Horticultural Experts enters the market. Which outcome is most likely?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Lindser’s demand becomes more inelastic."
+        },
+        {
+          "letter": "B",
+          "html": "Lindser’s total revenue decreases."
+        },
+        {
+          "letter": "C",
+          "html": "Lindser’s economic profit increases."
+        },
+        {
+          "letter": "D",
+          "html": "Deadweight loss in landscaping services increases."
+        },
+        {
+          "letter": "E",
+          "html": "The market price of landscaping services increases."
+        }
+      ],
+      "answer": "B",
+      "answerHtml": "<p>Entry supplies customers with an alternative and takes business away from the incumbent. The intended prediction is lower incumbent revenue and weaker pricing power. Entry generally makes the incumbent’s demand more elastic, rather than giving it greater freedom to raise price.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q58",
+      "year": "2025",
+      "originalNumber": "58",
+      "kind": "mcq",
+      "pages": [
+        22
+      ],
+      "title": "Identify an efficient benchmark",
+      "topic": "monopoly",
+      "stemHtml": "<table><thead><tr><th>Market</th><th>Price ($)</th><th>Quantity</th><th>DWL ($)</th></tr></thead><tbody><tr><td>1</td><td>25</td><td>100</td><td>50</td></tr><tr><td>2</td><td>30</td><td>750</td><td>300</td></tr><tr><td>3</td><td>45</td><td>500</td><td>100</td></tr><tr><td>4</td><td>50</td><td>300</td><td>0</td></tr><tr><td>5</td><td>60</td><td>20</td><td>200</td></tr></tbody></table><p>Which market displays outcomes consistent with perfect competition under the usual no-externality benchmark?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Market 1"
+        },
+        {
+          "letter": "B",
+          "html": "Market 2"
+        },
+        {
+          "letter": "C",
+          "html": "Market 3"
+        },
+        {
+          "letter": "D",
+          "html": "Market 4"
+        },
+        {
+          "letter": "E",
+          "html": "Market 5"
+        }
+      ],
+      "answer": "D",
+      "answerHtml": "<p>Market 4 is the only row with zero deadweight loss, consistent with the competitive P = MC benchmark. Absolute price or quantity alone does not identify market power, and zero DWL by itself is not a general proof of a particular market structure outside the stated benchmark.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2025-q59",
+      "year": "2025",
+      "originalNumber": "59",
+      "kind": "mcq",
+      "pages": [
+        23
+      ],
+      "title": "Efficient output and the external benefit",
+      "topic": "failure",
+      "stemHtml": "<figure><a href=\"past-papers-assets/2025-external-benefit.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"past-papers-assets/2025-external-benefit.jpg\" alt=\"MSC equals MPC at price P2. MPB meets this line at Q1, and MSB meets it at Q2. At Q2, MSB is P2 and MPB is P1.\" loading=\"lazy\"></a><figcaption>Diagram from the uploaded paper · tap to enlarge</figcaption></figure><p>What is the socially optimal quantity, and what is the marginal external benefit at that quantity?</p>",
+      "options": [
+        {
+          "letter": "A",
+          "html": "Q1; P3 − P2"
+        },
+        {
+          "letter": "B",
+          "html": "Q1; P2 − P1"
+        },
+        {
+          "letter": "C",
+          "html": "Q2; P2"
+        },
+        {
+          "letter": "D",
+          "html": "Q2; P1"
+        },
+        {
+          "letter": "E",
+          "html": "Q2; P2 − P1"
+        }
+      ],
+      "answer": "E",
+      "answerHtml": "<p>Efficiency requires MSB = MSC, giving Q2. At that same quantity, MSB is P2 and MPB is P1, so the external benefit is P2 − P1. The private equilibrium is Q1; positive external benefits cause underproduction in the unassisted market.</p>",
+      "answerOrigin": "Study solution checked against the handwritten answer in the supplied copy"
+    },
+    {
+      "id": "intl-2022-frq1",
+      "year": "2022",
+      "originalNumber": "FRQ 1",
+      "kind": "short",
+      "pages": [
+        28
+      ],
+      "title": "Carbon-capture monopoly: selected parts",
+      "topic": "monopoly",
+      "parts": "a–b and c(i); c(ii) omitted",
+      "stemHtml": "<p>A patented carbon-capture device has only one producer. The firm earns positive economic profit and maximizes profit.</p><ol><li><strong>a.</strong> Draw a monopoly graph showing Q<sub>M</sub>, P<sub>M</sub>, and the entire consumer-surplus area.</li><li><strong>b(i).</strong> Could a positive per-unit tax move output to the socially optimal quantity? Explain.</li><li><strong>b(ii).</strong> Instead, show a price ceiling that induces socially optimal output, labeling Q<sub>C</sub> and P<sub>C</sub>.</li><li><strong>b(iii).</strong> Is the firm necessarily earning positive profit at the regulated price and quantity? Explain.</li><li><strong>c(i).</strong> If the unregulated firm instead maximizes total revenue, what happens to marginal revenue if it increases output by one further unit?</li></ol><p class=\"source-note\">Selected final-topic parts. The source’s further finite-percentage elasticity question, c(ii), is omitted.</p>",
+      "answerHtml": "<p><strong>a.</strong> Draw downward-sloping demand and MR below demand, plus MC. Locate Q<sub>M</sub> at MR = MC, then read P<sub>M</sub> from demand. Shade consumer surplus below demand and above P<sub>M</sub>, up to Q<sub>M</sub>.</p><p><strong>b(i).</strong> No in the standard monopoly model: a positive per-unit tax raises effective MC and reduces monopoly output further, while efficient output is higher. The technology’s name alone does not supply an additional quantified externality.</p><p><strong>b(ii).</strong> Locate Q<sub>C</sub> where demand intersects MC; P<sub>C</sub> is the price at that point. A ceiling at this level can induce the efficient quantity in the standard diagram, provided the firm continues operating.</p><p><strong>b(iii).</strong> Not enough information to establish positive profit: compare P<sub>C</sub> with ATC at Q<sub>C</sub>. Initial positive profit does not reveal ATC at the new output. If P<sub>C</sub> = ATC profit is zero; above/below ATC gives positive/negative profit.</p><p><strong>c(i).</strong> Total revenue is maximized at MR = 0 in the standard smooth interior model. A unit beyond that point reduces total revenue and has negative marginal revenue.</p>",
+      "checks": [
+        "Located Q at MR = MC and price on demand; shaded consumer surplus correctly.",
+        "Explained why a positive unit tax reduces monopoly output.",
+        "Located efficient output where demand = MC and the corresponding ceiling.",
+        "Used ATC at regulated output to discuss profit, without assuming it stays positive.",
+        "Explained negative MR beyond the total-revenue maximum."
+      ],
+      "answerOrigin": "Independent study solution; no official marking rubric supplied"
+    },
+    {
+      "id": "intl-2022-frq2",
+      "year": "2022",
+      "originalNumber": "FRQ 2",
+      "kind": "short",
+      "pages": [
+        29
+      ],
+      "title": "Guava externality: parts a–b",
+      "topic": "failure",
+      "parts": "a–b only; labor-market parts omitted",
+      "stemHtml": "<p>Bueno produces guava in a perfectly competitive market. Use the supplied graph.</p><figure><a href=\"past-papers-assets/2022-guava-externality.jpg\" target=\"_blank\" rel=\"noopener\"><img src=\"past-papers-assets/2022-guava-externality.jpg\" alt=\"At Q0, MPB and MSC are 5 and MSB is 8. At Q1, MSB and MSC are 7 and MPB is 4. MPC equals MSC.\" loading=\"lazy\"></a><figcaption>Diagram from the uploaded paper · tap to enlarge</figcaption></figure><ol><li><strong>a.</strong> Identify the market failure.</li><li><strong>b.</strong> Use numbers from the graph to identify the marginal external benefit.</li></ol><p class=\"source-note\">Only parts a–b are included. Parts c–d concern labor hiring and monopsony and are outside this focused set.</p>",
+      "answerHtml": "<p><strong>a.</strong> A positive consumption externality: MSB exceeds MPB, while MPC = MSC. The unregulated market produces Q<sub>0</sub>, below efficient output Q<sub>1</sub>.</p><p><strong>b.</strong> Compare the two benefit curves at the same quantity. At Q<sub>0</sub>, external benefit = 8 − 5 = <strong>$3 per unit</strong>. At Q<sub>1</sub>, it is 7 − 4 = $3 as well. Do not subtract benefit at one quantity from benefit at another.</p>",
+      "checks": [
+        "Identified a positive consumption externality.",
+        "Explained MSB > MPB and MPC = MSC.",
+        "Distinguished private output Q0 from efficient output Q1.",
+        "Calculated MEB = $3 using both curves at the same quantity."
+      ],
+      "answerOrigin": "Independent study solution; no official marking rubric supplied"
+    },
+    {
+      "id": "intl-2025-frq1",
+      "year": "2025",
+      "originalNumber": "FRQ 1",
+      "kind": "short",
+      "pages": [
+        24
+      ],
+      "title": "Voda Reservoir: monopoly graphs",
+      "topic": "monopoly",
+      "parts": "A–D only; part E omitted",
+      "stemHtml": "<p>Voda Reservoir is the only bottled-water producer in a country. It maximizes profit but earns negative economic profit.</p><ol><li><strong>A.</strong> Draw a labeled monopoly graph showing Q<sub>M</sub>, P<sub>M</sub>, an ATC curve consistent with the loss, and the entire DWL area.</li><li><strong>B.</strong> Mark socially optimal output Q<sub>S</sub>.</li><li><strong>C.</strong> What happens to optimal output if the government instead grants a per-unit subsidy? Explain.</li><li><strong>D.</strong> If new producers enter and Voda continues operating, does its demand become more elastic, less elastic, or stay the same?</li></ol><p class=\"source-note\">The source’s labor-demand and minimum-working-age questions in part E are omitted.</p>",
+      "answerHtml": "<p><strong>A.</strong> Put Q<sub>M</sub> at MR = MC, P<sub>M</sub> on demand above it, and ATC above P<sub>M</sub> at that quantity. A loss rectangle may be shown between ATC and P<sub>M</sub> up to Q<sub>M</sub>. Shade DWL between demand and MC from Q<sub>M</sub> to Q<sub>S</sub>; the loss rectangle and DWL triangle represent different things.</p><p><strong>B.</strong> Q<sub>S</sub> is where demand = MC in this no-externality model, to the right of monopoly output.</p><p><strong>C.</strong> Output increases: a unit subsidy lowers effective MC, so its intersection with MR moves right.</p><p><strong>D.</strong> Demand facing Voda becomes more elastic because customers gain substitutes. Monopoly power does not guarantee positive profit, as the original loss assumption illustrates.</p>",
+      "checks": [
+        "Located monopoly Q and price using MR = MC and demand.",
+        "Placed ATC above price at Qm to show a loss.",
+        "Located efficient Qs where demand = MC and shaded DWL.",
+        "Explained the unit subsidy lowers effective MC and increases output.",
+        "Explained entry adds substitutes and makes firm demand more elastic."
+      ],
+      "answerOrigin": "Independent study solution; no official marking rubric supplied"
+    },
+    {
+      "id": "intl-2025-frq3",
+      "year": "2025",
+      "originalNumber": "FRQ 3",
+      "kind": "short",
+      "pages": [
+        26
+      ],
+      "title": "Jewelry strategies and cooperation",
+      "topic": "games",
+      "parts": "A–E",
+      "stemHtml": "<p>Tony’s Trinkets chooses Unique or Typical jewelry. Bitaly’s Bracelets chooses Gold or Silver. They choose independently and simultaneously, know the payoffs, and do not cooperate. Payoffs are (Tony’s profit, Bitaly’s profit).</p><table><thead><tr><th>Tony’s / Bitaly’s</th><th>Gold</th><th>Silver</th></tr></thead><tbody><tr><td>Unique</td><td>$15, $21</td><td>$20, $19</td></tr><tr><td>Typical</td><td>$10, $7</td><td>$21, $16</td></tr></tbody></table><ol><li><strong>A.</strong> If Bitaly chooses Silver, is Unique Tony’s best response? Use numbers.</li><li><strong>B.</strong> Does Bitaly have a dominant strategy? Use numbers.</li><li><strong>C.</strong> Identify all Nash equilibria.</li><li><strong>D.</strong> Tony’s payoff from Typical rises by the same amount against either action. What is the minimum increase among $2, $4, $6, $11, and $15 that makes Typical dominant?</li><li><strong>E.</strong> If the firms merge and maximize combined profit using the same actions and payoffs, what is the maximum combined profit?</li></ol>",
+      "answerHtml": "<p><strong>A.</strong> No. Against Silver, Typical yields Tony 21, versus 20 from Unique.</p><p><strong>B.</strong> No dominant strategy. Against Unique, Bitaly prefers Gold (21 > 19); against Typical, Bitaly prefers Silver (16 > 7).</p><p><strong>C.</strong> Two pure-strategy Nash equilibria: <strong>(Unique, Gold)</strong> and <strong>(Typical, Silver)</strong>. Each is a mutual best-response cell. The source asks for Nash equilibria in a pure-action matrix setting. If mixed strategies are included in your course, there is also a mixed equilibrium: Tony uses Unique with probability 9/11; Bitaly uses Gold with probability 1/6.</p><p><strong>D.</strong> Typical must beat 15 against Gold: 10 + x > 15, so x > 5. It already beats Unique against Silver. The smallest offered increase is <strong>$6</strong>.</p><p><strong>E.</strong> Combined profits are 15 + 21 = 36, 20 + 19 = 39, 10 + 7 = 17, and 21 + 16 = 37. The maximum is <strong>$39</strong> at (Unique, Silver), even though that cell is not a noncooperative equilibrium.</p>",
+      "checks": [
+        "Compared 21 with 20 against Silver and chose Typical.",
+        "Checked Bitaly’s preferences in both rows; no dominant strategy.",
+        "Identified the two pure-strategy mutual-best-response cells.",
+        "Selected a $6 increase from the offered choices.",
+        "Compared all four sums and found combined profit $39."
+      ],
+      "answerOrigin": "Independent study solution; no official marking rubric supplied"
+    }
+  ],
+  "scope": "Selected from user-uploaded 2022Intl.pdf and 2025Intl.pdf against the supplied CEIBS final-topic list. These are external practice papers, not verified CEIBS past finals.",
+  "missingTopics": [
+    "Imperfect information and moral hazard",
+    "Information-search remedies and government information",
+    "Five externality approaches, bargaining and legal remedies",
+    "Sequential games, game trees and mover advantages",
+    "Hold-up, repeated games, AI launch, underdog and giant cases",
+    "Explicit Lerner-index calculation"
+  ],
+  "reviewNotes": [
+    "2025 pages 27–49 repeat the multiple-choice questions with handwritten answers. They were not counted twice.",
+    "Solutions are independent study explanations. The 2022 appended answer list and 2025 handwriting are supplied annotations, not independently authenticated official marking schemes.",
+    "The 2022 supplied key marks Q8 as D although its own prices and utilities imply A (one pound of apples). Q8 is outside the selected final topics and is not included in practice.",
+    "The 2022 Q26 positive-externality item leaves third-party benefits implicit. It is omitted from this focused set.",
+    "Monopolistic-competition questions were excluded to keep the default set centered on the explicitly listed pure-monopoly and game/externality material.",
+    "Numerical DWL questions 2022 Q50 and 2025 Q46 occur in these papers; their inclusion does not establish the professor’s CEIBS exam requirements."
+  ]
+}

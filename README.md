@@ -37,6 +37,26 @@ Edit `content/microeconomics-final.json` and
 Run `node scripts/check_micro_final.cjs` to check 1,000 mixed selections,
 topic coverage, original saved-progress migration, and independent test sessions.
 
+## Uploaded past papers: final-topic selection
+
+The [2022 and 2025 selection](https://cha1350.github.io/ceibs-note/pages/economics/microeconomics-past-papers.html)
+contains 26 reviewed MCQs and four selected written exercises. It excludes utility,
+trade, comparative advantage, labor markets and monopolistic competition. The
+selection follows the student's supplied final topics; the papers are external
+practice, not authenticated CEIBS past finals. Question numbers and option order
+are retained, with study wording, source diagrams, source-page references and
+independent explanations. The 2025 marked duplicate is not counted twice.
+
+The supplied 2022 answer list contains at least one unrelated error (Q8); selected
+answers were checked independently. The review notes explain source limitations
+and which final topics are absent from both papers. Practice and test modes save
+locally under a separate key from the existing final bank.
+
+Edit `content/microeconomics-past-papers.json`, run
+`python3 scripts/build_micro_papers.py`, then `python3 scripts/build.py`.
+Run `node scripts/check_micro_papers.cjs` for selection, feedback, draft persistence,
+scoring, and the game-equilibrium checks.
+
 ## AI Impact Library
 
 The [AI Impact Library](https://cha1350.github.io/ceibs-note/pages/ai-impact-library/index.html)

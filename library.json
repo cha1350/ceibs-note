@@ -9,6 +9,26 @@
   ],
   "pages": [
     {
+      "id": "microeconomics-past-papers",
+      "title": "2022 & 2025 · Final-topic practice",
+      "description": "Selected from the uploaded papers: 26 MCQs and four written excerpts on monopoly, price customization, externalities, subsidy graphs, and games. Reviewed study solutions and original question numbers.",
+      "topic": "economics",
+      "formats": [
+        "Interactive"
+      ],
+      "tags": [
+        "Microeconomics",
+        "Final exam",
+        "Past papers",
+        "Monopoly",
+        "Game theory"
+      ],
+      "detail": "Final topics only · 30 selected items",
+      "path": "pages/economics/microeconomics-past-papers.html",
+      "updated": "2026-10-25",
+      "thumbnail": "assets/previews/microeconomics-past-papers.svg"
+    },
+    {
       "id": "microeconomics-final",
       "title": "Microeconomics final practice",
       "description": "192 questions: five balanced mocks plus a focused market-failure and monopoly review. Tax, subsidy and monopoly graphs, five approaches, information problems, Lerner index, and game theory.",
